@@ -1,11 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Logo from './components/logo'
+import Survey from './components/survey'
+import Mailinglist from './components/mailinglist'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+       
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -16,8 +20,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React 
         </a>
+        <Logo></Logo>
+        <Survey></Survey>
+        <Mailinglist></Mailinglist>
       </header>
     </div>
   );
