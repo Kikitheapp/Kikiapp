@@ -1,105 +1,49 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App-body {
+  background-color: #86BCA4;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-
 :root {
-	--primary-color: #3a4052;
+	--primary-color: white
 }
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-family: 'Open Sans', sans-serif;
-	line-height: 1.5;
-}
-
 a {
 	text-decoration: none;
 	color: var(--primary-color);
 }
+.logo{justify-content: center;
+	text-align: center;}
 
-h1 {
-	font-weight: 300;
-	font-size: 60px;
-	line-height: 1.2;
-	margin-bottom: 15px;
-}
 
-.showcase {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.graphic{
+float:right;
+padding-right: 15%;}
+.mailinglistbtn{ 
+ background-color: yellow; /* Green */
+	border: none;
+	color: darkgreen;
+	padding: 15px;
 	text-align: center;
-	color: #fff;
-	padding: 0 20px;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 25px;
+}
+.email{
+	padding: 10px;
+	border-radius: 25px;
+}
+.survey{
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: underline;
+	
 }
 
-.video-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 60%;
-	overflow: hidden;
-}
-
-.video-container video {
-	min-width: 100%;
-	min-height: 50%;
-  position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	object-fit: cover;
-}
-
-.video-container:after {
-	content: '';
-	z-index: 1;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.5);
-	position: absolute;
+.content-container{
+	clear: both;
 }
