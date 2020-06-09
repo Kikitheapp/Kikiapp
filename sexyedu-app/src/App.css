@@ -1,11 +1,8 @@
-
-
 .App-body {
-  background-color: #86BCA4;
+  background-color: #87BBA2;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
-
 }
 :root {
 	--primary-color: white
@@ -15,16 +12,28 @@ a {
 	color: var(--primary-color);
 }
 .logo{justify-content: center;
-	text-align: center;}
-
-
+	text-align: center;
+padding: 10px;
+}
 .graphic{
 float:right;
 padding-right: 15%;}
-.mailinglistbtn{ 
- background-color: yellow; /* Green */
+.slogan{
+	color: #3B6064;
+}
+.emailinput{
+	background-color: #F2EFEF;
+	border-radius: 25px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	padding-left:20px ;
+	padding-right:20px ;
+	margin-left: 6%;
+}
+.mailinglistbtn{
+ background-color: #E0BE36;
 	border: none;
-	color: darkgreen;
+	color: #3B6064;
 	padding: 15px;
 	text-align: center;
 	text-decoration: none;
@@ -32,16 +41,23 @@ padding-right: 15%;}
 	margin: 4px 2px;
 	cursor: pointer;
 	border-radius: 25px;
+	clear: both;
+	margin-left:7%;
 }
-.email{
-	padding: 10px;
-	border-radius: 25px;
+.quizlink{
+	margin-left: 7%;
+	color: #3B6064;
 }
+.mailinglist{
+	margin-left: 20%;
+	clear: left;
+	padding-top:5% ;
+}
+
 .survey{
 	font-size: 15px;
 	font-weight: bold;
 	text-decoration: underline;
-	
 }
 
 .content-container{

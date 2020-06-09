@@ -3,10 +3,11 @@ import React from "react";
 export default function Mailing(props) {
     return (
         <div className="mailinglist">
-            <form><input className="email"placeholder="jwhite@gmail.com"></input></form>
+            <p className="slogan">Get a fresh take on what you didn't learn in sex-ed class.</p>
+            <form><input className="emailinput"placeholder="jwhite@gmail.com"></input></form>
             <button className="mailinglistbtn" href="test.html">join our mailing list</button>
             <div className="survey">
-            <a href="www.google.com" target="_blank">Take our servey here</a>
+            <a className="quizlink" href="www.google.com" target="_blank">or take this short quiz</a>
         </div>
         </div>
     )
