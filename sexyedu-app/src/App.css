@@ -2,7 +2,7 @@
   background-color: #87BBA2;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:  #3B6064;
 }
 :root {
 	--primary-color: white
@@ -13,11 +13,11 @@ a {
 }
 .logo{justify-content: center;
 	text-align: center;
-padding: 10px;
+	padding: 10px;
 }
 .graphic{
-float:right;
-padding-right: 15%;}
+	float:right;
+	padding-right: 15%;}
 .slogan{
 	color: #3B6064;
 }
@@ -31,7 +31,7 @@ padding-right: 15%;}
 	margin-left: 6%;
 }
 .mailinglistbtn{
- background-color: #E0BE36;
+ 	background-color: #E0BE36;
 	border: none;
 	color: #3B6064;
 	padding: 15px;
