@@ -1,6 +1,6 @@
 .App-body {
   background-color: #87BBA2;
-  min-height: 100vh;
+  min-height: 90vh;
   font-size: calc(10px + 2vmin);
   color:  #3B6064;
 }
@@ -34,18 +34,20 @@ a {
  	background-color: #E0BE36;
 	border: none;
 	color: #3B6064;
-	padding: 15px;
+	padding: 12px;
+	padding-left: 20px;
+	padding-right: 25px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 16px;
-	margin: 4px 2px;
+	margin: 2px 2px;
 	cursor: pointer;
 	border-radius: 25px;
 	clear: both;
 	margin-left:7%;
 }
 .quizlink{
-	margin-left: 7%;
+	margin-left: 8%;
 	color: #3B6064;
 }
 .mailinglist{
@@ -70,8 +72,12 @@ footer {
     font-size: 12px;
     color: black;
     text-align: center;
-    background: #F2EFEF;
-    border-top: 8px solid #6D84EF;
+    background: #3B6064;
+    border-top: 8px solid #E0BE36;
     height: 50px;
     width: 100%;
+  }
+
+  .socialIcon{
+	 font-size: xx-large;
   }
