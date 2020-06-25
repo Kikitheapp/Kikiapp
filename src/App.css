@@ -74,6 +74,8 @@ footer {
     width: 100%;
   }
 
-  .socialIcon{
+  .SocialIcons{
 	 font-size: xx-large;
+	 color: whitesmoke;
+	 margin: 5px;
   }
