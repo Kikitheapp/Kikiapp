@@ -7,10 +7,6 @@
 :root {
 	--primary-color: white
 }
-a {
-	text-decoration: none;
-	color: var(--primary-color);
-}
 .logo{justify-content: center;
 	text-align: center;
 	padding: 10px;
