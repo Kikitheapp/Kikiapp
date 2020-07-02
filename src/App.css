@@ -13,7 +13,9 @@
 }
 .graphic{
 	float:right;
-	padding-right: 15%;}
+	padding-right: 10%;
+
+}
 .slogan{
 	color: #3B6064;
 }
@@ -24,7 +26,7 @@
 	padding-bottom: 10px;
 	padding-left:20px ;
 	padding-right:20px ;
-	margin-left: 6%;
+
 }
 .mailinglistbtn{
  	background-color: #E0BE36;
@@ -39,17 +41,18 @@
 	margin: 2px 2px;
 	cursor: pointer;
 	border-radius: 25px;
-	clear: both;
-	margin-left:7%;
+	clear: left;
+	margin-left: 1%;
+
 }
 .quizlink{
-	margin-left: 8%;
+	margin-left:2%;
 	color: #3B6064;
 }
 .mailinglist{
 	margin-left: 20%;
 	clear: left;
-	padding-top:5% ;
+	padding-top:7% ;
 }
 
 .survey{
@@ -57,7 +60,6 @@
 	font-weight: bold;
 	text-decoration: underline;
 }
-
 .content-container{
 	clear: both;
 }
@@ -65,8 +67,8 @@
 footer {
     padding: 30px 0;
     clear: both;
-    font-size: 12px;
-    color: black;
+    font-size: 20px;
+    color: whitesmoke;
     text-align: center;
     background: #3B6064;
     border-top: 8px solid #E0BE36;
@@ -79,3 +81,25 @@ footer {
 	 color: whitesmoke;
 	 margin: 5px;
   }
+
+  @media only screen and (max-width: 640px) {
+	.graphic{
+		width: 50%;
+
+	}
+
+  };
+  @media only screen and (max-width: 768px) {
+	  .graphic{
+		  width: 75%;
+
+		  
+	  }
+
+  };
+  @media only scren and (max-width:1280px){
+	.graphic{
+		width: 50%;
+	}
+
+  };
