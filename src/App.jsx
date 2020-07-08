@@ -10,10 +10,8 @@ function App() {
     <div className="App">
       <header className="App-body">
       <Logo></Logo>
-      <div className="content-container">
         <Graphic></Graphic>
         <Mailinglist></Mailinglist>
-        </div>
       </header>
     </div>
   );
