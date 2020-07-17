@@ -1,6 +1,6 @@
 .App-body {
   background-color: #87BBA2;
-  min-height: 90vh;
+  min-height: 95vh;
   font-size: calc(10px + 2vmin);
   color:  #3B6064;
 }
@@ -8,8 +8,10 @@
 	--primary-color: white
 }
 .logo{justify-content: center;
-	text-align: center;
-	padding: 10px;
+width: 50%;
+
+margin-right: auto;
+
 }
 .graphic{
 	float:right;
