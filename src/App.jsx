@@ -3,6 +3,7 @@ import './App.css';
 import Logo from './components/logo'
 import Mailinglist from './components/mailinglist'
 import Graphic from './components/graphic'
+import Navbar from "./components/nav";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <header className="App-body">
       <Logo></Logo>
+      <Navbar></Navbar>
         <Graphic></Graphic>
         <Mailinglist></Mailinglist>
       </header>

@@ -8,6 +8,7 @@ export default function Mailing(props) {
             <button className="mailinglistbtn" href="test.html">Join our mailing list</button>
             <div className="survey">
             <a className="quizlink" href="https://kristawhite122148.typeform.com/to/hNxxl3 " target="_blank" rel="noopener noreferrer">or take this short quiz</a>
+            
         </div>
         </div>
     )
