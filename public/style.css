@@ -7,6 +7,12 @@ body{
 	width: 50%;
 	margin-right: auto;
 	}
+
+#mc_embed_signup{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .indicates-required{
 	font-size:large !important ;
 	clear: both;
@@ -14,7 +20,6 @@ body{
 }
 
 #mc_embed_signup .mc-field-group input{
-	width: 20% !important;
 	align-content: center;
 
 
