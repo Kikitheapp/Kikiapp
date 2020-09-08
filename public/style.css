@@ -1,79 +1,32 @@
-.App-body {
-  background-color: #87BBA2;
-  min-height: 100vh;
-  font-size: calc(10px + 2vmin);
-  color:  #3B6064;
-}
+
 body{
 	background-color: #87BBA2;
-}
-:root {
-	--primary-color: white
+
 }
 .logo{justify-content: center;
-width: 50%;
-}
-.blog{float: right;
-padding-right: 10;
-margin-right: 10%;
-margin-bottom: 1%;
-padding-top: 10%;
-font-size: medium;
-}
-.graphic{
-	float:right;
-	padding-right: 5%;
+	width: 50%;
+	margin-right: auto;
+	}
 
+#mc_embed_signup{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.slogan{
-	color: #3B6064;
-}
-.emailinput{
-	background-color: #F2EFEF;
-	border-radius: 25px;
-	padding-top:10px;
-	padding-bottom: 10px;
-	padding-left:20px ;
-	padding-right:20px ;
-
-}
-.mailinglistbtn{
- 	background-color: #E0BE36;
-	border: none;
-	color: #3B6064;
-	padding: 12px;
-	padding-left: 20px;
-	padding-right: 25px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	margin: 2px 2px;
-	cursor: pointer;
-	border-radius: 25px;
-	clear: left;
-	margin-left: 1%;
-
-}
-.quizlink{
-	margin-left:2%;
-	color: #3B6064;
-	font-size:medium;
-}
-.mailinglist{
-	margin-left: 15%;
-	clear: left;
-
-}
-
-.survey{
-	font-size: 15px;
-	font-weight: bold;
-	text-decoration: underline;
-}
-.content-container{
+.indicates-required{
+	font-size:large !important ;
 	clear: both;
+	
 }
 
+#mc_embed_signup .mc-field-group input{
+	align-content: center;
+
+
+}
+#mc_embed_signup .mc-field-group {
+	padding-bottom: 1% !important;
+}
 footer {
     padding: 30px 0;
     clear: both;
