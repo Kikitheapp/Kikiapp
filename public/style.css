@@ -1,13 +1,39 @@
-
 body{
-	background-color: #87BBA2;
+	background-color: #35BBCA;
+	color:black;
+	font-size: larger
 
+	;
 }
-.logo{justify-content: center;
-	width: 50%;
-	margin-right: auto;
-	}
 
+	.logo{
+		margin-left: 23%;
+		clear: both;
+
+	}
+	ul {
+		clear: left;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		margin-right: 3%;
+		font-size: calc(10px + 2vmin);
+	  }
+	li{
+		float: right;
+	}  
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 1px 10px;
+		text-decoration: none;
+	  }
+	  
+	  li a :hover {
+		color: #3B6064 ;
+	}
 #mc_embed_signup{
 	display: flex;
 	justify-content: center;
@@ -16,13 +42,10 @@ body{
 .indicates-required{
 	font-size:large !important ;
 	clear: both;
-	
 }
 
 #mc_embed_signup .mc-field-group input{
 	align-content: center;
-
-
 }
 #mc_embed_signup .mc-field-group {
 	padding-bottom: 1% !important;

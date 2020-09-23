@@ -1,14 +1,22 @@
 import React from "react";
+import Logo from "./logo"
 
 
-export default function Navbar( props) {
+export default function Navbar(props) {
     return (
-        <div className="blog">
-            <a href="https://medium.com/@kikiapp" >
-            <nav>
-              <p>Visit our blog</p>
-            </nav>
-            </a>
+        <div className="navbar">
+            <Logo>{Logo}</Logo>
+            <ul>
+
+                <li>
+                    <a href="https://medium.com/@kikiapp">
+                        <p>Visit our blog</p></a>
+                </li>
+                <li>
+                    <a href="./aboutus.html" >
+                        <p>About us</p></a>
+                </li>
+            </ul>
         </div>
     )
 }

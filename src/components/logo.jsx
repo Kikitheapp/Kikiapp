@@ -1,5 +1,5 @@
 import React from "react";
-import Kikilogo from "../assets/images/kiki logo.png"
+import Kikilogo from "../assets/images/kikilogo1.png"
 export default function Logo(props) {
     return (
         <div className="logo">

@@ -1,24 +1,47 @@
 .App-body {
-  background-color: #87BBA2;
-  min-height: 100vh;
+  background-color: #35BBCA;
+  min-height: 90vh;
   font-size: calc(10px + 2vmin);
-  color:  #3B6064;
+  color: #3B6064;
 }
 body{
-	background-color: #87BBA2;
+	background-color: #35BBCA;
+	
 }
 :root {
 	--primary-color: white
 }
-.logo{justify-content: center;
-width: 50%;
+.logo{
+	margin-left: 23%;
+	margin-top: 4px;
+	clear: both;
+	position: fixed;
+	
+	
 }
-.blog{float: right;
-padding-right: 10;
-margin-right: 10%;
-margin-bottom: 1%;
-padding-top: 10%;
-font-size: medium;
+ul {
+	clear: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	margin-right: 3%;
+  }
+li{
+	float: right;
+
+}  
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 1px 10px;
+	text-decoration: none;
+
+  }
+  
+  li a :hover {
+	color: #3B6064 ;
 }
 .graphic{
 	float:right;
@@ -28,15 +51,7 @@ font-size: medium;
 .slogan{
 	color: #3B6064;
 }
-.emailinput{
-	background-color: #F2EFEF;
-	border-radius: 25px;
-	padding-top:10px;
-	padding-bottom: 10px;
-	padding-left:20px ;
-	padding-right:20px ;
 
-}
 .mailinglistbtn{
  	background-color: #E0BE36;
 	border: none;
@@ -51,25 +66,19 @@ font-size: medium;
 	cursor: pointer;
 	border-radius: 25px;
 	clear: left;
-	margin-left: 1%;
-
+	margin-left: 8px;
 }
 .quizlink{
-	margin-left:2%;
+	margin-left:10px;
 	color: #3B6064;
 	font-size:medium;
 }
 .mailinglist{
 	margin-left: 15%;
 	clear: left;
-
+	margin-top: 5%;
 }
 
-.survey{
-	font-size: 15px;
-	font-weight: bold;
-	text-decoration: underline;
-}
 .content-container{
 	clear: both;
 }
@@ -80,16 +89,18 @@ footer {
     font-size: 20px;
     color: whitesmoke;
     text-align: center;
-    background: #3B6064;
-    border-top: 8px solid #E0BE36;
-    height: 50px;
-    width: 100%;
+    background:#055164;
+    border-top: 8px solid goldenrod;
+    height: 70px;
+	width: 100%;
+	
   }
 
   .SocialIcons{
 	 font-size: xx-large;
 	 color: whitesmoke;
-	 margin: 5px;
+	 margin: 10px;
+	;
   }
 
   @media screen and (max-width:1280px){
@@ -133,7 +144,6 @@ footer {
 			align-content: center;
 			margin-right: 2%;
 			margin-left: auto;
-	
 		}
 		.emailinput{margin-top: 5%;
 			margin-left: 3%;}
@@ -144,10 +154,7 @@ footer {
 		.slogan{
 			margin-right: 10%;
 		}
-		
 		footer{height: 100px}
-	
-	
 	  };
 
   };
