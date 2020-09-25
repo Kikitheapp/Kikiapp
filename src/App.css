@@ -6,18 +6,15 @@
 }
 body{
 	background-color: #35BBCA;
-	
 }
 :root {
 	--primary-color: white
 }
 .logo{
-	margin-left: 23%;
+	margin-left: 22.5%;
 	margin-top: 4px;
 	clear: both;
 	position: fixed;
-	
-	
 }
 ul {
 	clear: left;
@@ -25,7 +22,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	margin-right: 3%;
+	margin-right: 11%;
   }
 li{
 	float: right;
@@ -37,7 +34,6 @@ li a {
 	text-align: center;
 	padding: 1px 10px;
 	text-decoration: none;
-
   }
   
   li a :hover {
@@ -45,12 +41,12 @@ li a {
 }
 .graphic{
 	float:right;
-	padding-right: 5%;
-
+	padding-right: 10%;
 }
 .slogan{
 	color: #3B6064;
 }
+
 
 .mailinglistbtn{
  	background-color: #E0BE36;
@@ -66,17 +62,18 @@ li a {
 	cursor: pointer;
 	border-radius: 25px;
 	clear: left;
-	margin-left: 8px;
+	margin-left: 8px ;
 }
 .quizlink{
 	margin-left:10px;
 	color: #3B6064;
 	font-size:medium;
+	clear:left ;
 }
 .mailinglist{
-	margin-left: 15%;
+	margin-left: 10%;
 	clear: left;
-	margin-top: 5%;
+	margin-top: 8%;
 }
 
 .content-container{
@@ -93,7 +90,6 @@ footer {
     border-top: 8px solid goldenrod;
     height: 70px;
 	width: 100%;
-	
   }
 
   .SocialIcons{
@@ -110,11 +106,12 @@ footer {
 		margin-right: 7%;}
 	.graphic{
 		width:65%;
-		margin-left: auto;
-		margin-right: 7%;
+		margin-right: 13%; 
+		margin-top: 5%;
 	}
 	.slogan{
 		clear: right;
+		margin-left: 15%;
 	}
 	.emailinput{
 		margin-left: 25%;
@@ -122,34 +119,40 @@ footer {
 	}
 
 	.mailinglistbtn{
-		margin-left: 26.5%;
+		margin-left: 35%;
 		padding: 12px;
-	
 	}
 	.quizlink{
-		margin-left: 27%;
+		margin-left: 35%;
 		font-size: medium;
 	}
 
   @media screen and (max-width: 992px) {
-	  .graphic{
-		  width: 75%;
-	  }
+	  .logo{margin-left: 2%;}
+	.graphic{
+		width: 75%;
+		margin: 10%;
+		margin-right: 15%;
+		justify-content: center;
+
+	}
+.mailinglist{
+	margin: 10%;
+}
+.slogan{
+}
+
+	li
+	{font-size: medium}
+
   };
 
 
+
 	@media screen and (min-width: 640px) {
-		.graphic{
-			width: 75%; 
-			align-content: center;
-			margin-right: 2%;
-			margin-left: auto;
-		}
-		.emailinput{margin-top: 5%;
-			margin-left: 3%;}
-		.mailinglistbtn{margin-left: 7%;}
+		.mailinglistbtn{margin-left: 1%;}
 		.quizlink{
-			margin-left: 11%;
+			margin-left: 10%;
 		}
 		.slogan{
 			margin-right: 10%;
@@ -157,4 +160,4 @@ footer {
 		footer{height: 100px}
 	  };
 
-  };
+	};
