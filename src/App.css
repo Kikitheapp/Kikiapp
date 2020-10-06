@@ -6,6 +6,7 @@
 }
 body{
 	background-color: #35BBCA;
+	font-family: 'Montserrat', sans-serif;
 }
 :root {
 	--primary-color: white
@@ -23,9 +24,11 @@ ul {
 	padding: 0;
 	overflow: hidden;
 	margin-right: 11%;
+	font-family: 'Candal', sans-serif;
   }
 li{
 	float: right;
+	margin-left: 2%;
 
 }  
 li a {
@@ -91,6 +94,10 @@ footer {
     height: 70px;
 	width: 100%;
   }
+  .bannerflag{
+	  width: 10%;
+	  float: left;
+  }
 
   .SocialIcons{
 	 font-size: xx-large;
@@ -139,12 +146,8 @@ footer {
 .mailinglist{
 	margin: 10%;
 }
-.slogan{
-}
-
 	li
 	{font-size: medium}
-
   };
 
 
