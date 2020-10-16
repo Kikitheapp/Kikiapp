@@ -62,6 +62,13 @@ body{
 	text-align: center;
 
 }
+span{
+	padding-top: 2%;
+}
+
+.container{
+	display: flex;
+}
 
 h1{color: white;}
 .block{
@@ -76,6 +83,10 @@ h1{color: white;}
 	margin-left: 2%;
 	padding:10px;
 	color: white
+}
+.bio-img{
+	width:500px;
+	height:500px;
 }
 .content{
 	width: 500px;

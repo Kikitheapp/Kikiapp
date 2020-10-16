@@ -49,6 +49,7 @@ li a {
 }
 .slogan{
 	color: #3B6064;
+	font-weight: bold;
 }
 
 
@@ -77,7 +78,7 @@ li a {
 .mailinglist{
 	margin-left: 10%;
 	clear: left;
-	margin-top: 8%;
+	margin-top: 12%;
 }
 
 .content-container{
