@@ -80,11 +80,9 @@ li a {
 	clear: left;
 	margin-top: 12%;
 }
-
 .content-container{
 	clear: both;
 }
-
 footer {
     padding: 30px 0;
     clear: both;
@@ -100,22 +98,29 @@ footer {
 	  width: 10%;
 	  float: left;
   }
-
   .SocialIcons{
 	 font-size: xx-large;
 	 color: whitesmoke;
 	 margin: 10px;
 	;
   }
-
   @media screen and (max-width:1280px){
+	  .logo{
+		  z-index: -1;
+		  position: static;
+	}
+	ul{
+		margin-top:-20%;
+		z-index: 1;
+		margin-right:15%;
+	}
 	.graphiccontainer{	
 		width: 75%;	
 		margin-left: auto;
-		margin-right: 7%;}
+}
 	.graphic{
 		width:65%;
-		margin-right: 13%; 
+		margin-right: 10%; 
 		margin-top: 5%;
 	}
 	.slogan{
@@ -128,11 +133,11 @@ footer {
 	}
 
 	.mailinglistbtn{
-		margin-left: 35%;
+		margin-left: 25%;
 		padding: 12px;
 	}
 	.quizlink{
-		margin-left: 35%;
+		margin-left: 25%;
 		font-size: medium;
 	}
 
