@@ -12,10 +12,10 @@ body{
 	--primary-color: white
 }
 .logo{
-	margin-left: 22.5%;
+	margin-left: 26%;
 	margin-top: 4px;
 	clear: both;
-	position: fixed;
+	position: sticky;
 }
 ul {
 	clear: left;

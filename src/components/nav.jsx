@@ -7,9 +7,8 @@ export default function Navbar(props) {
         <div className="navbar">
             <Logo>{Logo}</Logo>
             <ul>
-
                 <li>
-                    <a href="https://medium.com/@kikiapp">
+                    <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@kikiapp">
                         <p>Visit our blog</p></a>
                 </li>
                 <li>
