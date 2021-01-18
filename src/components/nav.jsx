@@ -1,11 +1,9 @@
 import React from "react";
-import Logo from "./logo"
 
 
 export default function Navbar(props) {
     return (
         <div className="navbar">
-            <Logo>{Logo}</Logo>
             <ul>
                 <li>
                     <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@kikiapp">

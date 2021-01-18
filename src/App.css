@@ -110,8 +110,8 @@ footer {
 		  position: static;
 	}
 	ul{
-		margin-top:-20%;
-		z-index: 1;
+		/* margin-top:-20%; */
+		z-index: 1; 
 		margin-right:15%;
 	}
 	.graphiccontainer{	
