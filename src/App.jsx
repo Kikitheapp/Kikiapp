@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Mailinglist from './components/mailinglist'
-import Graphic from './components/graphic'
+import Mailinglist from './components/mailinglist';
+import Graphic from './components/graphic';
 import Navbar from "./components/nav";
 import Logo from './components/logo';
 

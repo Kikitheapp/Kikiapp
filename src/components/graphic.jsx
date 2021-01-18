@@ -1,5 +1,5 @@
 import React from "react";
-import benchpeople from "../assets/images/undraw_couplekiki.svg"
+import benchpeople from "../assets/images/undraw_couplekiki.svg";
 
 export default function Graphic(props) {
     return (
