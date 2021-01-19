@@ -1,175 +1,202 @@
-body{
-	background-color: #35BBCA;
-	color:black;
-	font-size: larger;
-	font-family: 'Montserrat', sans-serif;
+body {
+  background-color: #35bbca;
+  color: black;
+  font-size: larger;
+  font-family: 'Montserrat', sans-serif;
 }
-.header-2{font-weight: bolder;
-color: #3B6064  ;}
-.indicates-required{
-	color: #3B6064;
-	font-family: 'Montserrat', sans-serif;
+.header-2 {
+  font-weight: bolder;
+  color: #3b6064;
 }
-	.logo{
-		margin-left: 26%;
-		clear: both;
-	}
-	ul {
-		clear: left;
-		list-style-type: none;
-		overflow: hidden;
-		margin-right: 3%;
-		font-size: calc(10px + 2vmin);
-		font-family: 'Candal', sans-serif;
-	  }
-	li{
-		float: right;
-	}  
-	li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 1px 10px;
-		text-decoration: none;
-	  }
-	  li a :hover {
-		color: #3B6064 ;
-	}
-#mc_embed_signup{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.indicates-required {
+  color: #3b6064;
+  font-family: 'Montserrat', sans-serif;
 }
-.indicates-required{
-	font-size:large !important ;
-	clear: both;
+.logo {
+  margin-left: 26%;
+  clear: both;
 }
-label{margin-left: 1%;
-font-weight: bold;
-color: #3B6064;}
+ul {
+  clear: left;
+  list-style-type: none;
+  overflow: hidden;
+  margin-right: 3%;
+  font-size: calc(10px + 2vmin);
+  font-family: 'Candal', sans-serif;
+}
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1px 10px;
+  text-decoration: none;
+}
+li a :hover {
+  color: #3b6064;
+}
+#mc_embed_signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.indicates-required {
+  font-size: large !important ;
+  clear: both;
+}
+label {
+  margin-left: 1%;
+  font-weight: bold;
+  color: #3b6064;
+}
 
-#mc_embed_signup .mc-field-group input{
-	border-radius: 25px;
-	align-content: center;
+#mc_embed_signup .mc-field-group input {
+  border-radius: 25px;
+  align-content: center;
 }
 #mc_embed_signup .mc-field-group {
-	padding-bottom: 1% !important;
+  padding-bottom: 1% !important;
 }
-.button{background-color:#E0BE36 !important;
-color: #3B6064 !important;
-margin-left: 30% !important;
-margin-right: 30% !important;}
-.SectionContainer{
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 1%;
-	color: white;
-	font-size: x-large;
+.button {
+  background-color: #e0be36 !important;
+  color: #3b6064 !important;
+  margin-left: 30% !important;
+  margin-right: 30% !important;
 }
-.header-1{
-	text-align: center;
+.SectionContainer {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 1%;
+  color: white;
+  font-size: x-large;
 }
-span{
-	padding-top: 2%;
+.header-1 {
+  text-align: center;
 }
-.container{
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	margin-left: 5%;
-	margin-right: 5%;
+span {
+  padding-top: 2%;
 }
-ul{padding-top: 100px;}
-h1{color: white;}
-.block{
-	height: 100px;
-	width: 100%;
-	background: #E0BE36;
-	margin-bottom: 2%;
-}
-.Bio{
-	background: #3B6064;
-	margin-left: 2%;
-	padding:10px;
-	color: white;
-	width:490px ;
-	margin-top: 2%;
-}
-.bio-img{
-	width:100%;
 
+.grow {
+  transition: all 0.3s ease-in-out;
 }
-.content{
-	width: 90%;
+
+.grow:hover {
+  transform: scale(1.03);
 }
-#about-links{
-	color: white !important;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+ul {
+  padding-top: 100px;
+}
+h1 {
+  color: white;
+}
+.block {
+  height: 100px;
+  width: 100%;
+  background: #e0be36;
+  margin-bottom: 2%;
+}
+.Bio {
+  background: #3b6064;
+  margin-left: 2%;
+  padding: 10px;
+  color: white;
+  width: 490px;
+  margin-top: 2%;
+}
+.bio-img {
+  width: 100%;
+}
+.content {
+  width: 90%;
+}
+#about-links {
+  color: white !important;
 }
 footer {
-    padding: 30px 0;
-    clear: both;
-    font-size: 20px;
-    color: whitesmoke;
-    text-align: center;
-    background: #3B6064;
-    border-top: 8px solid #E0BE36;
-    height: 50px;
-	width: 100%;
-	margin-top:19%;
+  padding: 30px 0;
+  clear: both;
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: center;
+  background: #3b6064;
+  border-top: 8px solid #e0be36;
+  height: 50px;
+  width: 100%;
+  margin-top: 19%;
+}
+.SocialIcons {
+  font-size: xx-large;
+  color: whitesmoke;
+  margin: 5px;
+}
+@media screen and (max-width: 1280px) {
+  .graphiccontainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: 7%;
   }
-  .SocialIcons{
-	 font-size: xx-large;
-	 color: whitesmoke;
-	 margin: 5px;
+  .slogan {
+    clear: right;
   }
-  @media screen and (max-width:1280px){
-	.graphiccontainer{	
-		width: 75%;	
-		margin-left: auto;
-		margin-right: 7%;}
-	.slogan{
-		clear: right;
-	}
-	.emailinput{
-		margin-left: 25%;
-		padding: 10px;
-	}
-	.quizlink{
-		margin-left: 27%;
-		font-size: medium;
-	}
-	}
-  @media screen and (max-width: 992px) {
-	  .graphic{
-		  width: 75%;
-  };
-	@media screen and (min-width: 640px) {
-		.navbar {padding-top: 2%;}
-		.graphic{
-			width: 75%; 
-			align-content: center;
-			margin-right: 2%;
-			margin-left: auto;
-		}
-		.Bio{
-			width: 50%;
-			height: 200px ;
-		}
-		.bio-img{
-			height: 50%;
-			width: 50%;
-		}
-		.emailinput{margin-top: 5%;
-			margin-left: 3%;}
-		.mailinglistbtn{margin-left: 7%;}
-		.quizlink{
-			margin-left: 11%;
-		}
-		.slogan{
-			margin-right: 10%;
-		}
-		footer{height: 100px;
-		width: 100%;
-	margin-top: 10%!important;}
-	  };
-	};
+  .emailinput {
+    margin-left: 25%;
+    padding: 10px;
+  }
+  .quizlink {
+    margin-left: 27%;
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 992px) {
+  .graphic {
+    width: 75%;
+  }
+  @media screen and (min-width: 640px) {
+    .navbar {
+      padding-top: 2%;
+    }
+    .graphic {
+      width: 75%;
+      align-content: center;
+      margin-right: 2%;
+      margin-left: auto;
+    }
+    .Bio {
+      width: 50%;
+      height: 200px;
+    }
+    .bio-img {
+      height: 50%;
+      width: 50%;
+    }
+    .emailinput {
+      margin-top: 5%;
+      margin-left: 3%;
+    }
+    .mailinglistbtn {
+      margin-left: 7%;
+    }
+    .quizlink {
+      margin-left: 11%;
+    }
+    .slogan {
+      margin-right: 10%;
+    }
+    footer {
+      height: 100px;
+      width: 100%;
+      margin-top: 10% !important;
+    }
+  }
+} ;
