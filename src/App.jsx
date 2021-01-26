@@ -1,24 +1,29 @@
-import React from 'react';
-import './App.css';
-import Mailinglist from './components/mailinglist';
-import Graphic from './components/graphic';
-import Navbar from "./components/nav";
-import Logo from './components/logo';
-
+import React from 'react'
+import './App.css'
+import { Route } from 'react-router-dom'
+import Mailinglist from './components/mailinglist'
+import Graphic from './components/graphic'
+import Navbar from './components/nav'
+import Logo from './components/logo'
+import AboutUs from './components/AboutUs.jsx'
 
 function App() {
   return (
-    
-    <div className="App">
-      <header className="App-body">
+    <div className='App'>
+      <header className='App-body'>
         <Logo></Logo>
-      <Navbar> </Navbar>
+        <Navbar> </Navbar>
+        <Route exact path='/'>
+          <Graphic></Graphic>
 
-        <Graphic></Graphic>
-        <Mailinglist></Mailinglist>
+          <Mailinglist></Mailinglist>
+        </Route>
+        <Route path='/aboutUs'>
+          <AboutUs></AboutUs>
+        </Route>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
