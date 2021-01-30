@@ -18,8 +18,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "server": "node server/server.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "prod": "react-scripts build && npm run server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
