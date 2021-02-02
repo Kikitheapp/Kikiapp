@@ -6,7 +6,6 @@ import Graphic from './components/graphic'
 import Navbar from './components/nav'
 import Logo from './components/logo'
 import AboutUs from './components/AboutUs.jsx'
-
 function App() {
   return (
     <div className='App'>
@@ -15,12 +14,15 @@ function App() {
         <Navbar> </Navbar>
         <Route exact path='/'>
           <Graphic></Graphic>
-
           <Mailinglist></Mailinglist>
         </Route>
         <Route path='/aboutUs'>
           <AboutUs></AboutUs>
         </Route>
+        <Route path='/MailinglistForm' render={()=>{
+          window.location.href='form.html'
+        }}>
+        </Route> 
       </header>
     </div>
   )

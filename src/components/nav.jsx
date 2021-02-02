@@ -19,8 +19,8 @@ export default function Navbar(props) {
             <p>About us</p>
           </Link>
 
-          {/* needs path to the form component <Link to='/'>
-          <p>Join Our Mailing List</p></Link> */}
+          <Link to='/MailinglistForm'>
+          <p>Join Our Mailing List</p></Link> 
         </li>
       </ul>
     </div>
