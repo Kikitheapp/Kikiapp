@@ -17,12 +17,12 @@ body {
   clear: both;
 }
 ul {
-  clear: left;
   list-style-type: none;
   overflow: hidden;
   margin-right: 3%;
   font-size: calc(10px + 2vmin);
   font-family: 'Candal', sans-serif;
+  padding-top:0 !important;
 }
 li {
   float: right;
@@ -94,9 +94,7 @@ span {
   margin-left: 5%;
   margin-right: 5%;
 }
-ul {
-  padding-top: 100px;
-}
+
 h1 {
   color: white;
 }
