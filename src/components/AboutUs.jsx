@@ -285,7 +285,7 @@ const AboutUs = () => {
                 <a
                   id='about-links'
                   target='_blank'
-                  rel=''
+                  rel='noopener noreferrer'
                   href='https://www.instagram.com/queer_moonchild/'
                 >
                   @queer_moonchild

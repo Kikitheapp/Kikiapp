@@ -19,14 +19,12 @@ body {
 ul {
   list-style-type: none;
   overflow: hidden;
-  margin-right: 3%;
+  margin-right: 10%;
   font-size: calc(10px + 2vmin);
   font-family: 'Candal', sans-serif;
-  padding-top:0 !important;
+
 }
-li {
-  float: right;
-}
+
 li a {
   display: block;
   color: white;
