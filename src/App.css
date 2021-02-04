@@ -18,19 +18,14 @@ body{
 	position: sticky;
 }
 ul {
-	clear: left;
+
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
 	overflow: hidden;
-	margin-right: 11%;
-	color: violet !important;
+	margin-right: 10%;
 	font-family: 'Candal', sans-serif;
   }
 li{
-	float: right;
 	margin-left: 2%;
-
 }  
 li a {
 	display: block;

@@ -18,7 +18,8 @@ export default function Navbar(props) {
           <Link to='/aboutUs'>
             <p>About us</p>
           </Link>
-
+          </li>
+          <li>
           <Link to='/MailinglistForm'>
           <p>Join Our Mailing List</p></Link> 
         </li>
