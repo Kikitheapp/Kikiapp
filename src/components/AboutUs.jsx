@@ -1,5 +1,5 @@
-import React from 'react'
-import '../AboutUs.css'
+import React from 'react';
+import '../AboutUs.css';
 
 const AboutUs = () => {
   return (
@@ -36,7 +36,7 @@ const AboutUs = () => {
         {'\n'}
         <div className='block'></div>
         <div>
-          <h1 class='header-1'>Meet Our Badass Team</h1>
+          <h1 className='header-1'>Meet Our Badass Team</h1>
           {'\n'}
           {/* <!-- Bios for the team --> */}
           <div className='container'>
@@ -299,4 +299,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default AboutUs;
