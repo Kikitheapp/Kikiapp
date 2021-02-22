@@ -6,6 +6,7 @@ import Graphic from './components/graphic'
 import Navbar from './components/nav'
 import Logo from './components/logo'
 import AboutUs from './components/AboutUs.jsx'
+import PrEP from './components/PrEP.jsx'
 function App() {
   return (
     <div className='App'>
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path='/aboutUs'>
           <AboutUs></AboutUs>
+        </Route>
+        <Route path='/PrEP-info'>
+          <PrEP></PrEP>
         </Route>
         <Route path='/MailinglistForm' render={()=>{
           window.location.href='form.html'

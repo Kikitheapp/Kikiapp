@@ -20,6 +20,10 @@ export default function Navbar(props) {
           </Link>
           </li>
           <li>
+          <Link to='/PrEP-info'> 
+          <p>PrEP info</p></Link>
+          </li>
+          <li>
           <Link to='/MailinglistForm'>
           <p>Join Our Mailing List</p></Link> 
         </li>
