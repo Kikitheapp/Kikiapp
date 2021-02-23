@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Route } from 'react-router-dom';
-import Mailinglist from './components/mailinglist';
 import Graphic from './components/graphic';
 import Navbar from './components/nav';
-import Logo from './components/logo';
 import AboutUs from './components/AboutUs.jsx';
 
 function App() {
@@ -13,7 +11,6 @@ function App() {
       <Navbar> </Navbar>
       <Route exact path='/'>
         <Graphic></Graphic>
-        <Mailinglist></Mailinglist>
       </Route>
       <Route path='/aboutUs'>
         <AboutUs></AboutUs>

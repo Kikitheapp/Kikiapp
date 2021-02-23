@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom'
 export default function Navbar(props) {
   return (
     <nav className='navbar navbar-expand-lg navbar-dark'>
-      <Link className='navbar-brand' to='/'>
-        <img src='../assets/images/kikilogo1.png' alt='logo'></img>
-      </Link>
+      <h1>
+        <Link className='navbar-brand' to='/'>
+          <img src='../assets/images/kikilogo1.png' alt='Kiki'></img>
+        </Link>
+      </h1>
       <button className="navbar-toggler"
         type="button"
         data-toggle="collapse"
