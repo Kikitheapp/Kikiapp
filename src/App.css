@@ -67,23 +67,24 @@ li a {
 }
 footer {
     padding: 30px 0;
-    font-size: 20px;
     color: whitesmoke;
     text-align: center;
     background:#055164;
     border-top: 8px solid goldenrod;
-    height: 70px;
-	width: 100%;
   }
-  .bannerflag{
-	  width: 10%;
-	  float: left;
-  }
-  .SocialIcons{
-	 font-size: xx-large;
-	 color: whitesmoke;
-	 margin: 10px;
-	;
+
+footer h3 {
+	font-size: 20px;
+}  
+
+.bannerflag{
+	width: 10%;
+	float: left;
+}
+.SocialIcons{
+	font-size: xx-large;
+	color: whitesmoke;
+	margin: 10px;
   }
 
 /*********************************************************************
