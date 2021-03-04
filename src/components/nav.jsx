@@ -9,7 +9,7 @@ export default function Navbar(props) {
           <a
             target='_blank'
             rel='noopener noreferrer'
-            href='https://medium.com/@kikiapp'
+            href='https://medium.com/kiki-app'
           >
             <p>Visit our blog</p>
           </a>
