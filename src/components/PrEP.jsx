@@ -40,11 +40,11 @@ const PrEP = () => {
             </Accordion>
             <Accordion title="Sources">
             <div className="sources-links">
-                <p>CDC. (2020, November 3). About Prep. HIV Basics.<a href="https://www.cdc.gov/hiv/basics/prep/about-prep.html" target="_blank" without rel="noopener noreferrer">
+                <p>CDC. (2020, November 3). About Prep. HIV Basics.<a href="https://www.cdc.gov/hiv/basics/prep/about-prep.html" target="_blank" rel="noopener noreferrer">
                     https://www.cdc.gov/hiv/basics/prep/about-prep.html</a></p>
-                <p>Planned Parenthood. (n.d.). What Is PrEP. Planned Parenthood. <a href="https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep" target="_blank" without rel="noopener noreferrer">
+                <p>Planned Parenthood. (n.d.). What Is PrEP. Planned Parenthood. <a href="https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep" target="_blank" rel="noopener noreferrer">
                     https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep </a></p>
-                <p>Please Prep Me. (2021, January 15). Please Prep Me. Please Prep Me. <a href="https://pleaseprepme.org/"target="_blank" without rel="noopener noreferrer">https://pleaseprepme.org/ </a></p>
+                <p>Please Prep Me. (2021, January 15). Please Prep Me. Please Prep Me. <a href="https://pleaseprepme.org/"target="_blank" rel="noopener noreferrer">https://pleaseprepme.org/ </a></p>
             </div>
             </Accordion>
 
