@@ -14,13 +14,18 @@ Kiki was founded in 2020 to address the gap in sexual health resources and educa
 #### to use this locally you must download git and NPM 
 You can do that here
 -Click the clone repo button in the top right.
+
 -Open your bash terminal and *cd* into the folder that you want your local repository to be placed.
+
 -Type in Git clone and copy and paste the "clone" link proveded and hit enter.
+
 -Once the local repository has been created open your IDE like VS code and open to the folder containing Kikiapp.
+
 -Launch your IDE or bash terminal to the Kikiapp folder and type in the command *npm start*. This should launch a local server on port 3000 of the current build. 
 
 ----
 
 ### Troubleshooting
 -ensure you have downloaded Git and npm 
+
 -Make sure your in the right directory when typeing *npm start*
