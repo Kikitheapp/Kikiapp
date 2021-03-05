@@ -10,7 +10,7 @@ Kiki was founded in 2020 to address the gap in sexual health resources and educa
 [GitBash](https://git-scm.com/downloads)
 
 ----
-## Startup And onboarding
+## Startup and Onboarding
 
 
 -Click the clone repo button in the top right.
