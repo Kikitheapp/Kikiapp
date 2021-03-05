@@ -12,7 +12,7 @@ Kiki was founded in 2020 to address the gap in sexual health resources and educa
 ----
 ## Startup And onboarding
 #### to use this locally you must download git and NPM 
-You can do that here
+
 -Click the clone repo button in the top right.
 
 -Open your bash terminal and *cd* into the folder that you want your local repository to be placed.
