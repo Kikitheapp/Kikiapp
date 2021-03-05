@@ -6,6 +6,8 @@ import Graphic from './components/graphic'
 import Navbar from './components/nav'
 import Logo from './components/logo'
 import AboutUs from './components/AboutUs.jsx'
+import Faq from './components/Faq.jsx'
+
 function App() {
   return (
     <div className='App'>
@@ -19,13 +21,16 @@ function App() {
         <Route path='/aboutUs'>
           <AboutUs></AboutUs>
         </Route>
-        <Route path='/MailinglistForm' render={()=>{
-          window.location.href='form.html'
+        <Route path='/Faq'>
+          <Faq></Faq>
+        </Route>
+        <Route path='/MailinglistForm' render={() => {
+          window.location.href = 'form.html'
         }}>
-        </Route> 
+        </Route>
       </header>
     </div>
   )
 }
 
-export default App
+export default App;
