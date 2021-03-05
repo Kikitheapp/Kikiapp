@@ -26,6 +26,6 @@ Kiki was founded in 2020 to address the gap in sexual health resources and educa
 ----
 
 ### Troubleshooting
--ensure you have downloaded Git and npm 
+-Enure you have downloaded Git and npm 
 
 -Make sure your in the right directory when typeing *npm start*
