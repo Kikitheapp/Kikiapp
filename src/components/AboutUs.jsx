@@ -161,7 +161,7 @@ const AboutUs = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  nicholas-frattaroli{' '}
+                  Nicholas-Frattaroli{' '}
                 </a>
                 {'\n'}
                 Github:
@@ -350,6 +350,48 @@ const AboutUs = () => {
                   rel='noopener noreferrer'
                 >
                   ricmartini16{' '}
+                </a>
+              </div>
+            </div>
+            <div className='Bio grow'>
+              <h4>Amanda Lynn Castonguay (they/them, she/her)</h4>
+                   {'\n'}
+              <img
+                className='bio-img'
+                src='./Assets/images/amanda.jpg'
+                alt='Amanda Lynn Castonguay (Web Dev)'
+              ></img>
+              {'\n'}
+              <h3>Web Developer</h3>
+              <div className='content'>
+                <p>
+                  Amanda Lynn is a Full-Stack Engineer, with a passion for teamwork and usability, 
+                  who lives and worksin Portland, Maine. As a member of the LGBTQ+ community and an advocate for diversity in tech, 
+                  they’re exited to work on a project that gives back to this community. When not working on one of their many projects,
+                   you can find Amanda tending to pet fish or riding their bike. Although, if it is summer, they are probably at the beach.
+                  {'\n'}
+                </p>
+                {'\n'}
+                LinkedIn:
+                <a
+                  id='about-links'
+                  href='https://www.linkedin.com/in/alcastonguay/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Amanda Castonguay{' '}
+                </a>
+                {'\n'}
+
+                Github:
+          
+                <a
+                  id='about-links'
+                  href='https://github.com/alcastonguay'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                 alcastonguay {' '}
                 </a>
               </div>
             </div>
