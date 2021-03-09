@@ -1,5 +1,5 @@
-import React from 'react'
-import '../AboutUs.css'
+import React from 'react';
+import '../AboutUs.css';
 
 const AboutUs = () => {
   return (
@@ -36,10 +36,10 @@ const AboutUs = () => {
         {'\n'}
         <div className='block'></div>
         <div>
-          <h1 class='header-1'>Meet Our Badass Team</h1>
+          <h1 className='header-1'>Meet Our Badass Team</h1>
           {'\n'}
           {/* <!-- Bios for the team --> */}
-          <div className='container'>
+          <div className='about-us-container'>
             <div className='Bio grow'>
               <h4>Krista White (She, Her, Hers)</h4>
               <img
@@ -49,7 +49,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Founder</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Krista White is a queer, Black writer and actor who decided to
                   take a UX Design class on a whim in 2019. She fell in love
@@ -111,7 +111,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Writer and Researcher</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Shanice is a black queer curator and cultural studies scholar
                   based in the NYC area. As someone who spent her formative
@@ -142,7 +142,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Web Developer</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Nick is a Web Developer based out of NYC. As a proud member of
                   the Bear community He is excited to help bring sexual health
@@ -184,9 +184,9 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Social Media Manager</h3>{' '}
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
-                  Kate Bader is a NYC based actor and content creator, with a
+                  Kate Bader is a NYC based actor and about-us-content creator, with a
                   background in film production, marketing, and healthcare. She
                   adores the way social media bridges community engagement,
                   visual aesthetics, entertainment, and digestible knowledge.
@@ -215,7 +215,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Data Scientist</h3>{' '}
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Mick is a Data Scientist based in Connecticut. As a proud
                   member of the LGBTQ community, he excited to contribute his
@@ -246,7 +246,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>UX Designer</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Fiona is a UX designer based in Austin, Texas with a
                   background in Architecture and Political Science. As a
@@ -269,7 +269,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Web Developer</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Jesse is a Web Developer based out of Salt lake city, Utah. As
                   part of the LGBTQ community, They are excited to help build a
@@ -285,7 +285,7 @@ const AboutUs = () => {
                 <a
                   id='about-links'
                   target='_blank'
-                  rel=''
+                  rel='noopener noreferrer'
                   href='https://www.instagram.com/queer_moonchild/'
                 >
                   @queer_moonchild
@@ -299,4 +299,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default AboutUs;
