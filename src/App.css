@@ -5,6 +5,7 @@
   color: #3B6064;
 }
 body{
+	color: white;
 	background-color: #35BBCA;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -100,7 +101,8 @@ footer h3 {
 /***************************************************************************
   ************************** FAQ Page ****************************************
   ***************************************************************************/
-  
+
+
 /*********************************************************************
 ***************************** Media Queries **************************
 **********************************************************************/
@@ -109,14 +111,26 @@ footer h3 {
 @media (min-width: 576px) {  }
  
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+	.margin-alot {
+		margin-bottom: 20rem;
+	} 
+ }
 
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+	.margin-alot {
+		margin-bottom: 20rem;
+	} 
+ }
 
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+	.margin-alot {
+		margin-bottom: 25rem;
+	} 
+}
 
 
