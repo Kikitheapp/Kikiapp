@@ -9,7 +9,7 @@ const AboutUs = () => {
                     <div className="col-md-8  col-lg-6">
                         <div className="row align-items-center">
                             <div className="col-auto">
-                                <i class="bi bi-patch-question "></i>
+                                <i className="bi bi-patch-question "></i>
                             </div>
                             <div className="col">
                                 <h3 id="heading-one" data-toggle="collapse" data-target="#question-one"
@@ -30,7 +30,7 @@ const AboutUs = () => {
                     <div className="col-md-8  col-lg-6">
                         <div className="row align-items-center">
                             <div className="col-auto">
-                                <i class="bi bi-patch-question "></i>
+                                <i className="bi bi-patch-question "></i>
                             </div>
                             <div className="col">
                                 <h3 id="heading-two" data-toggle="collapse" data-target="#question-two"
@@ -52,7 +52,7 @@ const AboutUs = () => {
                     <div className="col-md-8  col-lg-6">
                         <div className="row align-items-center">
                             <div className="col-auto">
-                                <i class="bi bi-patch-question "></i>
+                                <i className="bi bi-patch-question "></i>
                             </div>
                             <div className="col">
                                 <h3 id="heading-three" data-toggle="collapse" data-target="#question-three"
@@ -72,7 +72,7 @@ const AboutUs = () => {
                     <div className="col-md-8  col-lg-6">
                         <div className="row align-items-center">
                             <div className="col-auto">
-                                <i class="bi bi-patch-question "></i>
+                                <i className="bi bi-patch-question "></i>
                             </div>
                             <div className="col">
                                 <h3 id="heading-four" data-toggle="collapse" data-target="#question-four"
