@@ -10,6 +10,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-body'>
+        {/* Any jsx tag with no children should be a self-closing tag. See: https://reactjs.org/docs/jsx-in-depth.html */}
         <Logo></Logo>
         <Navbar> </Navbar>
         <Route exact path='/'>
