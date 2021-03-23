@@ -1,6 +1,5 @@
 import React from 'react'
-import '../AboutUs.css'
-import './prep.css'
+import '../App.css'
 import Accordion from './accordion'
 
 
