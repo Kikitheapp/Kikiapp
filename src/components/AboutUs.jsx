@@ -161,7 +161,7 @@ const AboutUs = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  nicholas-frattaroli{' '}
+                  Nicholas-Frattaroli{' '}
                 </a>
                 {'\n'}
                 Github:
@@ -289,6 +289,109 @@ const AboutUs = () => {
                   href='https://www.instagram.com/queer_moonchild/'
                 >
                   @queer_moonchild
+                </a>
+              </div>
+            </div>
+            <div className='Bio grow'>
+              <h4>Ricardo Martini (He, Him, His)</h4>
+              <img
+                className='bio-img'
+                src='./Assets/images/Ricardo2.png'
+                alt='Ricardo Martini(Web Developer)'
+              ></img>
+              {'\n'}
+              <h3>Web Developer</h3>
+              <div className='content'>
+                <p>
+                  Ricardo is a Software Engineer currently based in Jersey City, NJ.
+                  He is excited to contribute his knowledge in React and experience with full-stack engineering to build up the Kiki app
+                  and website with the rest of the dev team. Ricardo believes that accesibility to knowledge is the key in growing communities and people.
+                  When Ricardo is not nose deep in code, he is playing Pokemon, playing with his cat Anastasia, camping in the Catskills,
+                  or watching RuPaul's Drag Race/ surrporting local NYC drag queens.
+                </p>
+                {'\n'}
+                {'\n'}
+                LinkedIn:
+                <a
+                  id='about-links'
+                  href='https://www.linkedin.com/in/ricardo-martini/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  ricardo-martini{' '}
+                </a>
+                Portfolio:
+                <a
+                  id='about-links'
+                  href='https://www.ricardomartini.dev/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  {' '}
+                  ricardomartini.dev
+                </a>
+                {'\n'}
+                {'\n'}
+                Github:
+                <a
+                  id='about-links'
+                  href='https://github.com/mrricardom'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  mrricardom{' '}
+                </a>
+                {'\n'}
+                Medium:
+                <a
+                  id='about-links'
+                  href='https://medium.com/@ricmartini16'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  ricmartini16{' '}
+                </a>
+              </div>
+            </div>
+            <div className='Bio grow'>
+              <h4>Amanda Lynn Castonguay (they/them, she/her)</h4>
+                   {'\n'}
+              <img
+                className='bio-img'
+                src='./Assets/images/amanda.jpg'
+                alt='Amanda Lynn Castonguay (Web Dev)'
+              ></img>
+              {'\n'}
+              <h3>Web Developer</h3>
+              <div className='content'>
+                <p>
+                  Amanda Lynn is a Full-Stack Engineer, with a passion for teamwork and usability, 
+                  who lives and worksin Portland, Maine. As a member of the LGBTQ+ community and an advocate for diversity in tech, 
+                  they’re exited to work on a project that gives back to this community. When not working on one of their many projects,
+                   you can find Amanda tending to pet fish or riding their bike. Although, if it is summer, they are probably at the beach.
+                  {'\n'}
+                </p>
+                {'\n'}
+                LinkedIn:
+                <a
+                  id='about-links'
+                  href='https://www.linkedin.com/in/alcastonguay/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Amanda Castonguay{' '}
+                </a>
+                {'\n'}
+
+                Github:
+          
+                <a
+                  id='about-links'
+                  href='https://github.com/alcastonguay'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                 alcastonguay {' '}
                 </a>
               </div>
             </div>
