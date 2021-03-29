@@ -39,9 +39,6 @@ export default function Navbar(props) {
           <Link className='nav-link' to='/Faq'>
             <p>FAQ</p>
           </Link>
-            <Link className="nav-link" to='/Faq'>
-              <p>FAQ</p>
-            </Link>
           </li>
           <li className='nav-item'>
             <Link className='nav-link' to='/MailinglistForm'>
