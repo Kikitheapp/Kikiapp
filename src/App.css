@@ -7,11 +7,6 @@
   --background-color: #212121;
 }
 
-/* .App-body {
-  min-height: 90vh;
-  font-size: calc(10px + 2vmin);
-  color: #3b6064;
-} */
 body {
   background-color: var(--background-color);
   font-family: 'Montserrat', sans-serif;
