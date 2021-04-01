@@ -86,11 +86,16 @@ h1 {
   margin-left: 2%;
   padding: 10px;
   color: white;
-  width: 490px;
+  width: 30rem;
   margin-top: 2%;
+}
+h4{
+  height:5rem;
+  
 }
 .bio-img {
   width: 100%;
+
 }
 .about-us-content {
   width: 90%;
