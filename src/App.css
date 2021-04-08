@@ -11,22 +11,13 @@ body{
 :root {
 	--primary-color: white
 }
-.logo{
-	margin-left: 26%;
-	margin-top: 4px;
-	clear: both;
-	position: sticky;
-}
-ul {
 
+ul {
 	list-style-type: none;
 	overflow: hidden;
-	margin-right: 10%;
 	font-family: 'Candal', sans-serif;
+	font-size: calc(10px + 2vmin);
   }
-li{
-	margin-left: 2%;
-}  
 li a {
 	display: block;
 	color: white;
@@ -37,11 +28,6 @@ li a {
   
   li a :hover {
 	color: #3B6064 ;
-}
-.graphic{
-	float:right;
-	padding-right: 10%;
-	margin-top: 7%;
 }
 .slogan{
 	color: #3B6064;
@@ -81,99 +67,53 @@ li a {
 }
 footer {
     padding: 30px 0;
-    clear: both;
-    font-size: 20px;
     color: whitesmoke;
     text-align: center;
     background:#055164;
     border-top: 8px solid goldenrod;
-    height: 70px;
-	width: 100%;
   }
-  .bannerflag{
-	  width: 10%;
-	  float: left;
-  }
-  .SocialIcons{
-	 font-size: xx-large;
-	 color: whitesmoke;
-	 margin: 10px;
-	;
-  }
-  @media screen and (max-width:1280px){
-	  .logo{
-		  z-index: -1;
-		  position: static;
-	}
-	ul{
-		/* margin-top:-20%; */
-		z-index: 1; 
-		margin-right:15%;
-	}
-	.graphiccontainer{	
-		width: 75%;	
-		margin-left: auto;
+
+footer h3 {
+	font-size: 20px;
+}  
+
+.bannerflag{
+	width: 10%;
+	float: left;
 }
-	.graphic{
-		width:65%;
-		margin-right: 10%; 
-		margin-top: 5%;
-	}
-	.slogan{
-		clear: right;
-		margin-left: 15%;
-	}
-	.emailinput{
-		margin-left: 25%;
-		padding: 10px;
-	}
-
-	.mailinglistbtn{
-		margin-left: 25%;
-		padding: 12px;
-	}
-	.quizlink{
-		margin-left: 25%;
-		font-size: medium;
-	}
-
-  @media screen and (max-width: 992px) {
-	  .logo{margin-left: 2%;}
-	.graphic{
-		width: 75%;
-		margin: 10%;
-		margin-right: 15%;
-		justify-content: center;
-
-	}
-.mailinglist{
-	margin: 10%;
-}
-	li
-	{font-size: medium}
-  };
-
-
-
-	@media screen and (min-width: 640px) {
-		.mailinglistbtn{margin-left: 1%;}
-		.quizlink{
-			margin-left: 10%;
-		}
-		.slogan{
-			margin-right: 10%;
-		}
-		footer{height: 100px}
-	  };
-
-	};
-	/* @import url('https://fonts.googleapis.com/css2?family=Candal&family=Montserrat&display=swap'); */
-body {
-	background-color: #35bbca;
-	color: black;
-	font-size: larger;
-	font-family: 'Montserrat', sans-serif;
+.SocialIcons{
+	font-size: xx-large;
+	color: whitesmoke;
+	margin: 10px;
   }
+
+/*********************************************************************
+************************** Bootstrap Overrides ***********************
+**********************************************************************/
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+/*********************************************************************
+***************************** Media Queries **************************
+**********************************************************************/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
   .header-2 {
 	font-weight: bolder;
 	color: #3b6064;
@@ -181,40 +121,20 @@ body {
   .indicates-required {
 	color: #3b6064;
 	font-family: 'Montserrat', sans-serif;
+	font-size: large !important ;
+	clear: both;
   }
   .logo {
 	margin-left: 26%;
 	clear: both;
   }
-  ul {
-	list-style-type: none;
-	overflow: hidden;
-  ;
-	font-size: calc(10px + 2vmin);
-	font-family: 'Candal', sans-serif;
-  }
-  li {
-	float: right;
-  }
-  li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 1px 10px;
-	text-decoration: none;
-  }
-  li a :hover {
-	color: #3b6064;
-  }
+
   #mc_embed_signup {
 	display: flex;
 	justify-content: center;
 	align-items: center;
   }
-  .indicates-required {
-	font-size: large !important ;
-	clear: both;
-  }
+
   label {
 	margin-left: 1%;
 	font-weight: bold;
@@ -297,7 +217,7 @@ body {
 	transform: scale(1.03);
   }
   
-  .container {
+  .about-us-container {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -322,6 +242,9 @@ body {
 	width: 490px;
 	margin-top: 2%;
   }
+  h4{
+	font-size: large;
+  }
   .bio-img {
 	width: 100%;
   }
@@ -331,82 +254,3 @@ body {
   #about-links {
 	color: white !important;
   }
-  footer {
-	padding: 30px 0;
-	clear: both;
-	font-size: 20px;
-	color: whitesmoke;
-	text-align: center;
-	background: #3b6064;
-	border-top: 8px solid #e0be36;
-	height: 50px;
-	width: 100%;
-	margin-top: 19%;
-	padding-bottom: 50px;
-  }
-  .SocialIcons {
-	font-size: xx-large;
-	color: whitesmoke;
-	margin: 5px;
-  }
-  @media screen and (max-width: 1280px) {
-	.graphiccontainer {
-	  width: 75%;
-	  margin-left: auto;
-	  margin-right: 7%;
-	}
-	.slogan {
-	  clear: right;
-	}
-	.emailinput {
-	  margin-left: 25%;
-	  padding: 10px;
-	}
-	.quizlink {
-	  margin-left: 27%;
-	  font-size: medium;
-	}
-  }
-  @media screen and (max-width: 992px) {
-	.graphic {
-	  width: 75%;
-	}
-	@media screen and (min-width: 640px) {
-	  .navbar {
-		padding-top: 2%;
-	  }
-	  .graphic {
-		width: 75%;
-		align-content: center;
-		margin-right: 2%;
-		margin-left: auto;
-	  }
-	  .Bio {
-		width: 50%;
-		height: 200px;
-	  }
-	  .bio-img {
-		height: 50%;
-		width: 50%;
-	  }
-	  .emailinput {
-		margin-top: 5%;
-		margin-left: 3%;
-	  }
-	  .mailinglistbtn {
-		margin-left: 7%;
-	  }
-	  .quizlink {
-		margin-left: 11%;
-	  }
-	  .slogan {
-		margin-right: 10%;
-	  }
-	  footer {
-		height: 100px;
-		width: 100%;
-		margin-top: 10% !important;
-	  }
-	}
-  } ;
-  

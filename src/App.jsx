@@ -1,21 +1,16 @@
 import React from 'react'
 import './App.css'
 import { Route } from 'react-router-dom'
-import Mailinglist from './components/mailinglist'
 import Graphic from './components/graphic'
 import Navbar from './components/nav'
-import Logo from './components/logo'
 import AboutUs from './components/AboutUs.jsx'
 import PrEP from './components/PrEP.jsx'
 function App() {
   return (
-    <div className='App'>
-      <header className='App-body'>
-        <Logo></Logo>
+    <div className='App container-fluid'>
         <Navbar> </Navbar>
         <Route exact path='/'>
           <Graphic></Graphic>
-          <Mailinglist></Mailinglist>
         </Route>
         <Route path='/aboutUs'>
           <AboutUs></AboutUs>
@@ -27,9 +22,9 @@ function App() {
           window.location.href='form.html'
         }}>
         </Route> 
-      </header>
+
     </div>
   )
 }
 
-export default App
+export default App;
