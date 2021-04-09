@@ -1,5 +1,7 @@
-import React from 'react'
-import '../AboutUs.css'
+
+import React from 'react';
+import '../App.css'
+
 
 const AboutUs = () => {
   return (
@@ -36,10 +38,10 @@ const AboutUs = () => {
         {'\n'}
         <div className='block'></div>
         <div>
-          <h1 class='header-1'>Meet Our Badass Team</h1>
+          <h1 className='header-1'>Meet Our Badass Team</h1>
           {'\n'}
           {/* <!-- Bios for the team --> */}
-          <div className='container'>
+          <div className='about-us-container'>
             <div className='Bio grow'>
               <h4>Krista White (She, Her, Hers)</h4>
               <img
@@ -49,7 +51,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Founder</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Krista White is a queer, Black writer and actor who decided to
                   take a UX Design class on a whim in 2019. She fell in love
@@ -111,7 +113,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Writer and Researcher</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Shanice is a black queer curator and cultural studies scholar
                   based in the NYC area. As someone who spent her formative
@@ -142,7 +144,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Web Developer</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Nick is a Web Developer based out of NYC. As a proud member of
                   the Bear community He is excited to help bring sexual health
@@ -161,7 +163,7 @@ const AboutUs = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  nicholas-frattaroli{' '}
+                  Nicholas-Frattaroli{' '}
                 </a>
                 {'\n'}
                 Github:
@@ -184,9 +186,9 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Social Media Manager</h3>{' '}
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
-                  Kate Bader is a NYC based actor and content creator, with a
+                  Kate Bader is a NYC based actor and about-us-content creator, with a
                   background in film production, marketing, and healthcare. She
                   adores the way social media bridges community engagement,
                   visual aesthetics, entertainment, and digestible knowledge.
@@ -215,7 +217,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Data Scientist</h3>{' '}
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Mick is a Data Scientist based in Connecticut. As a proud
                   member of the LGBTQ community, he excited to contribute his
@@ -246,7 +248,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>UX Designer</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Fiona is a UX designer based in Austin, Texas with a
                   background in Architecture and Political Science. As a
@@ -269,7 +271,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Web Developer</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Jesse is a Web Developer based out of Salt lake city, Utah. As
                   part of the LGBTQ community, They are excited to help build a
@@ -353,6 +355,48 @@ const AboutUs = () => {
                 </a>
               </div>
             </div>
+            <div className='Bio grow'>
+              <h4>Amanda Lynn Castonguay (they/them, she/her)</h4>
+                   {'\n'}
+              <img
+                className='bio-img'
+                src='./Assets/images/amanda.jpg'
+                alt='Amanda Lynn Castonguay (Web Dev)'
+              ></img>
+              {'\n'}
+              <h3>Web Developer</h3>
+              <div className='content'>
+                <p>
+                  Amanda Lynn is a Full-Stack Engineer, with a passion for teamwork and usability, 
+                  who lives and worksin Portland, Maine. As a member of the LGBTQ+ community and an advocate for diversity in tech, 
+                  they’re exited to work on a project that gives back to this community. When not working on one of their many projects,
+                   you can find Amanda tending to pet fish or riding their bike. Although, if it is summer, they are probably at the beach.
+                  {'\n'}
+                </p>
+                {'\n'}
+                LinkedIn:
+                <a
+                  id='about-links'
+                  href='https://www.linkedin.com/in/alcastonguay/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Amanda Castonguay{' '}
+                </a>
+                {'\n'}
+
+                Github:
+          
+                <a
+                  id='about-links'
+                  href='https://github.com/alcastonguay'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                 alcastonguay {' '}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -360,4 +404,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default AboutUs;
