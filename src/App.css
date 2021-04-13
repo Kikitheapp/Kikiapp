@@ -1,10 +1,21 @@
 :root {
   --primary-color: white;
   --background-color: #35bbca;
+  --select-background: white;
+  --select-font-color: #212121;
 }
 
 .dark-mode {
   --background-color: #212121;
+  --select-font-color: white;
+  --select-background: #212121;
+}
+.theme-switcher {
+  background-color: var(--select-background);
+  position: absolute;
+  color: var(--select-font-color);
+  right: 0px;
+  top: 2px;
 }
 
 body {

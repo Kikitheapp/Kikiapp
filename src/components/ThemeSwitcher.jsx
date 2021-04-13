@@ -3,6 +3,7 @@ import React from 'react'
 export default function ThemeSwitcher() {
   return (
     <select
+      className='theme-switcher'
       onChange={(e) => {
         console.log(e.target.value)
         if (e.target.value === 'dark-mode') {

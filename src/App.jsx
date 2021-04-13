@@ -4,12 +4,10 @@ import { Route } from 'react-router-dom'
 import Graphic from './components/graphic'
 import Navbar from './components/nav'
 import AboutUs from './components/AboutUs.jsx'
-import ThemeSwitcher from './components/ThemeSwitcher.jsx'
 
 function App() {
   return (
     <div className='App container-fluid'>
-      <ThemeSwitcher></ThemeSwitcher>
       <Navbar> </Navbar>
       <Route exact path='/'>
         <Graphic></Graphic>
