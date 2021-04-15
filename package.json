@@ -16,6 +16,7 @@
     "react-scripts": "^4.0.3"
   },
   "scripts": {
+    "update-linter": "npx install-peerdeps --dev eslint-plugin-react",
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
