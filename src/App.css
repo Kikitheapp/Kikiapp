@@ -1,101 +1,110 @@
-.App-body {
-  background-color: #35BBCA;
-  min-height: 90vh;
-  font-size: calc(10px + 2vmin);
-  color: #3B6064;
-}
-body{
-	background-color: #35BBCA;
-	font-family: 'Montserrat', sans-serif;
-}
 :root {
-	--primary-color: white
+  --primary-color: white;
+  --background-color: #35bbca;
+  --select-background: white;
+  --select-font-color: #212121;
+}
+
+.dark-mode {
+  --background-color: #212121;
+  --select-font-color: white;
+  --select-background: #212121;
+}
+.theme-switcher {
+  background-color: var(--select-background);
+  position: absolute;
+  color: var(--select-font-color);
+  right: 0px;
+  top: 2px;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
-	list-style-type: none;
-	overflow: hidden;
-	font-family: 'Candal', sans-serif;
-	font-size: calc(10px + 2vmin);
-  }
+  list-style-type: none;
+  overflow: hidden;
+  font-family: 'Candal', sans-serif;
+}
 li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 1px 10px;
-	text-decoration: none;
-  }
-  
-  li a :hover {
-	color: #3B6064 ;
-}
-.slogan{
-	color: #3B6064;
-	font-weight: bold;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1px 10px;
+  text-decoration: none;
 }
 
+li a :hover {
+  color: #3b6064;
+}
+.slogan {
+  color: #3b6064;
+  font-weight: bold;
+}
 
-.mailinglistbtn{
- 	background-color: #E0BE36;
-	border: none;
-	color: #3B6064;
-	padding: 12px;
-	padding-left: 20px;
-	padding-right: 25px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 16px;
-	margin: 2px 2px;
-	cursor: pointer;
-	border-radius: 25px;
-	clear: left;
-	margin-left: 8px ;
+.mailinglistbtn {
+  background-color: #e0be36;
+  border: none;
+  color: #3b6064;
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  clear: left;
+  margin-left: 8px;
 }
-.quizlink{
-	margin-left:10px;
-	color: #3B6064;
-	font-size:medium;
-	clear:left ;
+.quizlink {
+  margin-left: 10px;
+  color: #3b6064;
+  font-size: medium;
+  clear: left;
 }
-.mailinglist{
-	margin-left: 10%;
-	clear: left;
-	margin-top: 12%;
+.mailinglist {
+  margin-left: 10%;
+  clear: left;
+  margin-top: 12%;
 }
-.content-container{
-	clear: both;
+.content-container {
+  clear: both;
 }
 footer {
-    padding: 30px 0;
-    color: whitesmoke;
-    text-align: center;
-    background:#055164;
-    border-top: 8px solid goldenrod;
-  }
+  padding: 30px 0;
+  color: whitesmoke;
+  text-align: center;
+  background: #055164;
+  border-top: 8px solid goldenrod;
+}
 
 footer h3 {
-	font-size: 20px;
-}  
-
-.bannerflag{
-	width: 10%;
-	float: left;
+  font-size: 20px;
 }
-.SocialIcons{
-	font-size: xx-large;
-	color: whitesmoke;
-	margin: 10px;
-  }
+
+.bannerflag {
+  width: 10%;
+  float: left;
+}
+.SocialIcons {
+  font-size: xx-large;
+  color: whitesmoke;
+  margin: 10px;
+}
 
 /*********************************************************************
 ************************** Bootstrap Overrides ***********************
 **********************************************************************/
 .navbar-dark .navbar-nav .nav-link {
-    color: white;
+  color: white;
 }
 .navbar-dark .navbar-toggler {
-    color: white;
-    border-color: white;
+  color: white;
+  border-color: white;
 }
 
 /*********************************************************************
@@ -103,13 +112,16 @@ footer h3 {
 **********************************************************************/
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {
+}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {
+}
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+}
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {  }

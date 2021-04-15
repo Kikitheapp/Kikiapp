@@ -8,23 +8,24 @@ import PrEP from './components/PrEP.jsx'
 function App() {
   return (
     <div className='App container-fluid'>
-        <Navbar> </Navbar>
-        <Route exact path='/'>
-          <Graphic></Graphic>
-        </Route>
-        <Route path='/aboutUs'>
-          <AboutUs></AboutUs>
-        </Route>
-        <Route path='/PrEP-info'>
-          <PrEP></PrEP>
-        </Route>
-        <Route path='/MailinglistForm' render={()=>{
-          window.location.href='form.html'
-        }}>
-        </Route> 
-
+      <Navbar> </Navbar>
+      <Route exact path='/'>
+        <Graphic></Graphic>
+      </Route>
+      <Route path='/aboutUs'>
+        <AboutUs></AboutUs>
+      </Route>
+      <Route path='/PrEP-info'>
+        <PrEP></PrEP>
+      </Route>
+      <Route
+        path='/MailinglistForm'
+        render={() => {
+          window.location.href = 'form.html'
+        }}
+      ></Route>
     </div>
   )
 }
 
-export default App;
+export default App
