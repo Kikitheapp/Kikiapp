@@ -106,6 +106,7 @@ footer h3 {
 **********************************************************************/
 .navbar-dark .navbar-nav .nav-link {
   color: white;
+  font-size: x-large;
 }
 .navbar-dark .navbar-toggler {
   color: white;
