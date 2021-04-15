@@ -23,9 +23,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "Kiki"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -39,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.0.0"
+    "gh-pages": "^3.1.0"
   },
   "homepage": "https://kikiapp.org"
 }
