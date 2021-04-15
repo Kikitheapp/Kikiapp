@@ -75,12 +75,17 @@ li a :hover {
   clear: both;
 }
 footer {
-  padding: 30px 0;
-  color: whitesmoke;
-  text-align: center;
-  background: #055164;
-  border-top: 8px solid goldenrod;
-}
+	position:static;
+	bottom:0;
+	margin-top: 12rem;
+	height: 10rem;  
+    padding: 30px 0;
+    color: whitesmoke;
+    text-align: center;
+    background:#055164;
+    border-top: 8px solid goldenrod;
+  }
+
 
 footer h3 {
   font-size: 20px;
@@ -101,32 +106,15 @@ footer h3 {
 **********************************************************************/
 .navbar-dark .navbar-nav .nav-link {
   color: white;
+  font-size: x-large;
 }
 .navbar-dark .navbar-toggler {
   color: white;
   border-color: white;
 }
 
-/*********************************************************************
-***************************** Media Queries **************************
-**********************************************************************/
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
-
-  .header-2 {
+.header-2 {
 	font-weight: bolder;
 	color: #3b6064;
   }
@@ -251,13 +239,15 @@ footer h3 {
 	margin-left: 2%;
 	padding: 10px;
 	color: white;
-	width: 490px;
+	width: 30rem;
 	margin-top: 2%;
   }
   h4{
-	font-size: large;
+	height: 4rem;
+	font-weight: bold;
   }
   .bio-img {
+
 	width: 100%;
   }
   .content {
@@ -266,3 +256,27 @@ footer h3 {
   #about-links {
 	color: white !important;
   }
+
+/*********************************************************************
+***************************** Media Queries **************************
+**********************************************************************/
+@media (max-width:500px) {
+	h4{font-size: larger;
+		font-weight: bold;}
+	h3{font-size: larger;
+}
+	
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	
+  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }

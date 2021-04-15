@@ -30,11 +30,15 @@ export default function Navbar(props) {
                 className='nav-link'
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://medium.com/@kikiapp'
-              >
+                href='https://medium.com/@kikiapp'>
                 <p>Visit our blog</p>
               </a>
             </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/prep-info'>
+                <p>PrEP-info</p>
+              </Link>
+              </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/aboutUs'>
                 <p>About us</p>

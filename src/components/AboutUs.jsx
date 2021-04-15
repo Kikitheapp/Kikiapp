@@ -1,4 +1,3 @@
-
 import React from 'react';
 import '../App.css'
 
@@ -49,7 +48,6 @@ const AboutUs = () => {
                 src='./Assets/images/Krista.png'
                 alt='Krista White (Founder)'
               ></img>
-              {'\n'}
               <h3>Founder</h3>
               <div className='about-us-content'>
                 <p>
@@ -60,8 +58,6 @@ const AboutUs = () => {
                   incredible team to bring this work to fruition. Based in New
                   York City, she loves sci-fi, baking, and writing fiction.
                 </p>
-                {'\n'}
-                {'\n'}
                 Blog:
                 <a
                   id='about-links'
@@ -72,7 +68,6 @@ const AboutUs = () => {
                   {' '}
                   aroundtheworldin80plays.com
                 </a>
-                {'\n'}
                 Twitter:
                 <a
                   id='about-links'
@@ -82,7 +77,7 @@ const AboutUs = () => {
                 >
                   @thekristawhite{' '}
                 </a>
-                {'\n'}
+                <br></br>
                 Instagram:
                 <a
                   id='about-links'
@@ -92,7 +87,7 @@ const AboutUs = () => {
                 >
                   @thekristawhite{' '}
                 </a>
-                {'\n'}
+              <br></br>
                 LinkedIn:
                 <a
                   id='about-links'
@@ -165,7 +160,7 @@ const AboutUs = () => {
                 >
                   Nicholas-Frattaroli{' '}
                 </a>
-                {'\n'}
+                <br></br>
                 Github:
                 <a
                   id='about-links'
@@ -209,7 +204,7 @@ const AboutUs = () => {
               </div>{' '}
             </div>{' '}
             <div className='Bio grow'>
-              <h4>Mick Franco (he/him/his)</h4>{' '}
+              <h4>Mick Franco (He,Him,His)</h4>{' '}
               <img
                 className='bio-img'
                 src='./Assets/images/mick.jpg'
@@ -322,6 +317,7 @@ const AboutUs = () => {
                 >
                   ricardo-martini{' '}
                 </a>
+                <br></br>
                 Portfolio:
                 <a
                   id='about-links'
@@ -332,8 +328,7 @@ const AboutUs = () => {
                   {' '}
                   ricardomartini.dev
                 </a>
-                {'\n'}
-                {'\n'}
+                <br></br>
                 Github:
                 <a
                   id='about-links'
@@ -343,7 +338,7 @@ const AboutUs = () => {
                 >
                   mrricardom{' '}
                 </a>
-                {'\n'}
+                <br></br>
                 Medium:
                 <a
                   id='about-links'
@@ -356,8 +351,8 @@ const AboutUs = () => {
               </div>
             </div>
             <div className='Bio grow'>
-              <h4>Amanda Lynn Castonguay (they/them, she/her)</h4>
-                   {'\n'}
+              <h4>Amanda Lynn Castonguay (They/Them, She/Her)</h4>
+
               <img
                 className='bio-img'
                 src='./Assets/images/amanda.jpg'
@@ -383,7 +378,7 @@ const AboutUs = () => {
                 >
                   Amanda Castonguay{' '}
                 </a>
-                {'\n'}
+                <br></br>
 
                 Github:
           
@@ -403,5 +398,4 @@ const AboutUs = () => {
     </div>
   )
 }
-
 export default AboutUs;
