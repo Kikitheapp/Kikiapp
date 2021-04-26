@@ -1,9 +1,10 @@
-import React from 'react';
-import './App.css';
-import { Route } from 'react-router-dom';
-import Graphic from './components/graphic';
-import Navbar from './components/nav';
-import AboutUs from './components/AboutUs.jsx';
+import React from 'react'
+import './App.css'
+import { Route } from 'react-router-dom'
+import Graphic from './components/graphic'
+import Navbar from './components/nav'
+import AboutUs from './components/AboutUs.jsx'
+import PrEP from './components/PrEP.jsx'
 import Faq from './components/Faq.jsx'
 function App() {
   return (
@@ -18,10 +19,18 @@ function App() {
       <Route path='/Faq'>
           <Faq></Faq>
         </Route>
-      <Route path='/MailinglistForm' render={() => {
+      <Route  path='/MailinglistForm' render={() => {
         window.location.href = 'form.html'
-      }}>
+      }}></Route>
+      <Route path='/PrEP-info'>
+        <PrEP></PrEP>
       </Route>
+      <Route
+        path='/MailinglistForm'
+        render={() => {
+          window.location.href = 'form.html'
+        }}
+      ></Route>
     </div>
   )
 }
