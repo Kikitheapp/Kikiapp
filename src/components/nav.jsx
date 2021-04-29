@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ThemeSwitcher from './ThemeSwitcher.jsx'
+
 
 export default function Navbar(props) {
   return (
     <div className='nav-container'>
-      <ThemeSwitcher></ThemeSwitcher>
+    
       <nav className='navbar navbar-expand-lg navbar-dark'>
         <h1>
           <Link className='navbar-brand' to='/'>
@@ -30,7 +30,8 @@ export default function Navbar(props) {
                 className='nav-link'
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://medium.com/@kikiapp'>
+                href='https://medium.com/@kikiapp'
+              >
                 <p>Visit our blog</p>
               </a>
             </li>
@@ -38,7 +39,7 @@ export default function Navbar(props) {
               <Link className='nav-link' to='/prep-info'>
                 <p>PrEP-info</p>
               </Link>
-              </li>
+            </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/aboutUs'>
                 <p>About us</p>
@@ -47,6 +48,11 @@ export default function Navbar(props) {
             <li className='nav-item'>
               <Link className='nav-link' to='/MailinglistForm'>
                 <p>Join Our Mailing List</p>
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/sex-toys'>
+                <p>Sex Toys</p>
               </Link>
             </li>
           </ul>
