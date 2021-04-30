@@ -4,27 +4,31 @@
   font-size: calc(10px + 2vmin);
   color: #3B6064;
 }
+
 body{
 	color: white;
 	background-color: #35BBCA;
 	font-family: 'Montserrat', sans-serif;
 }
+
 :root {
-  --primary-color: white;
-  --background-color: #35bbca;
+  --primary-color: #30C3CD;
+  --secondary-color: #35BBCA;
+  --background-color: white;
   --select-background: white;
-  --select-font-color: #212121;
+  --font-color: #212121;
 }
 
 .dark-mode {
   --background-color: #212121;
-  --select-font-color: white;
+  --font-color: white;
   --select-background: #212121;
 }
+
 .theme-switcher {
   background-color: var(--select-background);
   position: absolute;
-  color: var(--select-font-color);
+  color: var(--font-color);
   right: 0px;
   top: 2px;
 }
@@ -41,7 +45,7 @@ ul {
 }
 li a {
   display: block;
-  color: white;
+  color: var(--font-color);
   text-align: center;
   padding: 1px 10px;
   text-decoration: none;
@@ -85,17 +89,15 @@ li a :hover {
 .content-container {
   clear: both;
 }
+
 footer {
 	position:static;
 	bottom:0;
 	margin-top: 12rem;
 	height: 10rem;  
-    padding: 30px 0;
-    color: whitesmoke;
-    text-align: center;
-    background:#055164;
-    border-top: 8px solid goldenrod;
-  }
+  padding: 30px 0;
+  text-align: center;
+}
 
 
 footer h3 {
@@ -119,9 +121,19 @@ footer h3 {
   color: white;
   font-size: x-large;
 }
+
 .navbar-dark .navbar-toggler {
   color: white;
   border-color: white;
+}
+
+.bg-primary {
+ background-color: var(--primary-color)!important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color)!important;
+  opacity:0.4!important;
 }
 /***************************************************************************
   ************************** FAQ Page ****************************************
@@ -131,6 +143,23 @@ footer h3 {
 	font-weight: 900;
  	
 }
+
+.faq-person-1 {
+  position: absolute;
+  width: 296px;
+  height: 374px;
+  left: 300px;
+  top: 200px;
+}
+
+.faq-person-2 {
+  position: absolute;
+  width: 279px;
+  height: 330px;
+  left: 600px;
+  top: 200px;
+}
+
 .FAQtext i {
 	color: #30C3CD;
 }

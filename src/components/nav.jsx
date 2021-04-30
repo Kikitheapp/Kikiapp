@@ -6,7 +6,7 @@ export default function Navbar(props) {
   return (
     <div className='nav-container'>
       <ThemeSwitcher></ThemeSwitcher>
-      <nav className='navbar navbar-expand-lg navbar-dark'>
+      <nav className='navbar navbar-expand-lg'>
         <h1>
           <Link className='navbar-brand' to='/'>
             <img src='../assets/images/kikilogo1.png' alt='Kiki'></img>
@@ -38,12 +38,12 @@ export default function Navbar(props) {
               <Link className='nav-link' to='/prep-info'>
                 <p>PrEP-info</p>
               </Link>
-              </li>
-              <li className='nav-item'>
-          <Link className='nav-link' to='/Faq'>
-            <p>FAQ</p>
-          </Link>
-          </li>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/Faq'>
+                <p>FAQ</p>
+              </Link>
+            </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/aboutUs'>
                 <p>About us</p>

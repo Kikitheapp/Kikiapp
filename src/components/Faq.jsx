@@ -1,9 +1,17 @@
 import React from "react";
+import person1 from "../assets/images/faq-person-1.svg";
+import person2 from "../assets/images/faq-person-2.svg";
 
 const AboutUs = () => {
     return (
-        <div className="FAQtext container-fluid margin-alot" id="question-accordion">
-            <h2 className="text-center">FAQ</h2>
+        <div className="FAQtext margin-alot" id="question-accordion">
+            <h2 className="text-center bg-secondary">FAQ</h2>
+            <img src={person2} className="faq-person-1"
+                alt="Person with white shirt and blue skirt walking to meet person
+             on right." />
+            <img src={person1} className="faq-person-2"
+                alt="Person with orange jacket and blue jeans walking to meet person 
+            on left."/>
             <div className="accordion my-5">
                 <div className="row justify-content-center py-3">
                     <div className="col-md-8  col-lg-6">
