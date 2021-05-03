@@ -17,12 +17,15 @@ function App() {
         <ThemeSwitcher></ThemeSwitcher>
       </Route>
       <Route path='/aboutUs'>
+        <ThemeSwitcher></ThemeSwitcher>
         <AboutUs></AboutUs>
       </Route>
       <Route path='/PrEP-info'>
+        <ThemeSwitcher></ThemeSwitcher>
         <PrEP></PrEP>
       </Route>
       <Route path='/sex-toys'>
+        <ThemeSwitcher></ThemeSwitcher>
         <SexToys></SexToys>
       </Route>
       <Route
