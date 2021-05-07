@@ -1,7 +1,8 @@
-module.exports = {
+export default {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "es6":true
     },
     "extends": [
         "eslint:recommended",
@@ -20,12 +21,10 @@ module.exports = {
     "rules": {
         "react/prop-types": "off"
     },
+    "ignorePatterns": ["temp.js", "**/vendor/*.js","/public/Assets/bootstrap"],
     "settings":{
         "react":{
             "version": "detect" // React version. "detect" automatically picks the version you have installed.
-                           // You can also use `16.0`, `16.3`, etc, if you want to override the detected value.
-                           // default to latest and warns if missing
-                           // It will default to "detect" in the future
         }
     }
 };
