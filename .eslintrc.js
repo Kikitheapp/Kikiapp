@@ -24,7 +24,7 @@ module.exports = {
     "ignorePatterns": [
         "temp.js", 
         "**/vendor/*.js",
-        "eslint.js",
+        "/eslint.js",
         "/public/Assets/bootstrap",
         "/src/serviceworker.js"
         ],
