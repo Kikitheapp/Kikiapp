@@ -21,7 +21,13 @@ module.exports = {
     "rules": {
         "react/prop-types": "off"
     },
-    "ignorePatterns": ["temp.js", "**/vendor/*.js","/public/Assets/bootstrap"],
+    "ignorePatterns": [
+        "temp.js", 
+        "**/vendor/*.js",
+        "eslint.js",
+        "/public/Assets/bootstrap",
+        "/src/serviceworker.js"
+        ],
     "settings":{
         "react":{
             "version": "detect" // React version. "detect" automatically picks the version you have installed.
