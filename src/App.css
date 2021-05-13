@@ -5,18 +5,16 @@
   color: #3B6064;
 }
 
-body{
-	color: white;
-	background-color: #35BBCA;
-	font-family: 'Montserrat', sans-serif;
-}
-
 :root {
   --primary-color: #30C3CD;
   --secondary-color: #ACE7EB;
   --background-color: white;
   --select-background: white;
   --font-color: #212121;
+}
+
+html, body {
+  height: 100%;
 }
 
 .dark-mode {
@@ -34,8 +32,11 @@ body{
 }
 
 body {
+  color: var(--primary-color);
   background-color: var(--background-color);
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -55,6 +56,9 @@ li a :hover {
   color: #3b6064;
 }
 
+#root {
+  flex: 1 0 auto;
+}
 
 .slogan {
   color: #3b6064;
@@ -93,9 +97,8 @@ li a :hover {
 }
 
 footer {
-	position:static;
-	bottom:0;
-	margin-top: 12rem;
+  color: white;
+  flex-shrink: 0;
 	height: 10rem;  
   padding: 30px 0;
   text-align: center;
@@ -136,6 +139,8 @@ footer h3 {
 .bg-secondary {
   background-color: var(--secondary-color)!important;
 }
+
+
 /***************************************************************************
   ************************** FAQ Page ****************************************
   ***************************************************************************/
@@ -218,7 +223,6 @@ footer h3 {
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-bottom: 1%;
-	color: white;
 	font-size: x-large;
   }
   
@@ -246,7 +250,6 @@ footer h3 {
   .accordion-title {
 	font-weight: 600;
 	cursor: pointer;
-	color: white;
 	padding: 0.5em 1.5em;
 	display: flex;
 	justify-content: space-between;
@@ -256,12 +259,11 @@ footer h3 {
   }
   .accordion-content {
 	padding: 1em 1.5em;
-	color: white;
   }
   .sources-links {
 	font-size: large;
 	}
-  a{color: white;}
+
   .header-1 {
 	text-align: center;
   }
@@ -285,9 +287,6 @@ footer h3 {
 	margin-right: 5%;
   }
   
-  h1 {
-	color: white;
-  }
   .block {
 	height: 100px;
 	width: 100%;
@@ -343,17 +342,13 @@ footer h3 {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-	.margin-alot {
-		margin-bottom: 20rem;
-	} 
+
  }
 
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-	.margin-alot {
-		margin-bottom: 20rem;
-	} 
+
  }
 
 
