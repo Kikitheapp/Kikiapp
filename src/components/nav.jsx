@@ -6,7 +6,7 @@ export default function Navbar(props) {
   return (
     <div className='nav-container'>
       <ThemeSwitcher></ThemeSwitcher>
-      <nav className='navbar navbar-expand-lg'>
+      <nav className='navbar navbar-expand-lg navbar-light'>
         <h1>
           <Link className='navbar-brand' to='/'>
             <img src='../assets/images/kikilogo1.png' alt='Kiki'></img>

@@ -13,7 +13,7 @@ body{
 
 :root {
   --primary-color: #30C3CD;
-  --secondary-color: #35BBCA;
+  --secondary-color: #ACE7EB;
   --background-color: white;
   --select-background: white;
   --font-color: #212121;
@@ -54,6 +54,8 @@ li a {
 li a :hover {
   color: #3b6064;
 }
+
+
 .slogan {
   color: #3b6064;
   font-weight: bold;
@@ -133,31 +135,32 @@ footer h3 {
 
 .bg-secondary {
   background-color: var(--secondary-color)!important;
-  opacity:0.4!important;
 }
 /***************************************************************************
   ************************** FAQ Page ****************************************
   ***************************************************************************/
-  .FAQtext, .FAQtext h3, .FAQtext h2 {
+.FAQtext, .FAQtext h3, .FAQtext h2 {
 	color: #212121;
-	font-weight: 900;
- 	
+	font-weight: 900; 	
+
+}
+
+.FAQtext h2 {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 5rem 0 10rem 0;
+}
+
+.faq-people {
+  margin-top: -8rem;
 }
 
 .faq-person-1 {
-  position: absolute;
-  width: 296px;
-  height: 374px;
-  left: 300px;
-  top: 200px;
+  padding-right: 5%;
 }
 
 .faq-person-2 {
-  position: absolute;
-  width: 279px;
-  height: 330px;
-  left: 600px;
-  top: 200px;
+  padding-left: 5%;
 }
 
 .FAQtext i {
@@ -317,19 +320,26 @@ footer h3 {
 /*********************************************************************
 ***************************** Media Queries **************************
 **********************************************************************/
-@media (max-width:500px) {
-	h4{font-size: larger;
-		font-weight: bold;}
-	h3{font-size: larger;
-}
-	
-}
+
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {  }
- 
+
 @media (min-width: 576px) {
-	
+	h4{
+    font-size: larger;
+		font-weight: bold;
   }
+	h3{
+    font-size: larger;
+  }
+
+	.FAQtext h2 {
+    padding: 5rem 0 20rem 0;
+  }
+  
+  .faq-people {
+    margin-top: -18rem;
+  }
+}
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 

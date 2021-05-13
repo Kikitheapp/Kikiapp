@@ -2,20 +2,26 @@ import React from "react";
 import person1 from "../assets/images/faq-person-1.svg";
 import person2 from "../assets/images/faq-person-2.svg";
 
-const AboutUs = () => {
+const FAQ = () => {
     return (
         <div className="FAQtext margin-alot" id="question-accordion">
             <h2 className="text-center bg-secondary">FAQ</h2>
-            <img src={person2} className="faq-person-1"
-                alt="Person with white shirt and blue skirt walking to meet person
-             on right." />
-            <img src={person1} className="faq-person-2"
-                alt="Person with orange jacket and blue jeans walking to meet person 
-            on left."/>
+            <div className="faq-people row justify-content-center">
+                <div className="faq-person-1  col-6 text-right">
+                    <img src={person2} className="img-fluid"
+                        alt="Person with white shirt and blue skirt walking to meet person
+                    on right." />
+                </div>
+                <div className="faq-person-2  col-6">
+                    <img src={person1} className="img-fluid"
+                        alt="Person with orange jacket and blue jeans walking to meet person 
+                    on left."/>
+                </div>
+            </div>
             <div className="accordion my-5">
                 <div className="row justify-content-center py-3">
                     <div className="col-md-8  col-lg-6">
-                        <div className="row align-items-center">
+                        <div className="row align-items-center ">
                             <div className="col-auto">
                                 <i className="bi bi-plus"></i>
                             </div>
@@ -23,7 +29,7 @@ const AboutUs = () => {
                                 <h3 id="heading-one" data-toggle="collapse" data-target="#question-one"
                                     aria-expanded="true" aria-controls="question-one">
                                     STIs/STDs, Testing, and Barriers
-                        </h3>
+                                </h3>
                             </div>
                             <div className="collapse" id="question-one" data-parent="#question-accordion"
                                 aria-labelledby="heading-one">
@@ -122,4 +128,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs;
+export default FAQ;
