@@ -260,6 +260,35 @@ h4 {
   color: white !important;
 }
 
+.toys {
+  margin: 20px 40px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  text-align: center;
+  grid-gap: 0px;
+}
+
+.toy {
+  margin-top: 40px;
+  color: white;
+}
+
+.toy-image {
+  height: 300px;
+  width: 400px;
+}
+
+.toy-description {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
 /*********************************************************************
 ***************************** Media Queries **************************
 **********************************************************************/

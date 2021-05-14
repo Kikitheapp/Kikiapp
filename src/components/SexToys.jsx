@@ -5,6 +5,7 @@ import { baseURL, config } from '../services'
 
 const SexToys = () => {
   const [toys, setToys] = useState([])
+  const [isVisible, setIsVisible] = useState(true)
 
   useEffect(() => {
     const getToys = async () => {
@@ -16,12 +17,23 @@ const SexToys = () => {
   }, [])
 
   return (
-    <div>
+    <div className='toys'>
       {toys.map((toy) => {
         return (
-          <div>
-            <img src={toy.fields.Image} />
-            <h1>{toy.fields.Name}</h1>
+          <div className='toy'>
+            <img
+              className='toy-image'
+              src={toy.fields.image}
+              alt={toy.fields.name}
+              onClick={(e) => {
+                e.preventDefault()
+                return setIsVisible(!isVisible)
+              }}
+            />
+            <div className={isVisible ? 'hidden' : ''}>
+              <h1 className='toy-name'>{toy.fields.name}</h1>
+              <p className='toy-description'>{toy.fields.text}</p>
+            </div>
           </div>
         )
       })}
