@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ThemeSwitcher from './ThemeSwitcher.jsx'
 
-export default function Navbar(props) {
+export default function Navbar() {
   return (
     <div className='nav-container'>
       <ThemeSwitcher></ThemeSwitcher>

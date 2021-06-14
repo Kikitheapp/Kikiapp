@@ -112,8 +112,8 @@ const AboutUs = () => {
                 <p>
                   Shanice is a black queer curator and cultural studies scholar
                   based in the NYC area. As someone who spent her formative
-                  years covertly scrolling through gURL.com, she's excited to
-                  help build this new sex-positive digital space. She's
+                  years covertly scrolling through gURL.com, she&apos;s excited to
+                  help build this new sex-positive digital space. She&apos;s
                   passionate about queer history, internet culture, camp, filth,
                   and Dolly Parton, her toothless chihuahua.
                 </p>
@@ -304,7 +304,7 @@ const AboutUs = () => {
                   He is excited to contribute his knowledge in React and experience with full-stack engineering to build up the Kiki app
                   and website with the rest of the dev team. Ricardo believes that accesibility to knowledge is the key in growing communities and people.
                   When Ricardo is not nose deep in code, he is playing Pokemon, playing with his cat Anastasia, camping in the Catskills,
-                  or watching RuPaul's Drag Race/ surrporting local NYC drag queens.
+                  or watching RuPaul&apos;s Drag Race/ surrporting local NYC drag queens.
                 </p>
                 {'\n'}
                 {'\n'}
