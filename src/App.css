@@ -6,6 +6,7 @@
 }
 
 :root {
+  --peach-puff: #f6ccb7;
   --primary-color: #30C3CD;
   --secondary-color: #ACE7EB;
   --background-color: white;
@@ -120,6 +121,14 @@ footer h3 {
 }
 
 /*********************************************************************
+************************ Color and Stuff *****************************
+**********************************************************************/
+.bg-peach-puff {
+  background-color: var(--peach-puff);
+}
+
+
+/*********************************************************************
 ************************** Bootstrap Overrides ***********************
 **********************************************************************/
 .navbar-dark .navbar-nav .nav-link {
@@ -171,8 +180,8 @@ footer h3 {
 .FAQtext i {
 	color: #30C3CD;
 }
-.accordion i {
-	font-size: 4rem;
+.accordion i, .accordion-wrapper i {
+  font-size: 4rem;
 }
 .accordion h3 {
 	margin-bottom: 0rem;
@@ -254,12 +263,16 @@ footer h3 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;}
+ 
   .accordion-title:hover{
-	color: #f7931e;
+    color: #e8804c;
+    /*color: #f7931e;*/
   }
+ 
   .accordion-content {
 	padding: 1em 1.5em;
   }
+ 
   .sources-links {
 	font-size: large;
 	}

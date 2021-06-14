@@ -35,8 +35,8 @@ export default function Navbar() {
               </a>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/prep-info'>
-                <p>PrEP-info</p>
+              <Link className='nav-link' to='/PrEP'>
+                <p>PrEP Q&amp;A</p>
               </Link>
             </li>
             <li className='nav-item'>

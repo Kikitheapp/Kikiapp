@@ -22,7 +22,7 @@ function App() {
       <Route  path='/MailinglistForm' render={() => {
         window.location.href = 'form.html'
       }}></Route>
-      <Route path='/PrEP-info'>
+      <Route path='/PrEP'>
         <PrEP></PrEP>
       </Route>
       <Route

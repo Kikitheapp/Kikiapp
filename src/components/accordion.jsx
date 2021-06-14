@@ -4,16 +4,27 @@ const Accordion = ({ title, children }) => {
     const [isOpen, setOpen] = React.useState(false);
     return (
       <div className="accordion-wrapper">
+        <div className="row justify-content-center py-3">
+          <div className="col-md-8  col-lg-6">
+            <div className="row align-items-center ">
+              <div className="col-auto">
+                <i className="bi bi-plus"></i>
+                </div>
+              <div className="col">
         
-        <div
+        <h3
           className={`accordion-title ${isOpen ? "open" : ""}`}
           onClick={() => setOpen(!isOpen)}
           >
           {title}
+        </h3>
         </div>
         <div className={`accordion-item ${!isOpen ? "collapsed" : ""}`}>
-          <div className="accordion-content">{children}</div>
+          <div className="accordion-content row justify-content-center">{children}</div>
         </div>
+      </div>
+      </div>
+      </div>
       </div>
     );
   };
