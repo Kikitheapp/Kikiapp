@@ -5,12 +5,7 @@ import person1 from "../assets/images/prep-person-1.svg";
 import person2 from "../assets/images/prep-person-2.svg";
 import person3 from "../assets/images/prep-person-3.svg";
 import person4 from "../assets/images/prep-person-4.svg";
-import person5 from "../assets/images/prep-person-4.svg";
-
-
-
-
-//   ReactDOM.render(<App />, document.getElementById("app"));
+import person5 from "../assets/images/prep-person-5.svg";
 
 
 const PrEP = () => {
@@ -18,13 +13,13 @@ const PrEP = () => {
     return (
         <div className="FAQtext margin-alot" id="question-accordion">
             <h2 className="text-center bg-peach-puff">PrEP Q&amp;A</h2>
-            <div className="faq-people row justify-content-center">
-                <div className="faq-person-1  col-6 text-right">
+            <div className="prep-people row justify-content-center">
+                <div className="prep-person-1  col-6 text-right">
                     <img src={person1} className="img-fluid"
                         alt="Person with white shirt and blue skirt walking to meet person
                     on right." />
                 </div>
-                <div className="faq-person-2  col-6">
+                <div className="prep-person-2  col-6">
                     <img src={person2} className="img-fluid"
                         alt="Person with orange jacket and blue jeans walking to meet person 
                     on left."/>
@@ -38,8 +33,7 @@ const PrEP = () => {
                 medication that has drastically changed the outcomes for people at risk for HIV since it was introduced in 2012.</p>
                 <img src={person3} className="img-fluid"
                     alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
-
-      </Accordion>
+            </Accordion>
             <Accordion title="Who Should Start PrEP?">
                 <p>PrEP (specifically Truvada) is highly effective (more than 90%)  in preventing HIV transmission from sex for people of all 
                 genders and sexualities. People who might take PrEP include folks with a sexual partner who is HIV positive, folks with a partner 
@@ -47,32 +41,40 @@ const PrEP = () => {
                 contracting HIV), and people who inject non-prescription drugs. Chat with your doctor if you think PrEP might be right for you.</p>
                 <img src={person4} className="img-fluid"
                     alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
-      </Accordion>
+            </Accordion>
             <Accordion title="Where To Get It?">
                 <p>PrEP is covered under most private and public health insurance. Check out this directory for PrEP providers near you. 
                 It is also available through telehealth companies like Folx</p>
                 <img src={person5} className="img-fluid"
                     alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
-
-      </Accordion>
+            </Accordion>
             <Accordion title="Other Things To Know">
-                <p> - It’s important that you take your PrEP pills every day. If you skip pills, there may not be enough of the medication in your system to block 
-                    transmission of HIV.</p>
-                <p> - Since PrEP is just for HIV prevention, you still need to take precautions like barrier methods and regular testing to prevent other STIs/STDs.</p>
-                <p> Side effects like nausea, loss of appetite, and headaches may occur, but usually go away over time</p>
-                <p> - Once you’re on PrEP, you’ll need to visit your doctor once every three months for follow-ups on how the medication is working and an HIV test. 
-                    This may take the form of an in-person visit or a home test and telemedicine visit.</p>
-                <p> - If you’ve been exposed to HIV and aren’t on PrEP, you can take PEP (post-exposure prophylaxis) within 72 hours of exposure. The sooner you can get
-                     PEP, the more effective it is, and it must be taken daily for 28 days.</p>
+                <ul>
+                    <li> - It’s important that you take your PrEP pills every day. If you skip pills, there may not be enough of the medication in your system to block 
+                        transmission of HIV.</li>
+                    <li> - Since PrEP is just for HIV prevention, you still need to take precautions like barrier methods and regular testing to prevent other STIs/STDs.</li>
+                    <li> Side effects like nausea, loss of appetite, and headaches may occur, but usually go away over time</li>
+                    <li> - Once you’re on PrEP, you’ll need to visit your doctor once every three months for follow-ups on how the medication is working and an HIV test. 
+                        This may take the form of an in-person visit or a home test and telemedicine visit.</li>
+                    <li> - If you’ve been exposed to HIV and aren’t on PrEP, you can take PEP (post-exposure prophylaxis) within 72 hours of exposure. The sooner you can get
+                        PEP, the more effective it is, and it must be taken daily for 28 days.</li>
+                </ul>
             </Accordion>
             <Accordion title="Sources">
-            <div className="sources-links">
-                <p>CDC. (2020, November 3). About Prep. HIV Basics.<a href="https://www.cdc.gov/hiv/basics/prep/about-prep.html" target="_blank" rel="noopener noreferrer">
-                    https://www.cdc.gov/hiv/basics/prep/about-prep.html</a></p>
-                <p>Planned Parenthood. (n.d.). What Is PrEP. Planned Parenthood. <a href="https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep" target="_blank" rel="noopener noreferrer">
-                    https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep </a></p>
-                <p>Please Prep Me. (2021, January 15). Please Prep Me. Please Prep Me. <a href="https://pleaseprepme.org/"target="_blank" rel="noopener noreferrer">https://pleaseprepme.org/ </a></p>
-            </div>
+                <div className="sources-links">
+                    <ul>
+                        <li>CDC. (2020, November 3). About Prep. HIV Basics.<a href="https://www.cdc.gov/hiv/basics/prep/about-prep.html" target="_blank" rel="noopener noreferrer">
+                            https://www.cdc.gov/hiv/basics/prep/about-prep.html</a>
+                        </li>
+                        <li>Planned Parenthood. (n.d.). What Is PrEP. Planned Parenthood. 
+                            <a href="https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep" target="_blank" rel="noopener noreferrer">
+                            https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep </a>
+                        </li>
+                        <li>Please Prep Me. (2021, January 15). Please Prep Me. Please Prep Me. <a href="https://pleaseprepme.org/"target="_blank" rel="noopener noreferrer">
+                            https://pleaseprepme.org/ </a>
+                        </li>
+                    </ul>
+                </div>
             </Accordion>
 
         </div>

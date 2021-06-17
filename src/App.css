@@ -1,3 +1,17 @@
+:root {
+  --peach-puff: #f6ccb7;
+  --primary-color: #30C3CD;
+  --secondary-color: #ACE7EB;
+  --background-color: white;
+  --select-background: white;
+  --charcoal: #212121;
+  --dark-orange: #e8804c;
+}
+
+html, body {
+  height: 100%;
+  --font-color: var(--charcoal);
+}
 .App-body {
   background-color: #35BBCA;
   min-height: 90vh;
@@ -5,23 +19,10 @@
   color: #3B6064;
 }
 
-:root {
-  --peach-puff: #f6ccb7;
-  --primary-color: #30C3CD;
-  --secondary-color: #ACE7EB;
-  --background-color: white;
-  --select-background: white;
-  --font-color: #212121;
-}
-
-html, body {
-  height: 100%;
-}
-
 .dark-mode {
-  --background-color: #212121;
+  --background-color: var(--charcoal);
   --font-color: white;
-  --select-background: #212121;
+  --select-background: var(--charcoal);
 }
 
 .theme-switcher {
@@ -40,12 +41,13 @@ body {
   flex-direction: column;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   overflow: hidden;
   font-family: 'Candal', sans-serif;
 }
-li a {
+
+nav li a {
   display: block;
   color: var(--font-color);
   text-align: center;
@@ -53,7 +55,7 @@ li a {
   text-decoration: none;
 }
 
-li a :hover {
+nav li a :hover {
   color: #3b6064;
 }
 
@@ -131,6 +133,14 @@ footer h3 {
 /*********************************************************************
 ************************** Bootstrap Overrides ***********************
 **********************************************************************/
+.navbar-light .navbar-nav .nav-link {
+  color: var(--font-color);
+}
+
+.navbar-light .navbar-nav .nav-item :hover{
+  color: var(--dark-orange);
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: white;
   font-size: x-large;
@@ -154,7 +164,7 @@ footer h3 {
   ************************** FAQ Page ****************************************
   ***************************************************************************/
 .FAQtext, .FAQtext h3, .FAQtext h2 {
-	color: #212121;
+	color: var(--font-color);
 	font-weight: 900; 	
 
 }
@@ -165,16 +175,17 @@ footer h3 {
   padding: 5rem 0 10rem 0;
 }
 
-.faq-people {
-  margin-top: -8rem;
+.prep-people {
+  margin-top: -5rem;
 }
 
-.faq-person-1 {
+.prep-person-1 {
   padding-right: 5%;
 }
 
-.faq-person-2 {
+.prep-person-2 {
   padding-left: 5%;
+  margin-top: 1rem;
 }
 
 .FAQtext i {
@@ -237,12 +248,9 @@ footer h3 {
   
   
   .wrapper{
-	margin: 0 auto;
+	  margin: 0 auto;
   
 	}
-  .accordion-wrapper {
-	  margin-top: 0.5em;
-  }
   
   .accordion-item {
 	overflow: hidden;
@@ -265,8 +273,7 @@ footer h3 {
 	align-items: center;}
  
   .accordion-title:hover{
-    color: #e8804c;
-    /*color: #f7931e;*/
+    color: var(--dark-orange);
   }
  
   .accordion-content {
@@ -348,7 +355,7 @@ footer h3 {
     padding: 5rem 0 20rem 0;
   }
   
-  .faq-people {
+  .prep-people {
     margin-top: -18rem;
   }
 }

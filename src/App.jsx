@@ -5,7 +5,7 @@ import Graphic from './components/graphic'
 import Navbar from './components/nav'
 import AboutUs from './components/AboutUs.jsx'
 import PrEP from './components/PrEP.jsx'
-import Faq from './components/Faq.jsx'
+
 function App() {
   return (
     <div className='App container-fluid'>
@@ -16,9 +16,6 @@ function App() {
       <Route path='/aboutUs'>
         <AboutUs></AboutUs>
       </Route>
-      <Route path='/Faq'>
-          <Faq></Faq>
-        </Route>
       <Route  path='/MailinglistForm' render={() => {
         window.location.href = 'form.html'
       }}></Route>
