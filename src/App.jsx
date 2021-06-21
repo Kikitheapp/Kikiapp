@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Route } from 'react-router-dom'
-import Graphic from './components/graphic'
+import Homepage from './components/homepage'
 import Navbar from './components/nav'
 import AboutUs from './components/AboutUs.jsx'
 import PrEP from './components/PrEP.jsx'
@@ -11,7 +11,7 @@ function App() {
     <div className='App container-fluid'>
       <Navbar> </Navbar>
       <Route exact path='/'>
-        <Graphic></Graphic>
+        <Homepage></Homepage>
       </Route>
       <Route path='/aboutUs'>
         <AboutUs></AboutUs>

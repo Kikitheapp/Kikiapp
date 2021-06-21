@@ -46,7 +46,7 @@ export default function Navbar() {
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/MailinglistForm'>
-                <p>Join Our Mailing List</p>
+                <p>Join our mailing list</p>
               </Link>
             </li>
           </ul>

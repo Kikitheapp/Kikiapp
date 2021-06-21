@@ -34,7 +34,7 @@ html, body {
 }
 
 body {
-  color: var(--primary-color);
+  color: var(--text-color);
   background-color: var(--background-color);
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -63,15 +63,11 @@ nav li a :hover {
   flex: 1 0 auto;
 }
 
-.slogan {
-  color: #3b6064;
-  font-weight: bold;
-}
 
 .mailinglistbtn {
-  background-color: #e0be36;
+  font-weight: 900;
+  background-color: var(--dark-orange);
   border: none;
-  color: #3b6064;
   padding: 12px;
   padding-left: 20px;
   padding-right: 25px;
@@ -123,7 +119,7 @@ footer h3 {
 }
 
 /*********************************************************************
-************************ Color and Stuff *****************************
+************************** Colors and Utilities **********************
 **********************************************************************/
 .bg-peach-puff {
   background-color: var(--peach-puff);
@@ -133,6 +129,11 @@ footer h3 {
 /*********************************************************************
 ************************** Bootstrap Overrides ***********************
 **********************************************************************/
+
+.App h2, .App h3 {
+  font-weight: 900;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: var(--font-color);
 }
@@ -159,15 +160,20 @@ footer h3 {
   background-color: var(--secondary-color)!important;
 }
 
+/***************************************************************************
+  ************************** Homepage **************************************
+  ***************************************************************************/
+
+.home-person-2 {
+  margin-top: 2rem;
+}
+
+
 
 /***************************************************************************
-  ************************** FAQ Page ****************************************
+  ************************** PrEP Page ****************************************
   ***************************************************************************/
-.FAQtext, .FAQtext h3, .FAQtext h2 {
-	color: var(--font-color);
-	font-weight: 900; 	
 
-}
 
 .FAQtext h2 {
   margin-right: -15px;
@@ -265,7 +271,6 @@ footer h3 {
   }
   
   .accordion-title {
-	font-weight: 600;
 	cursor: pointer;
 	padding: 0.5em 1.5em;
 	display: flex;
@@ -362,6 +367,17 @@ footer h3 {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
+  .bg-placeholder {
+    z-index: -500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: no-repeat;
+    background-position-x: right;
+    background-size: auto 400px;
+  }
 
  }
 
@@ -369,8 +385,15 @@ footer h3 {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
 
+  .bg-placeholder {
+    background-size: auto 440px;
+  }
  }
 
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+  .bg-placeholder {
+    background-size: auto 600px ;
+  }
+}
