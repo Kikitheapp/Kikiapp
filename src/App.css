@@ -133,6 +133,7 @@ footer h3 {
 .App h2, .App h3 {
   font-weight: 900;
 }
+ 
 
 .navbar-light .navbar-nav .nav-link {
   color: var(--font-color);
@@ -158,7 +159,9 @@ footer h3 {
 
 .bg-secondary {
   background-color: var(--secondary-color)!important;
+
 }
+
 
 /***************************************************************************
   ************************** Homepage **************************************
@@ -315,11 +318,11 @@ footer h3 {
   .block {
 	height: 100px;
 	width: 100%;
-	background: #e0be36;
+	background: #ff9000;
 	margin-bottom: 2%;
   }
   .Bio {
-	background: #3b6064;
+	background: #30c3cd;
 	margin-left: 2%;
 	padding: 10px;
 	color: white;
