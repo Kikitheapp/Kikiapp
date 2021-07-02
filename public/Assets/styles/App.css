@@ -8,10 +8,13 @@
   --dark-orange: #e8804c;
 }
 
+
 html, body {
   height: 100%;
   --font-color: var(--charcoal);
+  margin: 0;
 }
+
 .App-body {
   background-color: #35BBCA;
   min-height: 90vh;
@@ -178,7 +181,7 @@ footer h3 {
   ***************************************************************************/
 
 
-.FAQtext h2 {
+.accordion-page h2 {
   margin-right: -15px;
   margin-left: -15px;
   padding: 5rem 0 10rem 0;
@@ -197,62 +200,77 @@ footer h3 {
   margin-top: 1rem;
 }
 
-.FAQtext i {
+.accordion-page i {
 	color: #30C3CD;
 }
+
 .accordion i, .accordion-wrapper i {
   font-size: 4rem;
 }
+
 .accordion h3 {
 	margin-bottom: 0rem;
 }
 
 
+  
+  /***************************************************************************
+  ************************** Mailing List Page *******************************
+  ***************************************************************************/
+
 .header-2 {
 	font-weight: bolder;
-	color: #3b6064;
-  }
-  .indicates-required {
-	color: #3b6064;
+}
+
+.indicates-required {
 	font-family: 'Montserrat', sans-serif;
 	font-size: large !important ;
 	clear: both;
-  }
-  .logo {
-	margin-left: 26%;
-	clear: both;
-  }
+}
 
-  #mc_embed_signup {
+
+.logo {
+	display: flex;
+  justify-content: center;
+}
+
+#mc_embed_signup {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  }
+}
 
-  label {
+label {
 	margin-left: 1%;
 	font-weight: bold;
-	color: #3b6064;
+}
+
+  #mc_embed_signup {
+    flex: 1 0 auto;
+  }
+
+  #mc_embed_signup .mc-field-group input {
+    border-radius: 25px;
+    align-content: center;
+  }
+
+  #mc_embed_signup .mc-field-group {
+	  padding-bottom: 1% !important;
+  }
+
+  #mc_embed_signup .button {
+    background-color: var(--dark-orange) !important;
+    color: var(--charcoal) !important;
+    margin-left: 30% !important;
+    margin-right: 30% !important;
+    border-radius: 25px;
   }
   
-  #mc_embed_signup .mc-field-group input {
-	border-radius: 25px;
-	align-content: center;
-  }
-  #mc_embed_signup .mc-field-group {
-	padding-bottom: 1% !important;
-  }
-  .button {
-	background-color: #e0be36 !important;
-	color: #3b6064 !important;
-	margin-left: 30% !important;
-	margin-right: 30% !important;
-  }
   .SectionContainer {
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 1%;
-	font-size: x-large;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    font-size: x-large;
   }
   
   
@@ -359,7 +377,7 @@ footer h3 {
     font-size: larger;
   }
 
-	.FAQtext h2 {
+	.accordion-page h2 {
     padding: 5rem 0 20rem 0;
   }
   

@@ -10,7 +10,7 @@ import person5 from "../assets/images/prep-person-5.svg";
 const PrEP = () => {
 
     return (
-        <div className="FAQtext">
+        <div className="accordion-page">
             <h2 className="text-center bg-peach-puff">PrEP Q&amp;A</h2>
             <div className="prep-people row justify-content-center mb-5">
                 <div className="prep-person-1 col-6 text-right">
