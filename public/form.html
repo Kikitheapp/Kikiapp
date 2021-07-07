@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-  <link href="Assets/styles/style.css" rel="stylesheet" />
   <link rel="icon" href="favicon.ico" />
+  <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
@@ -13,11 +13,12 @@
   <script src="https://kit.fontawesome.com/21f02cae4e.js" crossorigin="anonymous" SameSite=none></script>
   <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="Assets/styles/App.css" rel="stylesheet" />
   <title>Kikiapp</title>
 </head>
 
-<body>
-  <div class="logo">
+<body id="body">
+  <div class="logo pt-2">
     <a href="/"><img class="logo" src="./Assets/images/kikilogo1.png" alt="kikiapp logo"></img></a>
   </div>
   <!-- Begin Mailchimp Signup Form -->
@@ -60,17 +61,22 @@
   </form>
   </div>
   <!--End mc_embed_signup-->
-</body>
-<footer>
-  <span>Kiki</span>
-  <div>
-    <a class="SocialIcons" href="https://www.facebook.com/kikitheapp/" target="_blank"><i
-        class="fab fa-facebook-square"></i></a>
-    <a class="SocialIcons" href="https://www.instagram.com/kikitheapp/" target="_blank"> <i
-        class="fab fa-instagram-square"></i></a>
-    <a class="SocialIcons" href="https://twitter.com/kikitheapp" target="_blank"><i
-        class="fab fa-twitter-square"></i></a>
-  </div>
-</footer>
+  <footer class="container-fluid bg-primary mt-5">
+    <h3>Kiki</h3>
+    <h3>Follow us</h3>
+    <div>
+      <a class="SocialIcons" href="https://www.facebook.com/kikitheapp/" target="_blank" rel="noopener noreferrer"><i
+          class="fab fa-facebook-square"></i></a>
+      <a class="SocialIcons" href="https://www.instagram.com/kikitheapp/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram-square"></i></a>
+      <a class="SocialIcons" href="https://twitter.com/kikitheapp" target="_blank" rel="noopener noreferrer"><i
+          class="fab fa-twitter-square"></i></a>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 
 </html>

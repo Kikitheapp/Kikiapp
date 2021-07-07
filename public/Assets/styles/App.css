@@ -1,0 +1,420 @@
+:root {
+  --peach-puff: #f6ccb7;
+  --primary-color: #30C3CD;
+  --secondary-color: #ACE7EB;
+  --background-color: white;
+  --select-background: white;
+  --charcoal: #212121;
+  --dark-orange: #e8804c;
+}
+
+
+html, body {
+  height: 100%;
+  --font-color: var(--charcoal);
+  margin: 0;
+}
+
+.App-body {
+  background-color: #35BBCA;
+  min-height: 90vh;
+  font-size: calc(10px + 2vmin);
+  color: #3B6064;
+}
+
+.dark-mode {
+  --background-color: var(--charcoal);
+  --font-color: white;
+  --select-background: var(--charcoal);
+}
+
+.theme-switcher {
+  background-color: var(--select-background);
+  position: absolute;
+  color: var(--font-color);
+  right: 0px;
+  top: 2px;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  font-family: 'Candal', sans-serif;
+}
+
+nav li a {
+  display: block;
+  color: var(--font-color);
+  text-align: center;
+  padding: 1px 10px;
+  text-decoration: none;
+}
+
+nav li a :hover {
+  color: #3b6064;
+}
+
+#root {
+  flex: 1 0 auto;
+}
+
+
+.mailinglistbtn {
+  font-weight: 900;
+  background-color: var(--dark-orange);
+  border: none;
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  clear: left;
+  margin-left: 8px;
+}
+.quizlink {
+  margin-left: 10px;
+  color: #3b6064;
+  font-size: medium;
+  clear: left;
+}
+.mailinglist {
+  margin-left: 10%;
+  clear: left;
+  margin-top: 12%;
+}
+.content-container {
+  clear: both;
+}
+
+footer {
+  color: white;
+  flex-shrink: 0;
+	height: 10rem;  
+  padding: 30px 0;
+  text-align: center;
+}
+
+
+footer h3 {
+  font-size: 20px;
+}
+
+.bannerflag {
+  width: 10%;
+  float: left;
+}
+.SocialIcons {
+  font-size: xx-large;
+  color: whitesmoke;
+  margin: 10px;
+}
+
+/*********************************************************************
+************************** Colors and Utilities **********************
+**********************************************************************/
+.bg-peach-puff {
+  background-color: var(--peach-puff);
+}
+
+
+/*********************************************************************
+************************** Bootstrap Overrides ***********************
+**********************************************************************/
+
+.App h2, .App h3 {
+  font-weight: 900;
+}
+ 
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--font-color);
+}
+
+.navbar-light .navbar-nav .nav-item :hover{
+  color: var(--dark-orange);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: x-large;
+}
+
+.navbar-dark .navbar-toggler {
+  color: white;
+  border-color: white;
+}
+
+.bg-primary {
+ background-color: var(--primary-color)!important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color)!important;
+
+}
+
+
+/***************************************************************************
+  ************************** Homepage **************************************
+  ***************************************************************************/
+
+.home-person-2 {
+  margin-top: 2rem;
+}
+
+
+
+/***************************************************************************
+  ************************** PrEP Page ****************************************
+  ***************************************************************************/
+
+
+.accordion-page h2 {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 5rem 0 10rem 0;
+}
+
+.prep-people {
+  margin-top: -5rem;
+}
+
+.prep-person-1 {
+  padding-right: 5%;
+}
+
+.prep-person-2 {
+  padding-left: 5%;
+  margin-top: 1rem;
+}
+
+.accordion-page i {
+	color: #30C3CD;
+}
+
+.accordion i, .accordion-wrapper i {
+  font-size: 4rem;
+}
+
+.accordion h3 {
+	margin-bottom: 0rem;
+}
+
+
+  
+  /***************************************************************************
+  ************************** Mailing List Page *******************************
+  ***************************************************************************/
+
+.header-2 {
+	font-weight: bolder;
+}
+
+.indicates-required {
+	font-family: 'Montserrat', sans-serif;
+	font-size: large !important ;
+	clear: both;
+}
+
+
+.logo {
+	display: flex;
+  justify-content: center;
+}
+
+#mc_embed_signup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+label {
+	margin-left: 1%;
+	font-weight: bold;
+}
+
+  #mc_embed_signup {
+    flex: 1 0 auto;
+  }
+
+  #mc_embed_signup .mc-field-group input {
+    border-radius: 25px;
+    align-content: center;
+  }
+
+  #mc_embed_signup .mc-field-group {
+	  padding-bottom: 1% !important;
+  }
+
+  #mc_embed_signup .button {
+    background-color: var(--dark-orange) !important;
+    color: var(--charcoal) !important;
+    margin-left: 30% !important;
+    margin-right: 30% !important;
+    border-radius: 25px;
+  }
+  
+  .SectionContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    font-size: x-large;
+  }
+  
+  
+  .wrapper{
+	  margin: 0 auto;
+  
+	}
+  
+  .accordion-item {
+	overflow: hidden;
+	transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+	height: auto;
+	max-height: 9999px;
+  }
+  
+  .accordion-item.collapsed {
+	max-height: 0;
+	transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+  }
+  
+  .accordion-title {
+	cursor: pointer;
+	padding: 0.5em 1.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;}
+ 
+  .accordion-title:hover{
+    color: var(--dark-orange);
+  }
+ 
+  .accordion-content {
+	padding: 1em 1.5em;
+  }
+ 
+  .sources-links {
+	font-size: large;
+	}
+
+  .header-1 {
+	text-align: center;
+  }
+  span {
+	padding-top: 2%;
+  }
+  
+  .grow {
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .grow:hover {
+	transform: scale(1.03);
+  }
+  
+  .about-us-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	margin-left: 5%;
+	margin-right: 5%;
+  }
+  
+  .block {
+	height: 100px;
+	width: 100%;
+	background: #ff9000;
+	margin-bottom: 2%;
+  }
+  .Bio {
+	background: #30c3cd;
+	margin-left: 2%;
+	padding: 10px;
+	color: white;
+	width: 30rem;
+	margin-top: 2%;
+  }
+  h4{
+	height: 4rem;
+	font-weight: bold;
+  }
+  .bio-img {
+
+	width: 100%;
+  }
+  .content {
+	width: 90%;
+  }
+  #about-links {
+	color: white !important;
+  }
+
+/*********************************************************************
+***************************** Media Queries **************************
+**********************************************************************/
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+	h4{
+    font-size: larger;
+		font-weight: bold;
+  }
+	h3{
+    font-size: larger;
+  }
+
+	.accordion-page h2 {
+    padding: 5rem 0 20rem 0;
+  }
+  
+  .prep-people {
+    margin-top: -18rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  .bg-placeholder {
+    z-index: -500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: no-repeat;
+    background-position-x: right;
+    background-size: auto 400px;
+  }
+
+ }
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+  .bg-placeholder {
+    background-size: auto 440px;
+  }
+ }
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .bg-placeholder {
+    background-size: auto 600px ;
+  }
+}

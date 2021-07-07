@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div className='nav-container'>
       <ThemeSwitcher></ThemeSwitcher>
-      <nav className='navbar navbar-expand-lg navbar-dark'>
+      <nav className='navbar navbar-expand-lg navbar-light'>
         <h1>
           <Link className='navbar-brand' to='/'>
             <img src='../assets/images/kikilogo1.png' alt='Kiki'></img>
@@ -35,10 +35,10 @@ export default function Navbar() {
               </a>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/prep-info'>
-                <p>PrEP-info</p>
+              <Link className='nav-link' to='/PrEP'>
+                <p>PrEP Q&amp;A</p>
               </Link>
-              </li>
+            </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/aboutUs'>
                 <p>About us</p>
@@ -46,7 +46,7 @@ export default function Navbar() {
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/MailinglistForm'>
-                <p>Join Our Mailing List</p>
+                <p>Join our mailing list</p>
               </Link>
             </li>
           </ul>
