@@ -57,7 +57,7 @@ const AboutUs = () => {
                   incredible team to bring this work to fruition. Based in New
                   York City, she loves sci-fi, baking, and writing fiction.
                 </p>
-                Blog:
+                Blog:{' '}
                 <a
                   id='about-links'
                   href='https://www.aroundtheworldin80plays.com'
@@ -67,7 +67,8 @@ const AboutUs = () => {
                   {' '}
                   aroundtheworldin80plays.com
                 </a>
-                Twitter:
+                <br></br>
+                Twitter:{' '}
                 <a
                   id='about-links'
                   href='https://www.twitter.com/thekristawhite'
@@ -77,7 +78,7 @@ const AboutUs = () => {
                   @thekristawhite{' '}
                 </a>
                 <br></br>
-                Instagram:
+                Instagram:{' '}
                 <a
                   id='about-links'
                   href='https:www.instagram.com/thekristawhite/'
@@ -87,7 +88,7 @@ const AboutUs = () => {
                   @thekristawhite{' '}
                 </a>
               <br></br>
-                LinkedIn:
+                LinkedIn:{' '}
                 <a
                   id='about-links'
                   href='https:www.linkedin.com/in/kristawhite3'
@@ -118,7 +119,7 @@ const AboutUs = () => {
                 </p>
                 {'\n'}
                 {'\n'}
-                Instagram:
+                Instagram:{' '}
                 <a
                   id='about-links'
                   href='https:www.instagram.com/uvul.a/'
@@ -150,7 +151,7 @@ const AboutUs = () => {
                   {'\n'}
                 </p>
                 {'\n'}
-                LinkedIn:
+                LinkedIn:{' '}
                 <a
                   id='about-links'
                   href='https:www.linkedin.com/in/nicholas-frattaroli'
@@ -160,7 +161,7 @@ const AboutUs = () => {
                   Nicholas-Frattaroli{' '}
                 </a>
                 <br></br>
-                Github:
+                Github:{' '}
                 <a
                   id='about-links'
                   href='https:github.com/Nfratt'
@@ -307,7 +308,7 @@ const AboutUs = () => {
                 </p>
                 {'\n'}
                 {'\n'}
-                LinkedIn:
+                LinkedIn:{' '}
                 <a
                   id='about-links'
                   href='https://www.linkedin.com/in/ricardo-martini/'
@@ -317,7 +318,7 @@ const AboutUs = () => {
                   ricardo-martini{' '}
                 </a>
                 <br></br>
-                Portfolio:
+                Portfolio:{' '}
                 <a
                   id='about-links'
                   href='https://www.ricardomartini.dev/'
@@ -328,7 +329,7 @@ const AboutUs = () => {
                   ricardomartini.dev
                 </a>
                 <br></br>
-                Github:
+                Github:{' '}
                 <a
                   id='about-links'
                   href='https://github.com/mrricardom'
@@ -338,7 +339,7 @@ const AboutUs = () => {
                   mrricardom{' '}
                 </a>
                 <br></br>
-                Medium:
+                Medium:{' '}
                 <a
                   id='about-links'
                   href='https://medium.com/@ricmartini16'
@@ -368,7 +369,7 @@ const AboutUs = () => {
                   {'\n'}
                 </p>
                 {'\n'}
-                LinkedIn:
+                LinkedIn:{' '}
                 <a
                   id='about-links'
                   href='https://www.linkedin.com/in/alcastonguay/'
@@ -379,7 +380,7 @@ const AboutUs = () => {
                 </a>
                 <br></br>
 
-                Github:
+                Github:{' '}
           
                 <a
                   id='about-links'
