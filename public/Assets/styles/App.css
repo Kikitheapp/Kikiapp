@@ -92,6 +92,24 @@ nav li a {
   clear: left;
   margin-top: 12%;
 }
+.homebtn{
+  font-weight: 900;
+  background-color: var(--dark-orange);
+  border: none;
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 .content-container {
   clear: both;
 }
@@ -277,7 +295,7 @@ label {
   #mc_embed_signup .button {
     background-color: var(--dark-orange) !important;
     color: var(--charcoal) !important;
-    margin-left: 30% !important;
+    margin-left: 50% !important;
     margin-right: 30% !important;
     border-radius: 25px;
   }
