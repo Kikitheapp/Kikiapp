@@ -49,13 +49,13 @@ const PrEP = () => {
             </Accordion>
             <Accordion title="Other Things To Know">
                 <ul>
-                    <li> - It’s important that you take your PrEP pills every day. If you skip pills, there may not be enough of the medication in your system to block 
+                    <li>  It’s important that you take your PrEP pills every day. If you skip pills, there may not be enough of the medication in your system to block 
                         transmission of HIV.</li>
-                    <li> - Since PrEP is just for HIV prevention, you still need to take precautions like barrier methods and regular testing to prevent other STIs/STDs.</li>
+                    <li>  Since PrEP is just for HIV prevention, you still need to take precautions like barrier methods and regular testing to prevent other STIs/STDs.</li>
                     <li> Side effects like nausea, loss of appetite, and headaches may occur, but usually go away over time</li>
-                    <li> - Once you’re on PrEP, you’ll need to visit your doctor once every three months for follow-ups on how the medication is working and an HIV test. 
+                    <li> Once you’re on PrEP, you’ll need to visit your doctor once every three months for follow-ups on how the medication is working and an HIV test. 
                         This may take the form of an in-person visit or a home test and telemedicine visit.</li>
-                    <li> - If you’ve been exposed to HIV and aren’t on PrEP, you can take PEP (post-exposure prophylaxis) within 72 hours of exposure. The sooner you can get
+                    <li>  If you’ve been exposed to HIV and aren’t on PrEP, you can take PEP (post-exposure prophylaxis) within 72 hours of exposure. The sooner you can get
                         PEP, the more effective it is, and it must be taken daily for 28 days.</li>
                 </ul>
             </Accordion>

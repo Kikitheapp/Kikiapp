@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ThemeSwitcher from './ThemeSwitcher.jsx'
+
 
 export default function Navbar() {
   return (
     <div className='nav-container'>
-      <ThemeSwitcher></ThemeSwitcher>
       <nav className='navbar navbar-expand-lg navbar-light'>
         <h1>
           <Link className='navbar-brand' to='/'>
