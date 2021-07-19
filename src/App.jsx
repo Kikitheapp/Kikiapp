@@ -4,11 +4,13 @@ import Homepage from './components/homepage'
 import Navbar from './components/nav'
 import AboutUs from './components/AboutUs.jsx'
 import PrEP from './components/PrEP.jsx'
+import ThemeSwitcher from './components/ThemeSwitcher.jsx'
 
 function App() {
   return (
     <div className='App container-fluid'>
       <Navbar> </Navbar>
+      <ThemeSwitcher></ThemeSwitcher>
       <Route exact path='/'>
         <Homepage></Homepage>
       </Route>
