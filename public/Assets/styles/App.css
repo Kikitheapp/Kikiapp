@@ -180,12 +180,6 @@ footer h3 {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  font-size: x-large;
-}
-
-.navbar-dark .navbar-toggler {
-  color: white;
-  border-color: white;
 }
 
 .bg-primary {
@@ -332,17 +326,17 @@ label {
 	justify-content: space-between;
 	align-items: center;}
  
-  .accordion-title:hover{
+  .accordion-title:hover h3 {
     color: var(--dark-orange);
   }
  
   .accordion-content {
 	padding: 1em 1.5em;
   }
- 
-  .sources-links {
-	font-size: large;
-	}
+
+  .accordion-content li {
+    padding-top: 1em;
+  }
 
   .header-1 {
 	text-align: center;

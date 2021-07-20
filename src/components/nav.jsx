@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
   return (
     <div className='nav-container'>
-      <nav className='navbar navbar-expand-lg navbar-light'>
+      <nav id="navbar" className='navbar navbar-expand-lg navbar-light'>
         <h1>
           <Link className='navbar-brand' to='/'>
             <img src='../assets/images/kikilogo1.png' alt='Kiki'></img>
