@@ -81,12 +81,7 @@ nav li a {
   clear: left;
   margin-left: 8px;
 }
-.quizlink {
-  margin-left: 10px;
-  color: #3b6064;
-  font-size: medium;
-  clear: left;
-}
+
 .mailinglist {
   margin-left: 10%;
   clear: left;
@@ -143,8 +138,12 @@ footer h3 {
 
 .dark-mode .SocialIcons {
   color: var(--charcoal);
+  
 }
-
+.dark-mode .SocialIcons :hover{
+  color: #ffffff;
+  
+}
 /*********************************************************************
 ************************** Colors and Utilities **********************
 **********************************************************************/
@@ -180,12 +179,6 @@ footer h3 {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  font-size: x-large;
-}
-
-.navbar-dark .navbar-toggler {
-  color: white;
-  border-color: white;
 }
 
 .bg-primary {
@@ -332,17 +325,17 @@ label {
 	justify-content: space-between;
 	align-items: center;}
  
-  .accordion-title:hover{
+  .accordion-title:hover h3 {
     color: var(--dark-orange);
   }
  
   .accordion-content {
 	padding: 1em 1.5em;
   }
- 
-  .sources-links {
-	font-size: large;
-	}
+
+  .accordion-content li {
+    padding-top: 1em;
+  }
 
   .header-1 {
 	text-align: center;

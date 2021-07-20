@@ -6,7 +6,9 @@ const Accordion = ({ title, children }) => {
       <div className="accordion-wrapper">
         <div className="row justify-content-center">
           <div className="col-md-8  col-lg-6">
-            <div className="row align-items-center ">
+            <div className={`row align-items-center accordion-title ${isOpen ? "open" : ""}`}
+                  onClick={() => setOpen(!isOpen)}
+              >
               <div className="col-auto">
                 <i className="bi bi-plus"></i>
                 </div>
