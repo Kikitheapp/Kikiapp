@@ -81,12 +81,7 @@ nav li a {
   clear: left;
   margin-left: 8px;
 }
-.quizlink {
-  margin-left: 10px;
-  color: #3b6064;
-  font-size: medium;
-  clear: left;
-}
+
 .mailinglist {
   margin-left: 10%;
   clear: left;
@@ -143,6 +138,7 @@ footer h3 {
 
 .dark-mode .SocialIcons {
   color: var(--charcoal);
+  
 }
 
 /*********************************************************************
