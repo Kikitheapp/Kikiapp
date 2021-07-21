@@ -8,7 +8,7 @@ export default function Navbar() {
       <nav id="navbar" className='navbar navbar-expand-lg navbar-light'>
         <h1>
           <Link className='navbar-brand' to='/'>
-            <img src='../assets/images/kikilogo1.png' alt='Kiki'></img>
+            <img src='../Assets/images/kikilogo1.png' alt='Kiki'></img>
           </Link>
         </h1>
         <button
