@@ -355,7 +355,7 @@ const AboutUs = () => {
 
               <img
                 className='bio-img'
-                src='./Assets/images/amanda.jpg'
+                src='./Assets/images/Amanda.jpg'
                 alt='Amanda Lynn Castonguay (Web Dev)'
               ></img>
               {'\n'}
