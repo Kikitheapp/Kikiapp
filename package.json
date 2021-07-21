@@ -13,9 +13,10 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
+    "update-linter": "npx install-peerdeps --dev eslint-plugin-react",
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -36,6 +37,8 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2",
     "gh-pages": "^3.1.0"
   },
   "homepage": "https://kikiapp.org"

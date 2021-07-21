@@ -1,6 +1,7 @@
 import React from 'react'
 import Kikilogo from '../assets/images/kikilogo1.png'
 import { Link } from 'react-router-dom'
+
 export default function Logo(props) {
   return (
     <div className='logo'>

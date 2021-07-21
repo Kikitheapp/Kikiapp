@@ -1,5 +1,5 @@
-import React from 'react'
-import '../AboutUs.css'
+import React from 'react';
+
 
 const AboutUs = () => {
   return (
@@ -36,10 +36,10 @@ const AboutUs = () => {
         {'\n'}
         <div className='block'></div>
         <div>
-          <h1 class='header-1'>Meet Our Badass Team</h1>
+          <h1 className='header-1'>Meet Our Badass Team</h1>
           {'\n'}
           {/* <!-- Bios for the team --> */}
-          <div className='container'>
+          <div className='about-us-container'>
             <div className='Bio grow'>
               <h4>Krista White (She, Her, Hers)</h4>
               <img
@@ -47,9 +47,8 @@ const AboutUs = () => {
                 src='./Assets/images/Krista.png'
                 alt='Krista White (Founder)'
               ></img>
-              {'\n'}
               <h3>Founder</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Krista White is a queer, Black writer and actor who decided to
                   take a UX Design class on a whim in 2019. She fell in love
@@ -58,9 +57,7 @@ const AboutUs = () => {
                   incredible team to bring this work to fruition. Based in New
                   York City, she loves sci-fi, baking, and writing fiction.
                 </p>
-                {'\n'}
-                {'\n'}
-                Blog:
+                Blog:{' '}
                 <a
                   id='about-links'
                   href='https://www.aroundtheworldin80plays.com'
@@ -70,8 +67,8 @@ const AboutUs = () => {
                   {' '}
                   aroundtheworldin80plays.com
                 </a>
-                {'\n'}
-                Twitter:
+                <br></br>
+                Twitter:{' '}
                 <a
                   id='about-links'
                   href='https://www.twitter.com/thekristawhite'
@@ -80,8 +77,8 @@ const AboutUs = () => {
                 >
                   @thekristawhite{' '}
                 </a>
-                {'\n'}
-                Instagram:
+                <br></br>
+                Instagram:{' '}
                 <a
                   id='about-links'
                   href='https:www.instagram.com/thekristawhite/'
@@ -90,8 +87,8 @@ const AboutUs = () => {
                 >
                   @thekristawhite{' '}
                 </a>
-                {'\n'}
-                LinkedIn:
+              <br></br>
+                LinkedIn:{' '}
                 <a
                   id='about-links'
                   href='https:www.linkedin.com/in/kristawhite3'
@@ -111,18 +108,18 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Writer and Researcher</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Shanice is a black queer curator and cultural studies scholar
                   based in the NYC area. As someone who spent her formative
-                  years covertly scrolling through gURL.com, she's excited to
-                  help build this new sex-positive digital space. She's
+                  years covertly scrolling through gURL.com, she&apos;s excited to
+                  help build this new sex-positive digital space. She&apos;s
                   passionate about queer history, internet culture, camp, filth,
                   and Dolly Parton, her toothless chihuahua.
                 </p>
                 {'\n'}
                 {'\n'}
-                Instagram:
+                Instagram:{' '}
                 <a
                   id='about-links'
                   href='https:www.instagram.com/uvul.a/'
@@ -142,7 +139,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Web Developer</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Nick is a Web Developer based out of NYC. As a proud member of
                   the Bear community He is excited to help bring sexual health
@@ -154,17 +151,17 @@ const AboutUs = () => {
                   {'\n'}
                 </p>
                 {'\n'}
-                LinkedIn:
+                LinkedIn:{' '}
                 <a
                   id='about-links'
                   href='https:www.linkedin.com/in/nicholas-frattaroli'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  nicholas-frattaroli{' '}
+                  Nicholas-Frattaroli{' '}
                 </a>
-                {'\n'}
-                Github:
+                <br></br>
+                Github:{' '}
                 <a
                   id='about-links'
                   href='https:github.com/Nfratt'
@@ -184,9 +181,9 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Social Media Manager</h3>{' '}
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
-                  Kate Bader is a NYC based actor and content creator, with a
+                  Kate Bader is a NYC based actor and about-us-content creator, with a
                   background in film production, marketing, and healthcare. She
                   adores the way social media bridges community engagement,
                   visual aesthetics, entertainment, and digestible knowledge.
@@ -207,7 +204,7 @@ const AboutUs = () => {
               </div>{' '}
             </div>{' '}
             <div className='Bio grow'>
-              <h4>Mick Franco (he/him/his)</h4>{' '}
+              <h4>Mick Franco (He,Him,His)</h4>{' '}
               <img
                 className='bio-img'
                 src='./Assets/images/mick.jpg'
@@ -215,7 +212,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Data Scientist</h3>{' '}
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Mick is a Data Scientist based in Connecticut. As a proud
                   member of the LGBTQ community, he excited to contribute his
@@ -246,7 +243,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>UX Designer</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Fiona is a UX designer based in Austin, Texas with a
                   background in Architecture and Political Science. As a
@@ -269,7 +266,7 @@ const AboutUs = () => {
               ></img>
               {'\n'}
               <h3>Web Developer</h3>
-              <div className='content'>
+              <div className='about-us-content'>
                 <p>
                   Jesse is a Web Developer based out of Salt lake city, Utah. As
                   part of the LGBTQ community, They are excited to help build a
@@ -307,11 +304,11 @@ const AboutUs = () => {
                   He is excited to contribute his knowledge in React and experience with full-stack engineering to build up the Kiki app
                   and website with the rest of the dev team. Ricardo believes that accesibility to knowledge is the key in growing communities and people.
                   When Ricardo is not nose deep in code, he is playing Pokemon, playing with his cat Anastasia, camping in the Catskills,
-                  or watching RuPaul's Drag Race/ surrporting local NYC drag queens.
+                  or watching RuPaul&apos;s Drag Race/ surrporting local NYC drag queens.
                 </p>
                 {'\n'}
                 {'\n'}
-                LinkedIn:
+                LinkedIn:{' '}
                 <a
                   id='about-links'
                   href='https://www.linkedin.com/in/ricardo-martini/'
@@ -320,7 +317,8 @@ const AboutUs = () => {
                 >
                   ricardo-martini{' '}
                 </a>
-                Portfolio:
+                <br></br>
+                Portfolio:{' '}
                 <a
                   id='about-links'
                   href='https://www.ricardomartini.dev/'
@@ -330,9 +328,8 @@ const AboutUs = () => {
                   {' '}
                   ricardomartini.dev
                 </a>
-                {'\n'}
-                {'\n'}
-                Github:
+                <br></br>
+                Github:{' '}
                 <a
                   id='about-links'
                   href='https://github.com/mrricardom'
@@ -341,8 +338,8 @@ const AboutUs = () => {
                 >
                   mrricardom{' '}
                 </a>
-                {'\n'}
-                Medium:
+                <br></br>
+                Medium:{' '}
                 <a
                   id='about-links'
                   href='https://medium.com/@ricmartini16'
@@ -353,11 +350,52 @@ const AboutUs = () => {
                 </a>
               </div>
             </div>
+            <div className='Bio grow'>
+              <h4>Amanda Lynn Castonguay (They/Them, She/Her)</h4>
+
+              <img
+                className='bio-img'
+                src='./Assets/images/amanda.jpg'
+                alt='Amanda Lynn Castonguay (Web Dev)'
+              ></img>
+              {'\n'}
+              <h3>Web Developer</h3>
+              <div className='content'>
+                <p>
+                  Amanda Lynn is a Full-Stack Engineer, with a passion for teamwork and usability, 
+                  who lives and worksin Portland, Maine. As a member of the LGBTQ+ community and an advocate for diversity in tech, 
+                  they’re exited to work on a project that gives back to this community. When not working on one of their many projects,
+                   you can find Amanda tending to pet fish or riding their bike. Although, if it is summer, they are probably at the beach.
+                  {'\n'}
+                </p>
+                {'\n'}
+                LinkedIn:{' '}
+                <a
+                  id='about-links'
+                  href='https://www.linkedin.com/in/alcastonguay/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Amanda Castonguay{' '}
+                </a>
+                <br></br>
+
+                Github:{' '}
+          
+                <a
+                  id='about-links'
+                  href='https://github.com/alcastonguay'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                 alcastonguay {' '}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   )
 }
-
-export default AboutUs
+export default AboutUs;
