@@ -32,10 +32,14 @@ const FAQ = () => {
                             </div>
                             <div className="collapse" id="question-one" data-parent="#question-accordion"
                                 aria-labelledby="heading-one">
-                                Duis accumsan neque at volutpat bibendum. Cras eget purus eu ligula volutpat bibendum. Donec
-                                convallis justo ut arcu lobortis, sed commodo libero pulvinar.
-                        </div>
-
+                                   <a href='https://medium.com/kiki-app/hiv-aids-101-5ede46dd1394'target='_blank'rel='noopener noreferrer'>
+                                    HIV/AIDs 101
+                                    </a>
+                                    <p>The first STI/STD on many people’s minds is HIV/AIDS. Our HIV/AIDS 101 Guide helps break it down.</p>
+                                    <a href='https://medium.com/kiki-app/how-to-get-tested-for-stis-35938800f54' target='_blank'rel='noopener noreferrer' >
+                                        How To Get Tested</a>
+                                    <p>The lowdown on where, how, and when to get tested for STIs.</p>
+                            </div>        
                         </div>
                     </div>
                 </div>
