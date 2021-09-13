@@ -1,132 +1,76 @@
 import React from "react";
 import person1 from "../assets/images/faq-person-1.svg";
 import person2 from "../assets/images/faq-person-2.svg";
+import Accordion from './accordion';
 const FAQ = () => {
     return (
-        <div className="FAQtext margin-alot" id="question-accordion">
-            <h2 className="text-center bg-secondary">FAQ</h2>
-            <div className="faq-people row justify-content-center">
-                <div className="faq-person-1  col-6 text-right">
-                    <img src={person2} className="img-fluid"
+        <div className="accordion-page">
+            <h2 className="text-center bg-peach-puff">FAQ</h2>
+            <div className="prep-people row justify-content-center mb-5">
+                <div className="prep-person-1 col-6 text-right">
+                    <img src={person1} className="img-fluid"
                         alt="Person with white shirt and blue skirt walking to meet person
                     on right." />
                 </div>
-                <div className="faq-person-2  col-6">
-                    <img src={person1} className="img-fluid"
+                <div className="prep-person-2 col-6">
+                    <img src={person2} className="img-fluid"
                         alt="Person with orange jacket and blue jeans walking to meet person 
                     on left."/>
                 </div>
             </div>
-            <div className="accordion my-5">
-                <div className="row justify-content-center py-3">
-                    <div className="col-md-8  col-lg-6">
-                        <div className="row align-items-center ">
-                            <div className="col-auto">
-                                <i className="bi bi-plus"></i>
-                            </div>
-                            <div className="col">
-                                <h3 id="heading-one" data-toggle="collapse" data-target="#question-one"
-                                    aria-expanded="true" aria-controls="question-one">
-                                    STIs/STDs, Testing, and Barriers
-                                </h3>
-                            </div>
-                            <div className="collapse" id="question-one" data-parent="#question-accordion"
-                                aria-labelledby="heading-one">
-                                   <a href='https://medium.com/kiki-app/hiv-aids-101-5ede46dd1394'target='_blank'rel='noopener noreferrer'>
-                                    HIV/AIDs 101
-                                    </a>
-                                    <p>The first STI/STD on many people’s minds is HIV/AIDS. Our HIV/AIDS 101 Guide helps break it down.</p>
-                                    <a href='https://medium.com/kiki-app/how-to-get-tested-for-stis-35938800f54' target='_blank'rel='noopener noreferrer' >
-                                        How To Get Tested</a>
-                                    <p>The lowdown on where, how, and when to get tested for STIs.</p>
-                            </div>        
-                        </div>
-                    </div>
-                </div>
-                <div className="row justify-content-center py-3">
-                    <div className="col-md-8  col-lg-6">
-                        <div className="row align-items-center">
-                            <div className="col-auto">
-                                <i className="bi bi-plus"></i>
-                            </div>
-                            <div className="col">
-                                <h3 id="heading-two" data-toggle="collapse" data-target="#question-two"
-                                    aria-expanded="true" aria-controls="question-two">
-                                    Sexual Pleasure
-                            </h3>
-                            </div>
-                        </div>
-                        <div className="collapse" id="question-two" data-parent="#question-accordion"
-                            aria-labelledby="heading-two">
-                            Maecenas bibendum turpis vehicula, sollicitudin magna ac, tristique ante. Quisque dolor
-                            eros, mollis nec tincidunt id, suscipit nec quam. Vestibulum urna tellus, mattis vitae urna
-                            sed, molestie tempor diam.
+        <div className="wrapper">
+            <Accordion title=" STIs/STDs, Testing, and Barriers">
+                <a href='https://medium.com/kiki-app/hiv-aids-101-5ede46dd1394'target='_blank'rel='noopener noreferrer'>
+                HIV/AIDs 101
+                </a>
+                <p>The first STI/STD on many people’s minds is HIV/AIDS. Our HIV/AIDS 101 Guide helps break it down.</p>
+                <a href='https://medium.com/kiki-app/how-to-get-tested-for-stis-35938800f54' target='_blank'rel='noopener noreferrer' >
+                How To Get Tested
+                </a>
+                <p>The lowdown on where, how, and when to get tested for STIs.</p>
+            </Accordion>
+            <Accordion title="Who Should Start PrEP?">
+                <p>PrEP (specifically Truvada) is highly effective (more than 90%)  in preventing HIV transmission from sex for people of all 
+                genders and sexualities. People who might take PrEP include folks with a sexual partner who is HIV positive, folks with a partner 
+                whose HIV status is unknown, people who have tested positive for an STI in the past 6 months (which puts them at higher risk for 
+                contracting HIV), and people who inject non-prescription drugs. Chat with your doctor if you think PrEP might be right for you.</p>
 
-                        </div>
-                    </div>
-                </div>
-                <div className="row justify-content-center py-3">
-                    <div className="col-md-8  col-lg-6">
-                        <div className="row align-items-center">
-                            <div className="col-auto">
-                                <i className="bi bi-plus"></i>
-                            </div>
-                            <div className="col">
-                                <h3 id="heading-three" data-toggle="collapse" data-target="#question-three"
-                                    aria-expanded="true" aria-controls="question-three">
-                                    Gender and Identity
-                                </h3>
-                            </div>
-                        </div>
-                        <div className="collapse" id="question-three" data-parent="#question-accordion"
-                            aria-labelledby="heading-three">
-                            Quisque sed erat luctus, dapibus purus ut, imperdiet tortor. Cras sit amet ex lacinia augue
-                            tincidunt dictum.
-                        </div>
-                    </div>
-                </div>
-                <div className="row justify-content-center py-3">
-                    <div className="col-md-8  col-lg-6">
-                        <div className="row align-items-center">
-                            <div className="col-auto">
-                                <i className="bi bi-plus"></i>
-                            </div>
-                            <div className="col">
-                                <h3 id="heading-four" data-toggle="collapse" data-target="#question-four"
-                                    aria-expanded="true" aria-controls="question-four">
-                                    Reproductive Health
-                        </h3>
-                            </div>
-                            <div className="collapse" id="question-four" data-parent="#question-accordion"
-                                aria-labelledby="heading-four">
-                                Duis accumsan neque at volutpat bibendum. Cras eget purus eu ligula volutpat bibendum. Donec
-                                convallis justo ut arcu lobortis, sed commodo libero pulvinar.
-                        </div>
+            </Accordion>
+            <Accordion title="Where To Get It?">
+                <p>PrEP is covered under most private and public health insurance. Check out this directory for PrEP providers near you. 
+                It is also available through telehealth companies like Folx</p>
 
-                        </div>
-                    </div>
+            </Accordion>
+            <Accordion title="Other Things To Know">
+                <ul>
+                    <li>  It’s important that you take your PrEP pills every day. If you skip pills, there may not be enough of the medication in your system to block 
+                        transmission of HIV.</li>
+                    <li>  Since PrEP is just for HIV prevention, you still need to take precautions like barrier methods and regular testing to prevent other STIs/STDs.</li>
+                    <li> Side effects like nausea, loss of appetite, and headaches may occur, but usually go away over time</li>
+                    <li> Once you’re on PrEP, you’ll need to visit your doctor once every three months for follow-ups on how the medication is working and an HIV test. 
+                        This may take the form of an in-person visit or a home test and telemedicine visit.</li>
+                    <li>  If you’ve been exposed to HIV and aren’t on PrEP, you can take PEP (post-exposure prophylaxis) within 72 hours of exposure. The sooner you can get
+                        PEP, the more effective it is, and it must be taken daily for 28 days.</li>
+                </ul>
+            </Accordion>
+            <Accordion title="Sources">
+                <div className="sources-links">
+                    <ul>
+                        <li>CDC. (2020, November 3). About Prep. HIV Basics.<a href="https://www.cdc.gov/hiv/basics/prep/about-prep.html" target="_blank" rel="noopener noreferrer">
+                            https://www.cdc.gov/hiv/basics/prep/about-prep.html</a>
+                        </li>
+                        <li>Planned Parenthood. (n.d.). What Is PrEP. Planned Parenthood. 
+                            <a href="https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep" target="_blank" rel="noopener noreferrer">
+                            https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep </a>
+                        </li>
+                        <li>Please Prep Me. (2021, January 15). Please Prep Me. Please Prep Me. <a href="https://pleaseprepme.org/"target="_blank" rel="noopener noreferrer">
+                            https://pleaseprepme.org/ </a>
+                        </li>
+                    </ul>
                 </div>
-                <div className="row justify-content-center py-3">
-                    <div className="col-md-8  col-lg-6">
-                        <div className="row align-items-center">
-                            <div className="col-auto">
-                                <i className="bi bi-plus"></i>
-                            </div>
-                            <div className="col">
-                                <h3 id="heading-five" data-toggle="collapse" data-target="#question-five"
-                                    aria-expanded="true" aria-controls="question-five">
-                                    Relationships and Consent
-                        </h3>
-                            </div>
-                        </div>
-                        <div className="collapse" id="question-five" data-parent="#question-accordion"
-                            aria-labelledby="heading-five">
-                            Aenean a leo tincidunt, tempor nisl ut, gravida erat. Aenean dictum posuere felis laoreet
-                            aliquet. Sed placerat laoreet ullamcorper.
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </Accordion>
+
+        </div>
         </div>
     )
 }
