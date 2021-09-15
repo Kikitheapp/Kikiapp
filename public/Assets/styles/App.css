@@ -152,7 +152,10 @@ footer h3 {
 }
 
 .dark-mode .bg-peach-puff {
-  background-color: var(--charcoal);
+  background-color: var(--peach-puff);
+}
+.dark-mode h2{
+  color: var(--charcoal);
 }
 
 
