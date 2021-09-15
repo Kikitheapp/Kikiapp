@@ -49,10 +49,10 @@ const FAQ = () => {
             <Accordion title="Reproductive Health">
                 <ul>
                     <li>
-                    <a href='https://kikiapp.medium.com/what-you-need-to-know-about-birth-control-6ea439bdef2b' target='_blank'rel='noopener noreferrer'>
-                        <p>What You Need To Know About Birth Control</p>
-                    </a>
-                    <p>A gender neutral guide to birth control basics.</p>
+                        <a href='https://kikiapp.medium.com/what-you-need-to-know-about-birth-control-6ea439bdef2b' target='_blank'rel='noopener noreferrer'>
+                            <p>What You Need To Know About Birth Control</p>
+                        </a>
+                        <p>A gender neutral guide to birth control basics.</p>
                     </li>
                 </ul>
                 <img src={person4} className="img-fluid"
