@@ -1,5 +1,6 @@
 import React from 'react';
 import Accordion from './accordion';
+import Heading from './Heading';
 import person1 from "../assets/images/prep-person-1.svg";
 import person2 from "../assets/images/prep-person-2.svg";
 import person3 from "../assets/images/prep-person-3.svg";
@@ -8,22 +9,16 @@ import person5 from "../assets/images/prep-person-5.svg";
 
 
 const PrEP = () => {
+    const pageInfo = {
+        title: "PrEP Q&A",
+        bgColor: "peach-puff",
+        person1: person1,
+        person2: person2
+    }
 
     return (
         <div className="accordion-page">
-            <h2 className="text-center bg-peach-puff">PrEP Q&amp;A</h2>
-            <div className="prep-people row justify-content-center mb-5">
-                <div className="prep-person-1 col-6 text-right">
-                    <img src={person1} className="img-fluid"
-                        alt="Person with white shirt and blue skirt walking to meet person
-                    on right." />
-                </div>
-                <div className="prep-person-2 col-6">
-                    <img src={person2} className="img-fluid"
-                        alt="Person with orange jacket and blue jeans walking to meet person 
-                    on left."/>
-                </div>
-            </div>
+        <Heading info={pageInfo}></Heading>
         <div className="wrapper">
             <Accordion title="What is PrEP?">
                 <p>PrEP (full name pre-exposure prophylaxis) is a daily medication that helps prevent the transmission of HIV in people 

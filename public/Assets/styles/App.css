@@ -6,6 +6,7 @@
   --select-background: white;
   --charcoal: #212121;
   --dark-orange: #e8804c;
+  --light-orange: #FFD399;
 }
 
 
@@ -151,6 +152,10 @@ footer h3 {
   background-color: var(--peach-puff);
 }
 
+.bg-light-orange {
+  background-color: var(--light-orange);
+}
+
 .dark-mode .bg-peach-puff {
   background-color: var(--charcoal);
 }
@@ -193,6 +198,16 @@ footer h3 {
   background-color: var(--dark-orange)!important;
 }
 
+/*********************************************************************
+************************** Heading  **********************************
+**********************************************************************/
+
+h2.page-title {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 5rem 0 10rem 0;
+}
+
 /***************************************************************************
   ************************** Homepage **************************************
   ***************************************************************************/
@@ -208,11 +223,6 @@ footer h3 {
   ***************************************************************************/
 
 
-.accordion-page h2 {
-  margin-right: -15px;
-  margin-left: -15px;
-  padding: 5rem 0 10rem 0;
-}
 
 .prep-people {
   margin-top: -5rem;
@@ -414,7 +424,7 @@ label {
     font-size: larger;
   }
 
-	.accordion-page h2 {
+	h2.page-title {
     padding: 5rem 0 20rem 0;
   }
   
