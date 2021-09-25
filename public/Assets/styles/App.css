@@ -7,6 +7,8 @@
   --charcoal: #212121;
   --dark-orange: #e8804c;
   --light-orange: #FFD399;
+  --bright-orange: #FF9000;
+  --light-gray: #F0EDED;
 }
 
 
@@ -156,6 +158,14 @@ footer h3 {
   background-color: var(--light-orange);
 }
 
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
 .dark-mode .bg-peach-puff {
   background-color: var(--charcoal);
 }
@@ -250,6 +260,12 @@ h2.page-title {
 }
 
 
+/***************************************************************************
+  ************************** Sex Toy Page ***********************************
+  ***************************************************************************/
+.sex-toys .card {
+  height: 100%;
+}
   
   /***************************************************************************
   ************************** Mailing List Page *******************************
@@ -390,10 +406,11 @@ label {
     color: var(--charcoal);
   }
 
-  h4{
+  .Bio h4 {
 	height: 4rem;
 	font-weight: bold;
   }
+  
   .bio-img {
 
 	width: 100%;
@@ -416,11 +433,11 @@ label {
 /* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
-	h4{
+	.Bio h4{
     font-size: larger;
 		font-weight: bold;
   }
-	h3{
+	footer h3{
     font-size: larger;
   }
 
