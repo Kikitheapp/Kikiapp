@@ -42,7 +42,7 @@ const FAQ = () => {
             </Accordion>
             {/* <Accordion title="Sexual Pleasure"> */
           /* This link is currently returning a 404 keep out for now */
-            /* <a a href='https://kikiapp.medium.com/intro-to-anal-sex-fd609bc73442https://kikiapp.medium.com/intro-to-anal-sex-fd609bc73442'target='_blank'rel='noopener noreferrer'>
+            /* <a a href='https://kikiapp.medium.com/intro-to-anal-sex-fd609bc73442'target='_blank'rel='noopener noreferrer'>
             /* <p>A beginner’s guide to butt stuff.</p>
             /* <img src={person3} className="img-fluid"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
             /* </Accordion> */}
