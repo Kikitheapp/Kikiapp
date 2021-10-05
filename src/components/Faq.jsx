@@ -40,19 +40,23 @@ const FAQ = () => {
                 </ul>
                 <img src={person3} className="img-fluid"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
             </Accordion>
-            {/* <Accordion title="Sexual Pleasure"> */
-          /* This link is currently returning a 404 keep out for now */
-            /* <a a href='https://kikiapp.medium.com/intro-to-anal-sex-fd609bc73442'target='_blank'rel='noopener noreferrer'>
-            /* <p>A beginner’s guide to butt stuff.</p>
-            /* <img src={person3} className="img-fluid"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
-            /* </Accordion> */}
+             <Accordion title="Sexual Pleasure">
+                 <ul>
+                     <li>
+            <a a href='https://kikiapp.medium.com/intro-to-anal-sex-fd609bc73442'target='_blank'rel='noopener noreferrer'>
+             <p>Intro to Anal</p></a>
+             <p>A beginner’s guide to butt stuff, from prostrate pleasure to dealing with the messy bits.</p>
+             </li>
+             </ul>
+             <img src={person3} className="img-fluid"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
+            </Accordion> 
             <Accordion title="Reproductive Health">
                 <ul>
                     <li>
                         <a href='https://kikiapp.medium.com/what-you-need-to-know-about-birth-control-6ea439bdef2b' target='_blank'rel='noopener noreferrer'>
                             <p>What You Need To Know About Birth Control</p>
                         </a>
-                        <p>A gender neutral guide to birth control basics.</p>
+                        <p>A gender-neutral guide to birth control basics. Your body. Your choice.</p>
                     </li>
                 </ul>
                 <img src={person4} className="img-fluid"
@@ -65,7 +69,7 @@ const FAQ = () => {
                             <p>Consent Is Mandatory</p>
                         </a>
                         <p>
-                        The basics of sexual consent.
+                        The basics of sexual consent. The foundation to any sexual or romantic relationship.
                         </p>
                     </li>
                 </ul>
