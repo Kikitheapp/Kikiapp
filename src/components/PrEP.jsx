@@ -3,7 +3,7 @@ import Accordion from './accordion';
 import person1 from "../assets/images/prep-person-1.svg";
 import person2 from "../assets/images/prep-person-2.svg";
 import person3 from "../assets/images/prep-person-3.svg";
-import person4 from "../assets/images/prep-person-4.svg";
+import person4 from "../assets/images/FAQ-person-5.svg";
 import person5 from "../assets/images/prep-person-5.svg";
 
 
