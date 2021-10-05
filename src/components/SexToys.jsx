@@ -5,7 +5,9 @@ import person2 from "../assets/images/sextoys-person-2.svg";
 import placeholder from "../assets/images/sextoys-placeholder.jpg";
 
 const SexToys = () => {
-    const pageInfo = {
+
+
+    const headingInfo = {
         title: 'Meet The Sex Toys',
         bgColor: 'light-orange',
         person1: person1,
@@ -72,7 +74,7 @@ const SexToys = () => {
         }
     ]
 
-    let buildSexToyDivs = (sexToy) => {  
+    const buildSexToyCards = (sexToy) => {  
         return (
             <div key={sexToy.name} className="col py-3 align-item-stretch">
                 <div className="card bg-light-gray border-0 rounded-lg">
@@ -90,11 +92,12 @@ const SexToys = () => {
         )
     }
 
-    let sexToyCols = sexToys.map(buildSexToyDivs);
+    // Maps each sex toy to a Bootstrap card.
+    let sexToyCols = sexToys.map(buildSexToyCards);
 
     return (
         <div className="sex-toys">
-            <Heading info={pageInfo}></Heading>
+            <Heading info={headingInfo}></Heading>
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 px-5">
                 {sexToyCols} 
             </div>
