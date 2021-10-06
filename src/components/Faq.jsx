@@ -1,10 +1,10 @@
 import React from "react";
 import person1 from "../assets/images/faq-person-1.svg";
 import person2 from "../assets/images/faq-person-2.svg";
-import person3 from "../assets/images/prep-person-3.svg";
 import person4 from "../assets/images/prep-person-4.svg";
 import person5 from "../assets/images/prep-person-5.svg";
-
+import person6 from "../assets/images/prep-person-6.svg";
+import person9 from "../assets/images/prep-person-9.svg";
 import Accordion from './accordion';
 const FAQ = () => {
     return (
@@ -38,7 +38,7 @@ const FAQ = () => {
                 </li>
                     <p>The lowdown on where, how, and when to get tested for STIs.</p>
                 </ul>
-                <img src={person3} className="img-fluid align-self-center"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
+                <img src={person5} className="img-fluid align-self-center"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
             </Accordion>
              <Accordion title="Sexual Pleasure">
                  <ul>
@@ -48,7 +48,7 @@ const FAQ = () => {
              <p>A beginner’s guide to butt stuff, from prostrate pleasure to dealing with the messy bits.</p>
              </li>
              </ul>
-             <img src={person3} className="img-fluid align-self-center"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
+             <img src={person6} className="img-fluid align-self-center"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
             </Accordion> 
             <Accordion title="Reproductive Health">
                 <ul>
@@ -59,7 +59,7 @@ const FAQ = () => {
                         <p>A gender-neutral guide to birth control basics. Your body. Your choice.</p>
                     </li>
                 </ul>
-                <img src={person4} className="img-fluid align-self-center"
+                <img src={person9} className="img-fluid align-self-center"
                     alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
             </Accordion>
             <Accordion title="Relationships and Consent">
@@ -73,7 +73,7 @@ const FAQ = () => {
                         </p>
                     </li>
                 </ul>
-                <img src={person5} className="img-fluid align-self-center"
+                <img src={person4} className="img-fluid align-self-center"
                     alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
             </Accordion>
 
