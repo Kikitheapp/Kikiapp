@@ -215,18 +215,12 @@ footer h3 {
   padding: 5rem 0 10rem 0;
 }
 
-.prep-people {
-  margin-top: -5rem;
+
+.prep-person{
+height:30rem;
 }
 
-.prep-person-1 {
-  padding-right: 5%;
-}
 
-.prep-person-2 {
-  padding-left: 5%;
-  margin-top: 1rem;
-}
 
 .accordion-page i {
 	color: #30C3CD;

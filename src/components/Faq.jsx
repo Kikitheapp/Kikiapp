@@ -48,7 +48,7 @@ const FAQ = () => {
              <p>A beginner’s guide to butt stuff, from prostrate pleasure to dealing with the messy bits.</p>
              </li>
              </ul>
-             <img src={person6} className="img-fluid align-self-center"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
+             <img src={person6} className="img-fluid align-self-center prep-person"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
             </Accordion> 
             <Accordion title="Reproductive Health">
                 <ul>
@@ -59,7 +59,7 @@ const FAQ = () => {
                         <p>A gender-neutral guide to birth control basics. Your body. Your choice.</p>
                     </li>
                 </ul>
-                <img src={person9} className="img-fluid align-self-center"
+                <img src={person9} className="img-fluid align-self-center prep-person"
                     alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
             </Accordion>
             <Accordion title="Relationships and Consent">
