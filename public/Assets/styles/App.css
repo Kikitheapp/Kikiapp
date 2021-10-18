@@ -220,8 +220,6 @@ footer h3 {
 height:30rem;
 }
 
-
-
 .accordion-page i {
 	color: #30C3CD;
 }
@@ -325,14 +323,15 @@ label {
     font-size: x-large;
   }
   
-  
   .wrapper{
 	  margin: 0 auto;
   
 	}
+
   .header-1 {
 	text-align: center;
   }
+  
   span {
 	padding-top: 2%;
   }
