@@ -5,6 +5,7 @@ import Navbar from './components/nav'
 import AboutUs from './components/AboutUs.jsx'
 import PrEP from './components/PrEP.jsx'
 import ThemeSwitcher from './components/ThemeSwitcher.jsx'
+import Mailinglist from './components/Mailinglist'
 
 function App() {
   return (
@@ -17,18 +18,12 @@ function App() {
       <Route path='/aboutUs'>
         <AboutUs></AboutUs>
       </Route>
-      <Route  path='/MailinglistForm' render={() => {
-        window.location.href = 'form.html'
-      }}></Route>
       <Route path='/PrEP'>
         <PrEP></PrEP>
       </Route>
-      <Route
-        path='/MailinglistForm'
-        render={() => {
-          window.location.href = 'form.html'
-        }}
-      ></Route>
+      <Route path='/MailinglistForm'>
+        <Mailinglist></Mailinglist>
+      </Route>
     </div>
   )
 }
