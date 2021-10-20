@@ -216,8 +216,8 @@ footer h3 {
 }
 
 
-.prep-person{
-height:30rem;
+.accordion-person{
+  height: 28rem;
 }
 
 .accordion-page i {
@@ -410,7 +410,7 @@ label {
     padding: 5rem 0 20rem 0;
   }
   
-  .prep-people {
+  .heading-people {
     margin-top: -18rem;
   }
 }
