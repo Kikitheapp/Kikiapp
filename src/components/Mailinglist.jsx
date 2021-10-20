@@ -17,7 +17,6 @@ class Mailinglist extends Component {
                     placeholder: 'Email Address',
                     type: 'email',
                     required: true
-
                 },
                 {
                     name: 'EMAIL',
