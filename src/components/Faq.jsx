@@ -27,15 +27,15 @@ const FAQ = () => {
                 <ul>
                     <li>
                         <a href='https://medium.com/kiki-app/hiv-aids-101-5ede46dd1394'target='_blank'rel='noopener noreferrer'>
-                            <p>HIV/AIDs 101</p>
+                            HIV/AIDs 101
                         </a>
                     </li>
                     <p>The first STI/STD on many people’s minds is HIV/AIDS. Our HIV/AIDS 101 Guide helps break it down.</p>
                     <li>
                         <a href='https://medium.com/kiki-app/how-to-get-tested-for-stis-35938800f54' target='_blank'rel='noopener noreferrer' >
-                            <p>How To Get Tested</p>
+                            How To Get Tested
                         </a>
-                </li>
+                    </li>
                     <p>The lowdown on where, how, and when to get tested for STIs.</p>
                 </ul>
                 <img src={person5} className="img-fluid align-self-center"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
@@ -43,18 +43,19 @@ const FAQ = () => {
              <Accordion title="Sexual Pleasure">
                  <ul>
                      <li>
-            <a a href='https://kikiapp.medium.com/intro-to-anal-sex-fd609bc73442'target='_blank'rel='noopener noreferrer'>
-             <p>Intro to Anal</p></a>
-             <p>A beginner’s guide to butt stuff, from prostrate pleasure to dealing with the messy bits.</p>
-             </li>
-             </ul>
-             <img src={person6} className="img-fluid align-self-center prep-person"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
+                        <a a href='https://kikiapp.medium.com/intro-to-anal-sex-fd609bc73442'target='_blank'rel='noopener noreferrer'>
+                            Intro to Anal
+                        </a>
+                        <p>A beginner’s guide to butt stuff, from prostrate pleasure to dealing with the messy bits.</p>
+                    </li>
+                </ul>
+                <img src={person6} className="img-fluid align-self-center prep-person"alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
             </Accordion> 
             <Accordion title="Reproductive Health">
                 <ul>
                     <li>
                         <a href='https://kikiapp.medium.com/what-you-need-to-know-about-birth-control-6ea439bdef2b' target='_blank'rel='noopener noreferrer'>
-                            <p>What You Need To Know About Birth Control</p>
+                            What You Need To Know About Birth Control
                         </a>
                         <p>A gender-neutral guide to birth control basics. Your body. Your choice.</p>
                     </li>
@@ -66,11 +67,9 @@ const FAQ = () => {
                 <ul>
                     <li>
                         <a href='https://kikiapp.medium.com/what-you-need-to-know-about-birth-control-6ea439bdef2b' target='_blank'rel='noopener noreferrer'>
-                            <p>Consent Is Mandatory</p>
+                            Consent Is Mandatory
                         </a>
-                        <p>
-                        The basics of sexual consent. The foundation to any sexual or romantic relationship.
-                        </p>
+                        <p>The basics of sexual consent. The foundation to any sexual or romantic relationship.</p>
                     </li>
                 </ul>
                 <img src={person4} className="img-fluid align-self-center"
