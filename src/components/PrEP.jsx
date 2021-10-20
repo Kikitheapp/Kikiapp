@@ -39,14 +39,14 @@ const PrEP = () => {
                 genders and sexualities. People who might take PrEP include folks with a sexual partner who is HIV positive, folks with a partner 
                 whose HIV status is unknown, people who have tested positive for an STI in the past 6 months (which puts them at higher risk for 
                 contracting HIV), and people who inject non-prescription drugs. Chat with your doctor if you think PrEP might be right for you.</p>
-                <img src={person7} className="img-fluid align-self-center"
-                    alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
+                <img src={person7} className="img-fluid align-self-center prep-person"
+                    alt="Person with a modern haircut with red hair and mustache kissing person with pink beanie and a mustache." />
             </Accordion>
             <Accordion title="Where To Get It?">
                 <p>PrEP is covered under most private and public health insurance. Check out this directory for PrEP providers near you. 
                 It is also available through telehealth companies like Folx</p>
-                <img src={person8} className="img-fluid align-self-center"
-                    alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
+                <img src={person8} className="img-fluid align-self-center prep-person "
+                    alt="interracial couple holding hands in summer clothes " />
             </Accordion>
             <Accordion title="Other Things To Know">
                 <ul>
