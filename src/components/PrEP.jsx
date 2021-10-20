@@ -40,13 +40,13 @@ const PrEP = () => {
                 whose HIV status is unknown, people who have tested positive for an STI in the past 6 months (which puts them at higher risk for 
                 contracting HIV), and people who inject non-prescription drugs. Chat with your doctor if you think PrEP might be right for you.</p>
                 <img src={whoShouldStartPerson} className="img-fluid align-self-center accordion-person"
-                    alt="Person with earring and green shirt with eyes closed facing person with pink beanie hat and pink shirt with eyes closed." />
+                    alt="Person with a modern haircut with red hair and mustache kissing person with pink beanie and a mustache." />
             </Accordion>
             <Accordion title="Where To Get It?">
                 <p>PrEP is covered under most private and public health insurance. Check out this directory for PrEP providers near you. 
                 It is also available through telehealth companies like Folx</p>
-                <img src={whereToGetPerson} className="img-fluid align-self-center accordion-person"
-                    alt="Person with chinstrap beard, flowers in hair, and pink woven shirt facing person with chinstrap beard and pink floral shirt." />
+                <img src={whereToGetPerson} className="img-fluid align-self-center accordion-person "
+                    alt="interracial couple holding hands in summer clothes " />
             </Accordion>
             <Accordion title="Other Things To Know">
                 <ul>
