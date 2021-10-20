@@ -1,5 +1,4 @@
 import React from "react";
-
 const Accordion = ({ title, children }) => {
     const [isOpen, setOpen] = React.useState(false);
     return (
@@ -21,7 +20,7 @@ const Accordion = ({ title, children }) => {
                 </h3>
               </div>
               <div className={`accordion-item ${!isOpen ? "collapsed" : ""}`}>
-                <div className="accordion-content row justify-content-center">{children}</div>
+                <div className="accordion-content flex-column d-flex justify-content-center">{children}</div>
               </div>
             </div>
           </div>
