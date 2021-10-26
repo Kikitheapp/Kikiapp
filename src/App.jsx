@@ -20,6 +20,9 @@ function App() {
       <Route path='/aboutUs'>
         <AboutUs></AboutUs>
       </Route>
+      <Route path='/FAQ'>
+        <Faq></Faq>
+      </Route>
       <Route path='/PrEP'>
         <PrEP></PrEP>
       </Route>

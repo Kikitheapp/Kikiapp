@@ -280,7 +280,7 @@ footer h3 {
   text-align: center;
 }
 .mail-chimp-form{
- margin-top: 2rem;
+ margin-top: 4rem;
 
 }
 .mail-chimp-form :nth-child(1) {
@@ -303,13 +303,14 @@ margin-top:1rem;
       margin: auto;
       margin-top:1rem;
       }
-.Mailinglist{
+.msg-alert{
+  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 input{
 border-radius: 20px;
+width: 20rem;
+
 }
 
 .logo {

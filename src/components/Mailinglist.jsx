@@ -40,7 +40,7 @@ class Mailinglist extends Component {
             }}
             className='mail-chimp-form'
              /><div>
-                   <div className="indicates-required"><span className="asterisk">*</span> Email Address required</div>
+                   {/* <div className="indicates-required"><span className="asterisk">*</span> Email Address required</div> */}
                 <div className="bg-placeholder" style={{ backgroundImage: `url(${BackgroundVector})` }}></div>
             </div></>
     );
