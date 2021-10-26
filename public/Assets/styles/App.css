@@ -253,8 +253,41 @@ footer h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: large !important ;
 	clear: both;
+  color:red;
+  text-align: center;
 }
+.mail-chimp-form{
+ margin-top: 2rem;
 
+}
+.mail-chimp-form :nth-child(1) {
+display: flex;
+margin: auto;
+margin-top:1rem;
+}
+.mail-chimp-form :nth-child(2) {
+  display: flex;
+  margin: auto;
+  margin-top:1rem;
+  }
+  .mail-chimp-form :nth-child(3) {
+    display: flex;
+    margin: auto;
+    margin-top:1rem;
+    }
+    .mail-chimp-form :nth-child(4) {
+      display: flex;
+      margin: auto;
+      margin-top:1rem;
+      }
+.Mailinglist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input{
+border-radius: 20px;
+}
 
 .logo {
 	display: flex;

@@ -8,15 +8,14 @@ class Mailinglist extends Component {
       
     return (
         <>
-        <div className="indicates-required"><span className="asterisk">*</span> Email Address required</div>
-        <Mailchimp
+        <Mailchimp 
             action='https://kikiapp.us17.list-manage.com/subscribe/post?u=20a5ea56f2d052e902228a598&amp;id=fc23b82f9b'
             fields={[
                 {
                     name: 'EMAIL',
                     placeholder: 'Email Address',
                     type: 'email',
-                    required: true
+                    required: true,
                 },
                 {
                     name: 'EMAIL',
@@ -35,10 +34,13 @@ class Mailinglist extends Component {
                 sending: "Sending...",
                 success: "Thank you for subscribing!",
                 error: "An unexpected internal error has occurred.",
-                empty: "Please enter a valid Email",
+                empty: "Please enter a Email Address",
                 duplicate: "Too many subscribe attempts for this email address",
                 button: "Subscribe"
-            }} /><div>
+            }}
+            className='mail-chimp-form'
+             /><div>
+                   <div className="indicates-required"><span className="asterisk">*</span> Email Address required</div>
                 <div className="bg-placeholder" style={{ backgroundImage: `url(${BackgroundVector})` }}></div>
             </div></>
     );
