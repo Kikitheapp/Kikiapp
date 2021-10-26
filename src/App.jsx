@@ -6,6 +6,8 @@ import AboutUs from './components/AboutUs.jsx'
 import PrEP from './components/PrEP.jsx'
 import ThemeSwitcher from './components/ThemeSwitcher.jsx'
 import Mailinglist from './components/Mailinglist'
+import Faq from './components/Faq.jsx'
+
 
 function App() {
   return (
