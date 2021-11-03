@@ -266,8 +266,15 @@ h2.page-title {
 .sex-toys .card {
   height: 100%;
 }
-.dark-mode .card{
+
+.dark-mode .card {
   color: black;
+}
+
+.sex-toys .card img {
+  height: 15rem;
+  width: auto;
+  padding: 2rem;
 }
   
   /***************************************************************************
