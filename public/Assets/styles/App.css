@@ -165,7 +165,10 @@ footer h3 {
 }
 
 .dark-mode .bg-peach-puff {
-  background-color: var(--charcoal);
+  background-color: var(--peach-puff);
+}
+.dark-mode h2{
+  color: var(--charcoal);
 }
 
 .dark-mode .bg-light-orange {
@@ -240,22 +243,17 @@ h2.page-title {
 
 
 /***************************************************************************
-  ************************** PrEP Page ****************************************
+  ************************** PrEP Page & FAQ ****************************************
   ***************************************************************************/
-
-
-
-.prep-people {
-  margin-top: -5rem;
+.accordion-page h2 {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 5rem 0 10rem 0;
 }
 
-.prep-person-1 {
-  padding-right: 5%;
-}
 
-.prep-person-2 {
-  padding-left: 5%;
-  margin-top: 1rem;
+.accordion-person{
+  height: 28rem;
 }
 
 .accordion-page i {
@@ -269,87 +267,7 @@ h2.page-title {
 .accordion h3 {
 	margin-bottom: 0rem;
 }
-
-
-/***************************************************************************
-  ************************** Sex Toy Page ***********************************
-  ***************************************************************************/
-.sex-toys .card {
-  height: 100%;
-}
-
-.sex-toys .card img {
-  height: 15rem;
-  width: auto;
-  padding: 2rem;
-}
-  
-  /***************************************************************************
-  ************************** Mailing List Page *******************************
-  ***************************************************************************/
-
-.header-2 {
-	font-weight: bolder;
-}
-
-.indicates-required {
-	font-family: 'Montserrat', sans-serif;
-	font-size: large !important ;
-	clear: both;
-}
-
-
-.logo {
-	display: flex;
-  justify-content: center;
-}
-
-#mc_embed_signup {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-label {
-	margin-left: 1%;
-	font-weight: bold;
-}
-
-  #mc_embed_signup {
-    flex: 1 0 auto;
-  }
-
-  #mc_embed_signup .mc-field-group input {
-    border-radius: 25px;
-    align-content: center;
-  }
-
-  #mc_embed_signup .mc-field-group {
-	  padding-bottom: 1% !important;
-  }
-
-  #mc_embed_signup .button {
-    background-color: var(--dark-orange) !important;
-    color: var(--charcoal) !important;
-    margin-left: 50% !important;
-    margin-right: 30% !important;
-    border-radius: 25px;
-  }
-  
-  .SectionContainer {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 1%;
-    font-size: x-large;
-  }
-  
-  
-  .wrapper{
-	  margin: 0 auto;
-  
-	}
-  
-  .accordion-item {
+.accordion-item {
 	overflow: hidden;
 	transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
 	height: auto;
@@ -380,9 +298,123 @@ label {
     padding-top: 1em;
   }
 
+
+
+/***************************************************************************
+  ************************** Sex Toy Page ***********************************
+  ***************************************************************************/
+.sex-toys .card {
+  height: 100%;
+}
+
+.sex-toys .card img {
+  height: 15rem;
+  width: auto;
+  padding: 2rem;
+}
+  
+  /***************************************************************************
+  ************************** Mailing List Page *******************************
+  ***************************************************************************/
+
+.header-2 {
+	font-weight: bolder;
+}
+
+.indicates-required {
+	font-family: 'Montserrat', sans-serif;
+	font-size: large !important ;
+	clear: both;
+  color:red;
+  text-align: center;
+}
+.mail-chimp-form{
+ margin-top: 4rem;
+
+}
+.mail-chimp-form :nth-child(1) {
+display: flex;
+margin: auto;
+margin-top:1rem;
+}
+.mail-chimp-form :nth-child(2) {
+  display: flex;
+  margin: auto;
+  margin-top:1rem;
+  }
+  .mail-chimp-form :nth-child(3) {
+    display: flex;
+    margin: auto;
+    margin-top:1rem;
+    }
+    .mail-chimp-form :nth-child(4) {
+      display: flex;
+      margin: auto;
+      margin-top:1rem;
+      }
+.msg-alert{
+  text-align: center;
+  display: flex;
+}
+input{
+border-radius: 20px;
+width: 20rem;
+
+}
+
+.logo {
+	display: flex;
+  justify-content: center;
+}
+
+#mc_embed_signup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+label {
+	margin-left: 1%;
+	font-weight: bold;
+  }
+
+  #mc_embed_signup {
+    flex: 1 0 auto;
+  }
+
+  #mc_embed_signup .mc-field-group input {
+    border-radius: 25px;
+    align-content: center;
+  }
+
+  #mc_embed_signup .mc-field-group {
+	  padding-bottom: 1% !important;
+  }
+
+  #mc_embed_signup .button {
+    background-color: var(--dark-orange) !important;
+    color: var(--charcoal) !important;
+    margin-left: 50% !important;
+    margin-right: 30% !important;
+    border-radius: 25px;
+  }
+  
+  .SectionContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    font-size: x-large;
+  }
+  
+  .wrapper{
+	  margin: 0 auto;
+  
+	}
+
   .header-1 {
 	text-align: center;
   }
+  
   span {
 	padding-top: 2%;
   }
@@ -462,7 +494,7 @@ label {
     padding: 5rem 0 20rem 0;
   }
   
-  .prep-people {
+  .heading-people {
     margin-top: -18rem;
   }
 }

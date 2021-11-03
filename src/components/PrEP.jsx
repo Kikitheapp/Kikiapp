@@ -1,11 +1,12 @@
 import React from 'react';
 import Accordion from './accordion';
-import Heading from './Heading';
-import person1 from "../assets/images/prep-person-1.svg";
-import person2 from "../assets/images/prep-person-2.svg";
-import person3 from "../assets/images/prep-person-3.svg";
-import person4 from "../assets/images/prep-person-4.svg";
-import person5 from "../assets/images/prep-person-5.svg";
+import Heading from './heading';
+import person1 from "../assets/images/prep-person-header-1.svg";
+import person2 from "../assets/images/prep-person-header-2.svg";
+import whatIsPrepPerson from "../assets/images/prep-person-what-is-prep.svg";
+import whoShouldStartPerson from "../assets/images/prep-person-who-should-start.svg";
+import whereToGetPerson from "../assets/images/prep-person-where-to-get.svg";
+
 
 
 const PrEP = () => {
@@ -25,7 +26,7 @@ const PrEP = () => {
                 who have not yet been exposed. There are two types - Truvada, which protects all people at risk through sex or drug injection, 
                 and Descovy, which protects people assigned male at birth from getting HIV from sexual contact. PrEP is a revolutionary 
                 medication that has drastically changed the outcomes for people at risk for HIV since it was introduced in 2012.</p>
-                <img src={person3} className="img-fluid"
+                <img src={whatIsPrepPerson} className="img-fluid align-self-center"
                     alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
             </Accordion>
             <Accordion title="Who Should Start PrEP?">
@@ -33,14 +34,14 @@ const PrEP = () => {
                 genders and sexualities. People who might take PrEP include folks with a sexual partner who is HIV positive, folks with a partner 
                 whose HIV status is unknown, people who have tested positive for an STI in the past 6 months (which puts them at higher risk for 
                 contracting HIV), and people who inject non-prescription drugs. Chat with your doctor if you think PrEP might be right for you.</p>
-                <img src={person4} className="img-fluid"
-                    alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
+                <img src={whoShouldStartPerson} className="img-fluid align-self-center accordion-person"
+                    alt="Person with a modern haircut with red hair and mustache kissing person with pink beanie and a mustache." />
             </Accordion>
             <Accordion title="Where To Get It?">
                 <p>PrEP is covered under most private and public health insurance. Check out this directory for PrEP providers near you. 
                 It is also available through telehealth companies like Folx</p>
-                <img src={person5} className="img-fluid"
-                    alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
+                <img src={whereToGetPerson} className="img-fluid align-self-center accordion-person "
+                    alt="interracial couple holding hands in summer clothes " />
             </Accordion>
             <Accordion title="Other Things To Know">
                 <ul>
