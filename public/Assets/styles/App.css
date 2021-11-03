@@ -33,13 +33,11 @@ html, body {
 
 .theme-switcher {
   background-color: var(--select-background);
-  position: absolute;
   color: var(--font-color);
   padding: 2px;
-  right: 35px;
-  top: 80px;
   border-radius: 10px;
-}
+  margin: 0 1rem 1rem 0;
+} 
 
 body {
   color: var(--font-color);
@@ -170,6 +168,15 @@ footer h3 {
   background-color: var(--charcoal);
 }
 
+.dark-mode .bg-light-orange {
+  background-color: var(--dark-orange);
+}
+
+.dark-mode .bg-light-gray {
+  background-color: #414141;
+  color: white;
+}
+
 
 /*********************************************************************
 ************************** Bootstrap Overrides ***********************
@@ -216,6 +223,10 @@ h2.page-title {
   margin-right: -15px;
   margin-left: -15px;
   padding: 5rem 0 10rem 0;
+}
+
+.dark-mode h2.page-title {
+  color: var(--charcoal)
 }
 
 /***************************************************************************
@@ -265,10 +276,6 @@ h2.page-title {
   ***************************************************************************/
 .sex-toys .card {
   height: 100%;
-}
-
-.dark-mode .card {
-  color: black;
 }
 
 .sex-toys .card img {
