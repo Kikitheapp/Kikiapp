@@ -1,6 +1,6 @@
 import React from 'react';
 import Accordion from './accordion';
-import Heading from './heading';
+import Heading from './Heading';
 import person1 from "../assets/images/prep-person-header-1.svg";
 import person2 from "../assets/images/prep-person-header-2.svg";
 import whatIsPrepPerson from "../assets/images/prep-person-what-is-prep.svg";

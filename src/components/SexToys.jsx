@@ -1,5 +1,5 @@
 import React from 'react';
-import Heading from './heading'
+import Heading from './Heading.jsx'
 import person1 from "../assets/images/sextoys-person-1.svg";
 import person2 from "../assets/images/sextoys-person-2.svg";
 import dildo from "../assets/images/sextoys-dildo.png";
