@@ -1,6 +1,6 @@
 import React from "react";
 import Accordion from './accordion';
-import Heading from './heading';
+import Heading from './Heading';
 import headingPerson1 from "../assets/images/faq-person-header-2.svg";
 import headingPerson2 from "../assets/images/faq-person-header-1.svg";
 import relAndConsentPerson from "../assets/images/faq-person-rel-and-consent.svg";

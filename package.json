@@ -13,7 +13,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "rss-parser": "^3.12.0"
   },
   "scripts": {
     "update-linter": "npx install-peerdeps --dev eslint-plugin-react",
@@ -42,5 +43,6 @@
     "gh-pages": "^3.1.0",
     "react-mailchimp-form": "^1.0.2"
   },
-  "homepage": "https://kikitheapp.com"
+  "homepage": "https://kikitheapp.com",
+  "proxy": "https://medium.com/"
 }
