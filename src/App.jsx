@@ -5,6 +5,7 @@ import Navbar from './components/nav'
 import AboutUs from './components/AboutUs.jsx'
 import PrEP from './components/PrEP.jsx'
 import ThemeSwitcher from './components/ThemeSwitcher.jsx'
+import SexToys from './components/SexToys.jsx'
 import Mailinglist from './components/Mailinglist'
 import Faq from './components/Faq.jsx'
 
@@ -25,6 +26,9 @@ function App() {
       </Route>
       <Route path='/PrEP'>
         <PrEP></PrEP>
+      </Route>
+      <Route path='/MeetTheSexToys'>
+        <SexToys></SexToys>
       </Route>
       <Route path='/MailinglistForm'>
         <Mailinglist></Mailinglist>

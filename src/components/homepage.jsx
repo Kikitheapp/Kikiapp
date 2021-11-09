@@ -12,9 +12,8 @@ export default function homepage() {
             <div className="col-md-6 text-center text-md-left pl-md-5"> 
                 <h2>Get a fresh take on what you didn&apos;t learn in sex-ed.</h2>
                 <Link className='nav-link' to='/MailinglistForm'>
-                <a className="pl-lg-5">
-                    <button className="mailinglistbtn">Join our mailing list</button>  </a>
-                    </Link>
+                    <button className="mailinglistbtn">Join our mailing list</button>
+                </Link>
             </div>
             <div className="col-md-6 home-people">
                 <div className="row pr-md-5">

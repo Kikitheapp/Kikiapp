@@ -6,6 +6,9 @@
   --select-background: white;
   --charcoal: #212121;
   --dark-orange: #e8804c;
+  --light-orange: #FFD399;
+  --bright-orange: #FF9000;
+  --light-gray: #F0EDED;
 }
 
 
@@ -30,13 +33,11 @@ html, body {
 
 .theme-switcher {
   background-color: var(--select-background);
-  position: absolute;
   color: var(--font-color);
   padding: 2px;
-  right: 35px;
-  top: 80px;
   border-radius: 10px;
-}
+  margin: 0 1rem 1rem 0;
+} 
 
 body {
   color: var(--font-color);
@@ -151,11 +152,32 @@ footer h3 {
   background-color: var(--peach-puff);
 }
 
+.bg-light-orange {
+  background-color: var(--light-orange);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
 .dark-mode .bg-peach-puff {
   background-color: var(--peach-puff);
 }
 .dark-mode h2{
   color: var(--charcoal);
+}
+
+.dark-mode .bg-light-orange {
+  background-color: var(--dark-orange);
+}
+
+.dark-mode .bg-light-gray {
+  background-color: #414141;
+  color: white;
 }
 
 
@@ -194,6 +216,20 @@ footer h3 {
 
 .dark-mode .bg-primary {
   background-color: var(--dark-orange)!important;
+}
+
+/*********************************************************************
+************************** Heading  **********************************
+**********************************************************************/
+
+h2.page-title {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 5rem 0 10rem 0;
+}
+
+.dark-mode h2.page-title {
+  color: var(--charcoal)
 }
 
 /***************************************************************************
@@ -264,6 +300,19 @@ footer h3 {
 
 
 
+/***************************************************************************
+  ************************** Sex Toy Page ***********************************
+  ***************************************************************************/
+.sex-toys .card {
+  height: 100%;
+}
+
+.sex-toys .card img {
+  height: 15rem;
+  width: auto;
+  padding: 2rem;
+}
+  
   /***************************************************************************
   ************************** Mailing List Page *******************************
   ***************************************************************************/
@@ -406,10 +455,11 @@ label {
     color: var(--charcoal);
   }
 
-  h4{
+  .Bio h4 {
 	height: 4rem;
 	font-weight: bold;
   }
+  
   .bio-img {
 
 	width: 100%;
@@ -432,15 +482,15 @@ label {
 /* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
-	h4{
+	.Bio h4{
     font-size: larger;
 		font-weight: bold;
   }
-	h3{
+	footer h3{
     font-size: larger;
   }
 
-	.accordion-page h2 {
+	h2.page-title {
     padding: 5rem 0 20rem 0;
   }
   

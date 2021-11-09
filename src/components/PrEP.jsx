@@ -1,7 +1,8 @@
 import React from 'react';
 import Accordion from './accordion';
-import headingPerson1 from "../assets/images/prep-person-header-1.svg";
-import headingPerson2 from "../assets/images/prep-person-header-2.svg";
+import Heading from './Heading';
+import person1 from "../assets/images/prep-person-header-1.svg";
+import person2 from "../assets/images/prep-person-header-2.svg";
 import whatIsPrepPerson from "../assets/images/prep-person-what-is-prep.svg";
 import whoShouldStartPerson from "../assets/images/prep-person-who-should-start.svg";
 import whereToGetPerson from "../assets/images/prep-person-where-to-get.svg";
@@ -9,22 +10,16 @@ import whereToGetPerson from "../assets/images/prep-person-where-to-get.svg";
 
 
 const PrEP = () => {
+    const pageInfo = {
+        title: "PrEP Q&A",
+        bgColor: "peach-puff",
+        person1: person1,
+        person2: person2
+    }
 
     return (
         <div className="accordion-page">
-            <h2 className="text-center bg-peach-puff">PrEP Q&amp;A</h2>
-            <div className="heading-people row justify-content-center mb-5">
-                <div className="col-6 text-right">
-                    <img src={headingPerson1} className="img-fluid"
-                        alt="Person with white shirt and blue skirt walking to meet person
-                    on right." />
-                </div>
-                <div className="col-6">
-                    <img src={headingPerson2} className="img-fluid"
-                        alt="Person with orange jacket and blue jeans walking to meet person 
-                    on left."/>
-                </div>
-            </div>
+        <Heading info={pageInfo}></Heading>
         <div className="wrapper">
             <Accordion title="What is PrEP?">
                 <p>PrEP (full name pre-exposure prophylaxis) is a daily medication that helps prevent the transmission of HIV in people 
