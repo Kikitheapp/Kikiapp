@@ -65,7 +65,6 @@ nav li a {
   flex: 1 0 auto;
 }
 
-
 .mailinglistbtn {
   font-weight: 900;
   background-color: var(--dark-orange);
@@ -88,6 +87,7 @@ nav li a {
   clear: left;
   margin-top: 12%;
 }
+
 .homebtn{
   font-weight: 900;
   background-color: var(--dark-orange);
@@ -104,8 +104,17 @@ nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
+.blog-post img {
+  max-width: 100%;
+}
+
+.blog-post h3 {
+  font-size: 1rem;
+}
+
+
 .content-container {
   clear: both;
 }

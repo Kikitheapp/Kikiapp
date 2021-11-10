@@ -8,9 +8,12 @@ import { Link } from 'react-router-dom'
 export default function homepage() {
     
     const parser = new Parser();
-    //let feed = [];
     const [feed, setFeed] = React.useState([]);
 
+    React.useEffect(() => {
+        getFeed();
+    }, []);
+    
     async function getFeed() {
         try{
             let feedInfo = [];
@@ -24,16 +27,24 @@ export default function homepage() {
                 }
                 feedInfo.push(story);
             }
-            //feed = feedInfo;
             setFeed(feedInfo);
         } catch(error) {
             console.log(error);
         }
     }
+    
+    let blogPosts = feed.map(buildBlogPosts);
 
-    React.useEffect(() => {
-        getFeed();
-    });
+    function buildBlogPosts(blogPost){
+        return ( 
+            <div key={blogPost.title} className="blog-post col-12 col-md-4 p-3">
+                <a href={blogPost.link} target='_blank' rel="noreferrer">
+                <div dangerouslySetInnerHTML={{__html: blogPost.image}} />
+                <h3 className="text-center my-3">{blogPost.title}</h3> 
+                </a>
+            </div>
+        )
+    }
 
     return (
     <div>
@@ -56,8 +67,8 @@ export default function homepage() {
                 </div>
             </div>
         </div>
-        <div className="row">
-            <p>{feed.toString()}</p>
+        <div className="row px-5">
+            {blogPosts}
         </div>
     </div>
     )

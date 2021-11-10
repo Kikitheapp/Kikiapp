@@ -87,7 +87,7 @@ const SexToys = () => {
         }
     ]
 
-    const buildSexToyCards = (sexToy) => {  
+    function buildSexToyCards(sexToy) {  
         return (
             <div key={sexToy.name} className="col py-3 align-item-stretch">
                 <div className="card bg-light-gray border-0 rounded-lg">
