@@ -319,6 +319,7 @@ h2.page-title {
 
 .header-2 {
 	font-weight: bolder;
+  
 }
 
 .indicates-required {
@@ -352,6 +353,14 @@ margin-top:1rem;
       margin: auto;
       margin-top:1rem;
       }
+button {
+  background-color: var(--dark-orange);
+  border-radius: 10px;
+}
+.mailing-header{
+  margin: auto;
+  text-align: center;
+}
 .msg-alert{
   text-align: center;
   display: flex;
@@ -359,7 +368,6 @@ margin-top:1rem;
 input{
 border-radius: 20px;
 width: 20rem;
-
 }
 
 .logo {
@@ -367,37 +375,11 @@ width: 20rem;
   justify-content: center;
 }
 
-#mc_embed_signup {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 label {
 	margin-left: 1%;
 	font-weight: bold;
   }
 
-  #mc_embed_signup {
-    flex: 1 0 auto;
-  }
-
-  #mc_embed_signup .mc-field-group input {
-    border-radius: 25px;
-    align-content: center;
-  }
-
-  #mc_embed_signup .mc-field-group {
-	  padding-bottom: 1% !important;
-  }
-
-  #mc_embed_signup .button {
-    background-color: var(--dark-orange) !important;
-    color: var(--charcoal) !important;
-    margin-left: 50% !important;
-    margin-right: 30% !important;
-    border-radius: 25px;
-  }
   
   .SectionContainer {
     margin-left: 5%;
