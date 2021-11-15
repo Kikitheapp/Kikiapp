@@ -8,7 +8,6 @@ class Mailinglist extends Component {
     return (
         <>
            <h2 className="mailing-header">Join the Kiki Mailing List</h2>
-           <div>*</div>
            <Mailchimp 
                 action='https://kikiapp.us17.list-manage.com/subscribe/post?u=20a5ea56f2d052e902228a598&amp;id=fc23b82f9b'
                 fields={[
