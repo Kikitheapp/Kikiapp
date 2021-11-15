@@ -356,6 +356,8 @@ margin-top:1rem;
 button {
   background-color: var(--dark-orange);
   border-radius: 10px;
+  border: #e8804c;
+  padding: 10px;
 }
 .mailing-header{
   margin: auto;
@@ -368,6 +370,9 @@ button {
 input{
 border-radius: 20px;
 width: 20rem;
+display: block;
+padding: 8px;
+text-indent: 2%; 
 }
 
 .logo {
