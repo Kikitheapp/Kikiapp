@@ -373,6 +373,7 @@ width: 20rem;
 display: block;
 padding: 8px;
 text-indent: 2%; 
+border-style:solid ;
 }
 
 .logo {
