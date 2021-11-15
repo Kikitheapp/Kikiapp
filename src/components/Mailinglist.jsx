@@ -5,7 +5,6 @@ import BackgroundVector from '../assets/images/background-vector.svg'
  
 class Mailinglist extends Component {
   render() {
-      
     return (
         <>
            <h2 className="mailing-header">Join the Kiki Mailing List</h2>
