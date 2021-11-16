@@ -29,7 +29,7 @@ export default function Navbar() {
                 className='nav-link'
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://medium.com/@kikiapp'>
+                href='https://kikiapp.medium.com/'>
                 <p>Visit our blog</p>
               </a>
             </li>
