@@ -106,14 +106,18 @@ nav li a {
   align-items: center;
 }
 
+.blog-post-container {
+  background-color: var(--dark-orange);
+}
+
 .blog-post img {
   max-width: 100%;
+  border-radius: 15px;
 }
 
 .blog-post h3 {
   font-size: 1rem;
 }
-
 
 .content-container {
   clear: both;
@@ -177,7 +181,7 @@ footer h3 {
   background-color: var(--peach-puff);
 }
 .dark-mode h2{
-  color: var(--charcoal);
+  color: white;
 }
 
 .dark-mode .bg-light-orange {
@@ -237,9 +241,11 @@ h2.page-title {
   padding: 5rem 0 10rem 0;
 }
 
-.dark-mode h2.page-title {
-  color: var(--charcoal)
+
+.dark-mode .heading h2 {
+  color: var(--charcoal);
 }
+
 
 /***************************************************************************
   ************************** Homepage **************************************
@@ -248,6 +254,7 @@ h2.page-title {
 .home-person-2 {
   margin-top: 2rem;
 }
+
 
 
 
@@ -337,38 +344,45 @@ h2.page-title {
   color:red;
   text-align: center;
 }
-.mail-chimp-form{
- margin-top: 4rem;
 
-}
-.mail-chimp-form :nth-child(1) {
-display: flex;
-margin: auto;
-margin-top:1rem;
-}
-.mail-chimp-form :nth-child(2) {
+.mail-chimp-form {
   display: flex;
-  margin: auto;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.mail-chimp-form input{
+  border: solid 1px gray;
+  border-radius: 20px;
+  padding: .5rem;
+}
+
+.mail-chimp-form :nth-child(1) {
   margin-top:1rem;
-  }
-  .mail-chimp-form :nth-child(3) {
-    display: flex;
-    margin: auto;
-    margin-top:1rem;
-    }
-    .mail-chimp-form :nth-child(4) {
-      display: flex;
-      margin: auto;
-      margin-top:1rem;
-      }
+}
+
+.mail-chimp-form :nth-child(2) {
+  margin-top:1rem;
+}
+
+.mail-chimp-form :nth-child(3) {
+  margin-top:1rem;
+}
+
+.mail-chimp-form button {
+  background-color: var(--dark-orange);
+  color: var(--charcoal);
+  border: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  padding: .5rem 1rem;
+  align-self: end;
+}
+
 .msg-alert{
   text-align: center;
   display: flex;
-}
-input{
-border-radius: 20px;
-width: 20rem;
-
 }
 
 .logo {

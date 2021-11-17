@@ -2,7 +2,7 @@ import React from 'react';
 
 const Heading = (props) => {
     return (
-        <div>
+        <div className="heading">
             <h2 className={"page-title text-center bg-"+props.info.bgColor}>{props.info.title}</h2>
             <div className="heading-people row justify-content-center mb-5">
                 <div className="heading-person-1 col-6 text-right">
