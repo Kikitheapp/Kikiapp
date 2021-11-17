@@ -44,6 +44,10 @@ export default function Mailinglist() {
                     className='mail-chimp-form'
                     />
                 </div>
+                <div>
+                   {/* <div className="indicates-required"><span className="asterisk">*</span> Email Address required</div> */}
+                <div className="bg-placeholder" style={{ backgroundImage: `url(${BackgroundVector})` }}></div>
             </div>
+        </div>
     );
   }
