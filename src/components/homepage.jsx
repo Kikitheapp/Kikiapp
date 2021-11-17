@@ -37,7 +37,7 @@ export default function homepage() {
 
     function buildBlogPosts(blogPost){
         return ( 
-            <div key={blogPost.title} className="blog-post col-12 col-md-4 p-3">
+            <div key={blogPost.title} className="blog-post col-12 col-lg-4 p-3">
                 <a href={blogPost.link} target='_blank' rel="noreferrer">
                 <div dangerouslySetInnerHTML={{__html: blogPost.image}} />
                 <h3 className="text-center my-3">{blogPost.title}</h3> 
@@ -47,7 +47,7 @@ export default function homepage() {
     }
 
     return (
-    <div>
+    <div className="homepage">
         <div className="bg-placeholder" style={{backgroundImage: `url(${BackgroundVector})` }}></div>
         <div className="row align-items-center px-5 pb-5">
             <div className="col-md-6 text-center text-md-left pl-md-5"> 
@@ -67,8 +67,11 @@ export default function homepage() {
                 </div>
             </div>
         </div>
-        <div className="row px-5">
-            {blogPosts}
+        <div className="row p-5 blog-post-container">
+            <div className="col">
+                <h3 className="text-center">Our Latest Posts...</h3>
+                <div className="row pt-5">{blogPosts}</div>
+            </div>
         </div>
     </div>
     )
