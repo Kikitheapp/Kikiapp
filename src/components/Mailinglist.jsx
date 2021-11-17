@@ -1,7 +1,7 @@
 import React from 'react';
 // import the component
 import Mailchimp from 'react-mailchimp-form'
-//import BackgroundVector from '../assets/images/background-vector.svg'
+import BackgroundVector from '../assets/images/background-vector.svg'
  
 export default function Mailinglist() {
 

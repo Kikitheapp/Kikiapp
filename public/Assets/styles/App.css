@@ -347,27 +347,27 @@ h2.page-title {
 }
 
 .mail-chimp-form {
+  width: 20rem;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 0;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .mail-chimp-form input{
   border: solid 1px gray;
   border-radius: 20px;
   padding: .5rem;
-}
-
-.mail-chimp-form :nth-child(1) {
+  width: 20rem;
+  display: block;
+  text-indent: 2%; 
   margin-top:1rem;
 }
 
-.mail-chimp-form :nth-child(2) {
-  margin-top:1rem;
-}
-
-.mail-chimp-form :nth-child(3) {
-  margin-top:1rem;
+.dark-mode .mail-chimp-form input {
+  background-color: var(--charcoal);
+  color: white;
 }
 
 .mail-chimp-form button {
@@ -376,7 +376,6 @@ h2.page-title {
   border: none;
   border-radius: 20px;
   margin-top: 1rem;
-  margin-right: 2rem;
   padding: .5rem 1rem;
   align-self: end;
 }
