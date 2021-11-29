@@ -447,12 +447,13 @@ label {
   }
 
   .Bio {
-    background: #30c3cd;
-    margin-left: 2%;
-    padding: 10px;
-    color: white;
-    width: 30rem;
-    margin-top: 2%;
+	background: #30c3cd;
+	margin-left: 2%;
+	padding: 10px;
+	color: white;
+	width: 30rem;
+	margin-top: 2%;
+  margin-bottom: 2rem;
   }
 
   .dark-mode .Bio {
@@ -464,7 +465,8 @@ label {
   }
   
   .bio-img {
-	  width: 100%;
+  margin-top: 1rem;
+	width: 100%;
   }
   .content {
 	  width: 90%;

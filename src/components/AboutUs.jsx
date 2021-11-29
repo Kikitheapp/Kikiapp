@@ -100,37 +100,6 @@ const AboutUs = () => {
               </div>
             </div>
             <div className='Bio grow'>
-              <h4>Shanice Bailey (She, Her, Hers)</h4>
-              <img
-                className='bio-img'
-                src='./Assets/images/Shanice.jpg'
-                alt='Shanice Bailey (Intern)'
-              ></img>
-              {'\n'}
-              <h3>Writer and Researcher</h3>
-              <div className='about-us-content'>
-                <p>
-                  Shanice is a black queer curator and cultural studies scholar
-                  based in the NYC area. As someone who spent her formative
-                  years covertly scrolling through gURL.com, she&apos;s excited to
-                  help build this new sex-positive digital space. She&apos;s
-                  passionate about queer history, internet culture, camp, filth,
-                  and Dolly Parton, her toothless chihuahua.
-                </p>
-                {'\n'}
-                {'\n'}
-                Instagram:{' '}
-                <a
-                  id='about-links'
-                  href='https:www.instagram.com/uvul.a/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  @uvul.a{' '}
-                </a>
-              </div>
-            </div>
-            <div className='Bio grow'>
               <h4>Nicholas Frattaroli (He, Him, His)</h4>
               <img
                 className='bio-img'
@@ -235,29 +204,6 @@ const AboutUs = () => {
               </div>{' '}
             </div>{' '}
             <div className='Bio grow'>
-              <h4>Fiona Mustain (She, Her, Hers) </h4>{' '}
-              <img
-                className='bio-img'
-                src='./Assets/images/Mustain.Fiona.Middlebury.03.JPG'
-                alt='Fiona Mustain (Ux Designer)'
-              ></img>
-              {'\n'}
-              <h3>UX Designer</h3>
-              <div className='about-us-content'>
-                <p>
-                  Fiona is a UX designer based in Austin, Texas with a
-                  background in Architecture and Political Science. As a
-                  designer, her goal is to create a positive impact. She is
-                  excited to help design and build a positive space to bring
-                  sexual health to the LGBTG+ community. Apart from being on
-                  Figma, she is passionate about traveling, cooking, and
-                  reading.
-                  {'\n'}
-                </p>
-                {'\n'}
-              </div>
-            </div>
-            <div className='Bio grow'>
               <h4>Jesse Green (They/Them)</h4>
               <img
                 className='bio-img'
@@ -286,67 +232,6 @@ const AboutUs = () => {
                   href='https://www.instagram.com/queer_moonchild/'
                 >
                   @queer_moonchild
-                </a>
-              </div>
-            </div>
-            <div className='Bio grow'>
-              <h4>Ricardo Martini (He, Him, His)</h4>
-              <img
-                className='bio-img'
-                src='./Assets/images/Ricardo2.png'
-                alt='Ricardo Martini(Web Developer)'
-              ></img>
-              {'\n'}
-              <h3>Web Developer</h3>
-              <div className='content'>
-                <p>
-                  Ricardo is a Software Engineer currently based in Jersey City, NJ.
-                  He is excited to contribute his knowledge in React and experience with full-stack engineering to build up the Kiki app
-                  and website with the rest of the dev team. Ricardo believes that accesibility to knowledge is the key in growing communities and people.
-                  When Ricardo is not nose deep in code, he is playing Pokemon, playing with his cat Anastasia, camping in the Catskills,
-                  or watching RuPaul&apos;s Drag Race/ surrporting local NYC drag queens.
-                </p>
-                {'\n'}
-                {'\n'}
-                LinkedIn:{' '}
-                <a
-                  id='about-links'
-                  href='https://www.linkedin.com/in/ricardo-martini/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  ricardo-martini{' '}
-                </a>
-                <br></br>
-                Portfolio:{' '}
-                <a
-                  id='about-links'
-                  href='https://www.ricardomartini.dev/'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  {' '}
-                  ricardomartini.dev
-                </a>
-                <br></br>
-                Github:{' '}
-                <a
-                  id='about-links'
-                  href='https://github.com/mrricardom'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  mrricardom{' '}
-                </a>
-                <br></br>
-                Medium:{' '}
-                <a
-                  id='about-links'
-                  href='https://medium.com/@ricmartini16'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  ricmartini16{' '}
                 </a>
               </div>
             </div>
