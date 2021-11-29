@@ -13,7 +13,7 @@ const Accordion = ({ title, children }) => {
                 </div>
               <div className="col">      
                 <h3
-                  className={`accordion-title ${isOpen ? "open" : ""}`}
+                  className={` ${isOpen ? "open" : ""}`}
                   onClick={() => setOpen(!isOpen)}
                   >
                   {title}
