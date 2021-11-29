@@ -201,7 +201,10 @@ footer h3 {
 .App h2, .App h3 {
   font-weight: 900;
 }
- 
+
+.navbar {
+  padding: .5rem 1rem 0 1rem;
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: var(--font-color);
@@ -295,12 +298,13 @@ h2.page-title {
 	transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
   }
   
-  .accordion-title {
+.accordion-title {
 	cursor: pointer;
 	padding: 0.5em 1.5em;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;}
+	align-items: center;
+}
  
   .accordion-title:hover h3 {
     color: var(--dark-orange);
@@ -411,27 +415,28 @@ label {
 	}
 
   .header-1 {
-	text-align: center;
+	  text-align: center;
   }
   
   span {
-	padding-top: 2%;
+	  padding-top: 2%;
   }
   
   .grow {
-	transition: all 0.3s ease-in-out;
+	  transition: all 0.3s ease-in-out;
   }
   
   .grow:hover {
-	transform: scale(1.03);
+	  transform: scale(1.03);
   }
   
   .about-us-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	margin-left: 5%;
-	margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3rem;
   }
   
   .block {
@@ -456,8 +461,8 @@ label {
   }
 
   .Bio h4 {
-	height: 4rem;
-	font-weight: bold;
+    height: 4rem;
+	  font-weight: bold;
   }
   
   .bio-img {
@@ -465,10 +470,10 @@ label {
 	width: 100%;
   }
   .content {
-	width: 90%;
+	  width: 90%;
   }
   #about-links {
-	color: white !important;
+	  color: white !important;
   }
 
   .dark-mode #about-links {

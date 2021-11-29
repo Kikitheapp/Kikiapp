@@ -44,7 +44,7 @@ const FAQ = () => {
                 <Accordion title="Sexual Pleasure">
                     <ul>
                         <li>
-                            <a a href='https://kikiapp.medium.com/intro-to-anal-sex-fd609bc73442' target='_blank' rel='noopener noreferrer'>
+                            <a href='https://kikiapp.medium.com/intro-to-anal-sex-fd609bc73442' target='_blank' rel='noopener noreferrer'>
                                 Intro to Anal
                             </a>
                             <p>A beginner’s guide to butt stuff, from prostrate pleasure to dealing with the messy bits.</p>
