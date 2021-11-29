@@ -12,7 +12,7 @@ export default function Mailinglist() {
                 <h2 className="text-center">Join the Kiki mailing list</h2>
                 
                 <Mailchimp
-                    action='https://kikiapp.us17.list-manage.com/subscribe/post?u=20a5ea56f2d052e902228a598&amp;id=fc23b82f9b'
+                    action={process.env.REACT_APP_MAIL_CHIMP}
                     fields={[
                         {
                             name: 'EMAIL',
