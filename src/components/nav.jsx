@@ -29,13 +29,23 @@ export default function Navbar() {
                 className='nav-link'
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://medium.com/@kikiapp'>
+                href='https://kikiapp.medium.com/'>
                 <p>Visit our blog</p>
               </a>
             </li>
             <li className='nav-item'>
+              <Link className='nav-link' to='/MeetTheSexToys'>
+                <p>Meet The Sex Toys</p>
+              </Link>
+            </li>
+            <li className='nav-item'>
               <Link className='nav-link' to='/PrEP'>
                 <p>PrEP Q&amp;A</p>
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/Faq'>
+                <p>FAQ</p>
               </Link>
             </li>
             <li className='nav-item'>

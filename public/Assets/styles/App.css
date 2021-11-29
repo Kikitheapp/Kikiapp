@@ -6,6 +6,9 @@
   --select-background: white;
   --charcoal: #212121;
   --dark-orange: #e8804c;
+  --light-orange: #FFD399;
+  --bright-orange: #FF9000;
+  --light-gray: #F0EDED;
 }
 
 
@@ -30,13 +33,11 @@ html, body {
 
 .theme-switcher {
   background-color: var(--select-background);
-  position: absolute;
   color: var(--font-color);
   padding: 2px;
-  right: 35px;
-  top: 80px;
   border-radius: 10px;
-}
+  margin: 0 1rem 1rem 0;
+} 
 
 body {
   color: var(--font-color);
@@ -64,7 +65,6 @@ nav li a {
   flex: 1 0 auto;
 }
 
-
 .mailinglistbtn {
   font-weight: 900;
   background-color: var(--dark-orange);
@@ -87,6 +87,7 @@ nav li a {
   clear: left;
   margin-top: 12%;
 }
+
 .homebtn{
   font-weight: 900;
   background-color: var(--dark-orange);
@@ -103,8 +104,21 @@ nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
+.blog-post-container {
+  background-color: var(--dark-orange);
+}
+
+.blog-post img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.blog-post h3 {
+  font-size: 1rem;
+}
+
 .content-container {
   clear: both;
 }
@@ -151,8 +165,32 @@ footer h3 {
   background-color: var(--peach-puff);
 }
 
+.bg-light-orange {
+  background-color: var(--light-orange);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
 .dark-mode .bg-peach-puff {
-  background-color: var(--charcoal);
+  background-color: var(--peach-puff);
+}
+.dark-mode h2{
+  color: white;
+}
+
+.dark-mode .bg-light-orange {
+  background-color: var(--dark-orange);
+}
+
+.dark-mode .bg-light-gray {
+  background-color: #414141;
+  color: white;
 }
 
 
@@ -163,7 +201,10 @@ footer h3 {
 .App h2, .App h3 {
   font-weight: 900;
 }
- 
+
+.navbar {
+  padding: .5rem 1rem 0 1rem;
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: var(--font-color);
@@ -193,6 +234,22 @@ footer h3 {
   background-color: var(--dark-orange)!important;
 }
 
+/*********************************************************************
+************************** Heading  **********************************
+**********************************************************************/
+
+h2.page-title {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 5rem 0 10rem 0;
+}
+
+
+.dark-mode .heading h2 {
+  color: var(--charcoal);
+}
+
+
 /***************************************************************************
   ************************** Homepage **************************************
   ***************************************************************************/
@@ -203,28 +260,19 @@ footer h3 {
 
 
 
+
 /***************************************************************************
-  ************************** PrEP Page ****************************************
+  ************************** PrEP Page & FAQ ****************************************
   ***************************************************************************/
-
-
 .accordion-page h2 {
   margin-right: -15px;
   margin-left: -15px;
   padding: 5rem 0 10rem 0;
 }
 
-.prep-people {
-  margin-top: -5rem;
-}
 
-.prep-person-1 {
-  padding-right: 5%;
-}
-
-.prep-person-2 {
-  padding-left: 5%;
-  margin-top: 1rem;
+.accordion-person{
+  height: 28rem;
 }
 
 .accordion-page i {
@@ -238,75 +286,7 @@ footer h3 {
 .accordion h3 {
 	margin-bottom: 0rem;
 }
-
-
-  
-  /***************************************************************************
-  ************************** Mailing List Page *******************************
-  ***************************************************************************/
-
-.header-2 {
-	font-weight: bolder;
-}
-
-.indicates-required {
-	font-family: 'Montserrat', sans-serif;
-	font-size: large !important ;
-	clear: both;
-}
-
-
-.logo {
-	display: flex;
-  justify-content: center;
-}
-
-#mc_embed_signup {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-label {
-	margin-left: 1%;
-	font-weight: bold;
-}
-
-  #mc_embed_signup {
-    flex: 1 0 auto;
-  }
-
-  #mc_embed_signup .mc-field-group input {
-    border-radius: 25px;
-    align-content: center;
-  }
-
-  #mc_embed_signup .mc-field-group {
-	  padding-bottom: 1% !important;
-  }
-
-  #mc_embed_signup .button {
-    background-color: var(--dark-orange) !important;
-    color: var(--charcoal) !important;
-    margin-left: 50% !important;
-    margin-right: 30% !important;
-    border-radius: 25px;
-  }
-  
-  .SectionContainer {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 1%;
-    font-size: x-large;
-  }
-  
-  
-  .wrapper{
-	  margin: 0 auto;
-  
-	}
-  
-  .accordion-item {
+.accordion-item {
 	overflow: hidden;
 	transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
 	height: auto;
@@ -318,12 +298,13 @@ label {
 	transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
   }
   
-  .accordion-title {
+.accordion-title {
 	cursor: pointer;
 	padding: 0.5em 1.5em;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;}
+	align-items: center;
+}
  
   .accordion-title:hover h3 {
     color: var(--dark-orange);
@@ -337,27 +318,125 @@ label {
     padding-top: 1em;
   }
 
-  .header-1 {
-	text-align: center;
+
+
+/***************************************************************************
+  ************************** Sex Toy Page ***********************************
+  ***************************************************************************/
+.sex-toys .card {
+  height: 100%;
+}
+
+.sex-toys .card img {
+  height: 15rem;
+  width: auto;
+  padding: 2rem;
+}
+  
+  /***************************************************************************
+  ************************** Mailing List Page *******************************
+  ***************************************************************************/
+
+.header-2 {
+	font-weight: bolder;
+  
+}
+
+.indicates-required {
+	font-family: 'Montserrat', sans-serif;
+	font-size: large !important ;
+	clear: both;
+  color:red;
+  text-align: center;
+}
+
+.mail-chimp-form {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.mail-chimp-form input{
+  border: solid 1px gray;
+  border-radius: 20px;
+  padding: .5rem;
+  width: 20rem;
+  display: block;
+  text-indent: 2%; 
+  margin-top:1rem;
+  margin-right: 3rem;
+}
+
+.dark-mode .mail-chimp-form input {
+  background-color: var(--charcoal);
+  color: white;
+}
+
+.mail-chimp-form button {
+  background-color: var(--dark-orange);
+  color: var(--charcoal);
+  border: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  align-self: end;
+  margin-right:1.5rem ;
+}
+
+.msg-alert{
+  text-align: center;
+  display: flex;
+}
+
+.logo {
+	display: flex;
+  justify-content: center;
+}
+
+label {
+	margin-left: 1%;
+	font-weight: bold;
   }
+
+  
+  .SectionContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    font-size: x-large;
+  }
+  
+  .wrapper{
+	  margin: 0 auto;
+  
+	}
+
+  .header-1 {
+	  text-align: center;
+  }
+  
   span {
-	padding-top: 2%;
+	  padding-top: 2%;
   }
   
   .grow {
-	transition: all 0.3s ease-in-out;
+	  transition: all 0.3s ease-in-out;
   }
   
   .grow:hover {
-	transform: scale(1.03);
+	  transform: scale(1.03);
   }
   
   .about-us-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	margin-left: 5%;
-	margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3rem;
   }
   
   .block {
@@ -374,25 +453,27 @@ label {
 	color: white;
 	width: 30rem;
 	margin-top: 2%;
+  margin-bottom: 2rem;
   }
 
   .dark-mode .Bio {
     color: var(--charcoal);
   }
 
-  h4{
-	height: 4rem;
-	font-weight: bold;
+  .Bio h4 {
+    height: 4rem;
+	  font-weight: bold;
   }
+  
   .bio-img {
-
+  margin-top: 1rem;
 	width: 100%;
   }
   .content {
-	width: 90%;
+	  width: 90%;
   }
   #about-links {
-	color: white !important;
+	  color: white !important;
   }
 
   .dark-mode #about-links {
@@ -406,20 +487,23 @@ label {
 /* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
-	h4{
+	.Bio h4{
     font-size: larger;
 		font-weight: bold;
   }
-	h3{
+	footer h3{
     font-size: larger;
   }
 
-	.accordion-page h2 {
+	h2.page-title {
     padding: 5rem 0 20rem 0;
   }
   
-  .prep-people {
+  .heading-people {
     margin-top: -18rem;
+  }
+  .mail-chimp-form button{
+    margin-right: 2rem;
   }
 }
 
@@ -439,6 +523,9 @@ label {
 
   .dark-mode .bg-placeholder {
     background-size: 0;
+  }
+  .mail-chimp-form button{
+    margin-right: 2rem;
   }
 
  }
