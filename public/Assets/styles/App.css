@@ -363,6 +363,7 @@ h2.page-title {
   display: block;
   text-indent: 2%; 
   margin-top:1rem;
+  margin-right: 3rem;
 }
 
 .dark-mode .mail-chimp-form input {
@@ -378,6 +379,7 @@ h2.page-title {
   margin-top: 1rem;
   padding: .5rem 1rem;
   align-self: end;
+  margin-right:1.5rem ;
 }
 
 .msg-alert{
@@ -494,6 +496,9 @@ label {
   .heading-people {
     margin-top: -18rem;
   }
+  .mail-chimp-form button{
+    margin-right: 2rem;
+  }
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -512,6 +517,9 @@ label {
 
   .dark-mode .bg-placeholder {
     background-size: 0;
+  }
+  .mail-chimp-form button{
+    margin-right: 2rem;
   }
 
  }
