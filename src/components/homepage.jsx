@@ -15,6 +15,8 @@ export default function homepage() {
                 <Link className='nav-link' to='/MailinglistForm'>
                     <button className="mailinglistbtn">Join our mailing list</button>
                 </Link>
+                <br/>
+                <h4>Sign up to get our free queer pleasure workbook!</h4>
             </div>
             <div className="col-md-6 home-people">
                 <div className="row pr-md-5">
