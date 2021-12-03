@@ -240,7 +240,6 @@ const AboutUs = () => {
             </div>
             <div className='Bio grow'>
               <h4>Amanda Lynn Castonguay (They/Them, She/Her)</h4>
-
               <img
                 className='bio-img'
                 src='./Assets/images/Amanda.jpg'
@@ -277,6 +276,35 @@ const AboutUs = () => {
                   rel='noopener noreferrer'
                 >
                  alcastonguay {' '}
+                </a>
+              </div>
+            </div>
+            <div className='Bio grow'>
+              <h4>Jill Bradshaw (They/Them)</h4>
+              <img
+                className='bio-img'
+                src='./Assets/images/Jill.jpg'
+                alt='Jill Bradshaw'
+              ></img>
+              {'\n'}
+              <h3>Marketing Assistant</h3>
+              <div className='about-us-content'>
+                <p>
+                Jill is a queer trans non-binary actor/writer based in NYC. Accessible sex education for all is something they are extremely passionate about 
+                so they are absolutely thrilled to be part of Kiki’s team. Besides Kiki, 
+                Jill is dedicated to bringing representation to entertainment and is currently 
+                developing a series focused on two non-binary leads set to shoot in the spring!
+                  {'\n'}
+                </p>
+                {'\n'}
+                Instagram:{' '}
+                <a
+                  id='about-links'
+                  href='https://www.instagram.com/thejillbradshaw/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  @thejillbradshaw{' '}
                 </a>
               </div>
             </div>
