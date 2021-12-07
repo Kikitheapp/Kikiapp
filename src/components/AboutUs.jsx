@@ -16,7 +16,7 @@ const AboutUs = () => {
         <a target='_blank' href='https://www.instagram.com/kikitheapp/' rel="noreferrer"> Instagram,</a>
         <a target='_blank' href='https://www.facebook.com/kikitheapp' rel="noreferrer"> Facebook,</a>
         <a target='_blank' href='https://twitter.com/kikitheapp' rel="noreferrer"> Twitter,</a>
-        and 
+        &nbsp;and 
         <a target='_blank' href='https://www.tiktok.com/@kikitheapp?' rel="noreferrer"> TikTok. </a>
         You can also join us on Patreon for exclusive content.
         </p>
