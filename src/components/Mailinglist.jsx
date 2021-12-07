@@ -9,7 +9,8 @@ export default function Mailinglist() {
     return (
         <div className="row p-5 justify-content-center">
             <div className="col-md-6 col-xl-4">
-                <h2 className="text-center">Join the Kiki mailing list</h2>
+                <h2 className="text-center">Join the Kiki For The Future™ mailing list
+                and get our free queer pleasure workbook!</h2>
                 
                 <Mailchimp
                     action={process.env.REACT_APP_MAIL_CHIMP}
