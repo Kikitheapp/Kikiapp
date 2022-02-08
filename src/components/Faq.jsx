@@ -69,7 +69,7 @@ const FAQ = () => {
                 <Accordion title="Relationships and Consent">
                     <ul>
                         <li>
-                            <a href='https://kikiapp.medium.com/what-you-need-to-know-about-birth-control-6ea439bdef2b' 
+                            <a href='https://medium.com/kiki-app/consent-is-mandatory-6faa308c7251' 
                                 target='_blank' rel='noopener noreferrer'>
                                 Consent Is Mandatory
                             </a>
