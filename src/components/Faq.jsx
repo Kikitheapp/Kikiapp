@@ -47,7 +47,7 @@ const FAQ = () => {
                             <a href='https://kikiapp.medium.com/intro-to-anal-sex-fd609bc73442' target='_blank' rel='noopener noreferrer'>
                                 Intro to Anal
                             </a>
-                            <p>A beginner’s guide to butt stuff, from prostrate pleasure to dealing with the messy bits.</p>
+                            <p>A beginner’s guide to butt stuff, from prostate pleasure to dealing with the messy bits.</p>
                         </li>
                     </ul>
                     <img src={sexualPleasurePerson} className="img-fluid align-self-center accordion-person" 
@@ -69,7 +69,7 @@ const FAQ = () => {
                 <Accordion title="Relationships and Consent">
                     <ul>
                         <li>
-                            <a href='https://kikiapp.medium.com/what-you-need-to-know-about-birth-control-6ea439bdef2b' 
+                            <a href='https://medium.com/kiki-app/consent-is-mandatory-6faa308c7251' 
                                 target='_blank' rel='noopener noreferrer'>
                                 Consent Is Mandatory
                             </a>
