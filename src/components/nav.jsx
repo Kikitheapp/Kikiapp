@@ -54,6 +54,14 @@ export default function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
+            <a className='nav-link'
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://kikitheapp.myshopify.com'>
+                <p>Shop</p>
+                </a>
+            </li>
+            <li className='nav-item'>
               <Link className='nav-link' to='/MailinglistForm'>
                 <p>Join our mailing list</p>
               </Link>
