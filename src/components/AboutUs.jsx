@@ -283,11 +283,7 @@ const AboutUs = () => {
               <h4>Jill Bradshaw (They/Them)</h4>
               <img
                 className='bio-img'
-<<<<<<< HEAD
-                src='./Assets/images/jill.jpg'
-=======
                 src='./Assets/images/Jill.JPG'
->>>>>>> main
                 alt='Jill Bradshaw'
               ></img>
               {'\n'}
