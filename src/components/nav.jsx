@@ -24,6 +24,17 @@ export default function Navbar() {
         </button>
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className=' navbar-nav ml-auto'>
+          <li className='nav-item'>
+          <div className="subnav">
+          <button className="subnavbtn">Get Started <i className="fa fa-caret-down"></i></button>
+          <div className="subnav-content">
+      <a href="/ aboutUs">About Us</a>
+      <a href="/Faq">FAQ</a>
+      <Link className='nav-link' to='/PrEP'>PrEP Q&amp;A</Link>
+      <a> Meet the sex toys</a>
+    </div>
+  </div>
+          </li>
             <li className='nav-item'>
               <a
                 className='nav-link'
