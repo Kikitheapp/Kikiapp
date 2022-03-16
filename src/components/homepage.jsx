@@ -17,7 +17,7 @@ export default function homepage() {
     async function getFeed() {
         try{
             let feedInfo = [];
-            let thisFeed = await parser.parseURL('https://cors-anywhere.herokuapp.com/medium.com/feed/@kikiapp');
+            let thisFeed = await parser.parseURL('/feed/@kikiapp');
             for(let i=0; i<3; i++){
                 let item = thisFeed.items[i];
                 let story = {
