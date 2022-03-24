@@ -28,11 +28,11 @@ export default function Navbar() {
           <div className="subnav">
           <button className="subnavbtn">Get Started <i className="fa fa-caret-down"></i></button>
           <div className="subnav-content">
-      <a href="/ aboutUs">About Us</a>
-      <a href="/Faq">FAQ</a>
-      <Link className='nav-link' to='/PrEP'>PrEP Q&amp;A</Link>
-      <a> Meet the sex toys</a>
-    </div>
+          <Link className='nav-link' to='/aboutus'>About Us</Link>
+          <Link className='nav-link' to='/faq'>FAQ</Link>
+          <Link className='nav-link' to='/PrEP'>PrEP Q&amp;A</Link>
+          <Link className='nav-link' to='/MeetTheSexToys'> Meet the sex toys</Link>
+        </div>
   </div>
           </li>
             <li className='nav-item'>
@@ -43,26 +43,6 @@ export default function Navbar() {
                 href='https://kikiapp.medium.com/'>
                 <p>Visit our blog</p>
               </a>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/MeetTheSexToys'>
-                <p>Meet the sex toys</p>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/PrEP'>
-                <p>PrEP Q&amp;A</p>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/Faq'>
-                <p>FAQ</p>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/aboutUs'>
-                <p>About us</p>
-              </Link>
             </li>
             <li className='nav-item'>
             <a className='nav-link'
