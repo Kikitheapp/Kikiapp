@@ -22,13 +22,14 @@ export default function Navbar() {
         >
           <span className='navbar-toggler-icon'></span>
         </button>
-        <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-          <ul className=' navbar-nav ml-auto'>
+      <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+        <ul className=' navbar-nav ml-auto'>
+
           <li className='nav-item'>
           <div className="subnav">
           <button className="subnavbtn">Get Started <i className="fa fa-caret-down"></i></button>
           <div className="subnav-content">
-          <Link className='nav-link' to='/aboutus'>About Us</Link>
+          <Link className='nav-link nav-item' to='/aboutus'>About Us</Link>
           <Link className='nav-link' to='/faq'>FAQ</Link>
           <Link className='nav-link' to='/PrEP'>PrEP Q&amp;A</Link>
           <Link className='nav-link' to='/MeetTheSexToys'> Meet the sex toys</Link>

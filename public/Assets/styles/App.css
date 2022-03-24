@@ -60,6 +60,51 @@ nav li a {
   padding: 1px 10px;
   text-decoration: none;
 }
+/* Subnav */
+.subnav:hover .subnav-content {
+  display: block;
+}
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  border: none;
+  outline: none;
+  padding: 1px 10px;
+  padding-top: 7%;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+ .subnav:hover .subnavbtn {
+color:var(--dark-orange)
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+ margin: auto;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: #e8804c;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  color: #e8804c;
+}
 
 #root {
   flex: 1 0 auto;
@@ -210,7 +255,7 @@ footer h3 {
   color: var(--font-color);
 }
 
-.navbar-light .navbar-nav .nav-item :hover{
+.navbar-light .navbar-nav .nav-item .nav-link :hover{
   color: var(--dark-orange);
 }
 
