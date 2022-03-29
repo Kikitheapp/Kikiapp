@@ -1,5 +1,4 @@
 import React from "react";
-import Parser from 'rss-parser';
 import HomePerson1 from "../assets/images/home-person-1.svg";
 import HomePerson2 from "../assets/images/home-person-2.svg";
 import BackgroundVector from "../assets/images/background-vector.svg";
@@ -7,7 +6,8 @@ import { Link } from 'react-router-dom'
 
 export default function homepage() {
     
-    const parser = new Parser();
+    let Parser = require('rss-parser');
+    let parser = new Parser();
     const [feed, setFeed] = React.useState([]);
 
     React.useEffect(() => {
