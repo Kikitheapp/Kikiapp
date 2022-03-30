@@ -60,14 +60,17 @@ nav li a {
   padding: 1px 10px;
   text-decoration: none;
 }
+
 /* Subnav */
 .subnav:hover .subnav-content {
   display: block;
 }
 /* The subnavigation menu */
 .subnav {
-  float: left;
+  border: 0px !important;
   overflow: hidden;
+  margin-bottom: 2%;
+ text-align: center;
 }
 
 /* Subnav button */

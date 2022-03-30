@@ -25,16 +25,16 @@ export default function Navbar() {
       <div className='collapse navbar-collapse' id='navbarSupportedContent'>
         <ul className=' navbar-nav ml-auto'>
 
-          <li className='nav-item'>
+          <li className='nav-item dropdown'>
           <div className="subnav">
-          <button className="subnavbtn">Get Started <i className="fa fa-caret-down"></i></button>
-          <div className="subnav-content">
-          <Link className='nav-link nav-item' to='/aboutus'>About Us</Link>
-          <Link className='nav-link' to='/faq'>FAQ</Link>
-          <Link className='nav-link' to='/PrEP'>PrEP Q&amp;A</Link>
-          <Link className='nav-link' to='/MeetTheSexToys'> Meet the sex toys</Link>
+          <button className="subnavbtn dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Get Started </button>
+          <div className=" subnav subnav-content dropdown-menu" aria-labelledby="navbarDropdown">
+          <Link className='nav-link dropdown-item' to='/aboutus'>About Us</Link>
+          <Link className='nav-link dropdown-item' to='/faq'>FAQ</Link>
+          <Link className='nav-link dropdown-item' to='/PrEP'>PrEP Q&amp;A</Link>
+          <Link className='nav-link dropdown-item' to='/MeetTheSexToys'> Meet the sex toys</Link>
         </div>
-  </div>
+        </div>
           </li>
             <li className='nav-item'>
               <a
@@ -59,7 +59,7 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-        </div>
+          </div>
       </nav>
     </div>
   )
