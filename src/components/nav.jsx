@@ -22,44 +22,43 @@ export default function Navbar() {
         >
           <span className='navbar-toggler-icon'></span>
         </button>
-        <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-          <ul className=' navbar-nav ml-auto'>
+      <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+        <ul className=' navbar-nav ml-auto'>
+          <li className='nav-item dropdown'>
+            <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> 
+              Get Started 
+            </a>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link className='dropdown-item' to='/aboutus'>About Us</Link>
+              <Link className='dropdown-item' to='/faq'>FAQ</Link>
+              <Link className='dropdown-item' to='/PrEP'>PrEP Q&amp;A</Link>
+              <Link className='dropdown-item' to='/MeetTheSexToys'> Meet the sex toys</Link>
+            </div>
+          </li>
             <li className='nav-item'>
               <a
                 className='nav-link'
                 target='_blank'
                 rel='noopener noreferrer'
                 href='https://kikiapp.medium.com/'>
-                <p>Visit our blog</p>
+                Visit our blog
               </a>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/MeetTheSexToys'>
-                <p>Meet the sex toys</p>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/PrEP'>
-                <p>PrEP Q&amp;A</p>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/Faq'>
-                <p>FAQ</p>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link className='nav-link' to='/aboutUs'>
-                <p>About us</p>
-              </Link>
+            <a className='nav-link'
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://kikitheapp.myshopify.com'>
+                Shop
+                </a>
             </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/MailinglistForm'>
-                <p>Join our mailing list</p>
+                Join our mailing list
               </Link>
             </li>
           </ul>
-        </div>
+          </div>
       </nav>
     </div>
   )
