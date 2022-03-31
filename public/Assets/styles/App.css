@@ -226,6 +226,7 @@ footer h3 {
 
 .dropdown-menu {
   text-align: center;
+  border: none;
 }
 
 .bg-primary {
@@ -550,6 +551,7 @@ label {
 
   .dropdown-menu {
     text-align: left;
+    border: 1px solid rgba(0,0,0,.15);
   }
 
  }
