@@ -1,6 +1,7 @@
 {
   "name": "kikiapp",
-  "version": "1.0.3",
+  "version": "1.1.0",
+
   "private": true,
   "author": "KikiappTeam",
   "dependencies": {
