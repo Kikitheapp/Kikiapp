@@ -1,0 +1,87 @@
+:root {
+  --peach-puff: #f6ccb7;
+  --primary-color: #30C3CD;
+  --secondary-color: #ACE7EB;
+  --background-color: white;
+  --select-background: white;
+  --charcoal: #212121;
+  --dark-orange: #e8804c;
+  --light-orange: #FFD399;
+  --bright-orange: #FF9000;
+  --light-gray: #F0EDED;
+}
+
+html, body {
+  height: 100%;
+  --font-color: var(--charcoal);
+  margin: 0;
+}
+
+body {
+  color: var(--font-color);
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-color);
+}
+
+.dark-mode {
+  --background-color: var(--charcoal);
+  --font-color: white;
+  --select-background: var(--charcoal);
+}
+
+/*********************************************************************
+************************** Colors and Utilities **********************
+**********************************************************************/
+.bg-peach-puff {
+  background-color: var(--peach-puff);
+}
+
+.bg-light-orange {
+  background-color: var(--light-orange);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.dark-mode .bg-peach-puff {
+  background-color: var(--peach-puff);
+}
+
+.dark-mode h2{
+  color: white;
+}
+
+.dark-mode .bg-light-orange {
+  background-color: var(--dark-orange);
+}
+
+.dark-mode .bg-light-gray {
+  background-color: #414141;
+  color: white;
+}
+
+/*********************************************************************
+************************** Bootstrap Overrides ***********************
+**********************************************************************/
+
+h2, h3 {
+  font-weight: 900;
+}
+
+.bg-primary {
+  background-color: var(--primary-color)!important;
+ }
+ 
+ .bg-secondary {
+   background-color: var(--secondary-color)!important;
+ }
+ 
+ .dark-mode .bg-primary {
+   background-color: var(--dark-orange)!important;
+ }
+

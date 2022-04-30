@@ -1,0 +1,42 @@
+/*********************************************************************
+************************** Nav                 ***********************
+**********************************************************************/
+nav ul {
+  font-family: 'Candal', sans-serif;
+}
+
+
+/************************** Bootstrap Overrides ***********************/
+
+.navbar {
+  padding: .5rem 1rem 0 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--font-color);
+}
+
+.navbar-light .navbar-nav .nav-item :visited{
+  color: var(--font-color);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.nav-link:hover, .dropdown-item:hover, .dropdown-item:focus {
+  color:var(--dark-orange) !important;
+  background: none !important;
+}
+
+.dropdown-menu {
+  text-align: center;
+  border: none;
+}
+
+@media (min-width: 992px){
+  .dropdown-menu {
+    text-align: left;
+    border: 1px solid rgba(0,0,0,.15);
+  }
+}
