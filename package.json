@@ -16,7 +16,8 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.0",
-    "rss-parser": "^3.12.0"
+    "rss-parser": "^3.12.0",
+    "async": ">=2.6.4"
   },
   "scripts": {
     "update-linter": "npx install-peerdeps --dev eslint-plugin-react",
@@ -49,7 +50,9 @@
     "immer": ">=9.0.6",
     "nth-check": ">=2.0.1",
     "postcss": ">=8.2.13",
-    "react-mailchimp-form": "^1.0.2"
+    "react-mailchimp-form": "^1.0.2",
+    "async": ">=2.6.4"
+
   },
   "homepage": "https://kikitheapp.com",
   "proxy": "https://medium.com/"
