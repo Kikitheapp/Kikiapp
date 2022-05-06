@@ -27,5 +27,8 @@
     "react-dom": "^17.0.1",
     "react-icons": "^4.3.1",
     "react-mailchimp-form": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^7.0.1"
   }
 }
