@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "update-linter": "npx install-peerdeps --dev eslint-plugin-react",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -29,6 +30,7 @@
     "react-mailchimp-form": "^1.0.2"
   },
   "devDependencies": {
-    "eslint-config-react-app": "^7.0.1"
+    "eslint": "^8.14.0",
+    "eslint-plugin-react": "^7.29.4"
   }
 }
