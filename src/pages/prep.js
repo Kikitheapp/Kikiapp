@@ -60,10 +60,10 @@ const Prep = () => {
           <Accordion title="Sources">
               <div className="sources-links">
                   <ul>
-                      <li>CDC. (2020, November 3). About Prep. HIV Basics.<a href="https://www.cdc.gov/hiv/basics/prep/about-prep.html" target="_blank" rel="noopener noreferrer">
+                      <li>CDC. (2020, November 3). About Prep. HIV Basics. <a href="https://www.cdc.gov/hiv/basics/prep/about-prep.html" target="_blank" rel="noopener noreferrer">
                           https://www.cdc.gov/hiv/basics/prep/about-prep.html</a>
                       </li>
-                      <li>Planned Parenthood. (n.d.). What Is PrEP. Planned Parenthood. 
+                      <li>Planned Parenthood. (n.d.). What Is PrEP. Planned Parenthood.&nbsp;
                           <a href="https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep" target="_blank" rel="noopener noreferrer">
                           https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep </a>
                       </li>

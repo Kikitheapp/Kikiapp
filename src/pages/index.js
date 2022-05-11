@@ -6,7 +6,7 @@ import BackgroundVector from "../assets/images/background-vector.svg";
 import { Link } from 'gatsby';
 import './index.css';
 
-const IndexPage = () => {
+const index = () => {
   return (
     <div>
       <Layout pageTitle='Kiki for the Future'>
@@ -15,7 +15,7 @@ const IndexPage = () => {
           <div className="row align-items-center px-5 pb-5">
             <div className="col-md-6 text-center text-md-left pl-md-5"> 
               <h2 className="text-start">Get a fresh take on what you didn&apos;t learn in sex-ed.</h2>
-              <Link className='nav-link' to='/MailinglistForm'>
+              <Link className='nav-link' to='/mailinglist'>
                 <button type="button" className="btn btn-primary mailinglistbtn">Join our mailing list</button>
               </Link>
               <br/>
@@ -38,4 +38,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage;
+export default index;

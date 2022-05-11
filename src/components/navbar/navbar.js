@@ -54,8 +54,7 @@ const Navbar = ()=> {
                 </a>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/mailinglist
-              '>
+              <Link className='nav-link' to='/mailinglist'>
                 Join our mailing list
               </Link>
             </li>

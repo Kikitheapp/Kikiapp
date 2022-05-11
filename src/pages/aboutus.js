@@ -1,6 +1,7 @@
 import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from 'gatsby';
 
 
 import './aboutus.css';
@@ -13,22 +14,21 @@ const AboutUs = () => {
           <p>
           We are Kiki For The Future™. We are creating an app that curates sexual health resources for the queer community. 
           We are a platform for queer sexual education, for sexual liberation, for knowledge, for power, joy, freedom, and connection. 
-          Stay tuned for the launch of our app. For now, check out our
-          <a target='_blank' href='https://medium.com/kiki-app' rel="noreferrer"> blog </a>, 
-          sign up for our
-          <a target='_blank' href='https://kikitheapp.com/#/MailinglistForm' rel="noreferrer"> newsletter</a>, 
-          and follow us on
-          <a target='_blank' href='https://www.instagram.com/kikitheapp/' rel="noreferrer"> Instagram,</a>
-          <a target='_blank' href='https://www.facebook.com/kikitheapp' rel="noreferrer"> Facebook,</a>
-          <a target='_blank' href='https://twitter.com/kikitheapp' rel="noreferrer"> Twitter,</a>
-          &nbsp;and 
-          <a target='_blank' href='https://www.tiktok.com/@kikitheapp?' rel="noreferrer"> TikTok. </a>
+          Stay tuned for the launch of our app. For now, check out our&nbsp;
+          <a target='_blank' href='https://medium.com/kiki-app' rel="noreferrer">blog</a>, 
+          sign up for our&nbsp;
+          <Link target='_blank' to='/mailinglist' rel="noreferrer">newsletter</Link>, and follow us on&nbsp;
+          <a target='_blank' href='https://www.instagram.com/kikitheapp/' rel="noreferrer">Instagram</a>,&nbsp;
+          <a target='_blank' href='https://www.facebook.com/kikitheapp' rel="noreferrer">Facebook</a>,&nbsp;
+          <a target='_blank' href='https://twitter.com/kikitheapp' rel="noreferrer">Twitter</a>,
+          &nbsp;and&nbsp;
+          <a target='_blank' href='https://www.tiktok.com/@kikitheapp?' rel="noreferrer">TikTok</a>.
           You can also join us on Patreon for exclusive content.
           </p>
           <p>
           Kiki For The Future™ was founded in 2020 to address the gap in sexual health resources and education for the LGBTQIA+ community. 
-          This lack of education starts early:
-          <a target='_blank' href='https://www.glsen.org/research/2019-national-school-climate-survey' rel="noreferrer"> one study </a>
+          This lack of education starts early:&nbsp;
+          <a target='_blank' href='https://www.glsen.org/research/2019-national-school-climate-survey' rel="noreferrer">one study</a>&nbsp;
           found that fewer than 8% of LGBT youth have access to positive representations 
           of LGBT sexuality in their sex ed classes. This renders us essentially invisible and creates a barrier to having safe, 
           pleasurable sex lives. We also face healthcare disparities like doctors who are not educated in queer sexual health needs 
@@ -206,8 +206,12 @@ const AboutUs = () => {
                   rel='noopener noreferrer'>Amanda Castonguay</a>
                 <br></br>
                 Github:{' '}
-          
                 <a href='https://github.com/alcastonguay' target='_blank'
+                  rel='noopener noreferrer'>alcastonguay
+                </a>
+                <br></br>
+                Portfolio:{' '}
+                <a href='https://amandalynn.media' target='_blank'
                   rel='noopener noreferrer'>alcastonguay
                 </a>
               </p>
