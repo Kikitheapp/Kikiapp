@@ -1,0 +1,9 @@
+.sex-toys .card {
+  height: 100%;
+}
+
+.sex-toys .card img {
+  height: 15rem;
+  width: auto;
+  padding: 2rem;
+}

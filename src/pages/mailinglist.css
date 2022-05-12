@@ -1,0 +1,40 @@
+.mail-chimp-form {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.mail-chimp-form input{
+  border: solid 1px gray;
+  border-radius: 20px;
+  padding: .5rem;
+  width: 20rem;
+  display: block;
+  text-indent: 2%; 
+  margin-top:1rem;
+  margin-right: 3rem;
+}
+
+.dark-mode .mail-chimp-form input {
+  background-color: var(--charcoal);
+  color: white;
+}
+
+.mail-chimp-form button {
+  background-color: var(--dark-orange);
+  color: var(--charcoal);
+  border: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  align-self: end;
+  margin-right:1.5rem ;
+}
+
+.msg-alert{
+  text-align: center;
+  display: flex;
+}

@@ -1,0 +1,20 @@
+h2.page-title {
+  margin-right: -12px;
+  margin-left: -12px;
+  padding: 5rem 0 10rem 0;
+}
+
+
+.dark-mode .heading h2 {
+  color: var(--charcoal);
+}
+
+@media (min-width: 576px) {
+  h2.page-title {
+    padding: 5rem 0 20rem 0;
+  }
+
+  .heading-people {
+    margin-top: -18rem;
+  }
+}
