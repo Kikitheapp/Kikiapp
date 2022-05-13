@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Navbar from '../../components/navbar/Navbar';
+import Navbar from '../../components/navbar/navbar';
 import ThemeSwitcher from '../../components/themeswitcher/theme-switcher';
 import './layout.css';
 import { FaFacebookSquare } from 'react-icons/fa';
