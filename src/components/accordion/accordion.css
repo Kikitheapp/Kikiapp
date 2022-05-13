@@ -1,0 +1,54 @@
+.accordion-page h2 {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 5rem 0 10rem 0;
+}
+
+.accordion-person {
+  height: 28rem;
+}
+
+.accordion-icon {
+  font-size: 1.75rem;
+  color: #30C3CD;
+}
+
+.accordion-icon svg {
+	margin-bottom: .2em;
+}
+
+.accordion-title h3 {
+	margin-bottom: 0rem;
+}
+
+.accordion-body {
+	overflow: hidden;
+	transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+	height: auto;
+	max-height: 9999px;
+}
+  
+.accordion-body.collapsed {
+	max-height: 0;
+	transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+  
+.accordion-title {
+	cursor: pointer;
+	padding: 0.5em 1.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+ 
+.accordion-title:hover h3 {
+  color: var(--dark-orange);
+}
+
+.accordion-content {
+  padding: 1em 1.5em;
+}
+
+.accordion-content li {
+  padding-top: 1em;
+}

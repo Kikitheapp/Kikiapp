@@ -1,0 +1,33 @@
+.about-kiki {
+  font-size: x-large;
+}
+
+.block {
+  height: 100px;
+  width: 100%;
+  background: var(--dark-orange);
+  margin-bottom: 2%;
+}
+
+.bio {
+  background: #30c3cd;
+  padding: 12px 24px;
+  color: white;
+  height: 100%;
+}
+
+.dark-mode .bio {
+  color: var(--charcoal);
+}
+
+.bio-img {
+  margin: 1rem 0;
+}
+
+.bio a {
+  color: white !important;
+}
+
+.dark-mode .bio a {
+  color: var(--charcoal) !important;
+}
