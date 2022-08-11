@@ -221,7 +221,7 @@ const AboutUs = () => {
         <div className=' col-lg-5 col-xl-4 about-us-container'>
           <div className='bio grow'>
           <h4>Jill Bradshaw (They/Them)</h4>
-            <StaticImage className='bio-img' src='../assets/images/aboutus/jill.jpg'
+            <StaticImage className='bio-img' aspectRatio='1' src='../assets/images/aboutus/jill.jpg'
               alt='Jill Bradshaw (Marketing Assistant)'></StaticImage>
             <h3>Marketing Assistant</h3>
             <div className='about-us-content'>

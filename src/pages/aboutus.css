@@ -31,3 +31,8 @@
 .dark-mode .bio a {
   color: var(--charcoal) !important;
 }
+
+main .g-5 {
+  margin-left: 0;
+  margin-right: 0;
+}
