@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "update-linter": "npm update eslint eslint-plugin-react --save-dev",
+    "update-linter": "npm update eslint eslint-plugin-react --save-dev --legacy-peer-deps",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
