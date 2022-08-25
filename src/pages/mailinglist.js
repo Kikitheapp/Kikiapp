@@ -14,7 +14,7 @@ const Mailinglist = () => {
                     and get our free queer pleasure workbook!</h2>
                     
                     <Mailchimp
-                        action={process.env.REACT_APP_MAIL_CHIMP}
+                        action={process.env.GATSBY_MAILCHIMP}
                         fields={[
                             {
                                 name: 'EMAIL',

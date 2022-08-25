@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     siteUrl: `https://kikitheapp.com/#/`,
@@ -15,8 +19,19 @@ module.exports = {
         background_color: `#30C3CD`,
         theme_color: `#30C3CD`,
         display: `standalone`,
-        icon: 'src/assets/images/kikilogo1.png',
+        icon: './src/assets/images/kikilogo1.png',
         icons: [{src: `/favicons/android-chrome-32x32.png`, sizes: '32x32', type: 'image/png'}]
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-favicons',
+      options: {
+        logo: './src/assets/images/kikilogo1.png',
+        appName: 'My Website',
+        background: '#fff',
+        icons: {
+          favicons: true
+        }
       }
     }
   ]
