@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "update-linter": "npx install-peerdeps --dev eslint-plugin-react",
+    "update-linter": "npm update eslint eslint-plugin-react --save-dev",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "eslint": "^8.22.0",
-    "eslint-plugin-react": "^7.30.1"
+    "eslint-plugin-react": "^7.31.0"
   }
 }
