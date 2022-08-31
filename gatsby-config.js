@@ -7,7 +7,15 @@ module.exports = {
     siteUrl: `https://kikitheapp.com/#/`,
   },
   plugins: [
-    'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        // Defaults used for gatsbyImageData and StaticImage
+        defaults: {},
+        // Set to none to allow builds to continue on image errors
+        failOn: `none`,
+      }
+    },
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     {
@@ -19,19 +27,7 @@ module.exports = {
         background_color: `#30C3CD`,
         theme_color: `#30C3CD`,
         display: `standalone`,
-        icon: './src/assets/images/kikilogo1.png',
-        icons: [{src: `/favicons/android-chrome-32x32.png`, sizes: '32x32', type: 'image/png'}]
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-favicons',
-      options: {
-        logo: './src/assets/images/kikilogo1.png',
-        appName: 'My Website',
-        background: '#fff',
-        icons: {
-          favicons: true
-        }
+        icon: `src/assets/images/kikilogo1.png`
       }
     }
   ]
