@@ -22,7 +22,7 @@ const Prep = () => {
     <div>
       <Layout pageTitle='PrEP Q&amp;A - Kiki for the Future'>
         <PageHeading info={pageInfo}></PageHeading>
-        <div className="wrapper">
+        <div className="wrapper pb-5">
           <Accordion title="What is PrEP?">
               <p>PrEP (full name pre-exposure prophylaxis) is a daily medication that helps prevent the transmission of HIV in people 
               who have not yet been exposed. There are two types - Truvada, which protects all people at risk through sex or drug injection, 

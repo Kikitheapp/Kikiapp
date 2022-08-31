@@ -29,6 +29,10 @@ body {
   --select-background: var(--charcoal);
 }
 
+.docs h3 {
+  font-size: 1.25em;
+}
+
 /*********************************************************************
 ************************** Colors and Utilities **********************
 **********************************************************************/
@@ -62,6 +66,10 @@ body {
 
 .dark-mode .bg-light-gray {
   background-color: #414141;
+  color: white;
+}
+
+.text-white {
   color: white;
 }
 
