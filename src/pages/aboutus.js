@@ -39,6 +39,10 @@ const AboutUs = () => {
           This platform aims to create space for fun, fact-based, and easy-to-understand discussions about sex. For the newly out to the old pros,
           for everything from basic anatomy to butt plugs, Kiki For The Future™ is about inclusion for all. All genders, all sexualities, all types of sex and relationships.
           </p>
+          <p>
+            All feedback, comments, requests for technical support and other communications relating to
+            the Services should be directed to: <a href="mailto:support@kikitheapp.com">support@kikitheapp.com</a>.
+          </p> 
         </div>
       </div>
         <div className='block'></div>
