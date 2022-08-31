@@ -26,7 +26,7 @@ const Faq = () => {
     <div>
       <Layout pageTitle='FAQ - Kiki for the Future'>
         <PageHeading info={headingInfo}></PageHeading>
-        <div className="wrapper">
+        <div className="wrapper pb-5">
           <Accordion title="STIs/STDs, Testing, and Barriers">
             <ul>
                 <li>
