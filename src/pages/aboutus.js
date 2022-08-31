@@ -39,6 +39,10 @@ const AboutUs = () => {
           This platform aims to create space for fun, fact-based, and easy-to-understand discussions about sex. For the newly out to the old pros,
           for everything from basic anatomy to butt plugs, Kiki For The Future™ is about inclusion for all. All genders, all sexualities, all types of sex and relationships.
           </p>
+          <p>
+            All feedback, comments, requests for technical support and other communications relating to
+            the Services should be directed to: <a href="mailto:support@kikitheapp.com">support@kikitheapp.com</a>.
+          </p> 
         </div>
       </div>
         <div className='block'></div>
@@ -221,7 +225,7 @@ const AboutUs = () => {
         <div className=' col-lg-5 col-xl-4 about-us-container'>
           <div className='bio grow'>
           <h4>Jill Bradshaw (They/Them)</h4>
-            <StaticImage className='bio-img' src='../assets/images/aboutus/jill.jpg'
+            <StaticImage className='bio-img' aspectRatio='1' src='../assets/images/aboutus/jill.jpg'
               alt='Jill Bradshaw (Marketing Assistant)'></StaticImage>
             <h3>Marketing Assistant</h3>
             <div className='about-us-content'>

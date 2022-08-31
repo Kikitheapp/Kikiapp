@@ -1,22 +1,25 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Layout from '../layouts/layout/layout.js';
+import BackgroundVector from '../assets/images/background-vector.svg';
+
 
 // markup
 const NotFoundPage = () => {
   return (
     <div>
       <Layout>
+      <div className="bg-placeholder" style={{ backgroundImage: `url(${BackgroundVector})` }}></div>
         <title>Page Not Found - Kiki for the Future</title>
         <div className="row p-5 justify-content-center">
-          <div className="col-md-10 col-xl-10 about-kiki">
+          <div className="col-lg-10 col-xl-7 about-kiki">
             <h1>Oops! Page not found</h1>
             <p>
               Sorry{" "}
               <span role="img" aria-label="Pensive emoji">
                 😔
               </span>{" "}
-              Sorry, we couldn’t find what you were looking for.
+              we couldn’t find what you were looking for.
               <br />
               {process.env.NODE_ENV === "development" ? (
                 <>
