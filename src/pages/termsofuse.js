@@ -1,8 +1,6 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import BackgroundVector from '../assets/images/background-vector.svg';
-
 
 // markup
 const TermsOfUse = () => {
