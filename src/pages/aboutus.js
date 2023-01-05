@@ -14,7 +14,7 @@ const AboutUs = () => {
           <p>
           We are Kiki For The Future™. We are creating an app that curates sexual health resources for the queer community. 
           We are a platform for queer sexual education, for sexual liberation, for knowledge, for power, joy, freedom, and connection. 
-          Stay tuned for the launch of our app. For now, check out our&nbsp;
+          Please check out our&nbsp;
           <a target='_blank' href='https://medium.com/kiki-app' rel="noreferrer">blog</a>, 
           sign up for our&nbsp;
           <Link target='_blank' to='/mailinglist' rel="noreferrer">newsletter</Link>, and follow us on&nbsp;
@@ -70,8 +70,8 @@ const AboutUs = () => {
               </p>
               <p>
               Blog:{' '}
-              <a href='https://www.aroundtheworldin80plays.com' target='_blank' rel='noopener noreferrer'>
-                aroundtheworldin80plays.com
+              <a href='https://thekristawhite.com/' target='_blank' rel='noopener noreferrer'>
+                thekristawhite.com
               </a>
               <br></br>
               Twitter:{' '}
@@ -117,30 +117,6 @@ const AboutUs = () => {
                   Github.com/Nfratt
                 </a>
               </p>
-            </div>
-          </div>
-        </div>
-        <div className=' col-lg-5 col-xl-4 about-us-container'>
-          <div className='bio grow'>
-            <h4>Kate Bader (She,Her,Hers)</h4>
-            <StaticImage className='bio-img' src='../assets/images/aboutus/kate.jpg'
-              alt='Kate Bader(Social Media Manager)'></StaticImage>
-            <h3>Social Media Manager</h3>
-            <div className='about-us-content'>
-              <p>
-              Kate Bader is a NYC based actor and about-us-content creator, with a
-                  background in film production, marketing, and healthcare. She
-                  adores the way social media bridges community engagement,
-                  visual aesthetics, entertainment, and digestible knowledge.
-                  She is excited to be working on this team of talented
-                  individuals, and helping to bring curated sexual health info
-                  to a community she loves.
-              </p>
-              <p>Instagram:{' '}
-                <a href='https://www.instagram.com/kate_bader_/' target='_blank'
-                  rel='noopener noreferrer'>
-                  @Kate_bader_
-                </a></p>
             </div>
           </div>
         </div>
@@ -193,7 +169,7 @@ const AboutUs = () => {
         </div>
         <div className=' col-lg-5 col-xl-4 about-us-container'>
           <div className='bio grow'>
-          <h4>Amanda Lynn Castonguay (They/Them, She/Her)</h4>
+          <h4>Amanda Lynn Castonguay (They/She)</h4>
             <StaticImage className='bio-img' src='../assets/images/aboutus/amanda.jpg'
               alt='Amanda Lynn Castonguay (Web Developer)'></StaticImage>
             <h3>Web Developer</h3>
@@ -217,29 +193,6 @@ const AboutUs = () => {
                 Portfolio:{' '}
                 <a href='https://amandalynn.media' target='_blank'
                   rel='noopener noreferrer'>alcastonguay
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className=' col-lg-5 col-xl-4 about-us-container'>
-          <div className='bio grow'>
-          <h4>Jill Bradshaw (They/Them)</h4>
-            <StaticImage className='bio-img' aspectRatio='1' src='../assets/images/aboutus/jill.jpg'
-              alt='Jill Bradshaw (Marketing Assistant)'></StaticImage>
-            <h3>Marketing Assistant</h3>
-            <div className='about-us-content'>
-            <p>
-            Jill is a queer trans non-binary actor/writer based in NYC. Accessible sex 
-                education for all is something they are extremely passionate about 
-                so they are absolutely thrilled to be part of Kiki’s team. Besides Kiki, 
-                Jill is dedicated to bringing representation to entertainment and is currently 
-                developing a series focused on two non-binary leads set to shoot in the spring!
-            </p>
-              <p>Instagram:{' '}
-                <a href='https://www.instagram.com/thejillbradshaw/' target='_blank'
-                  rel='noopener noreferrer'>
-                  @thejillbradshaw
                 </a>
               </p>
             </div>
