@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<div
+  className="nav-container"
+>
+  <nav
+    className="navbar navbar-expand-lg navbar-light"
+    id="navbar"
+  >
+    <h1>
+      <a
+        className="navbar-brand"
+        href="/"
+      >
+        <img
+          alt="Kiki"
+          src="test-file-stub"
+        />
+      </a>
+    </h1>
+    <button
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-bs-target="#navbarSupportedContent"
+      data-bs-toggle="collapse"
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarSupportedContent"
+    >
+      <ul
+        className="navbar-nav ms-auto"
+      >
+        <li
+          className="nav-item dropdown"
+        >
+          <a
+            aria-expanded="false"
+            aria-haspopup="true"
+            className="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+          >
+            Get Started
+          </a>
+          <div
+            aria-labelledby="navbarDropdown"
+            className="dropdown-menu"
+          >
+            <a
+              className="dropdown-item"
+              href="/aboutus"
+            >
+              About Us
+            </a>
+            <a
+              className="dropdown-item"
+              href="/faq"
+            >
+              FAQ
+            </a>
+            <a
+              className="dropdown-item"
+              href="/prep"
+            >
+              PrEP Q&A
+            </a>
+            <a
+              className="dropdown-item"
+              href="/meetthesextoys"
+            >
+               Meet the sex toys
+            </a>
+          </div>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            href="https://kikiapp.medium.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Visit our blog
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            href="https://kikitheapp.myshopify.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Shop
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            href="/mailinglist"
+          >
+            Join our mailing list
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
