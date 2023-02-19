@@ -15,7 +15,7 @@ const index = () => {
           <div className="row align-items-center px-5 pb-5">
             <div className="col-md-6 text-center text-md-left pl-md-5"> 
               <h2 className="text-start">Get a fresh take on what you didn&apos;t learn in sex-ed.</h2>
-              <Link className='nav-link' to='/mailinglist'>
+              <Link className='nav-link' to='/mailinglist' data-testid='mailing-list-link'>
                 <button type="button" className="btn btn-primary mailinglistbtn">Join our mailing list</button>
               </Link>
               <br/>
