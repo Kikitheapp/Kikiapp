@@ -17,7 +17,6 @@ describe("Accordion", () => {
     await fireEvent.click(accordionTitle);
 
     let accordionContent = await screen.findByText("Hello, I am a child!");
-    console.log(accordionContent.parentElement);
 
     expect(accordionContent.parentElement.parentElement).not.toHaveClass('collapsed'); 
 

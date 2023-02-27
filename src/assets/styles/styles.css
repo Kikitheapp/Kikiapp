@@ -36,6 +36,11 @@ body {
 /*********************************************************************
 ************************** Colors and Utilities **********************
 **********************************************************************/
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
 .bg-peach-puff {
   background-color: var(--peach-puff);
 }
@@ -44,8 +49,12 @@ body {
   background-color: var(--light-orange);
 }
 
-.bg-primary {
-  background-color: var(--primary-color);
+.bg-dark-orange {
+  background-color: var(--dark-orange);
+}
+
+.bg-bright-orange {
+  background-color: var(--bright-orange);
 }
 
 .bg-light-gray {

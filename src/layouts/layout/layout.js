@@ -14,11 +14,11 @@ const Layout = ({ pageTitle, children }) => {
     <div className="root">
       <title>{pageTitle}</title>
       <div className="container-fluid">
-      <Navbar></Navbar>
-      <ThemeSwitcher></ThemeSwitcher>
-      <main>
-        {children}
-      </main>
+        <Navbar></Navbar>
+        <ThemeSwitcher></ThemeSwitcher>
+        <main>
+          {children}
+        </main>
       </div>
     </div>
       <footer className="container-fluid bg-primary">

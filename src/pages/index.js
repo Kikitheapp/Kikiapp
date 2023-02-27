@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
+import AppBanner from '../components/appbanner/app-banner';
 import HomePerson1 from "../assets/images/index/home-person-1.svg";
 import HomePerson2 from "../assets/images/index/home-person-2.svg";
 import BackgroundVector from "../assets/images/background-vector.svg";
@@ -9,6 +10,7 @@ import './index.css';
 const index = () => {
   return (
     <div>
+      <AppBanner></AppBanner>
       <Layout pageTitle='Kiki for the Future'>
         <div className="homepage">
           <div className="bg-placeholder" style={{backgroundImage: `url(${BackgroundVector})` }}></div>
