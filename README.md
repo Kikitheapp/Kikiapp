@@ -27,3 +27,39 @@ Javascript
 
 * Launch your IDE or UNIX terminal to the Kikiapp folder and type in the command ``npm start``. This should launch a local server on port 3000 of the current build. 
 
+
+## Tests
+
+### Running Tests
+
+Kiki for the Future uses [Jest](https://jestjs.io/docs/api) as a test framework, alongside 
+[React Testing Library](https://testing-library.com/docs/react-testing-library/api), as 
+reccomended by the community. Additionally, we use 
+[React Test Renderer](https://reactjs.org/docs/test-renderer.html) to create quick and easy 
+snapshot tests used for unit and regression testing React components.
+
+### Snapshot Testing
+
+Jest Snapshot tests are used as an easy way to ensure that a UI component has not changed. 
+Snapshots do this by creating a textual representation of the component, saving that to a file, 
+and using that file as a reference the next time the tests are run. 
+
+**Snapshot files should be commited with the tests that generate them.** This will ensure that UI 
+components remain consistent throughout development. 
+
+#### Updating Snapshots
+
+Sometimes changes to the UI component, or the test structure or data, are needed. When this 
+happens, a new snapshot needs to be generated. 
+
+To update the project's snapshots, run jest with the `--updateSnapshot` (or `-u`) flag:
+```
+jest --updateSnapshot
+``` 
+
+**You may recieve an error if you do not have Jest installed globally. The `updateSnapshot` script 
+`package.json` shortcut provides a fix for this:**
+ ```
+ npm run updateSnapshot
+ ```
+

@@ -1,0 +1,39 @@
+name: CI Check
+
+on: push
+
+jobs:
+  ci:
+    name: Lint javascript files
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Branch to GitHub Action Runner
+        uses: actions/checkout@v3.3.0
+
+      - name: Setup latest node.js environment
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: '*'
+        
+
+      - name: Cache node modules
+        uses: actions/cache@v2.1.4
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
+
+      - name: Install package dependencies
+        run: npm install
+
+      - name: Build gatsby project, runs linter
+        run: npm run build
+
+      - name: Run tests using Jest
+        run: npm test
+

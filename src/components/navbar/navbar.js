@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import logo from '../../assets/images/kikilogo1.png';
 import './navbar.css';
 
+//TODO: Fix link button for accessability
+
 const Navbar = ()=> {
   return (
     <div className='nav-container'>
@@ -49,7 +51,7 @@ const Navbar = ()=> {
             <a className='nav-link'
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://kikitheapp.myshopify.com'>
+                href='https://shop.kikitheapp.com/'>
                 Shop
                 </a>
             </li>
