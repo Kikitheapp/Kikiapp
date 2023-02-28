@@ -11,16 +11,12 @@ describe("Accordion", () => {
 
     render(<Accordion title={singleChild.title}>{singleChild.children}</Accordion>);
     
+    // find title, throw error if not found.
     let accordionTitle = await screen.findByText(singleChild.title);
-
-    console.log(accordionTitle);
-
-    expect(accordionTitle).toBeInTheDocument();
     
     await fireEvent.click(accordionTitle);
 
     let accordionContent = await screen.findByText("Hello, I am a child!");
-    console.log(accordionContent.parentElement);
 
     expect(accordionContent.parentElement.parentElement).not.toHaveClass('collapsed'); 
 
