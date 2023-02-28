@@ -66,4 +66,4 @@ describe("App Banner", () => {
 
   });
 
-})
+});

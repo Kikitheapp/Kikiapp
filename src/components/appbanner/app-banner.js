@@ -29,10 +29,10 @@ function AppBanner(){
       setPlatform('ios');
     }
   }, []);
-
   
   // build banner content, depending on platform
   let bannerContent = [];
+
   // If platform is not ios, add ios link
   if(platform !== 'ios'){
     bannerContent.push(androidImg);
