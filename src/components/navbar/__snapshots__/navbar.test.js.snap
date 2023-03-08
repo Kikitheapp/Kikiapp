@@ -100,7 +100,7 @@ exports[`Navbar renders correctly 1`] = `
         >
           <a
             className="nav-link"
-            href="https://kikitheapp.myshopify.com"
+            href="https://shop.kikitheapp.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
