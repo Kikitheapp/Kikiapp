@@ -15,8 +15,8 @@ const iosLink = "https://apps.apple.com/us/app/kiki-for-the-future/id6443610226"
  ***/
 function AppBanner(){
   // links with badges to app store
-  const androidImg = <a href={androidLink}><img src={playStoreBadge} alt="Get it on Google Play" className="android-link" key="android-link" /></a>;
-  const iosImg = <a href={iosLink}><img src={appStoreBadge} alt="Download on the App Store" className="ios-link" key="ios-link" /></a>;
+  const androidImg = <a href={androidLink} key="0"><img src={playStoreBadge} alt="Get it on Google Play" className="android-link" /></a>;
+  const iosImg = <a href={iosLink} key="1"><img src={appStoreBadge} alt="Download on the App Store" className="ios-link" /></a>;
 
   // state to keep track of platform
   const [platform, setPlatform] = useState('other');

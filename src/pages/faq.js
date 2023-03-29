@@ -15,7 +15,7 @@ import healthPerson from "../assets/images/faq/faq-person-health.svg";
 
 const headingInfo = {
   title: 'FAQ',
-  bgColor: 'peach-puff',
+  bgColor: 'secondary',
   person1: headingPerson1,
   person2: headingPerson2
 }

@@ -1,8 +1,7 @@
 import React from 'react';
 import {render, screen, fireEvent} from '@testing-library/react';
-import '@testing-library/jest-dom'
-import AppBanner from './app-banner'
-import userEvent from '@testing-library/user-event';
+import '@testing-library/jest-dom';
+import AppBanner from './app-banner';
 
 describe("App Banner", () => {
 

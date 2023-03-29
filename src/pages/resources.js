@@ -14,7 +14,7 @@ const pageInfo = {
   person2: person2
 }
 
-function Resources (props) {
+function Resources(props){
 
   let resources = props.data.allAirtable.edges;
   
@@ -29,7 +29,7 @@ function Resources (props) {
 
   return (
     <div>
-      <Layout pageTitle={`pageInfo.title - Kiki for the Future`}>
+      <Layout pageTitle={`${pageInfo.title} - Kiki for the Future`}>
         <PageHeading info={pageInfo}></PageHeading>
         <div className="wrapper pb-5">
           {resourceList}
