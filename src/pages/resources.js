@@ -25,15 +25,15 @@ function Resources(props){
 
   // resource types in order that they are displayed
   const resourceTypes = ['Housing', 'Legal', 'Health + Wellness', 'Queer Spaces'];
-  let resourceDivs = [];
 
   // loop through the resource types and build the sections for the resource lists
+  let resourceDivs = [];
   resources.forEach((group) => {
 
     // create a list of resources for this type
-    let resourceList = group.nodes.map((resource) => {
+    let resourceList = group.nodes.map((resource, index) => {
       return (
-        <div className="resource ms-5">
+        <div className="resource ms-5" key={resource.id}>
           <h4>{resource.data.resource_name}</h4>
           <p>{resource.data.resource_description}<br />
           Website: <a href={resource.data.resource_website}>{resource.data.resource_website}</a></p>
@@ -42,7 +42,7 @@ function Resources(props){
     });
 
     // create a section for this resource type and add the list of resources
-    let block = <div className="ms-5">
+    let block = <div className="ms-5" key={group.type}>
     <h3>{group.type}</h3>
       {resourceList}
     </div>;
@@ -53,7 +53,7 @@ function Resources(props){
 
   });
 
-  // TODO: Refactor resource sections into components
+  // TODO: Refactor resource sections into component
   // TODO: Add filter by catagory (using dropdown, one catagory at a time)
   
   return (
@@ -80,6 +80,7 @@ export const query = graphql`
             resource_website
             resource_description
           }
+          id
         }
       }
     }
