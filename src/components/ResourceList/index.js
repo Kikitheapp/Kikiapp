@@ -10,7 +10,7 @@ function ResourceList({resources}) {
 
 
     // create a list of resources for this type
-    let resourceList = resources.nodes.map((resource, index) => {
+    let resourceList = resources.map((resource, index) => {
       return (
         <div className="resource ms-5" key={resource.id}>
           <h4>{resource.data.resource_name}</h4>
