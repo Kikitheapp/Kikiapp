@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import PageHeading from '../components/pageheading/page-heading.js';
 import Accordion from '../components/accordion/accordion.js';
+import SEO from "../components/seo/seo.js";
 
 import person1 from "../assets/images/prep/prep-person-header-1.svg";
 import person2 from "../assets/images/prep/prep-person-header-2.svg";
@@ -20,7 +21,7 @@ const pageInfo = {
 const Prep = () => {
   return (
     <div>
-      <Layout pageTitle='PrEP Q&amp;A - Kiki for the Future'>
+      <Layout>
         <PageHeading info={pageInfo}></PageHeading>
         <div className="wrapper pb-5">
           <Accordion title="What is PrEP?">
@@ -80,3 +81,7 @@ const Prep = () => {
 }
 
 export default Prep;
+
+export function Head(){
+    return <SEO title={pageInfo.title} />
+}

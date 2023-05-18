@@ -8,11 +8,10 @@ import { FaTwitterSquare } from 'react-icons/fa';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { FaPatreon } from 'react-icons/fa';
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ children }) => {
   return (
     <>
     <div className="root">
-      <title>{pageTitle}</title>
       <div className="container-fluid">
         <Navbar></Navbar>
         <ThemeSwitcher></ThemeSwitcher>

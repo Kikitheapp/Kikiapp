@@ -3,6 +3,7 @@ import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import PageHeading from '../components/pageheading/page-heading.js';
 import Accordion from '../components/accordion/accordion.js';
+import SEO from "../components/seo/seo.js";
 
 import headingPerson1 from "../assets/images/faq/faq-person-header-2.svg";
 import headingPerson2 from "../assets/images/faq/faq-person-header-1.svg";
@@ -24,7 +25,7 @@ const headingInfo = {
 const Faq = () => {
   return (
     <div>
-      <Layout pageTitle='FAQ - Kiki for the Future'>
+      <Layout>
         <PageHeading info={headingInfo}></PageHeading>
         <div className="wrapper pb-5">
           <Accordion title="STIs/STDs, Testing, and Barriers">
@@ -93,3 +94,7 @@ const Faq = () => {
 }
 
 export default Faq;
+
+export function Head(){
+    return <SEO title={headingInfo.title} />
+}

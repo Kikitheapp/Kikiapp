@@ -1,11 +1,12 @@
 import * as React from 'react';
 import Layout from '../layouts/layout/layout.js';
+import SEO from "../components/seo/seo.js";
 import BackgroundVector from '../assets/images/background-vector.svg';
  
 const PrivacyPolicy = () => {
     return (
       <div>
-        <Layout pageTitle='Privacy Policy - Kiki for the Future'>
+        <Layout>
           <div className="bg-placeholder" style={{ backgroundImage: `url(${BackgroundVector})` }}></div>
           <div className="row p-5 justify-content-center">
             <div className="col-10 col-lg-8 col-xl-7 docs">
@@ -321,3 +322,7 @@ const PrivacyPolicy = () => {
   }
 
   export default PrivacyPolicy;
+
+  export function Head(){
+    return <SEO title="Privacy Policy" />
+  }
