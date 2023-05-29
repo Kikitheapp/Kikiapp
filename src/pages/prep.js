@@ -107,5 +107,5 @@ const Prep = () => {
 export default Prep;
 
 export function Head(){
-    return <SEO title={pageInfo.title} />
+    return <SEO title={pageMetadata.title} description={pageMetadata.description} />
 }

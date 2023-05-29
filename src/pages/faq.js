@@ -114,5 +114,5 @@ const Faq = () => {
 export default Faq;
 
 export function Head(){
-    return <SEO title={headingInfo.title} />
+    return <SEO title={pageMetadata.title} />
 }

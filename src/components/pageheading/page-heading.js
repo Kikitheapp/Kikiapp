@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './page-heading.css';
 
-const PageHeading = (props) => {
+function PageHeading(props) {
   
   const info = props.info;
   const metadata = props.metadata;
@@ -14,12 +14,9 @@ const PageHeading = (props) => {
       heading = <h2 className={"page-title text-center bg-"+info.bgColor}>{metadata.title}</h2>;
     }
     if(metadata.description) {
-      subHeading = <h3 className="page-subtitle text-center pb-5">{metadata.description}</h3>;
+      subHeading = <h3 className="page-subtitle text-center pb-4">{metadata.description}</h3>;
     }
   }
-
-
-
 
   return (
       <div className="heading">

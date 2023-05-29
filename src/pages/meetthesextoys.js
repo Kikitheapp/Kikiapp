@@ -128,7 +128,7 @@ const SexToys = () => {
 }
 
 export function Head(){
-  return <SEO title={headingInfo.title} />
+  return <SEO title={pageMetadata.title} description={pageMetadata.description} />
 }
 
 export default SexToys;
