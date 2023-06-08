@@ -6,12 +6,13 @@ import HomePerson2 from "../assets/images/index/home-person-2.svg";
 import BackgroundVector from "../assets/images/background-vector.svg";
 import { Link } from 'gatsby';
 import './index.css';
+import SEO from "../components/seo/seo.js";
 
-const index = () => {
+function Index(){
   return (
     <div>
       <AppBanner></AppBanner>
-      <Layout pageTitle='Kiki for the Future'>
+      <Layout>
         <div className="homepage">
           <div className="bg-placeholder" style={{backgroundImage: `url(${BackgroundVector})` }}></div>
           <div className="row align-items-center px-5 pb-5">
@@ -40,4 +41,9 @@ const index = () => {
   )
 }
 
-export default index;
+export default Index;
+
+
+export function Head(){
+  return <SEO />
+}

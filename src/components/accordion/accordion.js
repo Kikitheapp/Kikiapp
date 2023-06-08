@@ -12,30 +12,21 @@ const Accordion = ({ title, children }) => {
   const [isOpen, setOpen] = React.useState(false);
 
   return (
-    <div className="accordion-wrapper">
-      <div className="row justify-content-center">
-        <div className="col-md-8  col-lg-6">
-          <div className={`row align-items-center accordion-title ${isOpen ? "open" : ""}`}
-            onClick={() => setOpen(!isOpen)}
-          >
-            <div className="col-auto accordion-icon">
-              <FaPlus></FaPlus>
-            </div>
-            <div className="col accordion-text">
-              <h3
-                className={`${isOpen ? "open" : ""}`}
-                onClick={() => setOpen(!isOpen)}
-              >
+          <>
+          
+          <div className={`${isOpen ? "open" : ""}`} >
+            <button type="button" className="btn btn-accordion" onClick={() => setOpen(!isOpen)}>
+              <FaPlus className="accordion-icon my-3 me-3"></FaPlus>
+              <h4 className={`${isOpen ? "open" : ""}`}>
                 {title}
-              </h3>
-            </div>
+              </h4>
+          </button>
           </div>
+
           <div className={`accordion-body ${!isOpen ? "collapsed" : ""}`}>
-            <div className="accordion-content flex-column d-flex justify-content-center">{children}</div>
+            <div className="accordion-content flex-column d-flex justify-content-center m-4 mt-0">{children}</div>
           </div>
-        </div>
-      </div>
-    </div>
+          </>
 
   );
 };
