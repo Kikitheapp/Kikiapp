@@ -41,13 +41,12 @@ function Resources(props){
 
   if (resourceType == 'All') {
 
-    console.log(resources);
     list = resources.map((group, index) => {
       return <ResourceList resources={group} key={index} />
     });
   } else {
-    let thisResources = resources.filter((group) => { return group.type === resourceType });
-    console.log(thisResources);
+    
+    let thisResources = resources.filter((group) => { return group.type === resourceType })[0];
     list = <ResourceList resources={thisResources} />
     
   }

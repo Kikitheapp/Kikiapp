@@ -5,12 +5,12 @@ import * as React from 'react';
  * 
  ***/
 function ResourceList({resources}) {
-
+    console.log(resources);
     // TODO: Refactor resource sections into component
 
 
     // create a list of resources for this type
-    let resourceList = resources.map((resource, index) => {
+    let resourceList = resources.nodes.map((resource, index) => {
       return (
         <div className="resource ms-5" key={resource.id}>
           <h4>{resource.data.resource_name}</h4>
