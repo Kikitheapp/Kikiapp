@@ -39,7 +39,7 @@ function SEO(props) {
       {/* Essential Meta Tags */}
       <title>{metadata.title}</title>
       <meta property="og:title" content={metadata.title} />
-      <meta property="og:image" content={metadata.siteUrl + metadata.image} />
+      <meta property="og:image" content={defaults.siteUrl + metadata.image} />
       <meta property="og:url" content={metadata.siteUrl} />
       <meta name="twitter:card" content="summary_large_image" />  
       <meta property="og:type" content="article" />
