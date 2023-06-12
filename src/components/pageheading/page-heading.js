@@ -1,6 +1,10 @@
 import * as React from 'react';
 import './page-heading.css';
 
+/***
+ * PageHeading
+ * @param {object} info - Customize the page heading
+ * */
 function PageHeading(props) {
   
   const info = props.info;

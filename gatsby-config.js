@@ -32,6 +32,22 @@ module.exports = {
         display: `standalone`,
         icon: `src/assets/images/kikilogo1.png`
       }
+    },
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.AIRTABLE_AIR,
+        tables: [
+          {
+            baseId: `appztisEji0oKqoqN`,
+            tableName: `states`,
+          },
+          {
+            baseId: `appztisEji0oKqoqN`,
+            tableName: `resources`
+          }
+        ]
+      }
     }
   ]
 }

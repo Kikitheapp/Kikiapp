@@ -18,7 +18,8 @@ const pageMetadata = {
 
 
 const headingInfo = {
-  bgColor: 'peach-puff',
+  title: 'FAQ',
+  bgColor: 'secondary',
   person1: headingPerson1,
   person2: headingPerson2
 }

@@ -21,7 +21,7 @@ describe("PageHeading component", () => {
     description: 'This is the page description. Check out how cool it is!'
   }
 
-  it("renders title", async () => {
+  it("renders heading", async () => {
 
     // render the PageHeading component
     render(<PageHeading info={info} metadata={metadata} />);
@@ -31,7 +31,7 @@ describe("PageHeading component", () => {
 
   });
 
-  it("renders subtitle", async () => {
+  it("renders subheading", async () => {
 
     // render the PageHeading component
     render(<PageHeading info={info} metadata={metadata} />);

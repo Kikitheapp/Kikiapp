@@ -1,7 +1,9 @@
 h2.page-title {
   margin-right: -12px;
   margin-left: -12px;
-  padding: 1rem ;
+  padding: 5rem 0 10rem 0;
+  white-space: pre-line;
+  text-align: center;
 }
 
 
