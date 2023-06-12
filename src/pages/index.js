@@ -10,10 +10,10 @@ import SEO from "../components/seo/seo.js";
 
 function Index(){
   return (
-    <div>
+    <div className="homepage">
       <AppBanner></AppBanner>
       <Layout>
-        <div className="homepage">
+        <div>
           <div className="bg-placeholder" style={{backgroundImage: `url(${BackgroundVector})` }}></div>
           <div className="row align-items-center px-5 pb-5">
             <div className="col-md-6 text-center text-md-left pl-md-5"> 

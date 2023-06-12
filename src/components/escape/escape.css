@@ -1,0 +1,28 @@
+.escape {
+  top: 2%;
+  left: 100%
+}
+
+.homepage .escape {
+  top: 12%;
+}
+
+.escape-icon {
+  font-size: 1.32em;
+  margin: 0 0.5em;
+}
+
+.escape a {
+  border: 1px solid var(--primary-color);
+}
+
+.btn-escape:hover {
+  background-color: var(--peach-puff);
+}
+
+@media (min-width: 576px) { 
+  .escape {
+    left: 50%;
+    transform: translateX(-50%) !important;
+  }
+}

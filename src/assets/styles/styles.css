@@ -105,3 +105,9 @@ h2, h3 {
  .dark-mode .bg-primary {
    background-color: var(--dark-orange)!important;
  }
+
+.btn {
+  border-radius: 25px;
+  border: none;
+  padding: 12px 25px;
+}
