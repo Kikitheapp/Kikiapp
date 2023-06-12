@@ -10,6 +10,7 @@ module.exports = {
       siteUrl: `https://kikitheapp.com`,
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
