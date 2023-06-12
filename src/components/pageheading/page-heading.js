@@ -5,7 +5,7 @@ import './page-heading.css';
  * PageHeading
  * @param {object} info - Customize the page heading
  * */
-function PageHeading({info}) {
+function PageHeading(props) {
   
   const info = props.info;
   const metadata = props.metadata;
