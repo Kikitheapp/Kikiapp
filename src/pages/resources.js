@@ -22,6 +22,10 @@ function Resources(props){
     person2: person2
   }  
 
+  const pageMetadata = {
+    title: "LGBTQIA+ Resources"
+  }
+
   // get resources, grouped by type
   const resources = props.data.resources.group;
 
@@ -44,7 +48,7 @@ function Resources(props){
   return (
     <div>
       <Layout pageTitle={`${pageInfo.title} - Kiki for the Future`}>
-        <PageHeading info={pageInfo}></PageHeading>
+        <PageHeading info={pageInfo} metadata={pageMetadata}></PageHeading>
         <div className="m-5">
           <div className="py-4 my-5 bg-primary text-center">
             <label className="form-label">Resources by Type: </label>
