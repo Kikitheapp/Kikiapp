@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://kikitheapp.com/#/`,
+    siteUrl: `https://kikitheapp.com/`,
   },
   plugins: [
     {

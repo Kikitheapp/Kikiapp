@@ -1,16 +1,15 @@
 import * as React from 'react';
 
 /***
- * ResoruceList
- * 
+ * ResoruceList component - creates a list of resources with a heading type
+ * @param array resources - list of resources
+ * @param string type - type of resource
+ * @returns {React.Component} ResourceList component
  ***/
-function ResourceList({resources}) {
-    console.log(resources);
-    // TODO: Refactor resource sections into component
-
+function ResourceList({resources, type}) {
 
     // create a list of resources for this type
-    let resourceList = resources.nodes.map((resource, index) => {
+    let resourceList = resources.map((resource) => {
       return (
         <div className="resource ms-5" key={resource.id}>
           <h4>{resource.data.resource_name}</h4>
@@ -21,8 +20,8 @@ function ResourceList({resources}) {
     });
 
     // create a section for this resource type and add the list of resources
-    let block = <div className="ms-5" key={resources.type}>
-    <h3>{resources.type}</h3>
+    let block = <div className="ms-5" key={type}>
+    <h3>{type}</h3>
       {resourceList}
     </div>;
 

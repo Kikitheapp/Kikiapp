@@ -22,19 +22,4 @@ describe("Index", () => {
 
   });
 
-  // it("has button that links to mailing list signup page", async () => {
-
-  //   const user = userEvent.setup();
-
-  //   render(<Index />);
-
-  //   // Find button
-  //   const button = await screen.findByText(mockButtonText);
-  //   await user.click(button);
-
-  //   console.log(screen);
-
-
-  // });
-
 });

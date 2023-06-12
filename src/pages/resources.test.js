@@ -86,16 +86,16 @@ describe("Resources", () => {
 
     // Find heading, throw error if not found.
     // Ignore navbar links. 
-    const heading = await screen.findByText("Resources", {ignore: "script, style, nav a"});
+    const heading = await screen.findByText("LGBTQIA+ Resources", {ignore: "script, style, nav a"});
 
     // Find state heading, throw error if not found.
     const state = await screen.findByText("New York");
 
     // Find sections, throw error if not found.
-    const housing = await screen.findByText("Housing");
-    const legal = await screen.findByText("Legal");
-    const health = await screen.findByText("Health + Wellness");
-    const spaces = await screen.findByText("Queer Spaces");
+    const housing = await screen.findByText( "Housing", {ignore: "option"} );
+    const legal = await screen.findByText( "Legal", {ignore: "option"} );
+    const health = await screen.findByText( "Health + Wellness", {ignore: "option"} );
+    const spaces = await screen.findByText( "Queer Spaces", {ignore: "option"} );
 
   });
     

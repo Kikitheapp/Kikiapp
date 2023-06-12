@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from '../layouts/layout/layout.js';
 import PageHeading from '../components/pageheading/page-heading.js';
-import ResourceList from '../components/ResourceList/';
+import ResourceList from '../components/ResourceList/ResourceList.js';
 
 import person1 from "../assets/images/resources/resources-header-person-1.png";
 import person2 from "../assets/images/resources/resources-header-person-2.png";
@@ -16,7 +16,7 @@ import person2 from "../assets/images/resources/resources-header-person-2.png";
 function Resources(props){
 
   const pageInfo = {
-    title: "LGBTQIA+ \n Resources",
+    title: "LGBTQIA+ Resources",
     bgColor: "light-orange",
     person1: person1,
     person2: person2
@@ -26,30 +26,20 @@ function Resources(props){
   const resources = props.data.resources.group;
 
   // resource types in order that they are displayed
+  // TODO: Fix list order
+  // TODO: Handle National resources
+  // TODO: Add more states
   const resourceTypes = ['Housing', 'Legal', 'Health + Wellness', 'Queer Spaces'];
 
-  // TODO: Add filter by catagory (using dropdown, one catagory at a time)
-  // keep track of resource type selected
-  const [resourceType, setResourceType] = React.useState('All');
-  const [resourceList, setResourceList] = React.useState([]);
 
   function loadResources(event) {
-    setResourceType(event.target.value);
+    //setResourceType(event.target.value);
   }
 
-  let list;
+  let list = resources.map((group, index) => {
+    return <ResourceList resources={group.nodes} type={group.type} key={index} />
+  });
 
-  if (resourceType == 'All') {
-
-    list = resources.map((group, index) => {
-      return <ResourceList resources={group} key={index} />
-    });
-  } else {
-    
-    let thisResources = resources.filter((group) => { return group.type === resourceType })[0];
-    list = <ResourceList resources={thisResources} />
-    
-  }
 
   return (
     <div>
@@ -83,8 +73,9 @@ export const query = graphql`
           id
           data {
             resource_name
-            resource_website
             resource_description
+            resource_website
+            resource_national
           }
         }
       }
