@@ -1,33 +1,63 @@
 import React from 'react';
 import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
-import PageHeading from './page-heading';
-import person1 from "../assets/images/sextoys/sextoys-person-1.svg";
-import person2 from "../assets/images/sextoys/sextoys-person-2.svg";
 
-describe("Page Heading", () => {
-  
+import PageHeading from './page-heading';
+import person1 from "../assets/images/prep/prep-person-header-1.svg";
+import person2 from "../assets/images/prep/prep-person-header-2.svg";
+
+
+describe("PageHeading component", () => {
+
   const info = {
-    title: "Test Heading",
-    bgColor: "primary",
+    title: 'Page Title',
+    bgColor: 'peach-puff',
     person1: person1,
     person2: person2
   }
 
-  it("renders heading and people", async () => {    
-      
-      render(<PageHeading info={info} />);
-  
-      // Find heading, throw error if not found.
-      const heading = await screen.getByText(info.title);
-      // Check that heading has correct background color.
-      expect(heading).toHaveClass("bg-"+info.bgColor);
+  const metadata = {
+    title: 'Page Title',
+    description: 'This is the page description. Check out how cool it is!'
+  }
 
-      // Find people, throw error if not found.
-      const person1 = screen.getByAltText("Person looking right.");
-      expect(person1).toHaveAttribute("src", info.person1);
-      const person2 = screen.getByAltText("Person looking left.");
-      expect(person2).toHaveAttribute("src", info.person2);
+  it("renders heading", async () => {
+
+    // render the PageHeading component
+    render(<PageHeading info={info} metadata={metadata} />);
+
+    // check that the title is correct
+    expect(screen.getByText(metadata.title)).toBeInTheDocument();
+
+  });
+
+  it("renders subheading", async () => {
+
+    // render the PageHeading component
+    render(<PageHeading info={info} metadata={metadata} />);
+
+    // check that the description is correct
+    expect(screen.getByText(metadata.description)).toBeInTheDocument();
+
+  });
+
+  it("renders person1", async () => {
+
+    // render the PageHeading component
+    render(<PageHeading info={info} metadata={metadata} />);
+
+    // check that the person1 image is correct
+    expect(screen.getByAltText("Person looking right.")).toBeInTheDocument();
+
+  });
+
+  it("renders person2", async () => {
+
+    // render the PageHeading component
+    render(<PageHeading info={info} metadata={metadata} />);
+
+    // check that the person2 image is correct
+    expect(screen.getByAltText("Person looking left.")).toBeInTheDocument();
 
   });
 

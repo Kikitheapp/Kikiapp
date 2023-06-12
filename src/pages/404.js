@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Layout from '../layouts/layout/layout.js';
+import SEO from "../components/seo/seo.js";
 import BackgroundVector from '../assets/images/background-vector.svg';
 
 
@@ -10,7 +11,6 @@ const NotFoundPage = () => {
     <div>
       <Layout>
       <div className="bg-placeholder" style={{ backgroundImage: `url(${BackgroundVector})` }}></div>
-        <title>Page Not Found - Kiki for the Future</title>
         <div className="row p-5 justify-content-center">
           <div className="col-lg-10 col-xl-7 about-kiki">
             <h1>Oops! Page not found</h1>
@@ -38,4 +38,8 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default NotFoundPage;
+
+export function Head(){
+  return <SEO title="Page Not Found" />
+}

@@ -6,9 +6,25 @@ import './page-heading.css';
  * @param {object} info - Customize the page heading
  * */
 function PageHeading({info}) {
+  
+  const info = props.info;
+  const metadata = props.metadata;
+
+  let heading = <h2 className={"page-title text-center bg-"+info.bgColor}></h2>;
+  let subHeading;
+
+  if(metadata) {
+    if(metadata.title) {
+      heading = <h2 className={"page-title text-center bg-"+info.bgColor}>{metadata.title}</h2>;
+    }
+    if(metadata.description) {
+      subHeading = <h3 className="page-subtitle text-center pb-4">{metadata.description}</h3>;
+    }
+  }
+
   return (
       <div className="heading">
-          <h2 className={"page-title text-center bg-"+info.bgColor}>{info.title}</h2>
+          {heading}
           <div className="heading-people row justify-content-center mb-5">
               <div className="heading-person-1 col-6 text-end">
                   <img src={info.person1} className="img-fluid"
@@ -19,6 +35,7 @@ function PageHeading({info}) {
                       alt="Person looking left."/>
               </div>
           </div>
+          {subHeading}
       </div>
     )
 }
