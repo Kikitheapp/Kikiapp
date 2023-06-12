@@ -132,8 +132,6 @@ describe("SEO component", () => {
     // render the SEO component
     render(<SEO siteUrl={overrides.siteUrl} />);
 
-    console.log(defaults);
-
     // check that the siteUrl is correct
     const ogUrl = document.querySelector('meta[property="og:url"]');
     expect(ogUrl).toHaveAttribute("content", defaults.siteUrl + '/' + overrides.siteUrl);
