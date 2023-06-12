@@ -4,7 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://kikitheapp.com/#/`,
+      title: `Kiki For The Future`,
+      description: `Kiki For The Future. Get a fresh take on what you didn't learn in sex-ed.`,
+      image: `/card.png`,
+      siteUrl: `https://kikitheapp.com`,
   },
   plugins: [
     {
@@ -28,6 +31,22 @@ module.exports = {
         theme_color: `#30C3CD`,
         display: `standalone`,
         icon: `src/assets/images/kikilogo1.png`
+      }
+    },
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.AIRTABLE_AIR,
+        tables: [
+          {
+            baseId: `appztisEji0oKqoqN`,
+            tableName: `states`,
+          },
+          {
+            baseId: `appztisEji0oKqoqN`,
+            tableName: `resources`
+          }
+        ]
       }
     }
   ]

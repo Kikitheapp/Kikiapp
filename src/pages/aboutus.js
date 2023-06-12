@@ -2,13 +2,14 @@ import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from 'gatsby';
+import SEO from "../components/seo/seo.js";
 
 
 import './aboutus.css';
 
 const AboutUs = () => {
   return (
-    <div><Layout pageTitle='Learn About Us - Kiki for the Future'>
+    <div><Layout>
       <div className="row p-5 justify-content-center">
         <div className="col-md-10 col-xl-10 about-kiki">
           <p>
@@ -204,3 +205,8 @@ const AboutUs = () => {
 }
 
 export default AboutUs;
+
+export function Head(){
+  return <SEO  title="About Us" siteUrl="aboutus" />
+}
+

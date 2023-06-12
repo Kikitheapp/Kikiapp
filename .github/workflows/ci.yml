@@ -5,6 +5,8 @@ on: push
 jobs:
   ci:
     name: Lint javascript files
+    env: 
+      AIRTABLE_AIR: ${{ secrets.AIRTABLE_AIR }}
     runs-on: ubuntu-latest
 
     steps:

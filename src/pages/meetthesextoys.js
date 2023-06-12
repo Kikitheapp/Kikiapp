@@ -2,6 +2,7 @@ import * as React from "react";
 
 import Layout from '../layouts/layout/layout.js';
 import PageHeading from '../components/pageheading/page-heading.js';
+import SEO from '../components/seo/seo.js';
 
 import person1 from "../assets/images/sextoys/sextoys-person-1.svg";
 import person2 from "../assets/images/sextoys/sextoys-person-2.svg";
@@ -14,15 +15,18 @@ import lube from "../assets/images/sextoys/sextoys-lube.png";
 
 import './meetthesextoys.css';
 
-// markup
-const SexToys = () => {
+const pageMetadata = {
+  title: 'Meet The Sex Toys',
+  description: 'If sex toys could talk, how would they introduce themselves?'
+}
 
-  const headingInfo = {
-    title: 'Meet The Sex Toys',
-    bgColor: 'light-orange',
-    person1: person1,
-    person2: person2
-  }
+const headingInfo = {
+  bgColor: 'light-orange',
+  person1: person1,
+  person2: person2
+}
+
+const SexToys = () => {
 
   const sexToys = [
                     {
@@ -115,12 +119,16 @@ const SexToys = () => {
 
   return (
     <div><Layout pageTitle='Meet the Sex Toys - Kiki for the Future'>
-      <PageHeading info={headingInfo}></PageHeading>
+      <PageHeading info={headingInfo} metadata={pageMetadata}></PageHeading>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 px-5 sex-toys">
         {sexToyCols} 
       </div>
     </Layout></div>
   )
+}
+
+export function Head(){
+  return <SEO title={pageMetadata.title} description={pageMetadata.description} />
 }
 
 export default SexToys;

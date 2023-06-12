@@ -1,13 +1,15 @@
 import * as React from 'react';
 import Layout from '../layouts/layout/layout.js';
 import Mailchimp from 'react-mailchimp-form';
+import SEO from "../components/seo/seo.js";
+
 import BackgroundVector from '../assets/images/background-vector.svg';
 import './mailinglist.css';
  
 const Mailinglist = () => {
     return (
         <div>
-            <Layout pageTitle='Join our Mailing List - Kiki for the Future'>
+            <Layout>
             <div className="row p-5 justify-content-center">
                 <div className="col-md-6 col-xl-4">
                     <h2 className="text-center">Join the Kiki For The Future™ mailing list
@@ -56,3 +58,7 @@ const Mailinglist = () => {
   }
 
   export default Mailinglist;
+
+export function Head(){
+    return <SEO title="Join our Mailing List" />
+}
