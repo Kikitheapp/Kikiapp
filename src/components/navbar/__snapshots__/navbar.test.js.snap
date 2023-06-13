@@ -79,7 +79,7 @@ exports[`Navbar renders correctly 1`] = `
               className="dropdown-item"
               href="/meetthesextoys"
             >
-               Meet the sex toys
+              Meet the sex toys
             </a>
           </div>
         </li>

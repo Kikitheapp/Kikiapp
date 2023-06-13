@@ -1,19 +1,28 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+
+import Escape from '../../components/escape/escape';
 import Navbar from '../../components/navbar/navbar';
 import ThemeSwitcher from '../../components/themeswitcher/theme-switcher';
+
 import './layout.css';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaTwitterSquare } from 'react-icons/fa';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { FaPatreon } from 'react-icons/fa';
 
-const Layout = ({ pageTitle, children }) => {
+
+/**
+ * Layout component - main layout for the site
+ * @param ReactElement children - the children of the component
+ * @return ReactElement - the layout component
+ **/
+function Layout({ children }){
   return (
     <>
     <div className="root">
-      <title>{pageTitle}</title>
       <div className="container-fluid">
+        <Escape></Escape>
         <Navbar></Navbar>
         <ThemeSwitcher></ThemeSwitcher>
         <main>

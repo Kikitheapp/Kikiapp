@@ -1,5 +1,5 @@
 import React from 'react';
-import {render, screen, fireEvent} from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom'
 import Index from "./index";
 import userEvent from '@testing-library/user-event';
@@ -21,20 +21,5 @@ describe("Index", () => {
     // const button = await screen.findByText(mockButtonText);
 
   });
-
-  // it("has button that links to mailing list signup page", async () => {
-
-  //   const user = userEvent.setup();
-
-  //   render(<Index />);
-
-  //   // Find button
-  //   const button = await screen.findByText(mockButtonText);
-  //   await user.click(button);
-
-  //   console.log(screen);
-
-
-  // });
 
 });

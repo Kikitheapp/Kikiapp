@@ -1,12 +1,13 @@
 import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
+import SEO from "../components/seo/seo.js";
 import BackgroundVector from '../assets/images/background-vector.svg';
 
 // markup
 const TermsOfUse = () => {
   return (
     <div>
-      <Layout pageTitle="Terms of Service - Kiki for the Future">
+      <Layout>
       <div className="bg-placeholder" style={{ backgroundImage: `url(${BackgroundVector})` }}></div>
         <div className="row p-5 justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7 docs">
@@ -377,3 +378,7 @@ const TermsOfUse = () => {
 }
 
 export default TermsOfUse;
+
+export function Head(){
+  return <SEO title="Terms of Use" />
+}

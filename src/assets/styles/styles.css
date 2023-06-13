@@ -41,6 +41,10 @@ body {
   background-color: var(--primary-color);
 }
 
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
 .bg-peach-puff {
   background-color: var(--peach-puff);
 }
@@ -102,3 +106,8 @@ h2, h3 {
    background-color: var(--dark-orange)!important;
  }
 
+.btn {
+  border-radius: 25px;
+  border: none;
+  padding: 12px 25px;
+}

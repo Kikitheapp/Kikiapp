@@ -2,15 +2,16 @@ import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from 'gatsby';
+import SEO from "../components/seo/seo.js";
 
 
 import './aboutus.css';
 
 const AboutUs = () => {
   return (
-    <div><Layout pageTitle='Learn About Us - Kiki for the Future'>
-      <div className="row p-5 justify-content-center">
-        <div className="col-md-10 col-xl-10 about-kiki">
+    <div><Layout>
+      <div className="row justify-content-center">
+        <div className="col-md-10 col-xl-10 px-4 about-kiki">
           <p>
           We are Kiki For The Future™. We are creating an app that curates sexual health resources for the queer community. 
           We are a platform for queer sexual education, for sexual liberation, for knowledge, for power, joy, freedom, and connection. 
@@ -53,7 +54,7 @@ const AboutUs = () => {
           <h1 className='header-1'>Meet Our Badass Team</h1>
         </div>
       </div>
-      <div className="row p-5 g-5 justify-content-start">
+      <div className="row pb-5 g-5 justify-content-start">
         <div className=' col-lg-5 col-xl-4 about-us-container'>
           <div className='bio grow'>
             <h4>Krista White (She, Her, Hers)</h4>
@@ -204,3 +205,8 @@ const AboutUs = () => {
 }
 
 export default AboutUs;
+
+export function Head(){
+  return <SEO  title="About Us" siteUrl="aboutus" />
+}
+
