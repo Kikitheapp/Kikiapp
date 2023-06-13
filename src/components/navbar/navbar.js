@@ -36,7 +36,6 @@ const Navbar = ()=> {
                 <Link className='dropdown-item' to='/faq'>FAQ</Link>
                 <Link className='dropdown-item' to='/prep'>PrEP Q&amp;A</Link>
                 <Link className='dropdown-item' to='/meetthesextoys'>Meet the sex toys</Link>
-                <Link className='dropdown-item' to='/resources'>Resources</Link>
               </div>
             </li>
             <li className='nav-item'>
