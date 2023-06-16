@@ -3,6 +3,8 @@ import { graphql } from "gatsby";
 
 import RLayout from '../../layouts/rlayout/rlayout.js';
 import ResourceList from '../../components/ResourceList/ResourceList.js';
+import ResourceSelect from '../../components/ResourceSelect/ResourceSelect.js';
+
 import person1 from "../../assets/images/resources/resources-header-person-1.png";
 import person2 from "../../assets/images/resources/resources-header-person-2.png";
 
@@ -18,12 +20,17 @@ export default function Component(props) {
   let resources = props.data.resources.nodes;
   let type = props.pageContext.data__resource_type;
 
+
+    // TODO: Handle National resources
+
   return (
-  <RLayout pageTitle={`${pageInfo.title} - Kiki for the Future`}>
-    <div className="m-5">
-    <ResourceList resources={resources} type={type}></ResourceList>
-    </div>
-  </RLayout>
+    <RLayout pageTitle={`${pageInfo.title} - Kiki for the Future`}>
+      <ResourceSelect currentType={type}></ResourceSelect>
+      <div className="container my-5">
+        <h2>New York</h2>
+        <ResourceList resources={resources} type={type}></ResourceList>
+      </div>
+    </RLayout>
   );
 
 }

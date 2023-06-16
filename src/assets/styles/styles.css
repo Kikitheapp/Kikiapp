@@ -111,3 +111,8 @@ h2, h3 {
   border: none;
   padding: 12px 25px;
 }
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--charcoal);
+}

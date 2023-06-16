@@ -35,34 +35,17 @@ function RLayout({ children }){
     title: "LGBTQIA+ Resources"
   }
 
-  // TODO: Handle State selection
-  function loadResources(event) {
-    navigate(`/resources/${event.target.value}`);
-  }
-
   return (
-    <div>
     <div className="root">
       <div className="container-fluid">
         <Escape></Escape>
         <Navbar></Navbar>
         <ThemeSwitcher></ThemeSwitcher>
         <PageHeading info={pageInfo} metadata={pageMetadata}></PageHeading>
-        <main>
-        <div className="py-4 my-5 bg-primary text-center">
-            <label className="form-label" htmlFor="select-type">Resources by Type: </label>
-            <select id="select-type" className="text-center btn btn-outline-secondary ps-1" onChange={loadResources}>
-              <option value="">All</option>
-              <option value="housing">Housing</option>s
-              <option value="legal">Legal</option>
-              <option value="health-wellness">Health + Wellness</option>
-              <option value="queer-spaces">Queer Spaces</option>
-            </select>
-          </div>
-          {children}
-        </main>
       </div>
-    </div>
+      <main>
+        {children}
+      </main>
       <footer className="container-fluid bg-primary">
         <h3>Kiki for the Future™</h3>
         <h3>Follow us</h3>

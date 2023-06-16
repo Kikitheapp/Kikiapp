@@ -2,6 +2,7 @@ import * as React from "react";
 import { graphql} from "gatsby";
 import RLayout from '../../layouts/rlayout/rlayout.js';
 import ResourceList from '../../components/ResourceList/ResourceList.js';
+import ResourceSelect from '../../components/ResourceSelect/ResourceSelect.js';
 
 import person1 from "../../assets/images/resources/resources-header-person-1.png";
 import person2 from "../../assets/images/resources/resources-header-person-2.png";
@@ -28,24 +29,27 @@ function Resources(props){
   // get resources, grouped by type
   const resources = props.data.resources.group;
 
-  // resource types in order that they are displayed
-  // TODO: Fix list order
   // TODO: Handle National resources
-  // TODO: Make resources look good
   
   // const resourceTypes = ['Housing', 'Legal', 'Health + Wellness', 'Queer Spaces'];
 
 
-  let list = resources.map((group, index) => {
-    return <ResourceList resources={group.nodes} type={group.type} key={index} />
+  let list = {};
+  resources.forEach((group, index) => {
+    list[group.type] = <ResourceList resources={group.nodes} type={group.type} key={index} />;
   });
-
 
   return (
       <RLayout pageTitle={`${pageInfo.title} - Kiki for the Future`}>
-        <div className="m-5">
+        <ResourceSelect currentType='All'></ResourceSelect>
+        <div className="container">
+          <div className="my-5">
           <h2>New York</h2>
-          {list}
+          {list['Housing']}
+          {list['Legal']}
+          {list['Health + Wellness']}
+          {list['Queer Spaces']}
+          </div>
         </div>
       </RLayout>
   )
