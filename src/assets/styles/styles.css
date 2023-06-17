@@ -111,3 +111,14 @@ h2, h3 {
   border: none;
   padding: 12px 25px;
 }
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--charcoal);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--charcoal);
+}

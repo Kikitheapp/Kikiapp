@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import logo from '../../assets/images/kikilogo1.png';
 import './navbar.css';
 
-//TODO: Fix link button for accessability
 
 const Navbar = ()=> {
   return (
@@ -28,9 +27,9 @@ const Navbar = ()=> {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ms-auto'>
             <li className='nav-item dropdown'>
-              <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> 
+              <button className="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> 
                 Get Started 
-              </a>
+              </button>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <Link className='dropdown-item' to='/aboutus'>About Us</Link>
                 <Link className='dropdown-item' to='/faq'>FAQ</Link>

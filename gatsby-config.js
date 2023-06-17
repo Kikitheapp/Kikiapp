@@ -40,12 +40,15 @@ module.exports = {
         tables: [
           {
             baseId: `appztisEji0oKqoqN`,
-            tableName: `states`,
+            tableName: `resources`,
+            separateNodeType: true,
+            queryName: `Resources`,
+            tableLinks: ['resource_states', 'state_fullname']
           },
           {
             baseId: `appztisEji0oKqoqN`,
-            tableName: `resources`
-          }
+            tableName: `states`,
+          },          
         ]
       }
     }
