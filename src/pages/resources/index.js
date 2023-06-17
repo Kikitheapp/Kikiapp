@@ -29,7 +29,6 @@ function Resources(props){
 
 
   // get resources, grouped by type
-  console.log(props.data);
   const stateResources = props.data.state.group;
   const nationalResources = props.data.national.group;
 
@@ -69,7 +68,7 @@ function Resources(props){
 
 export const query = graphql`
   query {
-    state: allAirtableResources(filter: {data: {resource_national: {eq: null}}}) {
+    state: allAirtableResources(filter: {data: {resource_national: {eq: null}, resource_states: {elemMatch: {data: {state_abreviation: {eq: "NY"}}}}}}) {
       group(field: {data: {resource_type: SELECT}}) {
         type: fieldValue
         nodes {

@@ -60,7 +60,7 @@ export default function Component(props) {
 export const query = graphql`
   query($data__resource_type: String) {
     state: allAirtableResources(
-      filter: {data: {resource_national: {eq: null}, resource_type: {eq: $data__resource_type}}}
+      filter: {data: {resource_national: {eq: null}, resource_states: {elemMatch: {data: {state_abreviation: {eq: "NY"}}}} resource_type: {eq: $data__resource_type}}}
     ) {
       nodes {
         id
