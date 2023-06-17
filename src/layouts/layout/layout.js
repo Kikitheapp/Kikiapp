@@ -2,11 +2,9 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import '../layout.css';
 
-
 import Escape from '../../components/escape/escape';
 import Navbar from '../../components/navbar/navbar';
 import ThemeSwitcher from '../../components/themeswitcher/theme-switcher';
-
 
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaTwitterSquare } from 'react-icons/fa';

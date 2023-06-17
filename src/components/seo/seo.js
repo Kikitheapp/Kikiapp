@@ -20,7 +20,6 @@ function SEO(props) {
     siteUrl: defaults.siteUrl
   };
 
-  // TODO: Get page data from DB
   // if override is provideded, update metadata
   if (props.title) {
     metadata.title = `${props.title} - ${defaults.title}`;
