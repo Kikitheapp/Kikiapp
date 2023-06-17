@@ -42,17 +42,16 @@ exports[`Navbar renders correctly 1`] = `
         <li
           className="nav-item dropdown"
         >
-          <a
+          <button
             aria-expanded="false"
             aria-haspopup="true"
             className="nav-link dropdown-toggle"
             data-bs-toggle="dropdown"
             href="#"
             id="navbarDropdown"
-            role="button"
           >
             Get Started
-          </a>
+          </button>
           <div
             aria-labelledby="navbarDropdown"
             className="dropdown-menu"

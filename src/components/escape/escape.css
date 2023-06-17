@@ -18,6 +18,7 @@
 
 .btn-escape:hover {
   background-color: var(--peach-puff);
+  border: 1px solid var(--primary-color);
 }
 
 @media (min-width: 576px) { 
