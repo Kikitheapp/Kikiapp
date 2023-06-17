@@ -96,3 +96,4 @@ making them live! Let's walk through the steps needed to deploy the project.
     trigger the Netlify deployment process and deploy the new version of the project. Once the 
     process is complete, you will see your updates live on the [Kikiapp](https://kikiapp.org/) 
     website!
+    
