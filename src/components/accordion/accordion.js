@@ -15,8 +15,8 @@ const Accordion = ({ title, children }) => {
           <>
           
           <div className={`${isOpen ? "open" : ""}`} >
-            <button type="button" className="btn btn-accordion" onClick={() => setOpen(!isOpen)}>
-              <FaPlus className="accordion-icon my-3 me-3"></FaPlus>
+            <button type="button" className="btn btn-accordion d-flex justify-content-start" onClick={() => setOpen(!isOpen)}>
+              <FaPlus className="accordion-icon me-3"></FaPlus>
               <h4 className={`${isOpen ? "open" : ""}`}>
                 {title}
               </h4>
@@ -24,7 +24,7 @@ const Accordion = ({ title, children }) => {
           </div>
 
           <div className={`accordion-body ${!isOpen ? "collapsed" : ""}`}>
-            <div className="accordion-content flex-column d-flex justify-content-center m-4 mt-0">{children}</div>
+            <div className="accordion-content flex-column d-flex justify-content-center mt-0 me-4 mb-4">{children}</div>
           </div>
           </>
 

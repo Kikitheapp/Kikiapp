@@ -4,8 +4,8 @@ import PageHeading from '../components/pageheading/page-heading.js';
 import Accordion from '../components/accordion/accordion.js';
 import SEO from "../components/seo/seo.js";
 
-import person1 from "../assets/images/prep/prep-person-header-1.svg";
-import person2 from "../assets/images/prep/prep-person-header-2.svg";
+import person1 from "../assets/images/prep/prep-person-header-1.png";
+import person2 from "../assets/images/prep/prep-person-header-2.png";
 import whatIsPrepPerson from "../assets/images/prep/prep-person-what-is-prep.svg";
 import whoShouldStartPerson from "../assets/images/prep/prep-person-who-should-start.svg";
 import whereToGetPerson from "../assets/images/prep/prep-person-where-to-get.svg";
@@ -27,7 +27,7 @@ const Prep = () => {
     <div>
       <Layout>
         <PageHeading info={pageInfo} metadata={pageMetadata}></PageHeading>
-        <div className="wrapper pb-5">
+        <div className="wrapper px-sm-5 pb-5">
           <div className="row justify-content-center">
             <div className="col-md-8  col-lg-6">
               <Accordion title="What is PrEP?">
@@ -83,15 +83,17 @@ const Prep = () => {
               <Accordion title="Sources">
                 <div className="sources-links">
                     <ul>
-                        <li>CDC. (2020, November 3). About Prep. HIV Basics. <a href="https://www.cdc.gov/hiv/basics/prep/about-prep.html" target="_blank" rel="noopener noreferrer">
-                            https://www.cdc.gov/hiv/basics/prep/about-prep.html</a>
+                        <li>CDC. (2020, November 3). About Prep. HIV Basics. <br />
+                          <a href="https://www.cdc.gov/hiv/basics/prep/about-prep.html" target="_blank" rel="noopener noreferrer">
+                            https://<wbr />www<wbr />.<wbr />cdc<wbr />.<wbr />gov/hiv/basics/prep/about-prep.html</a>
                         </li>
-                        <li>Planned Parenthood. (n.d.). What Is PrEP. Planned Parenthood.&nbsp;
+                        <li>Planned Parenthood. (n.d.). What Is PrEP. Planned Parenthood.<br />
                             <a href="https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep" target="_blank" rel="noopener noreferrer">
-                            https://www.plannedparenthood.org/learn/stds-hiv-safer-sex/hiv-aids/prep </a>
+                            https://<wbr />www<wbr />.<wbr />plannedparenthood<wbr />.<wbr />org/learn/stds-hiv-safer-sex/hiv-aids/prep </a>
                         </li>
-                        <li>Please Prep Me. (2021, January 15). Please Prep Me. Please Prep Me. <a href="https://pleaseprepme.org/"target="_blank" rel="noopener noreferrer">
-                            https://pleaseprepme.org/ </a>
+                        <li>Please Prep Me. (2021, January 15). Please Prep Me. Please Prep Me. <br />
+                          <a href="https://pleaseprepme.org/"target="_blank" rel="noopener noreferrer">
+                            https://<wbr />pleaseprepme<wbr />.<wbr />org/ </a>
                         </li>
                     </ul>
                 </div>

@@ -1,12 +1,17 @@
+.btn-accordion {
+	display: flex;
+	text-align: start;
+}
+
 .btn-accordion h4 {
-	display: inline;
 	vertical-align: middle;
 	width: 100%;
-	text-align: left;
 }
 
 .btn-accordion:hover {
   color: var(--dark-orange);
+	background-color: transparent;
+	border-color: transparent;
 }
 
 
@@ -35,3 +40,10 @@
 	transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
 }
 
+.accordion-content {
+	margin-left: 4rem;
+}
+
+.accordion-content ul {
+	padding-left: 1rem;
+}

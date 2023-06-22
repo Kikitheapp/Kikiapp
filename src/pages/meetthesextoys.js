@@ -4,8 +4,8 @@ import Layout from '../layouts/layout/layout.js';
 import PageHeading from '../components/pageheading/page-heading.js';
 import SEO from '../components/seo/seo.js';
 
-import person1 from "../assets/images/sextoys/sextoys-person-1.svg";
-import person2 from "../assets/images/sextoys/sextoys-person-2.svg";
+import person1 from "../assets/images/sextoys/sextoys-person-1.png";
+import person2 from "../assets/images/sextoys/sextoys-person-2.png";
 import dildo from "../assets/images/sextoys/sextoys-dildo.png";
 import vibrator from "../assets/images/sextoys/sextoys-vibrator.png";
 import buttplug from "../assets/images/sextoys/sextoys-buttplug.png";
