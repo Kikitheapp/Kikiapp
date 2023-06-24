@@ -53,6 +53,10 @@ module.exports = {
         ]
       }
     }
-  ]
+  ],
+  proxy: {
+    prefix: "/feed",
+    url: "https://medium.com"
+  }
 }
 
