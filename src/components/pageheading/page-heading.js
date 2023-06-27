@@ -10,7 +10,7 @@ function PageHeading(props) {
   const info = props.info;
   const metadata = props.metadata;
 
-  let heading = <h2 className={"page-title text-center bg-"+info.bgColor}></h2>;
+  let heading = '';
   let subHeading;
 
   if(metadata) {
