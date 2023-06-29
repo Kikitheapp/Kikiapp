@@ -25,15 +25,11 @@ function PageHeading(props) {
   return (
       <div className="heading">
           {heading}
-          <div className="heading-people row justify-content-center mb-5">
-              <div className="heading-person-1 col-6 text-end">
-                  <img src={info.person1} className="img-fluid"
-                      alt='Person looking right.' />
-              </div>
-              <div className="heading-person-2 col-6">
-                  <img src={info.person2} className="img-fluid"
-                      alt="Person looking left."/>
-              </div>
+          <div className="heading-people d-flex justify-content-center align-items-end mb-5">
+              <img src={info.person1} className="img-fluid"
+                  alt='Person looking right.' />
+              <img src={info.person2} className="img-fluid"
+                  alt="Person looking left."/>
           </div>
           {subHeading}
       </div>

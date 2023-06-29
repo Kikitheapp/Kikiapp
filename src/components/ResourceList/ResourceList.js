@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './ResourceList.css';
 
 /***
  * ResoruceList component - creates a list of resources with a heading type
@@ -12,13 +13,17 @@ function ResourceList({resources, type}) {
     if(Array.isArray(resources) && resources.length !== 0) {
       // create a list of resources for this type
       let resourceList = resources.map((resource) => {
+        
+        let website = resource.data.resource_website;
+
         return (
           <div className="resource m-3" key={resource.id}>
             <h4>{resource.data.resource_name}</h4>
             <p className="mb-1">{resource.data.resource_description}</p>
-            <p>Website: <a href={resource.data.resource_website}>{resource.data.resource_website}</a></p>
+            <p>Website: <a href={website}>{website}</a></p>
           </div>
         )
+
       });
       block = 
         <div className="m-3" key={type}>
