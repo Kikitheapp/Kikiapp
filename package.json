@@ -10,6 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
+    "secure-start": "gatsby develop --https",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -27,6 +28,7 @@
     "gatsby-plugin-sharp": "^5.10.0",
     "gatsby-source-airtable": "^2.3.2",
     "gatsby-source-filesystem": "^5.10.0",
+    "gatsby-source-medium": "^5.11.0",
     "gatsby-transformer-sharp": "^5.10.0",
     "node-fetch": ">=2.6.7",
     "react": "^18.2.0",
