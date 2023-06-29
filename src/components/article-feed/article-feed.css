@@ -1,0 +1,11 @@
+.card a {
+  color: var(--font-color);
+}
+
+.card a, .card a:hover, .card a:active, .card a:visited {
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: var(--dark-orange);
+}

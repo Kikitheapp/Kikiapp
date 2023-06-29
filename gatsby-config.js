@@ -35,6 +35,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@kikiapp`,
+      },
+    },
+    {
       resolve: `gatsby-source-airtable`,
       options: {
         apiKey: process.env.AIRTABLE_AIR,
