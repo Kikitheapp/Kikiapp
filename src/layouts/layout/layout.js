@@ -20,7 +20,6 @@ import { FaPatreon } from 'react-icons/fa';
 function Layout({ children }){
   return (
     <>
-    <div className="root">
       <div className="container-fluid">
         <Escape></Escape>
         <Navbar></Navbar>
@@ -29,7 +28,6 @@ function Layout({ children }){
           {children}
         </main>
       </div>
-    </div>
       <footer className="container-fluid bg-primary">
         <h3>Kiki for the Future™</h3>
         <h3>Follow us</h3>

@@ -12,6 +12,10 @@ nav ul {
   padding: .5rem 1rem 0 1rem;
 }
 
+.homepage .navbar {
+  margin-top: 8rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: var(--font-color);
 }
