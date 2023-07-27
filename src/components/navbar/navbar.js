@@ -6,8 +6,8 @@ import './navbar.css';
 
 const Navbar = ()=> {
   return (
-    <div className='nav-container'>
       <nav id="navbar" className='navbar navbar-expand-lg navbar-light'>
+        <div className='container-fluid'>
         <h1>
           <Link className='navbar-brand' to='/'>
             <img src={logo} alt='Kiki'></img>
@@ -62,8 +62,8 @@ const Navbar = ()=> {
             </li>
           </ul>
         </div>
+        </div>
       </nav>
-    </div>
   )
 }
 
