@@ -31,8 +31,11 @@ function ArticleFeed() {
   `);
 
   let articles;
+  let articleCards;
+  
   try {
     articles = data.allMediumPost.edges;
+    articleCards = articles.map(buildArticleCard);
   } catch (error) {
     console.error(error);
   } 
@@ -40,7 +43,7 @@ function ArticleFeed() {
   
 
 
-  let articleCards = articles.map(buildArticleCard);
+
 
 
 
