@@ -6,6 +6,14 @@ h2.page-title {
   text-align: center;
 }
 
+.heading-people {
+  margin-top: -8rem;
+}
+
+.heading-people .img-fluid {
+  max-width: 50%;
+}
+
 
 .dark-mode .heading h2 {
   color: var(--charcoal);

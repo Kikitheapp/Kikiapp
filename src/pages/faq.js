@@ -5,8 +5,8 @@ import PageHeading from '../components/pageheading/page-heading.js';
 import Accordion from '../components/accordion/accordion.js';
 import SEO from "../components/seo/seo.js";
 
-import headingPerson1 from "../assets/images/faq/faq-person-header-2.svg";
-import headingPerson2 from "../assets/images/faq/faq-person-header-1.svg";
+import headingPerson1 from "../assets/images/faq/faq-person-header-2.png";
+import headingPerson2 from "../assets/images/faq/faq-person-header-1.png";
 import relAndConsentPerson from "../assets/images/faq/faq-person-rel-and-consent.svg";
 import stisStdsPerson from "../assets/images/faq/faq-person-stis-stds.svg";
 import sexualPleasurePerson from "../assets/images/faq/faq-person-sexual-pleasure.svg";
@@ -30,7 +30,7 @@ const Faq = () => {
     <div>
       <Layout>
         <PageHeading info={headingInfo} metadata={pageMetadata}></PageHeading>
-        <div className="wrapper pb-5">
+        <div className="wrapper px-sm-5 pb-5">
           <div className="row justify-content-center">
             <div className="col-md-8  col-lg-6">
               <Accordion title="STIs/STDs, Testing, and Barriers">

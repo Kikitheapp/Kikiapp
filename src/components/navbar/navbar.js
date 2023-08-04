@@ -3,12 +3,11 @@ import { Link } from 'gatsby';
 import logo from '../../assets/images/kikilogo1.png';
 import './navbar.css';
 
-//TODO: Fix link button for accessability
 
 const Navbar = ()=> {
   return (
-    <div className='nav-container'>
       <nav id="navbar" className='navbar navbar-expand-lg navbar-light'>
+        <div className='container-fluid'>
         <h1>
           <Link className='navbar-brand' to='/'>
             <img src={logo} alt='Kiki'></img>
@@ -28,14 +27,15 @@ const Navbar = ()=> {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ms-auto'>
             <li className='nav-item dropdown'>
-              <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> 
+              <button className="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> 
                 Get Started 
-              </a>
+              </button>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <Link className='dropdown-item' to='/aboutus'>About Us</Link>
                 <Link className='dropdown-item' to='/faq'>FAQ</Link>
                 <Link className='dropdown-item' to='/prep'>PrEP Q&amp;A</Link>
                 <Link className='dropdown-item' to='/meetthesextoys'>Meet the sex toys</Link>
+                <Link className='dropdown-item' to='/resources'>Resources</Link>
               </div>
             </li>
             <li className='nav-item'>
@@ -62,8 +62,8 @@ const Navbar = ()=> {
             </li>
           </ul>
         </div>
+        </div>
       </nav>
-    </div>
   )
 }
 

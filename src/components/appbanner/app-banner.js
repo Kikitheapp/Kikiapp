@@ -43,7 +43,7 @@ function AppBanner(){
   }
 
   return (
-    <div className="app-banner bg-bright-orange p-2 text-center sticky-top">
+    <div className="app-banner bg-bright-orange p-2 text-center fixed-top">
       <h2 className="mb-0">Our app is now available for download!</h2>
       {bannerContent}
     </div>

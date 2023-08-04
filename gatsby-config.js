@@ -35,18 +35,27 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@kikiapp`,
+      },
+    },
+    {
       resolve: `gatsby-source-airtable`,
       options: {
         apiKey: process.env.AIRTABLE_AIR,
         tables: [
           {
             baseId: `appztisEji0oKqoqN`,
-            tableName: `states`,
+            tableName: `resources`,
+            separateNodeType: true,
+            queryName: `Resources`,
+            tableLinks: ['resource_states', 'state_fullname']
           },
           {
             baseId: `appztisEji0oKqoqN`,
-            tableName: `resources`
-          }
+            tableName: `states`,
+          },          
         ]
       }
     }

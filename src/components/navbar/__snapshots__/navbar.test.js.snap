@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navbar renders correctly 1`] = `
-<div
-  className="nav-container"
+<nav
+  className="navbar navbar-expand-lg navbar-light"
+  id="navbar"
 >
-  <nav
-    className="navbar navbar-expand-lg navbar-light"
-    id="navbar"
+  <div
+    className="container-fluid"
   >
     <h1>
       <a
@@ -42,17 +42,16 @@ exports[`Navbar renders correctly 1`] = `
         <li
           className="nav-item dropdown"
         >
-          <a
+          <button
             aria-expanded="false"
             aria-haspopup="true"
             className="nav-link dropdown-toggle"
             data-bs-toggle="dropdown"
             href="#"
             id="navbarDropdown"
-            role="button"
           >
             Get Started
-          </a>
+          </button>
           <div
             aria-labelledby="navbarDropdown"
             className="dropdown-menu"
@@ -80,6 +79,12 @@ exports[`Navbar renders correctly 1`] = `
               href="/meetthesextoys"
             >
               Meet the sex toys
+            </a>
+            <a
+              className="dropdown-item"
+              href="/resources"
+            >
+              Resources
             </a>
           </div>
         </li>
@@ -119,6 +124,6 @@ exports[`Navbar renders correctly 1`] = `
         </li>
       </ul>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>
 `;

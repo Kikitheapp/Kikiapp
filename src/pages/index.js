@@ -1,6 +1,8 @@
 import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import AppBanner from '../components/appbanner/app-banner';
+import ArticleFeed from '../components/article-feed/article-feed';
+
 import HomePerson1 from "../assets/images/index/home-person-1.svg";
 import HomePerson2 from "../assets/images/index/home-person-2.svg";
 import BackgroundVector from "../assets/images/background-vector.svg";
@@ -13,7 +15,6 @@ function Index(){
     <div className="homepage">
       <AppBanner></AppBanner>
       <Layout>
-        <div>
           <div className="bg-placeholder" style={{backgroundImage: `url(${BackgroundVector})` }}></div>
           <div className="row align-items-center px-5 pb-5">
             <div className="col-md-6 text-center text-md-left pl-md-5"> 
@@ -35,7 +36,7 @@ function Index(){
               </div>
             </div>
           </div>
-      </div>
+      <ArticleFeed />
       </Layout>
     </div>
   )

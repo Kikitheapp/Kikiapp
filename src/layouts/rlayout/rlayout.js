@@ -1,33 +1,51 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
+
 import '../layout.css';
 
 import Escape from '../../components/escape/escape';
 import Navbar from '../../components/navbar/navbar';
 import ThemeSwitcher from '../../components/themeswitcher/theme-switcher';
+import PageHeading from '../../components/pageheading/page-heading.js';
+
 
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaTwitterSquare } from 'react-icons/fa';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { FaPatreon } from 'react-icons/fa';
 
+import person1 from "../../assets/images/resources/resources-header-person-1.png";
+import person2 from "../../assets/images/resources/resources-header-person-2.png";
 
 /**
- * Layout component - main layout for the site
+ * Resource layout component - layout for the resources pages
  * @param ReactElement children - the children of the component
  * @return ReactElement - the layout component
  **/
-function Layout({ children }){
+function RLayout({ children }){
+
+  const pageInfo = {
+    title: "LGBTQIA+ Resources",
+    bgColor: "light-orange",
+    person1: person1,
+    person2: person2
+  }  
+
+  const pageMetadata = {
+    title: "LGBTQIA+ Resources"
+  }
+
   return (
-    <>
+    <div className="root">
       <div className="container-fluid">
         <Escape></Escape>
         <Navbar></Navbar>
         <ThemeSwitcher></ThemeSwitcher>
-        <main>
-          {children}
-        </main>
+        <PageHeading info={pageInfo} metadata={pageMetadata}></PageHeading>
       </div>
+      <main>
+        {children}
+      </main>
       <footer className="container-fluid bg-primary">
         <h3>Kiki for the Future™</h3>
         <h3>Follow us</h3>
@@ -51,8 +69,8 @@ function Layout({ children }){
           <Link className="text-white text-decoration-none" to='/termsofuse'>Terms of Use</Link>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
 
-export default Layout;
+export default RLayout;
