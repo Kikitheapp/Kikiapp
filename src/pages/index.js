@@ -15,7 +15,7 @@ function Index(){
     <div className="homepage">
       <AppBanner></AppBanner>
       <Layout>
-          <div className="bg-placeholder" style={{backgroundImage: `url(${BackgroundVector})` }}></div>
+        <div className="bg-placeholder" style={{backgroundImage: `url(${BackgroundVector})` }}></div>
           <div className="row align-items-center px-5 pb-5">
             <div className="col-md-6 text-center text-md-left pl-md-5"> 
               <h2 className="text-start">Get a fresh take on what you didn&apos;t learn in sex-ed.</h2>
