@@ -4,11 +4,7 @@
 }
 
 .homepage .escape {
-<<<<<<< HEAD
   top: 9rem;
-=======
-  top: 12%;
->>>>>>> main
 }
 
 .escape-icon {
@@ -22,10 +18,7 @@
 
 .btn-escape:hover {
   background-color: var(--peach-puff);
-<<<<<<< HEAD
   border: 1px solid var(--primary-color);
-=======
->>>>>>> main
 }
 
 @media (min-width: 576px) { 
