@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navbar renders correctly 1`] = `
-<div
-  className="nav-container"
+<nav
+  className="navbar navbar-expand-lg navbar-light"
+  id="navbar"
 >
-  <nav
-    className="navbar navbar-expand-lg navbar-light"
-    id="navbar"
+  <div
+    className="container-fluid"
   >
     <h1>
       <a
@@ -124,6 +124,6 @@ exports[`Navbar renders correctly 1`] = `
         </li>
       </ul>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>
 `;
