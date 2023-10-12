@@ -50,7 +50,7 @@ const Faq = () => {
                     <p>The lowdown on where, how, and when to get tested for STIs.</p>
                   </li>
                 </ul>
-                <img src={stisStdsPerson} className="img-fluid align-self-center" 
+                <img src={stisStdsPerson} className="img-fluid align-self-center accordion-person" 
                 alt="Person with yellow shirt, jeans, and a pony tail leaning up against person with orange jacket, gray sweater, 
                     white pants, and a pony tail." />
               </Accordion>
@@ -101,7 +101,7 @@ const Faq = () => {
                       <p>The basics of sexual consent. The foundation to any sexual or romantic relationship.</p>
                   </li>
                 </ul>
-                <img src={relAndConsentPerson} className="img-fluid align-self-center"
+                <img src={relAndConsentPerson} className="img-fluid align-self-center accordion-person"
                   alt="Two people embracing, one wearing shorts and a t-shirt who is lifted slightly off the ground, and the other wearing tan pants and a white t-shirt." />
           </Accordion>
           </div>

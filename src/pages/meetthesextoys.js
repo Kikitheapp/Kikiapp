@@ -120,7 +120,7 @@ const SexToys = () => {
   return (
     <div><Layout pageTitle='Meet the Sex Toys - Kiki for the Future'>
       <PageHeading info={headingInfo} metadata={pageMetadata}></PageHeading>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 px-5 sex-toys">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 px-5 sex-toys">
         {sexToyCols} 
       </div>
     </Layout></div>

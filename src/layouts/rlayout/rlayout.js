@@ -1,11 +1,10 @@
 import * as React from 'react';
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 
 import '../layout.css';
 
 import Escape from '../../components/escape/escape';
 import Navbar from '../../components/navbar/navbar';
-import ThemeSwitcher from '../../components/themeswitcher/theme-switcher';
 import PageHeading from '../../components/pageheading/page-heading.js';
 
 
@@ -37,13 +36,13 @@ function RLayout({ children }){
 
   return (
     <div className="root">
-      <div className="container-fluid">
-        <Escape></Escape>
-        <Navbar></Navbar>
-        <ThemeSwitcher></ThemeSwitcher>
-        <PageHeading info={pageInfo} metadata={pageMetadata}></PageHeading>
+
+      <div className="bg-secondary menu">
+          <Escape></Escape>
+          <Navbar></Navbar>
       </div>
-      <main>
+      <main className="container-fluid">
+        <PageHeading info={pageInfo} metadata={pageMetadata}></PageHeading>
         {children}
       </main>
       <footer className="container-fluid bg-primary">

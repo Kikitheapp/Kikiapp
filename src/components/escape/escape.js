@@ -34,7 +34,7 @@ function Escape(props) {
   }
 
   return (
-    <div className="d-inline-block sticky-top start-50 m-2 escape">
+    <div className="escape text-center">
       <a href="https://google.com" className="btn btn-escape bg-peach-puff" onClick={exitClick}>
         <BsFillXCircleFill className="escape-icon"></BsFillXCircleFill>
         EXIT NOW - Press ESC x 3

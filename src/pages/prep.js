@@ -35,7 +35,7 @@ const Prep = () => {
                 who have not yet been exposed. There are two types - Truvada, which protects all people at risk through sex or drug injection, 
                 and Descovy, which protects people assigned male at birth from getting HIV from sexual contact. PrEP is a revolutionary 
                 medication that has drastically changed the outcomes for people at risk for HIV since it was introduced in 2012.</p>
-                <img src={whatIsPrepPerson} className="img-fluid align-self-center"
+                <img src={whatIsPrepPerson} className="img-fluid align-self-center accordion-person"
                     alt="Person with jean jacket and jeans giving another person with purple pants and a red jacket a piggy back ride." />
               </Accordion>
             </div>
