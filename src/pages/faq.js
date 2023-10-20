@@ -3,7 +3,7 @@ import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import PageHeading from '../components/pageheading/page-heading.js';
 import Accordion from '../components/accordion/accordion.js';
-import SEO from "../components/seo/seo.js";
+import Seo from "../components/seo/seo.js";
 
 import headingPerson1 from "../assets/images/faq/faq-person-header-2.png";
 import headingPerson2 from "../assets/images/faq/faq-person-header-1.png";
@@ -116,5 +116,5 @@ const Faq = () => {
 export default Faq;
 
 export function Head(){
-    return <SEO title={pageMetadata.title} />
+    return <Seo title={pageMetadata.title} />
 }

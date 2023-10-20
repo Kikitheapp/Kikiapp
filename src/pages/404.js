@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Layout from '../layouts/layout/layout.js';
-import SEO from "../components/seo/seo.js";
+import Seo from "../components/seo/seo.js";
 import BackgroundVector from '../assets/images/background-vector.svg';
 
 
@@ -41,5 +41,5 @@ const NotFoundPage = () => {
 export default NotFoundPage;
 
 export function Head(){
-  return <SEO title="Page Not Found" />
+  return <Seo title="Page Not Found" />
 }

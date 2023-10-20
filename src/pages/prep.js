@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import PageHeading from '../components/pageheading/page-heading.js';
 import Accordion from '../components/accordion/accordion.js';
-import SEO from "../components/seo/seo.js";
+import Seo from "../components/seo/seo.js";
 
 import person1 from "../assets/images/prep/prep-person-header-1.png";
 import person2 from "../assets/images/prep/prep-person-header-2.png";
@@ -56,9 +56,9 @@ const Prep = () => {
             <div className="col-md-8  col-lg-6">
               <Accordion title="Where To Get It?">
                 <p>PrEP is covered under most private and public health insurance. 
-                  Check out <a href="https://locator.hiv.gov/?location" target="_blank">this directory</a> for PrEP providers near you. 
+                  Check out <a href="https://locator.hiv.gov/?location" target="_blank" rel="noopener noreferrer">this directory</a> for PrEP providers near you. 
                 It is also available through telehealth companies like Folx.</p>
-                <img src={whereToGetPerson} className="img-fluid align-self-center accordion-person "
+                <img src={whereToGetPerson} className="img-fluid align-self-center accordion-person"
                     alt="interracial couple holding hands in summer clothes " />
               </Accordion>
             </div>
@@ -110,5 +110,5 @@ const Prep = () => {
 export default Prep;
 
 export function Head(){
-    return <SEO title={pageMetadata.title} description={pageMetadata.description} />
+    return <Seo title={pageMetadata.title} description={pageMetadata.description} />
 }

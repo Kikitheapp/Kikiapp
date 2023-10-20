@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from 'gatsby';
-import SEO from "../components/seo/seo.js";
+import Seo from "../components/seo/seo.js";
 
 
 import './aboutus.css';
@@ -204,5 +204,5 @@ const AboutUs = () => {
 export default AboutUs;
 
 export function Head(){
-  return <SEO  title="About Us" siteUrl="aboutus" />
+  return <Seo  title="About Us" siteUrl="aboutus" />
 }
