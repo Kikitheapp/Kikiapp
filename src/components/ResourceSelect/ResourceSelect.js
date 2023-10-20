@@ -18,11 +18,6 @@ function ResourceSelect({currentType}) {
 
   let thisTypeSlug = typeSlugs[types.indexOf(currentType)];
 
-  let typeOptions = types.map((type, index) => {
-    let isSelected = type === currentType ? 'selected' : '';
-    return <option value={typeSlugs[index]} key={index} selected={ isSelected } >{type}</option>
-  });
-
   return (
     <div className="container-fluid">
       <div className="py-3 bg-primary text-center">

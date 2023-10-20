@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
-import SEO from "../components/seo/seo.js";
+import Seo from "../components/seo/seo.js";
 import BackgroundVector from '../assets/images/background-vector.svg';
 
 // markup
@@ -380,5 +380,5 @@ const TermsOfUse = () => {
 export default TermsOfUse;
 
 export function Head(){
-  return <SEO title="Terms of Use" />
+  return <Seo title="Terms of Use" />
 }
