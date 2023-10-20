@@ -15,19 +15,19 @@ function Index(){
     <div className="homepage">
       <AppBanner></AppBanner>
       <Layout>
-        <div className="bg-placeholder" style={{backgroundImage: `url(${BackgroundVector})` }}></div>
-          <div className="row align-items-center px-5 pb-5">
-            <div className="col-md-6 text-center text-md-left pl-md-5"> 
-              <h2 className="text-start">Get a fresh take on what you didn&apos;t learn in sex-ed.</h2>
-              <Link className='nav-link' to='/mailinglist' data-testid='mailing-list-link'>
-                <button type="button" className="btn btn-primary mailinglistbtn">Join our mailing list</button>
+          <div className="row align-items-center p-2 welcome" style={{backgroundImage: `url(${BackgroundVector})` }}>
+            <div className="col-sm-6 text-center text-md-left px-md-5"> 
+              <h2 className="text-md-start pt-4 ">Get a fresh take on what you didn&apos;t learn in sex-ed.</h2>
+              <Link className='btn btn-primary mailinglistbtn my-3' to='/mailinglist' data-testid='mailing-list-link'>
+                {/* <button type="button" className="btn btn-primary mailinglistbtn my-3"> */}
+                  Join our mailing list
+                  {/* </button> */}
               </Link>
-              <br/>
-              <h4 className="text-start">Sign up to get our free queer pleasure workbook!</h4>
+              <h4 className="text-md-start pb-1">Sign up to get our free queer pleasure workbook!</h4>
             </div>
-            <div className="col-md-6 home-people">
-              <div className="row pr-md-5">
-                <div className="col-6 home-person-1">
+            <div className="col-sm-6 home-people">
+              <div className="row">
+                <div className="col-6 home-person-1 text-end">
                   <img className="img-fluid" src={HomePerson1} alt="Person standing with lab coat and a bun." />
                 </div>
                 <div className="col-6 home-person-2">

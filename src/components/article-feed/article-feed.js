@@ -44,7 +44,7 @@ function ArticleFeed() {
 
   function buildArticleCard(article){
     return (
-      <div className="col-md" key={article.node.id}>
+      <div className="col-sm py-3" key={article.node.id}>
 
         <div className="card">
         <a href={`https://medium.com/kiki-magazine/${article.node.uniqueSlug}`} target="_blank" rel="noreferrer">
@@ -59,8 +59,11 @@ function ArticleFeed() {
   }
 
   return (
-    <div className="row gy-3 justify-content-center p-5 bg-dark-orange text-center">
+    <div className="row p-4 bg-dark-orange text-center">
+      <h3>Our latest Posts...</h3>
+      <div className="row justify-content-center">
       {articleCards}
+      </div>
     </div>
   );
 }

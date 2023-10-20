@@ -6,7 +6,7 @@ import './navbar.css';
 
 const Navbar = ()=> {
   return (
-      <nav id="navbar" className='navbar navbar-expand-lg navbar-light'>
+      <nav id="navbar" className='navbar navbar-expand-md p-1 navbar-light bg-secondary'>
         <div className='container-fluid'>
         <h1>
           <Link className='navbar-brand' to='/'>
@@ -30,7 +30,7 @@ const Navbar = ()=> {
               <button className="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"> 
                 Get Started 
               </button>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div className="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
                 <Link className='dropdown-item' to='/aboutus'>About Us</Link>
                 <Link className='dropdown-item' to='/faq'>FAQ</Link>
                 <Link className='dropdown-item' to='/prep'>PrEP Q&amp;A</Link>

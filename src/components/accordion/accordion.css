@@ -11,7 +11,7 @@
 
 
 .accordion-person {
-  height: 28rem;
+  max-height: 250px;
 }
 
 .accordion-icon {

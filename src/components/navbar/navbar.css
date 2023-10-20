@@ -5,16 +5,18 @@ nav ul {
   font-family: 'Candal', sans-serif;
 }
 
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
 
 /************************** Bootstrap Overrides ***********************/
 
-.navbar {
-  padding: .5rem 1rem 0 1rem;
-}
 
-.homepage .navbar {
-  margin-top: 8rem;
-}
 
 .navbar-light .navbar-nav .nav-link {
   color: var(--font-color);
@@ -34,13 +36,11 @@ nav ul {
 }
 
 .dropdown-menu {
-  text-align: center;
   border: none;
 }
 
-@media (min-width: 992px){
+@media (min-width: 768px){
   .dropdown-menu {
-    text-align: left;
     border: 1px solid rgba(0,0,0,.15);
   }
 }

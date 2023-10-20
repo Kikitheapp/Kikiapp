@@ -4,7 +4,6 @@ import '../layout.css';
 
 import Escape from '../../components/escape/escape';
 import Navbar from '../../components/navbar/navbar';
-import ThemeSwitcher from '../../components/themeswitcher/theme-switcher';
 
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaTwitterSquare } from 'react-icons/fa';
@@ -19,15 +18,15 @@ import { FaPatreon } from 'react-icons/fa';
  **/
 function Layout({ children }){
   return (
-    <>
-      <div className="container-fluid">
+    <div className="root">
+      <div className="bg-secondary menu">
         <Escape></Escape>
         <Navbar></Navbar>
-        <ThemeSwitcher></ThemeSwitcher>
-        <main>
-          {children}
-        </main>
       </div>
+      <main className="container-fluid">
+        {children}
+      </main>
+
       <footer className="container-fluid bg-primary">
         <h3>Kiki for the Future™</h3>
         <h3>Follow us</h3>
@@ -51,7 +50,7 @@ function Layout({ children }){
           <Link className="text-white text-decoration-none" to='/termsofuse'>Terms of Use</Link>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
 
