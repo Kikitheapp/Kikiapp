@@ -39,6 +39,10 @@ function Escape(props) {
         <BsFillXCircleFill className="escape-icon"></BsFillXCircleFill>
         EXIT NOW - Press ESC x 3
       </a>
+      <a href="https://google.com" className="btn btn-escape btn-escape-2 bg-peach-puff" onClick={exitClick}>
+        <BsFillXCircleFill className="escape-icon"></BsFillXCircleFill>
+        <span>exit</span>
+      </a>
     </div>
   );
 }

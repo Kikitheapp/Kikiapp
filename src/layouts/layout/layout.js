@@ -19,13 +19,13 @@ import { FaPatreon } from 'react-icons/fa';
 function Layout({ children }){
   return (
     <div className="root">
-        <div className="bg-secondary menu">
-          <Escape></Escape>
-          <Navbar></Navbar>
-        </div>
-        <main className="container-fluid">
-          {children}
-        </main>
+      <div className="bg-secondary menu">
+        <Escape></Escape>
+        <Navbar></Navbar>
+      </div>
+      <main className="container-fluid">
+        {children}
+      </main>
 
       <footer className="container-fluid bg-primary">
         <h3>Kiki for the Future™</h3>

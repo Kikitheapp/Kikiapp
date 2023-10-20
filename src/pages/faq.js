@@ -13,7 +13,8 @@ import sexualPleasurePerson from "../assets/images/faq/faq-person-sexual-pleasur
 import healthPerson from "../assets/images/faq/faq-person-health.svg";
 
 const pageMetadata = {
-    title: "FAQ"
+    title: "FAQ",
+    description: "Links to our sex-ed 101 blog posts."
 }
 
 

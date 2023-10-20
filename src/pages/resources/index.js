@@ -9,7 +9,8 @@ import person1 from "../../assets/images/resources/resources-header-person-1.png
 import person2 from "../../assets/images/resources/resources-header-person-2.png";
 
 const pageMetadata = {
-  title: "LGBTQIA+ Resources"
+  title: "LGBTQIA+ Resources",
+  desription: "Find IRL LGBTQIA+ resources in NYC and beyond."
 }
 
 /**

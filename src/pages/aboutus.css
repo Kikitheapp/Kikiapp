@@ -1,5 +1,5 @@
 .about-kiki {
-  font-size: x-large;
+  font-size: 1.2rem;
 }
 
 .block {
@@ -9,30 +9,45 @@
   margin-bottom: 2%;
 }
 
+.bio-row, .about-kiki {
+  max-width: 1400px;
+}
+
 .bio {
   background: #30c3cd;
-  padding: 12px 24px;
+  padding: 12px 24px 0px 24px;
   color: white;
   height: 100%;
 }
 
-.dark-mode .bio {
-  color: var(--charcoal);
+.bio img {
+  max-width: 400px;
+  max-height: 400px;
+  margin: 0 auto;
 }
 
 .bio-img {
-  margin: 1rem 0;
+  width: 100%;
+}
+
+.bio h3 {
+  margin-top: 1rem;
 }
 
 .bio a {
   color: white !important;
 }
 
-.dark-mode .bio a {
-  color: var(--charcoal) !important;
+/* Medium devices (tablets, 768px and up) */ 
+@media (min-width: 768px) {
+  .bio h4 {
+    min-height: 3.7rem;
+  }
 }
 
-main .g-5 {
-  margin-left: 0;
-  margin-right: 0;
+/* xlarge devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .bio h4 {
+    min-height: 4.5rem;
+  }
 }

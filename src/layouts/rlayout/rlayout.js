@@ -26,12 +26,13 @@ function RLayout({ children }){
   const pageInfo = {
     title: "LGBTQIA+ Resources",
     bgColor: "light-orange",
-    person1: person1,
-    person2: person2
+    person1: {"img": person1, "alt": "Two masc-appearing people holding hands and dancing."},
+    person2: {"img": person2, "alt": "Two femme-appearing people holding hands and dancing, one in a dress and one in flares and a long-sleeved crop top."}
   }  
 
   const pageMetadata = {
-    title: "LGBTQIA+ Resources"
+    title: "LGBTQIA+ Resources",
+    description: "Find IRL LGBTQIA+ resources in NYC and beyond."
   }
 
   return (
