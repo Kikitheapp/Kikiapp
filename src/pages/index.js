@@ -8,7 +8,7 @@ import HomePerson2 from "../assets/images/index/home-person-2.svg";
 import BackgroundVector from "../assets/images/background-vector.svg";
 import { Link } from 'gatsby';
 import './index.css';
-import SEO from "../components/seo/seo.js";
+import Seo from "../components/seo/seo.js";
 
 function Index(){
   return (
@@ -46,5 +46,5 @@ export default Index;
 
 
 export function Head(){
-  return <SEO />
+  return <Seo />
 }

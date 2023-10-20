@@ -2,7 +2,7 @@ import * as React from "react";
 
 import Layout from '../layouts/layout/layout.js';
 import PageHeading from '../components/pageheading/page-heading.js';
-import SEO from '../components/seo/seo.js';
+import Seo from '../components/seo/seo.js';
 
 import person1 from "../assets/images/sextoys/sextoys-person-1.png";
 import person2 from "../assets/images/sextoys/sextoys-person-2.png";
@@ -128,7 +128,7 @@ const SexToys = () => {
 }
 
 export function Head(){
-  return <SEO title={pageMetadata.title} description={pageMetadata.description} />
+  return <Seo title={pageMetadata.title} description={pageMetadata.description} />
 }
 
 export default SexToys;
