@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Layout from '../layouts/layout/layout.js';
 import Mailchimp from 'react-mailchimp-form';
-import SEO from "../components/seo/seo.js";
+import Seo from "../components/seo/seo.js";
 
 import './mailinglist.css';
  
@@ -57,5 +57,5 @@ const Mailinglist = () => {
   export default Mailinglist;
 
 export function Head(){
-    return <SEO title="Join our Mailing List" />
+    return <Seo title="Join our Mailing List" />
 }
