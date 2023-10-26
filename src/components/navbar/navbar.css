@@ -17,11 +17,6 @@ nav ul {
 /************************** Bootstrap Overrides ***********************/
 
 
-
-.homepage .navbar {
-  margin-top: 8rem;
-}
-
 .navbar-light .navbar-nav .nav-link {
   color: var(--font-color);
 }
