@@ -4,10 +4,14 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Link } from 'gatsby';
 import Seo from "../components/seo/seo.js";
 
-
 import './aboutus.css';
 
+import { useBlogUrl } from '../hooks/use-blog-url.js';
+
 const AboutUs = () => {
+
+  const blogLink = useBlogUrl();
+
   return (
     <div><Layout>
       <div className="row justify-content-center">
@@ -16,13 +20,13 @@ const AboutUs = () => {
           We are Kiki For The Future™. We are creating an app that curates sexual health resources for the queer community. 
           We are a platform for queer sexual education, for sexual liberation, for knowledge, for power, joy, freedom, and connection. 
           Please check out our&ensp;
-          <a target='_blank' href='https://medium.com/kiki-app' rel="noreferrer">blog</a>, 
+          <a target='_blank' href={blogLink} rel="noreferrer">blog</a>, 
           sign up for our&ensp;
           <Link target='_blank' to='/mailinglist' rel="noreferrer">newsletter</Link>, and follow us on&ensp;
           <a target='_blank' href='https://www.instagram.com/kikitheapp/' rel="noreferrer">Instagram</a>,&ensp;
           <a target='_blank' href='https://www.facebook.com/kikitheapp' rel="noreferrer">Facebook</a>,&ensp;
           <a target='_blank' href='https://twitter.com/kikitheapp' rel="noreferrer">Twitter</a>,&nbsp;and&ensp;
-          <a target='_blank' href='https://www.tiktok.com/@kikitheapp?' rel="noreferrer">TikTok</a>.
+          <a target='_blank' href='https://www.tiktok.com/@kikitheapp' rel="noreferrer">TikTok</a>.
           You can also join us on Patreon for exclusive content.
           </p>
           <p>

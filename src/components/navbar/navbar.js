@@ -3,8 +3,13 @@ import { Link } from 'gatsby';
 import logo from '../../assets/images/kikilogo1.png';
 import './navbar.css';
 
+import { useBlogUrl } from "../../hooks/use-blog-url";
 
-const Navbar = ()=> {
+
+function Navbar() {
+
+  const blogLink = useBlogUrl();
+
   return (
       <nav id="navbar" className='navbar navbar-expand-md p-1 navbar-light bg-secondary'>
         <div className='container-fluid'>
@@ -43,7 +48,7 @@ const Navbar = ()=> {
                 className='nav-link'
                 target='_blank'
                 rel='noopener noreferrer'
-                href='https://kikiapp.medium.com/'>
+                href={blogLink}>
                 Visit our blog
               </a>
             </li>
