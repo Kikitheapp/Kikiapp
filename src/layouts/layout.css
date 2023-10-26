@@ -20,38 +20,3 @@
 #___gatsby, #gatsby-focus-wrapper, #gatsby-focus-wrapper > div:first-of-type {
   height: 100%;
 }
-
-
-/*********************************************************************
-************************** Footer              ***********************
-**********************************************************************/
-
-footer {
-  color: white;
-  flex-shrink: 0;
-  padding: 30px 0;
-  text-align: center;
-}
-
-.dark-mode footer {
-  color: var(--charcoal);
-}
-
-footer h3 {
-  font-size: 20px;
-}
-
-.social-icons {
-  font-size: xx-large;
-  color: whitesmoke;
-  margin: 10px;
-}
-
-.dark-mode .social-icons {
-  color: var(--charcoal);
-  
-}
-
-.dark-mode .social-icons :hover{
-  color: #ffffff;
-}

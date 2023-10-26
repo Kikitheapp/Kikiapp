@@ -1,9 +1,28 @@
 import React from 'react';
+import * as Gatsby from 'gatsby';
 import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom'
 import Resources from "./";
 
 describe("Resources", () => {
+
+  const useStaticQuery = jest.spyOn(Gatsby, `useStaticQuery`)
+  const mockUseStaticQuery = {
+    site: {
+      siteMetadata: {
+        "blogUrl": "https://medium.com/kiki-app"
+      }
+    }
+  }
+
+  beforeAll(() => {
+    useStaticQuery.mockImplementation(() => mockUseStaticQuery);
+  });
+
+  afterAll(() => {
+    jest.restoreAllMocks();
+  });
+
     
   it("renders", async () => {
 
