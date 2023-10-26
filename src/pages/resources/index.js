@@ -3,13 +3,14 @@ import { graphql} from "gatsby";
 import RLayout from '../../layouts/rlayout/rlayout.js';
 import ResourceList from '../../components/ResourceList/ResourceList.js';
 import ResourceSelect from '../../components/ResourceSelect/ResourceSelect.js';
-import SEO from '../../components/seo/seo.js';
+import Seo from '../../components/seo/seo.js';
 
 import person1 from "../../assets/images/resources/resources-header-person-1.png";
 import person2 from "../../assets/images/resources/resources-header-person-2.png";
 
 const pageMetadata = {
-  title: "LGBTQIA+ Resources"
+  title: "LGBTQIA+ Resources",
+  desription: "Find IRL LGBTQIA+ resources in NYC and beyond."
 }
 
 /**
@@ -113,5 +114,5 @@ export const query = graphql`
 export default Resources;
 
 export function Head(){
-  return <SEO title={pageMetadata.title} />
+  return <Seo title={pageMetadata.title} />
 }

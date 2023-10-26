@@ -12,7 +12,7 @@ const Accordion = ({ title, children }) => {
   const [isOpen, setOpen] = React.useState(false);
 
   return (
-          <>
+        <>
           
           <div className={`${isOpen ? "open" : ""}`} >
             <button type="button" className="btn btn-accordion d-flex justify-content-start" onClick={() => setOpen(!isOpen)}>
@@ -26,7 +26,7 @@ const Accordion = ({ title, children }) => {
           <div className={`accordion-body ${!isOpen ? "collapsed" : ""}`}>
             <div className="accordion-content flex-column d-flex justify-content-center mt-0 me-4 mb-4">{children}</div>
           </div>
-          </>
+        </>
 
   );
 };

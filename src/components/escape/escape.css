@@ -1,29 +1,32 @@
-.escape {
-  top: 2%;
-  left: 100%
-}
-
-.homepage .escape {
-  top: 9rem;
-}
 
 .escape-icon {
   font-size: 1.32em;
   margin: 0 0.5em;
 }
 
-.escape a {
+.btn-escape {
   border: 1px solid var(--primary-color);
+  width: 300px;
+  margin: 8px;
+}
+
+.btn-escape-2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 40%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-escape:hover {
   background-color: var(--peach-puff);
   border: 1px solid var(--primary-color);
-}
-
-@media (min-width: 576px) { 
-  .escape {
-    left: 50%;
-    transform: translateX(-50%) !important;
-  }
 }

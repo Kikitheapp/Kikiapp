@@ -1,0 +1,21 @@
+/*********************************************************************
+************************** Footer              ***********************
+**********************************************************************/
+
+footer {
+  color: white;
+  flex-shrink: 0;
+  padding: 30px 0;
+  text-align: center;
+}
+
+
+footer h3 {
+  font-size: 20px;
+}
+
+.social-icons {
+  font-size: xx-large;
+  color: whitesmoke;
+  margin: 10px;
+}

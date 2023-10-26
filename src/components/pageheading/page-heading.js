@@ -22,14 +22,36 @@ function PageHeading(props) {
     }
   }
 
+  let person1 = '';
+  let person1alt = 'Person looking right.';
+  
+  if(typeof info.person1 === 'object'){
+    person1 = info.person1.img;
+    person1alt = info.person1.alt;
+  } else {
+    person1 = info.person1;
+  }
+
+  
+  let person2 = '';
+  let person2alt = 'Person looking left.';
+  if(typeof info.person2 === 'object'){
+    person2 = info.person2.img;
+    person2alt = info.person2.alt;
+  } else {
+    person2 = info.person2;
+  }
+
+  
+
   return (
       <div className="heading">
           {heading}
           <div className="heading-people d-flex justify-content-center align-items-end mb-5">
-              <img src={info.person1} className="img-fluid"
-                  alt='Person looking right.' />
-              <img src={info.person2} className="img-fluid"
-                  alt="Person looking left."/>
+              <img src={person1} className="img-fluid"
+                  alt={person1alt} />
+              <img src={person2} className="img-fluid"
+                  alt={person2alt} />
           </div>
           {subHeading}
       </div>

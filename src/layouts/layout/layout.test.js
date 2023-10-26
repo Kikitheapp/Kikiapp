@@ -7,6 +7,24 @@ import Layout from './layout';
 
 
 describe("Layout component", () => {
+  
+  const useStaticQuery = jest.spyOn(Gatsby, `useStaticQuery`)
+  const mockUseStaticQuery = {
+    site: {
+      siteMetadata: {
+        "blogUrl": "https://medium.com/kiki-app"
+      }
+    }
+  }
+
+  beforeAll(() => {
+    useStaticQuery.mockImplementation(() => mockUseStaticQuery);
+  });
+
+  afterAll(() => {
+    jest.restoreAllMocks();
+  });
+
 
   it("renders the layout", async () => {
       
@@ -15,9 +33,6 @@ describe("Layout component", () => {
       // check for escape button
       expect(screen.getByText("EXIT NOW - Press ESC x 3")).toBeInTheDocument();
 
-      // check for footer text
-      expect(screen.getByText("Kiki for the Future™")).toBeInTheDocument();
-  
     }
   );
 

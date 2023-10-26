@@ -1,9 +1,8 @@
 import * as React from 'react';
 import Layout from '../layouts/layout/layout.js';
 import Mailchimp from 'react-mailchimp-form';
-import SEO from "../components/seo/seo.js";
+import Seo from "../components/seo/seo.js";
 
-import BackgroundVector from '../assets/images/background-vector.svg';
 import './mailinglist.css';
  
 const Mailinglist = () => {
@@ -11,7 +10,7 @@ const Mailinglist = () => {
         <div>
             <Layout>
             <div className="row p-5 justify-content-center">
-                <div className="col-md-6 col-xl-4">
+                <div className="col-sm-6 col-xl-4">
                     <h2 className="text-center">Join the Kiki For The Future™ mailing list
                     and get our free queer pleasure workbook!</h2>
                     
@@ -48,9 +47,7 @@ const Mailinglist = () => {
                         className='mail-chimp-form'
                         />
                     </div>
-                    <div>
-                    <div className="bg-placeholder" style={{ backgroundImage: `url(${BackgroundVector})` }}></div>
-                </div>
+                    <div></div>
             </div>
         </Layout>
         </div>
@@ -60,5 +57,5 @@ const Mailinglist = () => {
   export default Mailinglist;
 
 export function Head(){
-    return <SEO title="Join our Mailing List" />
+    return <Seo title="Join our Mailing List" />
 }

@@ -2,35 +2,38 @@ import * as React from "react";
 import Layout from '../layouts/layout/layout.js';
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from 'gatsby';
-import SEO from "../components/seo/seo.js";
-
+import Seo from "../components/seo/seo.js";
 
 import './aboutus.css';
 
+import { useBlogUrl } from '../hooks/use-blog-url.js';
+
 const AboutUs = () => {
+
+  const blogLink = useBlogUrl();
+
   return (
     <div><Layout>
       <div className="row justify-content-center">
-        <div className="col-md-10 col-xl-10 px-4 about-kiki">
+        <div className="col-md-10 px-5 py-4 about-kiki">
           <p>
           We are Kiki For The Future™. We are creating an app that curates sexual health resources for the queer community. 
           We are a platform for queer sexual education, for sexual liberation, for knowledge, for power, joy, freedom, and connection. 
-          Please check out our&nbsp;
-          <a target='_blank' href='https://medium.com/kiki-app' rel="noreferrer">blog</a>, 
-          sign up for our&nbsp;
-          <Link target='_blank' to='/mailinglist' rel="noreferrer">newsletter</Link>, and follow us on&nbsp;
-          <a target='_blank' href='https://www.instagram.com/kikitheapp/' rel="noreferrer">Instagram</a>,&nbsp;
-          <a target='_blank' href='https://www.facebook.com/kikitheapp' rel="noreferrer">Facebook</a>,&nbsp;
-          <a target='_blank' href='https://twitter.com/kikitheapp' rel="noreferrer">Twitter</a>,
-          &nbsp;and&nbsp;
-          <a target='_blank' href='https://www.tiktok.com/@kikitheapp?' rel="noreferrer">TikTok</a>.
+          Please check out our&ensp;
+          <a target='_blank' href={blogLink} rel="noreferrer">blog</a>, 
+          sign up for our&ensp;
+          <Link target='_blank' to='/mailinglist' rel="noreferrer">newsletter</Link>, and follow us on&ensp;
+          <a target='_blank' href='https://www.instagram.com/kikitheapp/' rel="noreferrer">Instagram</a>,&ensp;
+          <a target='_blank' href='https://www.facebook.com/kikitheapp' rel="noreferrer">Facebook</a>,&ensp;
+          <a target='_blank' href='https://twitter.com/kikitheapp' rel="noreferrer">Twitter</a>,&nbsp;and&ensp;
+          <a target='_blank' href='https://www.tiktok.com/@kikitheapp' rel="noreferrer">TikTok</a>.
           You can also join us on Patreon for exclusive content.
           </p>
           <p>
           Kiki For The Future™ was founded in 2020 to address the gap in sexual health resources and education for the LGBTQIA+ community. 
-          This lack of education starts early:&nbsp;
-          <a target='_blank' href='https://www.glsen.org/research/2019-national-school-climate-survey' rel="noreferrer">one study</a>&nbsp;
-          found that fewer than 8% of LGBT youth have access to positive representations 
+          This lack of education starts early:&ensp;
+          <a target='_blank' href='https://www.glsen.org/research/2019-national-school-climate-survey' rel="noreferrer">one study</a>
+          &ensp;found that fewer than 8% of LGBT youth have access to positive representations 
           of LGBT sexuality in their sex ed classes. This renders us essentially invisible and creates a barrier to having safe, 
           pleasurable sex lives. We also face healthcare disparities like doctors who are not educated in queer sexual health needs 
           that lead to higher rates of STIs and fewer preventative healthcare visits. Learning about sexual health and pleasure shouldn’t be daunting.
@@ -47,16 +50,14 @@ const AboutUs = () => {
         </div>
       </div>
         <div className='block'></div>
-        <div>
-      </div>
-      <div className="row p-5 justify-content-center">
-        <div className="col-md-10 col-xl-10 text-center">
+      <div className="row px-3 py-3 justify-content-center">
+        <div className="col text-center">
           <h1 className='header-1'>Meet Our Badass Team</h1>
         </div>
       </div>
-      <div className="row pb-5 g-5 justify-content-start">
-        <div className=' col-lg-5 col-xl-4 about-us-container'>
-          <div className='bio grow'>
+      <div className="row pb-5 gy-3 row-cols-sm-2 row-cols-lg-3 justify-content-center align-self-center bio-row">
+        <div className='col-sm'>
+          <div className='bio'>
             <h4>Krista White (She, Her, Hers)</h4>
             <StaticImage className='bio-img' src='../assets/images/aboutus/krista.png'
               alt='Krista White (Founder)'></StaticImage>
@@ -93,8 +94,8 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className=' col-lg-5 col-xl-4 about-us-container'>
-          <div className='bio grow'>
+        <div className='col-sm'>
+          <div className='bio'>
             <h4>Nicholas Frattaroli (He, Him, His)</h4>
             <StaticImage className='bio-img' src='../assets/images/aboutus/nick.jpg'
               alt='Nick Frattaroli (Web Dev)'></StaticImage>
@@ -121,8 +122,8 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className=' col-lg-5 col-xl-4 about-us-container'>
-          <div className='bio grow'>
+        <div className='col-sm'>
+          <div className='bio'>
             <h4>Mick Franco (He,Him,His)</h4>
             <StaticImage className='bio-img' src='../assets/images/aboutus/mick.jpg'
               alt='Mick Franco (Data Scientist)'></StaticImage>
@@ -145,8 +146,8 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className=' col-lg-5 col-xl-4 about-us-container'>
-          <div className='bio grow'>
+        <div className='col-sm'>
+          <div className='bio'>
           <h4>Jesse Green (They/Them)</h4>
             <StaticImage className='bio-img' src='../assets/images/aboutus/jesse.jpg'
               alt='Jesse Green (Web Developer)'></StaticImage>
@@ -168,15 +169,15 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className=' col-lg-5 col-xl-4 about-us-container'>
-          <div className='bio grow'>
-          <h4>Amanda Lynn Castonguay (They/She)</h4>
+        <div className='col-sm'>
+          <div className='bio'>
+          <h4>Amanda Lynn (They/She)</h4>
             <StaticImage className='bio-img' src='../assets/images/aboutus/amanda.jpg'
-              alt='Amanda Lynn Castonguay (Web Developer)'></StaticImage>
+              alt='Amanda Lynn (Web Developer)'></StaticImage>
             <h3>Web Developer</h3>
             <div className='about-us-content'>
             <p>
-            Amanda Lynn is a Full-Stack Engineer, with a passion for teamwork and usability, 
+            Amanda is a Full-Stack Engineer, with a passion for teamwork and usability, 
             who lives and worksin Portland, Maine. As a member of the LGBTQ+ community and an advocate 
             for diversity in tech, they’re exited to work on a project that gives back to this community. 
             When not working on one of their many projects, you can find Amanda tending to pet fish or 
@@ -193,7 +194,7 @@ const AboutUs = () => {
                 <br></br>
                 Portfolio:{' '}
                 <a href='https://amandalynn.media' target='_blank'
-                  rel='noopener noreferrer'>alcastonguay
+                  rel='noopener noreferrer'>amandalynn.media
                 </a>
               </p>
             </div>
@@ -207,6 +208,5 @@ const AboutUs = () => {
 export default AboutUs;
 
 export function Head(){
-  return <SEO  title="About Us" siteUrl="aboutus" />
+  return <Seo  title="About Us" siteUrl="aboutus" />
 }
-

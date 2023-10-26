@@ -2,7 +2,7 @@
 
 exports[`Navbar renders correctly 1`] = `
 <nav
-  className="navbar navbar-expand-lg navbar-light"
+  className="navbar navbar-expand-md p-1 navbar-light bg-secondary"
   id="navbar"
 >
   <div
@@ -54,7 +54,7 @@ exports[`Navbar renders correctly 1`] = `
           </button>
           <div
             aria-labelledby="navbarDropdown"
-            className="dropdown-menu"
+            className="dropdown-menu bg-secondary"
           >
             <a
               className="dropdown-item"
@@ -93,7 +93,7 @@ exports[`Navbar renders correctly 1`] = `
         >
           <a
             className="nav-link"
-            href="https://kikiapp.medium.com/"
+            href="https://medium.com/kiki-app"
             rel="noopener noreferrer"
             target="_blank"
           >
