@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#30C3CD`,
         theme_color: `#30C3CD`,
         display: `standalone`,
-        icon: `src/assets/images/kikilogo1.png`
+        icon: `src/assets/images/kikifava.png`
       }
     },
     {

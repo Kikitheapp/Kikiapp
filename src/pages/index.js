@@ -19,11 +19,9 @@ function Index(){
             <div className="col-sm-6 text-center text-md-left px-md-5"> 
               <h2 className="text-md-start pt-4 ">Get a fresh take on what you didn&apos;t learn in sex-ed.</h2>
               <Link className='btn btn-primary mailinglistbtn my-3' to='/mailinglist' data-testid='mailing-list-link'>
-                {/* <button type="button" className="btn btn-primary mailinglistbtn my-3"> */}
                   Join our mailing list
-                  {/* </button> */}
               </Link>
-              <h4 className="text-md-start pb-1">Sign up to get our free queer pleasure workbook!</h4>
+              <h3 className="text-md-start pb-1">Sign up to get our free queer pleasure workbook!</h3>
             </div>
             <div className="col-sm-6 home-people">
               <div className="row">

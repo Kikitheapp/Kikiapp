@@ -12,8 +12,8 @@ import { FaTiktok } from "react-icons/fa";
 
 function Footer(){
   return <footer className="container-fluid bg-primary">
-    <h3>Kiki for the Future™</h3>
-    <h3>Follow us</h3>
+    <h5>Kiki for the Future™</h5>
+    <h5>Follow us</h5>
     <div>
       <a className="social-icons" href="https://www.facebook.com/kikitheapp/" target="_blank" rel="noopener noreferrer">
         <FaFacebookSquare></FaFacebookSquare>
@@ -32,9 +32,9 @@ function Footer(){
       </a>
     </div>
     <div className="pt-2">
-      <Link className="text-white text-decoration-none" to='/privacypolicy'>Privacy Policy</Link>
+      <Link className="text-charcoal text-decoration-none" to='/privacypolicy'>Privacy Policy</Link>
       &nbsp;-&nbsp; 
-      <Link className="text-white text-decoration-none" to='/termsofuse'>Terms of Use</Link>
+      <Link className="text-charcoal text-decoration-none" to='/termsofuse'>Terms of Use</Link>
     </div>
   </footer>
 }

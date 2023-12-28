@@ -64,7 +64,7 @@ function ArticleFeed() {
 
   return (
     <div className="row p-4 bg-dark-orange text-center">
-      <h3>Our latest Posts...</h3>
+      <h4>Our latest Posts...</h4>
       <div className="row justify-content-center">
       {articleCards}
       </div>

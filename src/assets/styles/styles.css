@@ -11,23 +11,13 @@
   --light-gray: #F0EDED;
 }
 
-html, body {
-  height: 100%;
-  --font-color: var(--charcoal);
-  margin: 0;
-}
 
 body {
-  color: var(--font-color);
+  color: var(--charcoal);
   font-family: 'Montserrat', sans-serif;
   background-color: var(--background-color);
 }
 
-.dark-mode {
-  --background-color: var(--charcoal);
-  --font-color: white;
-  --select-background: var(--charcoal);
-}
 
 .docs h3 {
   font-size: 1.25em;
@@ -65,25 +55,12 @@ body {
   background-color: var(--light-gray);
 }
 
-.dark-mode .bg-peach-puff {
-  background-color: var(--peach-puff);
-}
-
-.dark-mode h2{
-  color: white;
-}
-
-.dark-mode .bg-light-orange {
-  background-color: var(--dark-orange);
-}
-
-.dark-mode .bg-light-gray {
-  background-color: #414141;
-  color: white;
-}
-
 .text-white {
   color: white;
+}
+
+.text-charcoal {
+  color: var(--charcoal);
 }
 
 /*********************************************************************

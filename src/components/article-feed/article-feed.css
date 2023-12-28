@@ -1,5 +1,5 @@
 .card a {
-  color: var(--font-color);
+  color: var(--charcoal);
 }
 
 .card a, .card a:hover, .card a:active, .card a:visited {
@@ -7,5 +7,5 @@
 }
 
 .card a:hover {
-  color: var(--dark-orange);
+  color: var(--primary-color);
 }
