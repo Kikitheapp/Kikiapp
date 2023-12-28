@@ -16,7 +16,7 @@
 .bio {
   background: #30c3cd;
   padding: 12px 24px 0px 24px;
-  color: white;
+  color: var(--charcoal);
   height: 100%;
 }
 
@@ -35,7 +35,11 @@
 }
 
 .bio a {
-  color: white !important;
+  color: var(--charcoal);
+}
+
+.bio a:hover {
+  color: var(--dark-orange);
 }
 
 /* Medium devices (tablets, 768px and up) */ 
