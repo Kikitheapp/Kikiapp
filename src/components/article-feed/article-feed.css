@@ -1,3 +1,8 @@
+.card {
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+}
+
 .card a {
   color: var(--charcoal);
 }
@@ -8,4 +13,9 @@
 
 .card a:hover {
   color: var(--primary-color);
+}
+
+.homepage h4 {
+  font-size: 1.75rem;
+  font-weight: 900;
 }

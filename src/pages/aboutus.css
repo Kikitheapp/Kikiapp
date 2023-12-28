@@ -31,7 +31,14 @@
 }
 
 .bio h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.bio h4 {
   margin-top: 1rem;
+  font-size: 1.75rem;
+  font-weight: 900;
 }
 
 .bio a {
@@ -44,14 +51,14 @@
 
 /* Medium devices (tablets, 768px and up) */ 
 @media (min-width: 768px) {
-  .bio h4 {
+  .bio h3 {
     min-height: 3.7rem;
   }
 }
 
 /* xlarge devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .bio h4 {
+  .bio h3 {
     min-height: 4.5rem;
   }
 }
