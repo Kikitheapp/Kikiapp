@@ -11,8 +11,11 @@ import { FaTiktok } from "react-icons/fa";
 
 
 function Footer(){
+
+  const year = new Date().getFullYear();
+
   return <footer className="container-fluid bg-primary">
-    <h5>Kiki for the Future™</h5>
+    <h5>Kiki for the Future&reg;</h5>
     <h5>Follow us</h5>
     <div>
       <a className="social-icons" href="https://www.facebook.com/kikitheapp/" target="_blank" rel="noopener noreferrer">
@@ -35,6 +38,9 @@ function Footer(){
       <Link className="text-charcoal text-decoration-none" to='/privacypolicy'>Privacy Policy</Link>
       &nbsp;-&nbsp; 
       <Link className="text-charcoal text-decoration-none" to='/termsofuse'>Terms of Use</Link>
+    </div>
+    <div className="pt-2">
+      <small>&copy; 2021-{year} Kiki for the Future<sup>&reg;</sup></small>
     </div>
   </footer>
 }
