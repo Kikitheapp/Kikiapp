@@ -34,8 +34,11 @@ function Resources(props){
   const nationalResources = props.data.national.group;
 
   let stateList = {};
-  stateResources.forEach((group, index) => {
-    stateList[group.type] = <ResourceList resources={group.nodes} type={group.type} key={index} />;
+  stateResources.forEach((state, i) => {
+    stateList[state.state] = [];
+    state.group.forEach((group, j) => {
+      stateList[state.state].push(<ResourceList resources={group.nodes} type={group.type} key={`${i}-${j}`} />);
+    });
   });
 
   let nationalList = {};
@@ -50,10 +53,11 @@ function Resources(props){
         <div className="container">
           <div className="my-5">
             <h2>New York</h2>
-            {stateList['Housing']}
-            {stateList['Legal']}
-            {stateList['Health + Wellness']}
-            {stateList['Queer Spaces']}
+            {stateList['New York']}
+          </div>
+          <div className="my-5">
+            <h2>Maine</h2>
+            {stateList['Maine']}
           </div>
           <div className="my-5">
             <h2>National</h2>
@@ -69,21 +73,17 @@ function Resources(props){
 
 export const query = graphql`
   query {
-    state: allAirtableResources(filter: {data: {resource_national: {eq: null}, resource_states: {elemMatch: {data: {state_abreviation: {eq: "NY"}}}}}}) {
-      group(field: {data: {resource_type: SELECT}}) {
-        type: fieldValue
-        nodes {
-          id
-          data {
-            resource_name
-            resource_description
-            resource_website
-            resource_national
-            resource_states {
-              data {
-                state_abreviation
-                state_fullname
-              }
+    state: allAirtableResources(filter: {data: {resource_national: {eq: null}}}) {
+      group(field: {data: {resource_states: {data: {state_fullname: SELECT}}}}) {
+        state: fieldValue
+        group(field: {data: {resource_type: SELECT}}) {
+          type: fieldValue
+          nodes {
+            id
+            data {
+              resource_name
+              resource_description
+              resource_website
             }
           }
         }
