@@ -23,6 +23,11 @@
   font-weight: 900;
 }
 
+.homepage h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 .homepage .menu {
   padding-top: 140px;
 }

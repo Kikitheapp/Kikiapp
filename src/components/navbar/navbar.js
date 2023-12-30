@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import logo from '../../assets/images/kikilogo1.png';
+import logo from '../../assets/images/kikilogo.png';
 import './navbar.css';
 
 import { useBlogUrl } from "../../hooks/use-blog-url";
@@ -15,7 +15,7 @@ function Navbar() {
         <div className='container-fluid'>
         <h1>
           <Link className='navbar-brand' to='/'>
-            <img src={logo} alt='Kiki'></img>
+            <img src={logo} alt='Kiki for the future'></img>
           </Link>
         </h1>
         <button

@@ -10,23 +10,13 @@ nav ul {
 }
 
 .navbar-brand img {
-  max-height: 50px;
+  max-height: 75px;
 }
 
 
 /************************** Bootstrap Overrides ***********************/
-
-
-.navbar-light .navbar-nav .nav-link {
-  color: var(--font-color);
-}
-
-.navbar-light .navbar-nav .nav-item :visited{
-  color: var(--font-color);
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
+.nav-link {
+  color: var(--charcoal);
 }
 
 .nav-link:hover, .dropdown-item:hover, .dropdown-item:focus {

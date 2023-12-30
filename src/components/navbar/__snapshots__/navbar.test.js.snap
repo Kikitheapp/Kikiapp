@@ -14,7 +14,7 @@ exports[`Navbar renders correctly 1`] = `
         href="/"
       >
         <img
-          alt="Kiki"
+          alt="Kiki for the future"
           src="test-file-stub"
         />
       </a>

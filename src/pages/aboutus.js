@@ -58,10 +58,10 @@ const AboutUs = () => {
       <div className="row pb-5 gy-3 row-cols-sm-2 row-cols-lg-3 justify-content-center align-self-center bio-row">
         <div className='col-sm'>
           <div className='bio'>
-            <h4>Krista White (She, Her, Hers)</h4>
+            <h3>Krista White (She, Her, Hers)</h3>
             <StaticImage className='bio-img' src='../assets/images/aboutus/krista.png'
               alt='Krista White (Founder)'></StaticImage>
-            <h3>Founder</h3>
+            <h4>Founder</h4>
             <div className='about-us-content'>
               <p>
                 Krista White is a queer, Black writer and actor who decided to take a UX Design 
@@ -96,10 +96,11 @@ const AboutUs = () => {
         </div>
         <div className='col-sm'>
           <div className='bio'>
-            <h4>Nicholas Frattaroli (He, Him, His)</h4>
+            {/* TODO: Update header order for good accessability */}
+            <h3>Nicholas Frattaroli (He, Him, His)</h3>
             <StaticImage className='bio-img' src='../assets/images/aboutus/nick.jpg'
               alt='Nick Frattaroli (Web Dev)'></StaticImage>
-            <h3>Web Developer</h3>
+            <h4>Web Developer</h4>
             <div className='about-us-content'>
               <p>
                 Nick is a Web Developer based out of NYC. As a proud member of the Bear community He is excited 
@@ -124,10 +125,10 @@ const AboutUs = () => {
         </div>
         <div className='col-sm'>
           <div className='bio'>
-            <h4>Mick Franco (He,Him,His)</h4>
+            <h3>Mick Franco (He,Him,His)</h3>
             <StaticImage className='bio-img' src='../assets/images/aboutus/mick.jpg'
               alt='Mick Franco (Data Scientist)'></StaticImage>
-            <h3>Data Scientist</h3>
+            <h4>Data Scientist</h4>
             <div className='about-us-content'>
             <p>
               Mick is a Data Scientist based in Connecticut. As a proud
@@ -148,10 +149,10 @@ const AboutUs = () => {
         </div>
         <div className='col-sm'>
           <div className='bio'>
-          <h4>Jesse Green (They/Them)</h4>
+          <h3>Jesse Green (They/Them)</h3>
             <StaticImage className='bio-img' src='../assets/images/aboutus/jesse.jpg'
               alt='Jesse Green (Web Developer)'></StaticImage>
-            <h3>Web Developer</h3>
+            <h4>Web Developer</h4>
             <div className='about-us-content'>
             <p>
                   Jesse is a Web Developer based out of Salt lake city, Utah. As
@@ -171,10 +172,10 @@ const AboutUs = () => {
         </div>
         <div className='col-sm'>
           <div className='bio'>
-          <h4>Amanda Lynn (They/She)</h4>
+          <h3>Amanda Lynn (They/She)</h3>
             <StaticImage className='bio-img' src='../assets/images/aboutus/amanda.jpg'
               alt='Amanda Lynn (Web Developer)'></StaticImage>
-            <h3>Web Developer</h3>
+            <h4>Web Developer</h4>
             <div className='about-us-content'>
             <p>
             Amanda is a Full-Stack Engineer, with a passion for teamwork and usability, 
