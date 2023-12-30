@@ -96,7 +96,6 @@ const AboutUs = () => {
         </div>
         <div className='col-sm'>
           <div className='bio'>
-            {/* TODO: Update header order for good accessability */}
             <h3>Nicholas Frattaroli (He, Him, His)</h3>
             <StaticImage className='bio-img' src='../assets/images/aboutus/nick.jpg'
               alt='Nick Frattaroli (Web Dev)'></StaticImage>

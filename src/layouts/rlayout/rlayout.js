@@ -7,6 +7,7 @@ import Navbar from '../../components/navbar/navbar';
 import Footer from '../../components/footer/footer';
 import PageHeading from '../../components/pageheading/page-heading';
 
+
 import person1 from "../../assets/images/resources/resources-header-person-1.png";
 import person2 from "../../assets/images/resources/resources-header-person-2.png";
 
