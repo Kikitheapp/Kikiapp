@@ -16,7 +16,7 @@
 .bio {
   background: #30c3cd;
   padding: 12px 24px 0px 24px;
-  color: white;
+  color: var(--charcoal);
   height: 100%;
 }
 
@@ -31,23 +31,34 @@
 }
 
 .bio h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.bio h4 {
   margin-top: 1rem;
+  font-size: 1.75rem;
+  font-weight: 900;
 }
 
 .bio a {
-  color: white !important;
+  color: var(--charcoal);
+}
+
+.bio a:hover {
+  color: var(--dark-orange);
 }
 
 /* Medium devices (tablets, 768px and up) */ 
 @media (min-width: 768px) {
-  .bio h4 {
+  .bio h3 {
     min-height: 3.7rem;
   }
 }
 
 /* xlarge devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .bio h4 {
+  .bio h3 {
     min-height: 4.5rem;
   }
 }

@@ -24,15 +24,18 @@ export default function Component(props) {
     person2: person2
   }  
 
-  let stateResources = props.data.state.nodes;
+  let stateResources = props.data.state.group;
 
   let stateResourcesBlock = '';
 
   if(Array.isArray(stateResources) && stateResources.length !== 0) {
-    stateResourcesBlock =         <><h2>New York</h2>
-    <ResourceList resources={stateResources} type={type}></ResourceList></>;
+    stateResourcesBlock = stateResources.map((state, i) => {
+      return <div key={i}>
+        <h2>{state.state}</h2>
+        <ResourceList resources={state.nodes} type={type} key={`${i}`} />
+      </div>
+    });
   }
-
 
 
   let nationalResources = props.data.national.nodes;
@@ -60,20 +63,16 @@ export default function Component(props) {
 export const query = graphql`
   query($data__resource_type: String) {
     state: allAirtableResources(
-      filter: {data: {resource_national: {eq: null}, resource_states: {elemMatch: {data: {state_abreviation: {eq: "NY"}}}} resource_type: {eq: $data__resource_type}}}
+      filter: {data: {resource_national: {eq: null}, resource_type: {eq: $data__resource_type}}}
     ) {
-      nodes {
-        id
-        data {
-          resource_name
-          resource_description
-          resource_website
-          resource_national
-          resource_states {
-            data {
-              state_abreviation
-              state_fullname
-            }
+      group(field: {data: {resource_states: {data: {state_fullname: SELECT}}}}) {
+        state: fieldValue
+        nodes {
+          id
+          data {
+            resource_name
+            resource_description
+            resource_website
           }
         }
       }
