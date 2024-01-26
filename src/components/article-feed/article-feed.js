@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import './article-feed.css';
+import articleImage from '../../assets/images/kiki-splash.png';
 
 import { useBlogUrl } from "../../hooks/use-blog-url";
 
@@ -15,18 +16,16 @@ function ArticleFeed() {
 
   const data = useStaticQuery(graphql`
     query MyQuery {
-      allMediumPost(limit: 3, sort: {latestPublishedAt: DESC}) {
-        edges {
-          node {
-            id
-            title
-            latestPublishedAt
-            uniqueSlug
-            virtuals {
-              subtitle
-              previewImage {
-                imageId
-              }
+      allWpPost(sort: {date: ASC}, limit: 3) {
+        nodes {
+          id
+          title
+          excerpt
+          slug
+          featuredImage {
+            node {
+              altText
+              sourceUrl
             }
           }
         }
@@ -37,24 +36,32 @@ function ArticleFeed() {
   let articles;
   let articleCards;
   try {
-    articles = data.allMediumPost.edges;
+    articles = data.allWpPost.nodes;
     articleCards = articles.map(buildArticleCard);
 
   } catch (error) {
-    console.error(error);
   } 
 
   
 
   function buildArticleCard(article){
+    if(!article.featuredImage){
+      article.featuredImage = {
+        node: {
+          altText: "Kiki for the Future",
+          sourceUrl: `${articleImage}`
+        }
+      }
+    }
+
     return (
-      <div className="col-sm py-3" key={article.node.id}>
+      <div className="col-sm py-3" key={article.id}>
 
         <div className="card">
-        <a href={`${blogUrl}/${article.node.uniqueSlug}`} target="_blank" rel="noreferrer">
-          <img className="card-img-top" src={`https://miro.medium.com/max/1000/${article.node.virtuals.previewImage.imageId}`} alt={article.node.title} />
+        <a href={`${blogUrl}/${article.slug}`} target="_blank" rel="noreferrer">
+          <img src={article.featuredImage.node.sourceUrl} className="card-img-top" alt={article.featuredImage.node.altText} />
           <div className="card-body">
-            <h4 className="card-title">{article.node.title}</h4>
+            <h4 className="card-title">{article.title}</h4>
           </div>
         </a>
         </div>

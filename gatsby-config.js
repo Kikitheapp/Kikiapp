@@ -8,7 +8,7 @@ module.exports = {
       description: `Kiki For The Future. Get a fresh take on what you didn't learn in sex-ed.`,
       image: `/card.png`,
       siteUrl: `https://kikitheapp.com`,
-      blogUrl: `https://medium.com/kiki-app`
+      blogUrl: `https://cms.kikitheapp.com`
   },
   plugins: [
     `gatsby-plugin-netlify`,
@@ -39,6 +39,15 @@ module.exports = {
       resolve: `gatsby-source-medium`,
       options: {
         username: `@kikiapp`,
+      },
+    },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        /*
+         * The full URL of the WordPress site's GraphQL API.
+         */
+        url: `https://cms.kikitheapp.com/graphql`,
       },
     },
     {
