@@ -16,4 +16,16 @@ describe("Escape component", () => {
 
   });
 
+  it("exits the app when escape is pressed 3 times", async () => {
+
+  });
+
+  it("exits the app when clicked", async () => {
+    
+  });
+
+  it("does not exit the app when escape is pressed less than 3 times", async () => {
+
+  });
+
 });

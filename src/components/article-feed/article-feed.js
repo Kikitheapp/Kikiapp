@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import './article-feed.css';
 import articleImage from '../../assets/images/kiki-splash.png';
@@ -15,8 +15,8 @@ function ArticleFeed() {
   const blogUrl = useBlogUrl();
 
   const data = useStaticQuery(graphql`
-    query MyQuery {
-      allWpPost(sort: {date: ASC}, limit: 3) {
+    query GetPostPreviews {
+      allWpPost(sort: {date: DESC}, limit: 3) {
         nodes {
           id
           title
@@ -33,16 +33,22 @@ function ArticleFeed() {
     }
   `);
 
-  let articles;
-  let articleCards;
-  try {
-    articles = data.allWpPost.nodes;
-    articleCards = articles.map(buildArticleCard);
+  const [articles, setArticles] = useState([]);
 
-  } catch (error) {
-  } 
+    useEffect(() => {
+
+    try {
+
+      setArticles(data.allWpPost.nodes);
+
+    } catch (error) {
+
+    } 
+
+  }, [data]);
 
   
+  let articleCards = articles.map(buildArticleCard);
 
   function buildArticleCard(article){
     if(!article.featuredImage){
