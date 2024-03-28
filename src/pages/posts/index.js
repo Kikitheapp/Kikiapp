@@ -1,58 +1,52 @@
-import React, { useEffect, useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from '../../layouts/layout/layout';
+import Layout from '../../layouts/mlayout/mlayout';
+import SEO from '../../components/seo/seo';
+import ArticleCard from '../../components/article-card/article-card';
 
-const PostsPage = () => {
-  const [posts, setPosts] = useState([]);
+export default function PostsPage(props) {
+  
+  const posts = props.data.allWpPost.nodes;
 
-  const data = useStaticQuery(graphql`
-    query GetPostPreviews {
-      allWpPost(sort: {date: DESC}, limit: 3) {
-        nodes {
-          id
-          title
-          excerpt
-          slug
-          featuredImage {
-            node {
-              altText
-              sourceUrl
-            }
-          }
-          categories {
-            nodes {
-              name
-            }
-          }
-        }
-      }
-    }
-  `);
+  let postCards = posts.map((post) => {
+    return <ArticleCard key={post.id} post={post} />;
+  });
 
-  useEffect(() => {
-    if (data && data.allWpPost) {
-      setPosts(data.allWpPost.nodes);
-      console.log(data);
-    }
-    
-  }, [data]);
-
-
-  console.log(posts);
+  // ToDo: Style the post content
 
   return (
     <Layout pageTitle="Posts">
     <div>
-      <h1>Posts</h1>
-      {posts.map((post) => (
-        <div key={post.id}>
-          <h2>{post.title}</h2>
-        </div>
-      ))}
+      <h1>Latest Blog Posts</h1>
+      {postCards}
     </div>
     </Layout>
   );
 };
 
-export default PostsPage;
+export function Head(){
+  return <SEO title="Latest Blog Posts" />;
+}
+
+export const query = graphql` 
+query GetPostFeed {
+  allWpPost(sort: {date: DESC}) {
+    nodes {
+      id
+      title
+      slug
+      featuredImage {
+        node {
+          altText
+          gatsbyImage(placeholder: BLURRED, layout: CONSTRAINED, width: 400)
+        }
+      }
+      categories {
+        nodes {
+          name
+        }
+      }
+    }
+  }
+}`;
