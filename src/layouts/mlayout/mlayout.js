@@ -13,7 +13,7 @@ import Footer from '../../components/footer/footer';
  **/
 function Layout({ children }){
   return (
-    <div className="root">
+    <div className="root d-flex flex-column min-vh-100">
       <div className="bg-secondary menu">
         <Escape></Escape>
         <Navbar></Navbar>

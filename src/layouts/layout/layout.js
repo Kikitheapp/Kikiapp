@@ -18,7 +18,7 @@ function Layout({ children }){
         <Escape></Escape>
         <Navbar></Navbar>
       </div>
-      <main className="container-fluid">
+      <main>
         {children}
       </main>
 

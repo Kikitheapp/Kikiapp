@@ -1,0 +1,15 @@
+.posts-page {
+
+  .blog-card {
+    border: 1px solid #dee2e6;
+  }
+
+  .blog-card img {
+    max-width: 400px;
+    max-height: 224px;
+    overflow: hidden;
+  }
+
+
+
+}

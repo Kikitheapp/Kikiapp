@@ -15,6 +15,7 @@ function Index(){
     <div className="homepage">
       <AppBanner></AppBanner>
       <Layout>
+        <div className="container-fluid">
           <div className="row align-items-center p-2 welcome" style={{backgroundImage: `url(${BackgroundVector})` }}>
             <div className="col-sm-6 text-center text-md-left px-md-5"> 
               <h2 className="text-md-start pt-4 ">Get a fresh take on what you didn&apos;t learn in sex-ed.</h2>
@@ -33,6 +34,7 @@ function Index(){
                 </div>
               </div>
             </div>
+          </div>
           </div>
       <ArticleFeed />
       </Layout>

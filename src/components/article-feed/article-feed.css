@@ -1,18 +1,37 @@
-.card {
-  border: 3px solid var(--primary-color);
-  border-radius: 10px;
-}
+.article-feed {
 
-.card a {
-  color: var(--charcoal);
-}
+  flex-grow: 1;
+  align-items: flex-start;
 
-.card a, .card a:hover, .card a:active, .card a:visited {
-  text-decoration: none;
-}
+  .blog-card {
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    margin: .5rem auto;
+    background-color: white;
+    min-height: 127px;
+    max-width: 400px;
+    max-height: 230px;
+  }
 
-.card a:hover {
-  color: var(--primary-color);
+  .blog-card img {
+    border-radius: 7px;
+    max-width: 400px;
+    max-height: 224px;
+    overflow: hidden;
+  }
+
+
+  h3.blog-title {
+    font-size: 1rem !important;
+    color: var(--charcoal);
+    margin: 1rem .5rem;
+
+  }
+
+  a {
+    color: var(--charcoal);
+    text-decoration: none;
+  }
 }
 
 .homepage h4 {

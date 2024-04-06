@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import {GatsbyImage, getImage} from 'gatsby-plugin-image';
+import './article-card.css';
 
 
 function ArticleCard(props) {
@@ -10,14 +11,15 @@ function ArticleCard(props) {
   let postImage;
 
   if(post.featuredImage) {
-    postImage = <GatsbyImage image={getImage(post.featuredImage.node)} alt={post.title} />;
+    console.log(post.featuredImage);
+    postImage = <GatsbyImage className="blog-title" image={getImage(post.featuredImage.node)} alt={post.title} />;
   } else {
-    postImage = <h2 className="blog-card">{post.title}</h2>;
+    postImage = <h3 className="blog-title">{post.title}</h3>;
   }
 
 
-  return <div key={post.id}>
-    <Link to={post.slug}>{postImage}</Link>
+  return <div key={post.id} className='blog-card' >
+    <Link to={`posts/${post.slug}`} >{postImage}</Link>
   </div>
 }
 

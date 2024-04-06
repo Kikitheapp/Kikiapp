@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import './article-feed.css';
 import articleImage from '../../assets/images/kiki-splash.png';
 
-import { useBlogUrl } from "../../hooks/use-blog-url";
+import ArticleCard from '../article-card/article-card';
+
 
 /**
  * ArticleFeed component - get Kiki articles from Medium and display the three most recent.
@@ -11,8 +12,6 @@ import { useBlogUrl } from "../../hooks/use-blog-url";
  * @returns <ArticleFeed />
  **/
 function ArticleFeed() {
-
-  const blogUrl = useBlogUrl();
 
   const data = useStaticQuery(graphql`
     query GetPostPreviews {
@@ -25,7 +24,7 @@ function ArticleFeed() {
           featuredImage {
             node {
               altText
-              sourceUrl
+              gatsbyImage(placeholder: BLURRED, layout: CONSTRAINED, width: 400)
             }
           }
         }
@@ -47,39 +46,19 @@ function ArticleFeed() {
 
   }, [data]);
 
-  
-  let articleCards = articles.map(buildArticleCard);
 
-  function buildArticleCard(article){
-    if(!article.featuredImage){
-      article.featuredImage = {
-        node: {
-          altText: "Kiki for the Future",
-          sourceUrl: `${articleImage}`
-        }
-      }
-    }
+  let postCards = articles.map((post) => {
+    console.log(post);
+    return <div className='col-md' key={post.id}><ArticleCard className='post' post={post} /></div>;
+  });
 
-    return (
-      <div className="col-sm py-3" key={article.id}>
-
-        <div className="card">
-        <a href={`${blogUrl}/${article.slug}`} target="_blank" rel="noreferrer">
-          <img src={article.featuredImage.node.sourceUrl} className="card-img-top" alt={article.featuredImage.node.altText} />
-          <div className="card-body">
-            <h4 className="card-title">{article.title}</h4>
-          </div>
-        </a>
-        </div>
-      </div>
-    );
-  }
+  console.log(postCards);
 
   return (
-    <div className="row p-4 bg-dark-orange text-center">
+    <div className="container-fluid p-4 bg-dark-orange text-center article-feed">
       <h4>Our latest Posts...</h4>
-      <div className="row justify-content-center">
-      {articleCards}
+      <div className="row">
+        {postCards}
       </div>
     </div>
   );

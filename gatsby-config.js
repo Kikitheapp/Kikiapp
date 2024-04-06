@@ -7,8 +7,7 @@ module.exports = {
       title: `Kiki For The Future`,
       description: `Kiki For The Future. Get a fresh take on what you didn't learn in sex-ed.`,
       image: `/card.png`,
-      siteUrl: `https://kikitheapp.com`,
-      blogUrl: `https://cms.kikitheapp.com`
+      siteUrl: `https://kikitheapp.com`
   },
   plugins: [
     `gatsby-plugin-netlify`,

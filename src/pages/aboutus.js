@@ -6,11 +6,7 @@ import Seo from "../components/seo/seo.js";
 
 import './aboutus.css';
 
-import { useBlogUrl } from '../hooks/use-blog-url.js';
-
 const AboutUs = () => {
-
-  const blogLink = useBlogUrl();
 
   return (
     <div><Layout>
@@ -20,7 +16,7 @@ const AboutUs = () => {
           We are Kiki For The Future™. We are creating an app that curates sexual health resources for the queer community. 
           We are a platform for queer sexual education, for sexual liberation, for knowledge, for power, joy, freedom, and connection. 
           Please check out our&ensp;
-          <a target='_blank' href={blogLink} rel="noreferrer">blog</a>, 
+          <Link to='/posts' rel="noreferrer">blog</Link>, 
           sign up for our&ensp;
           <Link target='_blank' to='/mailinglist' rel="noreferrer">newsletter</Link>, and follow us on&ensp;
           <a target='_blank' href='https://www.instagram.com/kikitheapp/' rel="noreferrer">Instagram</a>,&ensp;
