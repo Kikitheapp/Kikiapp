@@ -3,24 +3,37 @@ import { graphql } from 'gatsby';
 
 import Layout from '../../layouts/mlayout/mlayout';
 import SEO from '../../components/seo/seo';
+
+import ArticleTopics from '../../components/article-topics/article-topics';
 import ArticleCard from '../../components/article-card/article-card';
+
+import './index.css';
+
 
 export default function Component(props) {
 
-  const catagory = props.pageContext.name;
+  const category = props.pageContext.name;
 
   const posts = props.data.catagory.nodes;
 
   let postCards = posts.map((post) => {
-    return <div className="col" key={post.id}><ArticleCard post={post} /></div>;
+    return <div className="col-md-4 my-1" key={post.id}><ArticleCard post={post} /></div>;
   });
+
+  let topCards = postCards.splice(0, 3);
   
   return (
-    <Layout pageTitle="Posts">
-      <div>
-        <h1 className="text-center">Latest Blog Posts</h1>
+    <Layout pageTitle={`${category} Posts`}>
+      <div className='container-fluid my-4 posts-page'>
+        <h1 className="text-center">Latest {category} Posts</h1>
         <div className="row">
-        {postCards}
+        {topCards}
+        </div>
+        <div className="text-center border my-3 py-3">
+          <ArticleTopics />
+        </div>
+        <div className="row">
+          {postCards}
         </div>
       </div>
     </Layout>
@@ -59,5 +72,5 @@ export const query = graphql`
 
   export function Head(){
     // TODO: Fix title and description
-    return <SEO title="Posts" />;
+    return <SEO title="Latest Blog Posts" />;
   }

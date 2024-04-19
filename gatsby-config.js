@@ -46,7 +46,7 @@ module.exports = {
         /*
          * The full URL of the WordPress site's GraphQL API.
          */
-        url: `https://cms.kikitheapp.com/graphql`,
+        url: process.env.KIKI_CMS,
       },
     },
     {

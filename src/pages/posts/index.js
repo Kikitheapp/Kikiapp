@@ -1,53 +1,22 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../../layouts/mlayout/mlayout';
 import SEO from '../../components/seo/seo';
 import ArticleCard from '../../components/article-card/article-card';
+import ArticleTopics from '../../components/article-topics/article-topics';
 
 import './index.css';
 
 export default function PostsPage(props) {
   
   const posts = props.data.allWpPost.nodes;
-  const categories = props.data.allWpCategory.nodes;
-  
-  const topics = [
-    {
-      name: 'All',
-      slug: ''
-    },
-    {
-      name: 'Queer Sex Ed 101',
-      slug: 'queer-sex-ed-101'
-    },
-    {
-      name: 'Sexual Pleasure',
-      slug: 'sexual-pleasure'
-    },
-    {
-      name: 'Relationships and Consent',
-      slug: 'relationships-and-consent'
-    },
-    {
-      name: 'Gender and Queerness',
-      slug: 'gender-and-queerness'
-    },
-    {
-      name: 'Queer Joy and Wellness',
-      slug: 'queer-joy-and-wellness'
-    }
-  ]
-
-  console.log(categories);
 
   let postCards = posts.map((post) => {
-    return <div className='col-md my-1' key={post.id}><ArticleCard post={post} /></div>;
+    return <div className='col-md-4 my-1' key={post.id}><ArticleCard post={post} /></div>;
   });
 
-  let categoryList = topics.map((category, index) => {
-    return <div key={index}><Link to={`/posts/${category.slug}`}>{category.name}</Link></div>;
-  });
+
 
   let topCards = postCards.splice(0, 3);
 
@@ -58,9 +27,8 @@ export default function PostsPage(props) {
       <div className='row'>
         {topCards}
       </div>
-      <div className='text-center border'>
-        <h2>Topics</h2>
-        {categoryList}
+      <div className='text-center border my-3 py-3'>
+        <ArticleTopics />
       </div>
       <div className='row'>
         {postCards}
@@ -84,7 +52,7 @@ query GetPostFeed {
       featuredImage {
         node {
           altText
-          gatsbyImage(placeholder: BLURRED, layout: CONSTRAINED, width: 400)
+          gatsbyImage(placeholder: BLURRED, layout: CONSTRAINED, width: 600)
         }
       }
       categories {

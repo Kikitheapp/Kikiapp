@@ -11,15 +11,14 @@ function ArticleCard(props) {
   let postImage;
 
   if(post.featuredImage) {
-    console.log(post.featuredImage);
     postImage = <GatsbyImage className="blog-title" image={getImage(post.featuredImage.node)} alt={post.title} />;
   } else {
-    postImage = <h3 className="blog-title">{post.title}</h3>;
+    postImage = <div className="blog-no-img"><h3 className="blog-title">{post.title}</h3></div>;
   }
 
 
   return <div key={post.id} className='blog-card' >
-    <Link to={`posts/${post.slug}`} >{postImage}</Link>
+    <Link to={`/posts/${post.slug}`} >{postImage}</Link>
   </div>
 }
 

@@ -1,15 +1,44 @@
 .posts-page {
 
-  .blog-card {
-    border: 1px solid #dee2e6;
+  .topics a {
+    color: var(--text-color);
+    text-decoration: none;
   }
 
-  .blog-card img {
-    max-width: 400px;
-    max-height: 224px;
+  .topics a:hover {
+    color: var(--primary-color);
+  }
+
+  .blog-card {
+    border: 2px solid #dee2e6;
     overflow: hidden;
   }
 
+  .blog-card h3 {
+    padding: 1rem 2rem;
+    background-color: var(--peach-puff);
+    margin: 0;
+    text-align: center;
+  }
 
+  .blog-card a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
 
+  .blog-card a:hover {
+    color: var(--dark-orange);
+  }
+
+}
+
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }

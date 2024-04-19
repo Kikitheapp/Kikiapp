@@ -24,7 +24,7 @@ function ArticleFeed() {
           featuredImage {
             node {
               altText
-              gatsbyImage(placeholder: BLURRED, layout: CONSTRAINED, width: 400)
+              gatsbyImage(placeholder: BLURRED, layout: CONSTRAINED, width: 600)
             }
           }
         }
@@ -46,13 +46,9 @@ function ArticleFeed() {
 
   }, [data]);
 
-
   let postCards = articles.map((post) => {
-    console.log(post);
-    return <div className='col-md' key={post.id}><ArticleCard className='post' post={post} /></div>;
+    return <div className='col-md-4' key={post.id}><ArticleCard className='post' post={post} /></div>;
   });
-
-  console.log(postCards);
 
   return (
     <div className="container-fluid p-4 bg-dark-orange text-center article-feed">

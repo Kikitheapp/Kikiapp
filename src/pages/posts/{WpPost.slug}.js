@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import DOMPurify from 'dompurify';
 
 import SEO from '../../components/seo/seo';
 import Layout from '../../layouts/mlayout/mlayout';
 
+import './index.css';
 
 let pageMetadata = {
   title: 'Post',
@@ -12,31 +13,31 @@ let pageMetadata = {
 };
 
 
-export default function Component(props){
+function Component(props){
 
   const post = props.data.post;
 
-  let title = <h1>{post.title}</h1>;
+  let title = <h1 className="text-center my-3 mt-5">{post.title}</h1>;
   if(post.featuredImage){
-    title = <img src={post.featuredImage.node.sourceUrl} alt={post.featuredImage.node.altText} />;
+    title = <img className="img-fluid" src={post.featuredImage.node.sourceUrl} alt={post.featuredImage.node.altText} />;
   } 
-
 
   pageMetadata.title = post.title;
 
-  // TODO: Style the post content
   return (
     <Layout pageTitle={post.title}>
     <div className="post">
-      {title}
-      <div>
-        <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(post.content) }} />
+      <div className="post-title">
+        {title}
+        <p className="post-author">{new Date(post.date).toLocaleDateString()} by {post.author.node.name}</p>
       </div>
+      <div className="post-text" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(post.content) }} />
     </div>
     </Layout>
   );
 };
 
+export default Component;
 
 export const data = graphql`
     query($slug : String) {
@@ -45,11 +46,15 @@ export const data = graphql`
           id
           date
           title
-          excerpt
           featuredImage {
             node {
               altText
               sourceUrl
+            }
+          }
+          author {
+            node {
+              name
             }
           }
           content

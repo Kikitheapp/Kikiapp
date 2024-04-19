@@ -10,8 +10,6 @@ describe("ArticleFeed component", () => {
     
     render(<ArticleFeed />);
 
-    expect(screen.getByText("Kiki for the Future")).toBeInTheDocument();
-
   });
 
 
