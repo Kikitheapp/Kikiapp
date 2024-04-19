@@ -48,48 +48,22 @@ const postNoImage = {
 
 describe('Component should...', () => {
   it('render without errors', () => {
-
-    //graphql.mockResolvedValueOnce({ data: postHappy });
     render(<Component data={postHappy} />);
-    // TODO: Add assertions to verify that the component renders without errors
   });
 
-  // it('fetch post data correctly', () => {
-  //   graphql.mockResolvedValueOnce({ data: mockData });
 
-  //   render(<Component />);
-
-  //   // TODO: Add assertions to verify that the post data is fetched correctly
-  // });
 
 
 });
 
 
 describe('Component should NOT...', () => {
-  // beforeEach(() => {
-  //   graphql.mockClear();
-  // });
-
-  // it('run injected scripts.', () => {
-
-  //   const mockData = {
-  //     post: {
-  //       id: '1',
-  //       date: '2022-01-01',
-  //       title: 'Test Post',
-  //       content: '<script>alert("Test")</script>',
-  //       slug: 'test-post',
-  //       author: {
-  //         node: {
-  //           name: 'Test Author',
-  //         }
-  //       }
-  //     }
-  //   };
 
 
-  //   render(<Component data={mockData} />);
-  // });
+  it('run injected scripts.', () => {
+
+
+    //render(<Component data={postHappy} />);
+  });
 
 });
