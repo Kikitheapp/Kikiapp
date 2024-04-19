@@ -6,12 +6,16 @@ import articleImage from '../../assets/images/kiki-splash.png';
 import ArticleCard from '../article-card/article-card';
 
 
+import { useBlogUrl } from "../../hooks/use-blog-url";
+
 /**
  * ArticleFeed component - get Kiki articles from Medium and display the three most recent.
  * 
  * @returns <ArticleFeed />
  **/
 function ArticleFeed() {
+
+  const blogUrl = useBlogUrl();
 
   const data = useStaticQuery(graphql`
     query GetPostPreviews {
@@ -34,8 +38,7 @@ function ArticleFeed() {
 
   const [articles, setArticles] = useState([]);
 
-    useEffect(() => {
-
+  useEffect(() => {
     try {
 
       setArticles(data.allWpPost.nodes);
@@ -43,7 +46,6 @@ function ArticleFeed() {
     } catch (error) {
 
     } 
-
   }, [data]);
 
   let postCards = articles.map((post) => {

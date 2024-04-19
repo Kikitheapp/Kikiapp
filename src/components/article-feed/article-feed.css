@@ -1,3 +1,4 @@
+
 .article-feed {
 
   flex-grow: 1;
@@ -11,6 +12,7 @@
     border-radius: 7px;
     border: 3px solid var(--primary-color);
   }
+
 
   .blog-no-img {
     padding: 1rem 2rem;
@@ -32,4 +34,5 @@
   a:hover {
     color: var(--dark-orange);
   }
+
 }
