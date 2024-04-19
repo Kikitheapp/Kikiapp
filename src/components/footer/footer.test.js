@@ -1,5 +1,6 @@
 import React from 'react';
 import {render, screen} from '@testing-library/react';
+import renderer  from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import Footer from './footer';
 
@@ -13,14 +14,19 @@ describe("Footer", () => {
 
   it("renders", async () => {
       
-      // render the Footer component
-      render(<Footer />);
+    // render the Footer component
+    render(<Footer />);
+
+    // check that the footer text is correct
+    expect(screen.getByText(footerText1)).toBeInTheDocument();
+    expect(screen.getByText(footerText2)).toBeInTheDocument();
+    expect(screen.getByText(footerText3)).toBeInTheDocument();
+
+  });
+
+  it("matches snapshot", () => {
+    const tree = renderer.create(<Footer />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   
-      // check that the footer text is correct
-      expect(screen.getByText(footerText1)).toBeInTheDocument();
-      expect(screen.getByText(footerText2)).toBeInTheDocument();
-      expect(screen.getByText(footerText3)).toBeInTheDocument();
-  
-    });
-  
-});
+ });

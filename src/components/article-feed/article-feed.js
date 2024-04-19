@@ -1,8 +1,10 @@
-import * as React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React, { useEffect, useState } from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import './article-feed.css';
+import articleImage from '../../assets/images/kiki-splash.png';
 
-import { useBlogUrl } from "../../hooks/use-blog-url";
+import ArticleCard from '../article-card/article-card';
+
 
 /**
  * ArticleFeed component - get Kiki articles from Medium and display the three most recent.
@@ -11,22 +13,18 @@ import { useBlogUrl } from "../../hooks/use-blog-url";
  **/
 function ArticleFeed() {
 
-  const blogUrl = useBlogUrl();
-
   const data = useStaticQuery(graphql`
-    query MyQuery {
-      allMediumPost(limit: 3, sort: {latestPublishedAt: DESC}) {
-        edges {
-          node {
-            id
-            title
-            latestPublishedAt
-            uniqueSlug
-            virtuals {
-              subtitle
-              previewImage {
-                imageId
-              }
+    query GetPostPreviews {
+      allWpPost(sort: {date: DESC}, limit: 3) {
+        nodes {
+          id
+          title
+          excerpt
+          slug
+          featuredImage {
+            node {
+              altText
+              gatsbyImage(placeholder: BLURRED, layout: CONSTRAINED, width: 600)
             }
           }
         }
@@ -34,39 +32,29 @@ function ArticleFeed() {
     }
   `);
 
-  let articles;
-  let articleCards;
-  try {
-    articles = data.allMediumPost.edges;
-    articleCards = articles.map(buildArticleCard);
+  const [articles, setArticles] = useState([]);
 
-  } catch (error) {
-    console.error(error);
-  } 
+    useEffect(() => {
 
-  
+    try {
 
-  function buildArticleCard(article){
-    return (
-      <div className="col-sm py-3" key={article.node.id}>
+      setArticles(data.allWpPost.nodes);
 
-        <div className="card">
-        <a href={`${blogUrl}/${article.node.uniqueSlug}`} target="_blank" rel="noreferrer">
-          <img className="card-img-top" src={`https://miro.medium.com/max/1000/${article.node.virtuals.previewImage.imageId}`} alt={article.node.title} />
-          <div className="card-body">
-            <h4 className="card-title">{article.node.title}</h4>
-          </div>
-        </a>
-        </div>
-      </div>
-    );
-  }
+    } catch (error) {
+
+    } 
+
+  }, [data]);
+
+  let postCards = articles.map((post) => {
+    return <div className='col-md-4' key={post.id}><ArticleCard className='post' post={post} /></div>;
+  });
 
   return (
-    <div className="row p-4 bg-dark-orange text-center">
+    <div className="container-fluid p-4 bg-dark-orange text-center article-feed">
       <h4>Our latest Posts...</h4>
-      <div className="row justify-content-center">
-      {articleCards}
+      <div className="row">
+        {postCards}
       </div>
     </div>
   );
