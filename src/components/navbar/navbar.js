@@ -3,12 +3,10 @@ import { Link } from 'gatsby';
 import logo from '../../assets/images/kikilogo.png';
 import './navbar.css';
 
-import { useBlogUrl } from "../../hooks/use-blog-url";
 
 
 
 function Navbar() {
-
 
   return (
       <nav id="navbar" className='navbar navbar-expand-md p-1 navbar-light bg-secondary'>
