@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import './article-feed.css';
-import articleImage from '../../assets/images/kiki-splash.png';
 
 import ArticleCard from '../article-card/article-card';
 
