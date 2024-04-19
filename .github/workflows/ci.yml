@@ -7,7 +7,7 @@ jobs:
     name: Lint javascript files
     env: 
       AIRTABLE_AIR: ${{ secrets.AIRTABLE_AIR }}
-      KIKI_CMS: ${{ variables.KIKI_CMS }}
+      KIKI_CMS: ${{ vars.KIKI_CMS }}
     runs-on: ubuntu-latest
 
     steps:
