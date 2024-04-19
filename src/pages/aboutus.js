@@ -6,6 +6,8 @@ import Seo from "../components/seo/seo.js";
 
 import './aboutus.css';
 
+import { useBlogUrl } from '../hooks/use-blog-url.js';
+
 const AboutUs = () => {
 
   return (

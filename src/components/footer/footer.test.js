@@ -1,6 +1,8 @@
 import React from 'react';
 import {render, screen} from '@testing-library/react';
+
 import renderer  from 'react-test-renderer';
+
 import '@testing-library/jest-dom';
 import Footer from './footer';
 
@@ -14,6 +16,7 @@ describe("Footer", () => {
 
   it("renders", async () => {
       
+
     // render the Footer component
     render(<Footer />);
 
@@ -30,3 +33,4 @@ describe("Footer", () => {
   });
   
  });
+
