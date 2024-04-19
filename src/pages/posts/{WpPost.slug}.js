@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import DOMPurify from 'dompurify';
+import DOMPurify from 'isomorphic-dompurify';
 
 import SEO from '../../components/seo/seo';
 import Layout from '../../layouts/mlayout/mlayout';
