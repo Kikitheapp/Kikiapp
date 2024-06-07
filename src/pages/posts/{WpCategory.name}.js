@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../../layouts/mlayout/mlayout';
-import SEO from '../../components/seo/seo';
+import Seo from '../../components/seo/seo';
 
 import ArticleTopics from '../../components/article-topics/article-topics';
 import ArticleCard from '../../components/article-card/article-card';
@@ -72,5 +72,5 @@ export const query = graphql`
 
   export function Head(){
     // TODO: Fix title and description
-    return <SEO title="Latest Blog Posts" />;
+    return <Seo title="Latest Blog Posts" />;
   }

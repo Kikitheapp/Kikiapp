@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import DOMPurify from 'isomorphic-dompurify';
 
-import SEO from '../../components/seo/seo';
+import Seo from '../../components/seo/seo';
 import Layout from '../../layouts/mlayout/mlayout';
 
 import './index.css';
@@ -67,6 +67,6 @@ export const data = graphql`
 export function Head(){
   // TODO: Fix the title and description
   return (
-    <SEO title="Post" />
+    <Seo title="Post" />
   )
 }

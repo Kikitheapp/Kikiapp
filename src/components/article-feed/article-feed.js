@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import './article-feed.css';
 
 import ArticleCard from '../article-card/article-card';
@@ -18,7 +18,6 @@ function ArticleFeed() {
         nodes {
           id
           title
-          excerpt
           slug
           featuredImage {
             node {
