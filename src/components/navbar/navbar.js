@@ -3,12 +3,9 @@ import { Link } from 'gatsby';
 import logo from '../../assets/images/kikilogo.png';
 import './navbar.css';
 
-import { useBlogUrl } from "../../hooks/use-blog-url";
 
 
 function Navbar() {
-
-  const blogLink = useBlogUrl();
 
   return (
       <nav id="navbar" className='navbar navbar-expand-md p-1 navbar-light bg-secondary'>
@@ -44,22 +41,22 @@ function Navbar() {
               </div>
             </li>
             <li className='nav-item'>
-              <a
+              <Link
                 className='nav-link'
-                target='_blank'
-                rel='noopener noreferrer'
-                href={blogLink}>
-                Visit our blog
-              </a>
+                to='/posts'>
+                Blog
+              </Link>
             </li>
-            <li className='nav-item'>
+            {
+            // Removed temporarily until shop is re-launched
+            /* <li className='nav-item'>
             <a className='nav-link'
                 target='_blank'
                 rel='noopener noreferrer'
                 href='https://shop.kikitheapp.com/'>
                 Shop
                 </a>
-            </li>
+            </li> */}
             <li className='nav-item'>
               <Link className='nav-link' to='/mailinglist'>
                 Join our mailing list

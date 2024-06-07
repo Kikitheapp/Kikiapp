@@ -1,0 +1,3 @@
+.blog-card a, .blog-card a:hover, .blog-card a:active, .blog-card a:visited {
+  text-decoration: none;
+}

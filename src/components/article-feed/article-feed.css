@@ -1,21 +1,35 @@
-.card {
-  border: 3px solid var(--primary-color);
-  border-radius: 10px;
-}
+.article-feed {
 
-.card a {
-  color: var(--charcoal);
-}
+  flex-grow: 1;
+  align-items: flex-start;
 
-.card a, .card a:hover, .card a:active, .card a:visited {
-  text-decoration: none;
-}
+  .blog-card {
+    margin: .5rem auto;
+  }
 
-.card a:hover {
-  color: var(--primary-color);
-}
+  .blog-card img {
+    border-radius: 7px;
+    border: 3px solid var(--primary-color);
+  }
 
-.homepage h4 {
-  font-size: 1.75rem;
-  font-weight: 900;
+  .blog-no-img {
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    border: 3px solid var(--primary-color);
+    background-color: var(--peach-puff);
+  }
+
+  .blog-no-img h3 {
+    font-weight: 900;
+    margin: 0;
+  }
+
+  a {
+    color: var(--charcoal);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--dark-orange);
+  }
 }

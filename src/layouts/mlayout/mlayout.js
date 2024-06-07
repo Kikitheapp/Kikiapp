@@ -7,18 +7,18 @@ import Footer from '../../components/footer/footer';
 
 
 /**
- * Layout component - main layout for the site
+ * Margin Layout component - Layout with margins for readability
  * @param ReactElement children - the children of the component
  * @return ReactElement - the layout component
  **/
 function Layout({ children }){
   return (
-    <div className="root">
+    <div className="root d-flex flex-column min-vh-100">
       <div className="bg-secondary menu">
         <Escape></Escape>
         <Navbar></Navbar>
       </div>
-      <main>
+      <main className="container">
         {children}
       </main>
 

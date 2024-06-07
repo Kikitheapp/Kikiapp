@@ -116,5 +116,5 @@ const Faq = () => {
 export default Faq;
 
 export function Head(){
-    return <Seo title={pageMetadata.title} />
+    return <Seo title={pageMetadata.title} description={pageMetadata.description} />
 }

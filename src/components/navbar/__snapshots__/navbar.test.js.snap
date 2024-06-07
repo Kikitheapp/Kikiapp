@@ -93,23 +93,9 @@ exports[`Navbar renders correctly 1`] = `
         >
           <a
             className="nav-link"
-            href="https://medium.com/kiki-app"
-            rel="noopener noreferrer"
-            target="_blank"
+            href="/posts"
           >
-            Visit our blog
-          </a>
-        </li>
-        <li
-          className="nav-item"
-        >
-          <a
-            className="nav-link"
-            href="https://shop.kikitheapp.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Shop
+            Blog
           </a>
         </li>
         <li
