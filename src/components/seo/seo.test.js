@@ -6,7 +6,7 @@ import * as Gatsby from 'gatsby';
 import SEO from './seo';
 
 
-describe("SEO component", () => {
+describe("SEO component metadata", () => {
 
   const useStaticQuery = jest.spyOn(Gatsby, `useStaticQuery`)
   const mockUseStaticQuery = {
@@ -210,3 +210,8 @@ describe("SEO component", () => {
     
 
 });
+
+describe("SEO component google gtag", () => {
+  // ToDo: Can we test this?
+
+});  
