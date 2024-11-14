@@ -16,7 +16,7 @@ function ArticleCard(props) {
     postImage = <div className="blog-no-img"><h3 className="blog-title">{post.title}</h3></div>;
   }
 
-
+  // TODO: Add like button
   return <div key={post.id} className='blog-card' >
     <Link to={`/posts/${post.slug}`} >{postImage}</Link>
   </div>
