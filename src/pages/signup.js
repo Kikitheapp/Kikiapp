@@ -12,19 +12,19 @@ function SignInPage() {
   console.log(process.env.GATSBY_KIKI_G_LOGIN);
    return <Layout>
       <div className="d-block m-5">
-        <h1 className="text-center">Sign In</h1>
+        <h1 className="text-center">Sign Up</h1>
         <form className="mb-3" id="userSignIn">
           <div>
             <label className="form-label" for="userEmail">Email: </label>
             <input className="form-control mb-3" id="userEmail" type="email" name="email" />
           </div>
           <div>
-            <label for="userPassword" className="form-label">Password: </label>
-            <input className="form-control mb-3" type="password" name="userPassword" id="userPassword" />
+            <label for="username" className="form-label">Username: </label>
+            <input className="form-control mb-3" type="text" name="username" id="username" />
           </div>
           <div className="mb-3 text-center">
-            <button type="submit" className="btn btn-primary">Sign In</button>
-            <a className="btn btn-secondary mx-3" href="/signup">Sign Up</a>
+            <button type="submit" className="btn btn-primary">Sign Up</button>
+            <a className="btn btn-secondary mx-3" href="/signin">Go Back</a>
           </div>
         </form>
         <h5 className="fst-italic"> Or sign in with: </h5>
