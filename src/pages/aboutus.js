@@ -20,8 +20,7 @@ const AboutUs = () => {
           sign up for our&ensp;
           <Link target='_blank' to='/mailinglist' rel="noreferrer">newsletter</Link>, and follow us on&ensp;
           <a target='_blank' href='https://www.instagram.com/kikitheapp/' rel="noreferrer">Instagram</a>,&ensp;
-          <a target='_blank' href='https://www.facebook.com/kikitheapp' rel="noreferrer">Facebook</a>,&ensp;
-          <a target='_blank' href='https://twitter.com/kikitheapp' rel="noreferrer">Twitter</a>,&nbsp;and&ensp;
+          <a target='_blank' href='https://www.facebook.com/kikitheapp' rel="noreferrer">Facebook</a>,&nbsp;and&ensp;
           <a target='_blank' href='https://www.tiktok.com/@kikitheapp' rel="noreferrer">TikTok</a>.
           You can also join us on Patreon for exclusive content.
           </p>

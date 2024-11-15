@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import './footer.css';
 
 import { FaFacebookSquare } from 'react-icons/fa';
-import { FaTwitterSquare } from 'react-icons/fa';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { FaPatreon } from 'react-icons/fa';
 import { FaTiktok } from "react-icons/fa";
@@ -23,9 +22,6 @@ function Footer(){
         </a>
       <a className="social-icons" href="https://www.instagram.com/kikitheapp/" target="_blank" rel="noopener noreferrer">
         <FaInstagramSquare></FaInstagramSquare>
-      </a>
-      <a className="social-icons" href="https://twitter.com/kikitheapp" target="_blank" rel="noopener noreferrer">
-        <FaTwitterSquare></FaTwitterSquare>
       </a>
       <a className="social-icons" href="https://www.patreon.com/kikitheapp" target="_blank" rel="noopener noreferrer">
         <FaPatreon></FaPatreon>
