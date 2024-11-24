@@ -14,9 +14,8 @@ function Escape(props) {
   let keyCount = 0;
   function exitButton(event) {
 
-    event.preventDefault();
-
     if(event.key === 'Escape') {
+      event.preventDefault();
       keyCount++;
       if (keyCount === 3) {
         window.location.replace("https://google.com");
