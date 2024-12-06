@@ -68,15 +68,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        /*
-         * The full URL of the WordPress site's GraphQL API.
-         */
-        url: process.env.KIKI_CMS,
-      },
-    },
-    {
       resolve: `gatsby-source-airtable`,
       options: {
         apiKey: process.env.AIRTABLE_AIR,

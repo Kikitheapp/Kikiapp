@@ -5,6 +5,12 @@ export default async (req, context) => {
 
   console.log(process.env.URL);
 
-
-  return new Response("Hello, world!");
+  let resp = new Response({status: 200, body: "Hello World!"});
+  
+  return resp;
 };
+
+
+export const config = {
+  path: "/account"
+}

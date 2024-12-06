@@ -33,19 +33,15 @@ function Navbar() {
                 Get Started 
               </button>
               <div className="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                <Link className='dropdown-item' to='/aboutus'>About Us</Link>
-                <Link className='dropdown-item' to='/faq'>FAQ</Link>
-                <Link className='dropdown-item' to='/prep'>PrEP Q&amp;A</Link>
-                <Link className='dropdown-item' to='/meetthesextoys'>Meet the sex toys</Link>
-                <Link className='dropdown-item' to='/resources'>Resources</Link>
+                <Link className='dropdown-item' to='/aboutus/'>About Us</Link>
+                <Link className='dropdown-item' to='/faq/'>FAQ</Link>
+                <Link className='dropdown-item' to='/prep/'>PrEP Q&amp;A</Link>
+                <Link className='dropdown-item' to='/meetthesextoys/'>Meet the sex toys</Link>
+                <Link className='dropdown-item' to='/resources/'>Resources</Link>
               </div>
             </li>
             <li className='nav-item'>
-              <Link
-                className='nav-link'
-                to='/posts'>
-                Blog
-              </Link>
+              <Link className='nav-link' to='/posts/'>Blog</Link>
             </li>
             {
             // Removed temporarily until shop is re-launched
@@ -58,9 +54,12 @@ function Navbar() {
                 </a>
             </li> */}
             <li className='nav-item'>
-              <Link className='nav-link' to='/mailinglist'>
+              <Link className='nav-link' to='/mailinglist/'>
                 Join our mailing list
               </Link>
+            </li>
+            <li className='nav-item'>
+              <Link className='nav-link' to='/app/signin/'>Sign In</Link>
             </li>
           </ul>
         </div>

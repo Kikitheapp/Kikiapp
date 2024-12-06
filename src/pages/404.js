@@ -1,7 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
+
 import Layout from '../layouts/layout/layout.js';
 import Seo from "../components/seo/seo.js";
+
+import { Link } from "gatsby"
 import BackgroundVector from '../assets/images/background-vector.svg';
 
 

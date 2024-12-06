@@ -1,9 +1,10 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import DOMPurify from 'isomorphic-dompurify';
 
-import Seo from '../../components/seo/seo';
 import Layout from '../../layouts/mlayout/mlayout';
+import Seo from '../../components/seo/seo';
+
+import { graphql } from 'gatsby';
 
 import './index.css';
 
