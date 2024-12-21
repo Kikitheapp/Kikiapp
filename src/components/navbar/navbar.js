@@ -47,16 +47,14 @@ function Navbar() {
                 Blog
               </Link>
             </li>
-            {
-            // Removed temporarily until shop is re-launched
-            /* <li className='nav-item'>
-            <a className='nav-link'
+            <li className='nav-item'>
+             <a className='nav-link'
                 target='_blank'
                 rel='noopener noreferrer'
                 href='https://shop.kikitheapp.com/'>
                 Shop
-                </a>
-            </li> */}
+              </a>
+            </li>
             <li className='nav-item'>
               <Link className='nav-link' to='/mailinglist'>
                 Join our mailing list
